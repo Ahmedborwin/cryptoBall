@@ -9,6 +9,7 @@
     "test": "npm run test:unit",
     "test:unit": "hardhat test test/unit/*.spec.js",
     "startLocalFunctionsTestnet": "node scripts/startLocalFunctionsTestnet.js",
+    "deployConsumer": "npx hardhat run deploy/01-deploy-Consumer.js",
     "listen": "nodemon scripts/listen.js",
     "lint": "npm run lint:contracts && npm run format:check",
     "lint:fix": "solhint 'contracts/**/*.sol' --fix",

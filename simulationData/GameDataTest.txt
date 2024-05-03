@@ -1,23 +1,4 @@
-const fs = require("fs")
-const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-toolkit")
-
-//File takes array of objects for two 11 player teams and generate 5 random numbers and
-//finally formats these into an array of strings to be used by the gameEngine
-let ArgsArray = []
-
-// Configure the request by setting the fields below
-const requestConfig = {
-  // String containing the source code to be executed
-  source: fs.readFileSync("./gameEngine.js").toString(),
-  //source: fs.readFileSync("./API-request-example.js").toString(),
-  // Location of source code (only Inline is currently supported)
-  codeLocation: Location.Inline,
-  // Optional. Secrets can be accessed within the source code with `secrets.varName` (ie: secrets.apiKey). The secrets object can only contain string values.
-  secrets: { apiKey: process.env.COINMARKETCAP_API_KEY ?? "" },
-  // Optional if secrets are expected in the sourceLocation of secrets (only Remote or DONHosted is supported)
-  secretsLocation: Location.DONHosted,
-  // Args (string only array) can be accessed within the source code with `args[index]` (ie: args[0]).
-  args: [
+[
     '{"player_id":1,"name":"Player 1","positions":"Goalkeeper","overall_rating":97,"potential":75,"value":1000000,"Attack":84,"Midfield":64,"Defense":94,"Goalkeeping":90}',
     '{"player_id":2,"name":"Player 2","positions":"Defender","overall_rating":100,"potential":76,"value":35000000,"Attack":83,"Midfield":88,"Defense":60,"Goalkeeping":9}',
     '{"player_id":3,"name":"Player 3","positions":"Defender","overall_rating":61,"potential":65,"value":13000000,"Attack":81,"Midfield":66,"Defense":81,"Goalkeeping":7}',
@@ -40,17 +21,9 @@ const requestConfig = {
     '{"player_id":20,"name":"Player 20","positions":"Forward","overall_rating":85,"potential":87,"value":41000000,"Attack":55,"Midfield":79,"Defense":62,"Goalkeeping":10}',
     '{"player_id":21,"name":"Player 21","positions":"Goalkeeper","overall_rating":62,"potential":100,"value":54000000,"Attack":56,"Midfield":80,"Defense":68,"Goalkeeping":88}',
     '{"player_id":22,"name":"Player 22","positions":"Midfielder","overall_rating":74,"potential":79,"value":66000000,"Attack":91,"Midfield":56,"Defense":50,"Goalkeeping":7}',
-    "61",
-    "95",
-    "34",
-    "71",
-    "3",
-  ],
-
-  // Code language (only JavaScript is currently supported)
-  codeLanguage: CodeLanguage.JavaScript,
-  // Expected type of the returned value
-  expectedReturnType: ReturnType.uint256,
-}
-
-module.exports = requestConfig
+    '61',
+    '95',
+    '34',
+    '71',
+    '3'
+  ]

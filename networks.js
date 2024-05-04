@@ -20,6 +20,8 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY
 // TODO @dev - set this to run the accept.js task.
 const SECOND_PRIVATE_KEY = process.env.SECOND_PRIVATE_KEY
 
+const providerApiKey = process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF"
+
 if (!isTestEnvironment && !isSimulation && !PRIVATE_KEY) {
   throw Error("Set the PRIVATE_KEY environment variable with your EVM wallet private key")
 }
@@ -132,28 +134,12 @@ const networks = {
       "https://02.functions-gateway.testnet.chain.link/",
     ],
   },
-  arbitrum: {
-    url: process.env.ARBITRUM_RPC_URL || "UNSET",
-    gasPrice: undefined,
-    nonce: undefined,
-    accounts,
-    verifyApiKey: process.env.ARBISCAN_API_KEY || "UNSET",
-    chainId: 42161,
-    confirmations: DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS,
-    nativeCurrencySymbol: "ETH",
-    linkToken: "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
-    linkPriceFeed: "0xb7c8Fb1dB45007F98A68Da0588e1AA524C317f27", // LINK/ETH
-    functionsRouter: "0x97083E831F8F0638855e2A515c90EdCF158DF238",
-    donId: "fun-arbitrum-mainnet-1",
-    gatewayUrls: ["https://01.functions-gateway.chain.link/", "https://02.functions-gateway.chain.link/"],
-  },
   arbitrumSepolia: {
-    url: process.env.ARBITRUM_SEPOLIA_RPC_URL || "UNSET",
+    url: `https://arb-sepolia.g.alchemy.com/v2/${providerApiKey}` || "UNSET",
     gasPrice: undefined,
     nonce: undefined,
-    accounts,
+    subscriptionId: 59,
     verifyApiKey: process.env.ARBISCAN_API_KEY || "UNSET",
-    url: process.env.ARBITRUM_SEPOLIA_RPC_URL || "UNSET",
     accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
     chainId: 421614,
     confirmations: DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS,
@@ -209,9 +195,10 @@ const networks = {
     accounts,
     confirmations: 1,
     nativeCurrencySymbol: "ETH",
-    linkToken: "0xB181E4986609AfE59689280e77A949F96fFb4dE3",
-    functionsRouter: "0xEA09f163857F2F9FfA1c40281EdEA2441821f0Df",
+    linkToken: "0x8e7ad80D87Ef8D471a7A4aD6ae75DA30E815082e",
+    functionsRouter: "0x06911E1cAdaF83544C00D0836CdeD1C3875D67aF",
     donId: "local-functions-testnet",
+    subscriptionId: 1,
   },
 }
 

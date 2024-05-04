@@ -17,6 +17,10 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
   bytes public s_lastResponse;
   bytes public s_lastError;
 
+  //Game Variables
+  //game Engine JS Code
+  string internal gameEngine;
+
   event ResponseReceived(bytes32 _requestId, bytes _response);
 
   constructor(address router, bytes32 _donId) FunctionsClient(router) ConfirmedOwner(msg.sender) {
@@ -76,5 +80,11 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
     if (response.length > 0) {
       emit ResponseReceived(requestId, response);
     }
+  }
+
+  //UTIL FUNCTIONS
+
+  function populateGameEngine(string calldata _gameEngine) external onlyOwner {
+    gameEngine = _gameEngine;
   }
 }

@@ -1,0 +1,151 @@
+[
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "router" },
+      { "type": "bytes32", "name": "_donId" }
+    ]
+  },
+  { "type": "error", "name": "EmptyArgs", "inputs": [] },
+  { "type": "error", "name": "EmptySource", "inputs": [] },
+  { "type": "error", "name": "NoInlineSecrets", "inputs": [] },
+  { "type": "error", "name": "OnlyRouterCanFulfill", "inputs": [] },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "OwnershipTransferRequested",
+    "inputs": [
+      { "type": "address", "name": "from", "indexed": true },
+      { "type": "address", "name": "to", "indexed": true }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "OwnershipTransferred",
+    "inputs": [
+      { "type": "address", "name": "from", "indexed": true },
+      { "type": "address", "name": "to", "indexed": true }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "RequestFulfilled",
+    "inputs": [{ "type": "bytes32", "name": "id", "indexed": true }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "RequestSent",
+    "inputs": [{ "type": "bytes32", "name": "id", "indexed": true }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "ResponseReceived",
+    "inputs": [
+      { "type": "bytes32", "name": "_requestId", "indexed": false },
+      { "type": "bytes", "name": "_response", "indexed": false }
+    ]
+  },
+  { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "donId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "bytes32" }]
+  },
+  {
+    "type": "function",
+    "name": "handleOracleFulfillment",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "bytes32", "name": "requestId" },
+      { "type": "bytes", "name": "response" },
+      { "type": "bytes", "name": "err" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "populateGameEngine",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "string", "name": "_gameEngine" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "s_lastError",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "bytes" }]
+  },
+  {
+    "type": "function",
+    "name": "s_lastRequestId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "bytes32" }]
+  },
+  {
+    "type": "function",
+    "name": "s_lastResponse",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "bytes" }]
+  },
+  {
+    "type": "function",
+    "name": "sendRequest",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "string", "name": "source" },
+      { "type": "uint8", "name": "secretsLocation" },
+      { "type": "bytes", "name": "encryptedSecretsReference" },
+      { "type": "string[]", "name": "args" },
+      { "type": "bytes[]", "name": "bytesArgs" },
+      { "type": "uint64", "name": "subscriptionId" },
+      { "type": "uint32", "name": "callbackGasLimit" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setDonId",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "bytes32", "name": "newDonId" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "to" }],
+    "outputs": []
+  }
+]

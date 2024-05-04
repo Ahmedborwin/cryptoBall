@@ -51,7 +51,6 @@ module.exports = {
       sepolia: networks.ethereumSepolia.verifyApiKey,
       polygonMumbai: networks.polygonMumbai.verifyApiKey,
       avalancheFujiTestnet: networks.avalancheFuji.verifyApiKey,
-      arbitrum: networks.arbitrum.verifyApiKey,
       arbitrumSepolia: networks.arbitrumSepolia.verifyApiKey,
       baseSepolia: networks.baseSepolia.verifyApiKey,
       optimismSepolia: networks.optimismSepolia.verifyApiKey,

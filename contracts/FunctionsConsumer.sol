@@ -17,6 +17,8 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
   bytes public s_lastResponse;
   bytes public s_lastError;
 
+  event ResponseReceived(bytes32 _requestId, bytes _response);
+
   constructor(address router, bytes32 _donId) FunctionsClient(router) ConfirmedOwner(msg.sender) {
     donId = _donId;
   }
@@ -71,5 +73,8 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
   function fulfillRequest(bytes32 requestId, bytes memory response, bytes memory err) internal override {
     s_lastResponse = response;
     s_lastError = err;
+    if (response.length > 0) {
+      emit ResponseReceived(requestId, response);
+    }
   }
 }

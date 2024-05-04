@@ -1,11 +1,15 @@
+const { Buffer } = await import("node:buffer")
+const { promisify } = await import("node:util")
+const { gzip, ungzip } = await import("node:zlib")
+const gzipAsync = promisify(gzip)
+
 //Test Game engine mechanics
 //expects meta data for 11 players for each team and an array of random nummbers to be
-
 // Assuming arguments contains 22 player names followed by 5 random integers
 
 // Parsing player data into objects
-const team1 = args.slice(0, 11).map((playerJson) => JSON.parse(playerJson))
-const team2 = args.slice(11, 22).map((playerJson) => JSON.parse(playerJson))
+const team1 = args.slice(0, 4).map((playerJson) => JSON.parse(playerJson))
+const team2 = args.slice(6, 10).map((playerJson) => JSON.parse(playerJson))
 const randomFactors = args.slice(22, 27).map(Number)
 
 // Simulate a match
@@ -52,6 +56,44 @@ function adjustPlayerAttributes(team, outcomeFactor) {
   })
 }
 
+function encodeMatchResult(matchResult) {
+  // Define byte encoding scheme
+  const encodingScheme = {
+    goalsTeam1: { bytes: 2, type: "uint16" },
+    goalsTeam2: { bytes: 2, type: "uint16" },
+    team1: { bytes: matchResult.team1.length * 20, type: "string" },
+    team2: { bytes: matchResult.team2.length * 20, type: "string" },
+  }
+
+  // Encode goalsTeam1 and goalsTeam2 using a custom function that returns a Buffer directly
+  const goalsTeam1Bytes = Buffer.from(Functions.encodeUint256(matchResult.goalsTeam1))
+  const goalsTeam2Bytes = Buffer.from(Functions.encodeUint256(matchResult.goalsTeam2))
+
+  // Encode team1 and team2 and ensure each player encoding is converted to a Buffer
+  const team1Bytes = Buffer.concat(
+    matchResult.team1.map((player) => Buffer.from(Functions.encodeString(JSON.stringify(player), "utf8")))
+  )
+  const team2Bytes = Buffer.concat(
+    matchResult.team2.map((player) => Buffer.from(Functions.encodeString(JSON.stringify(player), "utf8")))
+  )
+
+  // Concatenate bytes
+  const encodedBytes = Buffer.concat([goalsTeam1Bytes, goalsTeam2Bytes, team1Bytes, team2Bytes])
+
+  return encodedBytes
+}
+
+async function compressBuffer(buffer) {
+  try {
+    const compressed = await gzipAsync(buffer)
+    console.log(`Original size: ${buffer.length}, Compressed size: ${compressed.length}`)
+    return compressed
+  } catch (error) {
+    console.error("Compression error:", error)
+    return null
+  }
+}
+
 // Simulate the match with the provided data
 const matchResult = simulateMatch()
 
@@ -65,5 +107,16 @@ console.log("Updated Team 2 Stats:", matchResult.team2)
 // - Functions.encodeUint256
 // - Functions.encodeInt256
 // - Functions.encodeString
-// Or return a custom Buffer for a custom byte encoding
-return Functions.encodeUint256(Math.round(totalAmountAfterInterest))
+// Return the encoded matchResult as a custom Buffer
+// Encode the matchResult object
+const encodedMatchResult = encodeMatchResult(matchResult)
+
+compressBuffer(encodedMatchResult).then((compressedResult) => {
+  if (compressedResult) {
+    console.log("Compression successful")
+    // Log the size of the encodedMatchResult buffer in bytes
+    console.log(`The size of the encodedMatchResult buffer is: ${compressedResult.length} bytes`)
+    console.log(compressedResult)
+    return compressedResult
+  }
+})

@@ -6,7 +6,7 @@ const gzipAsync = promisify(gzip)
 // Parsing player data into arrays of values
 const team1 = args.slice(0, 11).map((playerJson) => Object.values(JSON.parse(playerJson)))
 const team2 = args.slice(11, 22).map((playerJson) => Object.values(JSON.parse(playerJson)))
-const randomFactors = args.slice(22, 30).map(Number)
+const randomFactors = args.slice(22, 27).map(Number)
 
 function simulateMatch() {
   console.log("Starting match simulation...")

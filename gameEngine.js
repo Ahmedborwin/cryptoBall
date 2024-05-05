@@ -11,13 +11,40 @@ const randomFactors = args.slice(22, 27).map(Number)
 function simulateMatch() {
   console.log("Starting match simulation...")
 
+  const homeBias = 0.25;
+  const eliteGoalSavePercentage = .85;
+  const shotsToGoalsRatio = 3;
+
+
+  const homeTeam = randomFactors[0] % 2;
+
+  for (int i = 0; i < 11; i++) {
+    team1Attack += team1[i].attack;
+    team1Defense += team1[i].defense;
+    team1Midfield += team1[i].midfield;
+  }
+  const team1Skill = team1Attack + team1Defense + team1Midfield
+  const team1Goals = computeScoreFromChance(team1Skill)
+  team1Goals = team1Goals - ((team1Goals * shotsToGoalsRatio) * (team2GkSkill * eliteGoalSavePercentage))
+
+
+  for (int i = 0; i < 11; i++) {
+    team2Attack += team2[i].attack;
+    team2Defense += team2[i].defense;
+    team2Midfield += team2[i].midfield;
+  }
+  const team2Skill = team2Attack + team2Defense + team2Midfield;
+  const team2Goals = computeScoreFromChance(team2Skill)
+  team2Goals = team2Goals - ((team2Goals * shotsToGoalsRatio) * (team1GkSkill * eliteGoalSavePercentage))
+
+  /*
+
   let scoreTeam1 =
     team1.reduce((acc, player) => {
       return acc + player[2] + player[3] + player[4] // Assuming Attack, Midfield, Defense are at indexes 2, 3, 4
     }, 0) /
       1000 +
     (randomFactors[0] % 3)
-    
 
   let scoreTeam2 =
     team2.reduce((acc, player) => {
@@ -34,9 +61,30 @@ function simulateMatch() {
   adjustPlayerAttributes(team1, goalsTeam1 >= goalsTeam2 ? randomFactors[2] : -randomFactors[3])
   adjustPlayerAttributes(team2, goalsTeam2 >= goalsTeam1 ? randomFactors[3] : -randomFactors[2])
   console.log("Player attributes adjusted based on match results.")
-
-  return { goalsTeam1, goalsTeam2, team1, team2 }
+  */
+  return { team1Goals, team2Goals, team1, team2 }
 }
+
+function computeScoreFromChance(chance) {
+    // Ensure the chance is within the 0-10000 range
+    if (chance < 0 || chance > 3000) {
+      return "Chance must be between 0 and 10000";
+    }
+
+    // Convert chance to a probability between 0 and 1
+    const probability = chance / 3000;
+
+    // Define the base value for the adjustment
+    const base = Math.exp(-3.5);
+
+    // Adjust the computation to ensure the score is scaled from 0 to 10
+    // Calculate the score using the inverse of the exponential function adjusted correctly
+    // This formula now starts at 0 and increases to 10 as the chance decreases
+    const score = (Math.log((1 - probability) * (1 - base) + base) / Math.log(base) * 8);
+
+    // Return the score directly without rounding
+    return score + 1;
+  }
 
 function adjustPlayerAttributes(team, outcomeFactor) {
   team.forEach((player) => {

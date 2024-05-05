@@ -28,18 +28,18 @@ async function EventListeners() {
   const consumerAddress = consumerAddressList[networks[network.name]["chainId"]]
 
   // Connect to the contract
-  const consumer = new ethers.Contract(chainRunnerAddress, chainRunnerAbi, provider)
+  const consumer = new ethers.Contract(consumerAddress, consumerABI, provider)
 
-  consumer.on("competitionStarted", (arg1, arg2, arg3, arg4, arg5, event) => {
-    console.log("-----------------------")
-    console.log(`New Event: competitionStarted`)
-    console.log(
-      `comp started, compid is: ${arg1} , list of athletes: ${arg2}
-            )}`
-    )
-    console.log("-----------------------")
-    // Add your event handling logic here
-  })
+  // consumer.on("competitionStarted", (, event) => {
+  //     console.log("-----------------------")
+  //     console.log(`New Event: competitionStarted`)
+  //     console.log(
+  //         `comp started, compid is: ${arg1} , list of athletes: ${arg2}
+  //         )}`
+  //     )
+  //     console.log("-----------------------")
+  //     // Add your event handling logic here
+  // })
 
   console.log(`Listening for events...`)
 }

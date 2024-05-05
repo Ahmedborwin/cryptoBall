@@ -8,7 +8,6 @@ pragma solidity ^0.8.19;
 contract CRYPTOBALL {
   //variables
   //events
-
   //create team profile
   function createTeamProfile(string memory _name) external {}
   //stake team

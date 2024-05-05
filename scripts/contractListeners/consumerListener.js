@@ -30,16 +30,14 @@ async function EventListeners() {
   // Connect to the contract
   const consumer = new ethers.Contract(consumerAddress, consumerABI, provider)
 
-  // consumer.on("competitionStarted", (, event) => {
-  //     console.log("-----------------------")
-  //     console.log(`New Event: competitionStarted`)
-  //     console.log(
-  //         `comp started, compid is: ${arg1} , list of athletes: ${arg2}
-  //         )}`
-  //     )
-  //     console.log("-----------------------")
-  //     // Add your event handling logic here
-  // })
+  consumer.on("ResponseReceived", (arg1, arg2, event) => {
+    console.log("-----------------------")
+    console.log(`New Event: ResponseReceived`)
+    //decode Response Buffer
+    //retrieve tokens + upload to IPFS + update tokens
+    console.log(``)
+    console.log("-----------------------")
+  })
 
   console.log(`Listening for events...`)
 }

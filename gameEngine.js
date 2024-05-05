@@ -17,6 +17,7 @@ function simulateMatch() {
     }, 0) /
       1000 +
     (randomFactors[0] % 3)
+    
 
   let scoreTeam2 =
     team2.reduce((acc, player) => {

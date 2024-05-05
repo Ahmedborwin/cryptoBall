@@ -8,7 +8,7 @@ let ArgsArray = []
 // Configure the request by setting the fields below
 const requestConfig = {
   // String containing the source code to be executed
-  source: fs.readFileSync("./gameEngine.js").toString(),
+  source: fs.readFileSync("./gameEnginev2.js").toString(),
   //source: fs.readFileSync("./API-request-example.js").toString(),
   // Location of source code (only Inline is currently supported)
   codeLocation: Location.Inline,

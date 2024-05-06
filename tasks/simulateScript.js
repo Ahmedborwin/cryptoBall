@@ -65,6 +65,7 @@ task("functions-simulate-script", "Executes the JavaScript source code locally")
         const decodedData = decodeMatchResult(buffer)
         if (decodedData) {
           console.log("Data Decoded!")
+          decodedData.team1[0].overall_rating
           //here i want to update the tokenURI for one of my tokens
           const metaData = await fetchNFTMetadata(hre, decodedData)
         }

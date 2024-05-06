@@ -65,5 +65,8 @@
     "semi": false,
     "singleQuote": false,
     "printWidth": 120
+  },
+  "devDependencies": {
+    "@pinata/sdk": "^2.1.0"
   }
 }

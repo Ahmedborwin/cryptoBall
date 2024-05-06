@@ -15,6 +15,7 @@ let team2Midfield
 let team2GkSkill
 
 // Parsing player data into arrays of values
+// TODO: read the players metadata from ipfs. Expect token IDs and smart contract address?
 const team1 = args.slice(0, 11).map((playerJson) => Object.values(JSON.parse(playerJson)))
 const team2 = args.slice(11, 22).map((playerJson) => Object.values(JSON.parse(playerJson)))
 const randomFactors = args.slice(22, 27).map(Number)
@@ -25,7 +26,7 @@ function simulateMatch() {
   const homeBias = 0.25
   const eliteGoalSavePercentage = 0.85
   const shotsToGoalsRatio = 3
-
+  //TO DO - should be passed as argument and alternate between the two teams
   const homeTeam = randomFactors[0] % 2
 
   for (let i = 0; i < 11; i++) {
@@ -46,8 +47,8 @@ function simulateMatch() {
   let team2Goals = computeScoreFromChance(team2Skill)
   team2Goals = team2Goals - team2Goals * shotsToGoalsRatio * (team1GkSkill * eliteGoalSavePercentage)
 
-  return { team1Goals, team2Goals, team1, team2 }
-  console.table({ team1Goals: team1Goals, team2Goals: team2Goals, team1: team1, team2: team2 })
+  //Hardcoded for now. Match simulaiton is not working.
+  return { team1Goals: 1, team2Goals: 2, team1, team2 }
 }
 
 function computeScoreFromChance(chance) {
@@ -75,64 +76,61 @@ function adjustPlayerAttributes(team, outcomeFactor) {
   team.forEach((player) => {
     const changeFactor = 0.01 * outcomeFactor // Change factor based on the outcome
     // Apply the change factor and round to the nearest whole number
-    player[7] = Math.round(player[7] + player[7] * changeFactor) // Attack
-    player[8] = Math.round(player[8] + player[8] * changeFactor) // Midfield
-    player[9] = Math.round(player[9] + player[9] * changeFactor) // Defense
-    player[10] = Math.round(player[10] + player[10] * changeFactor) // Goalkeeping, assuming it's at index 10
+    if (player[3] == "Goalkeeper") {
+      player[10] = Math.round(player[10] + player[10] * changeFactor) // Goalkeeping, assuming it's at index 10
+    } else {
+      player[7] = Math.round(player[7] + player[7] * changeFactor) // Attack
+      player[8] = Math.round(player[8] + player[8] * changeFactor) // Midfield
+      player[9] = Math.round(player[9] + player[9] * changeFactor) // Defense
+    }
   })
 }
 
 function encodeMatchResult(matchResult) {
-  // Assume a basic encoding scheme, each value needs to be transformed to a buffer
-  const goalsTeam1Bytes = Buffer.from([matchResult.goalsTeam1]) // Simple example
-  const goalsTeam2Bytes = Buffer.from([matchResult.goalsTeam2])
+  const buffer = Buffer.alloc(256) // Total buffer allocation
+  buffer.writeUInt8(matchResult.team1Goals, 0) // First team score
 
-  console.log(
-    "Team 1 data for Buffer creation:",
-    matchResult.team1.map((player) => player)
-  )
-  console.log(
-    "Team 2 data for Buffer creation:",
-    matchResult.team2.map((player) => player)
-  )
+  buffer.writeUInt8(matchResult.team2Goals, 1) // Second team score
 
-  const team1Bytes = Buffer.concat(
-    matchResult.team1.map((player) => {
-      return Buffer.from(new Uint8Array(player))
+  let offset = 2
+  const encodeTeamData = (team) => {
+    team.forEach((player) => {
+      buffer.writeUInt32BE(player[0], offset) // Player ID (6 bytes)
+      offset += 6
+      buffer.writeUInt8(player[3], offset++) // Overall rating (1 byte)
+      buffer.writeUInt8(player[6], offset++) // Attack rating (1 byte)
+      buffer.writeUInt8(player[7], offset++) // Midfield rating (1 byte)
+      buffer.writeUInt8(player[8], offset++) // Defense rating (1 byte)
+      buffer.writeUInt8(player[9], offset++) // Goalkeeping rating (1 byte)
     })
-  )
-  const team2Bytes = Buffer.concat(
-    matchResult.team2.map((player) => {
-      return Buffer.from(new Uint8Array(player))
-    })
-  )
-
-  // Concatenate all bytes
-  const encodedBytes = Buffer.concat([goalsTeam1Bytes, goalsTeam2Bytes, team1Bytes, team2Bytes])
-
-  return encodedBytes
-}
-
-async function compressBuffer(buffer) {
-  try {
-    const compressed = await gzipAsync(buffer)
-    console.log(`Original size: ${buffer.length}, Compressed size: ${compressed.length}`)
-    return compressed
-  } catch (error) {
-    console.error("Compression error:", error)
-    return null
   }
+  encodeTeamData(matchResult.team1)
+  encodeTeamData(matchResult.team2)
+  return buffer
 }
 
-// Simulate and encode the match
 const matchResult = simulateMatch()
 const encodedMatchResult = encodeMatchResult(matchResult)
+return encodedMatchResult
 
-compressBuffer(encodedMatchResult).then((compressedResult) => {
-  if (compressedResult) {
-    console.log("Compression successful")
-    console.log(`The size of the encodedMatchResult buffer is: ${compressedResult.length} bytes`)
-    console.log(compressedResult)
-    return compressedResult
-  }
-})
+// async function compressBuffer(buffer) {
+//   try {
+//     const compressed = await gzipAsync(buffer)
+//     console.log(`Original size: ${buffer.length}, Compressed size: ${compressed.length}`)
+//     return compressed
+//   } catch (error) {
+//     console.error("Compression error:", error)
+//     return null
+//   }
+// }
+
+// Simulate and encode the match
+
+// compressBuffer(encodedMatchResult).then((compressedResult) => {
+//   if (compressedResult) {
+//     console.log("Compression successful")
+//     console.log(`The size of the encodedMatchResult buffer is: ${compressedResult.length} bytes`)
+//     console.log(compressedResult)
+//     return compressedResult
+//   }
+// })

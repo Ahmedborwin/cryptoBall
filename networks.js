@@ -133,6 +133,11 @@ const networks = {
       "https://01.functions-gateway.testnet.chain.link/",
       "https://02.functions-gateway.testnet.chain.link/",
     ],
+    //VRF Variables
+    vrfCoordinatorV2: "",
+    gasLane: "",
+    callbackGasLimit: "500000", // 500,000 gas
+    vrfSubscriptionId: "", // add your ID here!
   },
   arbitrumSepolia: {
     url: `https://arb-sepolia.g.alchemy.com/v2/${providerApiKey}` || "UNSET",
@@ -152,6 +157,11 @@ const networks = {
       "https://01.functions-gateway.testnet.chain.link/",
       "https://02.functions-gateway.testnet.chain.link/",
     ],
+    //VRF Variables
+    vrfCoordinatorV2: "0x5CE8D5A2BC84beb22a398CCA51996F7930313D61",
+    gasLane: "0x1770bdc7eec7771f7ba4ffd640f34260d7f095b79c92d34a5b2551d6f6cfd2be",
+    callbackGasLimit: "500000", // 500,000 gas
+    vrfSubscriptionId: "20214844033880888205091865342092934110496179937850397192050651574761593789054", // add your ID here!
   },
   baseSepolia: {
     url: process.env.BASE_SEPOLIA_RPC_URL || "UNSET", // https://docs.basescan.org/v/sepolia-basescan/

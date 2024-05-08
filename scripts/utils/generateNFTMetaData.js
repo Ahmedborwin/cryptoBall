@@ -62,14 +62,14 @@ const processPlayers = (data, chunkSize = 100) => {
       return {
         name: player.name,
         club_position: player.club_position,
-        attributes: {
-          overall_rating: player.overall_rating,
-          potential: player.potential,
-          attack: playerAttributes.attack.toString(),
-          defense: playerAttributes.defense.toString(),
-          midfield: playerAttributes.midfield.toString(),
-          goalkeeping: playerAttributes.goalkeeping.toString(),
-        },
+        attributes: [
+          { overall_rating: player.overall_rating },
+          { potential: player.potential },
+          { attack: playerAttributes.attack.toString() },
+          { defense: playerAttributes.defense.toString() },
+          { midfield: playerAttributes.midfield.toString() },
+          { goalkeeping: playerAttributes.goalkeeping.toString() },
+        ],
       }
     })
 

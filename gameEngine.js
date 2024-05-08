@@ -234,28 +234,6 @@ function adjustPlayerAttributes(team, outcomeFactor) {
     console.log(team1PlayerID, team1Attribute, team2PlayerID, team2Attribute)
   return { team1PlayerID, team1Attribute, team2PlayerID, team2Attribute }
 }
-/*
-function encodeMatchResult(matchResult) {
-  // Assume a basic encoding scheme, each value needs to be transformed to a buffer
-  const goalsTeam1Bytes = Buffer.from([matchResult.goalsTeam1]) // Simple example
-  const goalsTeam2Bytes = Buffer.from([matchResult.goalsTeam2])
-
-  const team1Bytes = Buffer.concat(
-    matchResult.team1.map((player) => {
-      return Buffer.from(new Uint8Array(player))
-    })
-  )
-  const team2Bytes = Buffer.concat(
-    matchResult.team2.map((player) => {
-      return Buffer.from(new Uint8Array(player))
-    })
-  )
-  // Concatenate all bytes
-  const encodedBytes = Buffer.concat([goalsTeam1Bytes, goalsTeam2Bytes, team1Bytes, team2Bytes])
-
-  return encodedBytes
-}
-*/
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max)

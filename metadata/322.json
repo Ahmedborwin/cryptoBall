@@ -1,12 +1,30 @@
 {
   "name": "Antoine Griezmann",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "88",
-    "potential": "88",
-    "attack": "87",
-    "defense": "62",
-    "midfield": "88",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "88"
+    },
+    {
+      "name": "potential",
+      "value": "88"
+    },
+    {
+      "name": "attack",
+      "value": "87"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "88"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

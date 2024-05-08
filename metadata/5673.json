@@ -1,12 +1,30 @@
 {
   "name": "Alvino Volpi Neto",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "35",
-    "defense": "29",
-    "midfield": "40",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

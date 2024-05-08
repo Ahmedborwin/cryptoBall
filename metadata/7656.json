@@ -1,12 +1,30 @@
 {
   "name": "Tan Kenneth Jerico Schmidt",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "76",
-    "attack": "47",
-    "defense": "68",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

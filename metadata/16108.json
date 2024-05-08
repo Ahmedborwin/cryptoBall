@@ -1,12 +1,30 @@
 {
   "name": "Joshua James Walker",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "62",
-    "attack": "65",
-    "defense": "27",
-    "midfield": "57",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

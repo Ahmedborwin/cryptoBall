@@ -1,12 +1,30 @@
 {
   "name": "Yuriel Darío Celi Guerrero",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "70",
-    "attack": "67",
-    "defense": "55",
-    "midfield": "65",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Lúcio Anselmo Corteijo Salazar",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "76",
-    "attack": "63",
-    "defense": "73",
-    "midfield": "67",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

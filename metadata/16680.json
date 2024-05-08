@@ -1,12 +1,30 @@
 {
   "name": "황성민 Sung-Min Hwang",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "57",
-    "attack": "28",
-    "defense": "22",
-    "midfield": "36",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

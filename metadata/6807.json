@@ -1,12 +1,30 @@
 {
   "name": "Lucas Galvão da Costa Souza",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "61",
-    "defense": "69",
-    "midfield": "66",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

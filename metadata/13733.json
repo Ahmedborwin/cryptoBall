@@ -1,12 +1,30 @@
 {
   "name": "Radek Vítek",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "78",
-    "attack": "29",
-    "defense": "26",
-    "midfield": "39",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

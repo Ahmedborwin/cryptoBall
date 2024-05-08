@@ -1,12 +1,30 @@
 {
   "name": "Jeroen Zoet",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "37",
-    "defense": "27",
-    "midfield": "46",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

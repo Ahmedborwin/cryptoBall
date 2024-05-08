@@ -1,12 +1,30 @@
 {
   "name": "Lucas Agustín Ferreira Zagas",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "73",
-    "attack": "55",
-    "defense": "67",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "55"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

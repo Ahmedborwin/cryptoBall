@@ -1,12 +1,30 @@
 {
   "name": "Benjamin Chiemela Fredrick",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "78",
-    "attack": "46",
-    "defense": "61",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

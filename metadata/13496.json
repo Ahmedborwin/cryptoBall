@@ -1,12 +1,30 @@
 {
   "name": "Aaron James Lewis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "63",
-    "attack": "62",
-    "defense": "63",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

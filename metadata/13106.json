@@ -1,12 +1,30 @@
 {
   "name": "Rodrigo Fernandes Melro",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "64",
-    "defense": "26",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

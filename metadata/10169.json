@@ -1,12 +1,30 @@
 {
   "name": "Cătălin Cîrjan",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "79",
-    "attack": "66",
-    "defense": "48",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

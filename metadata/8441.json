@@ -1,12 +1,30 @@
 {
   "name": "Edward Chilufya",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "72",
-    "attack": "70",
-    "defense": "29",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

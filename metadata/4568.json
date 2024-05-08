@@ -1,12 +1,30 @@
 {
   "name": "Matheus Pereira da Silva",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "76",
-    "attack": "68",
-    "defense": "67",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

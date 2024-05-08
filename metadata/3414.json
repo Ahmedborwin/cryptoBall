@@ -1,12 +1,30 @@
 {
   "name": "Rúben Barcelos de Sousa Lameiras",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "74",
-    "defense": "50",
-    "midfield": "72",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

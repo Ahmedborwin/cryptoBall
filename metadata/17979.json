@@ -1,12 +1,30 @@
 {
   "name": "Manglenthang Kipgen",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "69",
-    "attack": "53",
-    "defense": "33",
-    "midfield": "55",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

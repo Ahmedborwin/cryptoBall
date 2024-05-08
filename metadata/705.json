@@ -1,12 +1,30 @@
 {
   "name": "José Diogo Dalot Teixeira",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "83",
-    "attack": "75",
-    "defense": "77",
-    "midfield": "78",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

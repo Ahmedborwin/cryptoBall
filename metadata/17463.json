@@ -1,12 +1,30 @@
 {
   "name": "Mirshad Michu",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "56",
-    "attack": "21",
-    "defense": "19",
-    "midfield": "28",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

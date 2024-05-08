@@ -1,12 +1,30 @@
 {
   "name": "Serge Ngoma",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "80",
-    "attack": "62",
-    "defense": "42",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

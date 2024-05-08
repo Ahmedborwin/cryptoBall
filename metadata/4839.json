@@ -1,12 +1,30 @@
 {
   "name": "André Filipe Magalhães Ribeiro Ferreira",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "74",
-    "attack": "35",
-    "defense": "28",
-    "midfield": "40",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

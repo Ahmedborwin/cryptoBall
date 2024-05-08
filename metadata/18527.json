@@ -1,12 +1,30 @@
 {
   "name": "Bryan Dowd",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "58",
-    "attack": "18",
-    "defense": "16",
-    "midfield": "24",
-    "goalkeeping": "50"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "58"
+    },
+    {
+      "name": "attack",
+      "value": "18"
+    },
+    {
+      "name": "defense",
+      "value": "16"
+    },
+    {
+      "name": "midfield",
+      "value": "24"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "50"
+    }
+  ]
 }

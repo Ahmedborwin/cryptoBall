@@ -1,12 +1,30 @@
 {
   "name": "Alim Öztürk",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "47",
-    "defense": "67",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

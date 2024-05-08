@@ -1,12 +1,30 @@
 {
   "name": "Bas Edo Kuipers",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "60",
-    "defense": "71",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

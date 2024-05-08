@@ -1,12 +1,30 @@
 {
   "name": "Sebastian Alexander Jung",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "61",
-    "defense": "71",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

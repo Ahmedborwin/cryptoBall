@@ -1,12 +1,30 @@
 {
   "name": "Jonas Häkkinen",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "57",
-    "attack": "40",
-    "defense": "56",
-    "midfield": "44",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

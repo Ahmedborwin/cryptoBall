@@ -1,12 +1,30 @@
 {
   "name": "Sam Field",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "76",
-    "attack": "58",
-    "defense": "69",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

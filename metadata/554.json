@@ -1,12 +1,30 @@
 {
   "name": "Jordan Pickford",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "82",
-    "potential": "83",
-    "attack": "40",
-    "defense": "32",
-    "midfield": "59",
-    "goalkeeping": "83"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "82"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "83"
+    }
+  ]
 }

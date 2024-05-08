@@ -1,12 +1,30 @@
 {
   "name": "Robert Ibáñez Castro",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "68",
-    "defense": "51",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

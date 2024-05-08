@@ -1,12 +1,30 @@
 {
   "name": "Matheus Trindade Gonçalves",
   "club_position": "CM",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "70",
-    "attack": "54",
-    "defense": "69",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

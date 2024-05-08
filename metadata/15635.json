@@ -1,12 +1,30 @@
 {
   "name": "Jadan Raymond",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "71",
-    "attack": "61",
-    "defense": "40",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

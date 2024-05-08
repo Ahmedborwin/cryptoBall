@@ -1,12 +1,30 @@
 {
   "name": "Brian McManus",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "61",
-    "attack": "54",
-    "defense": "54",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

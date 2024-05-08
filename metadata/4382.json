@@ -1,12 +1,30 @@
 {
   "name": "Larry Vásquez Ortega",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "53",
-    "defense": "70",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

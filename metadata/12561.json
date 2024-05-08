@@ -1,12 +1,30 @@
 {
   "name": "Ogou Edmond Akichi",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "61",
-    "defense": "62",
-    "midfield": "64",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

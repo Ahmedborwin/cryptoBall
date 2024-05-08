@@ -1,12 +1,30 @@
 {
   "name": "Marvin De Lima",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "76",
-    "attack": "60",
-    "defense": "27",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

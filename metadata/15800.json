@@ -1,12 +1,30 @@
 {
   "name": "Diego Corral",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "73",
-    "attack": "61",
-    "defense": "28",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

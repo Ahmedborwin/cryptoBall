@@ -1,12 +1,30 @@
 {
   "name": "Grzegorz Krychowiak",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "61",
-    "defense": "75",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

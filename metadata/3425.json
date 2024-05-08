@@ -1,12 +1,30 @@
 {
   "name": "Ethan Shea Horvath",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "74",
-    "attack": "37",
-    "defense": "22",
-    "midfield": "42",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

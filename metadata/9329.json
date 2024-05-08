@@ -1,12 +1,30 @@
 {
   "name": "Rajiv van La Parra",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "69",
-    "defense": "46",
-    "midfield": "63",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

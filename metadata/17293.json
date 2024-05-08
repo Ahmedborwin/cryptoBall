@@ -1,12 +1,30 @@
 {
   "name": "Danish Farooq Bhat",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "56",
-    "attack": "57",
-    "defense": "39",
-    "midfield": "55",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

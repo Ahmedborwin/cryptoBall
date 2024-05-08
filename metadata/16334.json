@@ -1,12 +1,30 @@
 {
   "name": "Матија Поповић Matija Popovic",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "79",
-    "attack": "57",
-    "defense": "49",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

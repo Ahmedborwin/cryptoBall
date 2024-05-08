@@ -1,12 +1,30 @@
 {
   "name": "Victor Loturi",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "76",
-    "attack": "64",
-    "defense": "61",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

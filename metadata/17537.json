@@ -1,12 +1,30 @@
 {
   "name": "Lorcan Healy",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "58",
-    "attack": "36",
-    "defense": "30",
-    "midfield": "42",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "58"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

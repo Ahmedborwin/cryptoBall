@@ -1,12 +1,30 @@
 {
   "name": "Ruben Providence",
   "club_position": "RF",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "75",
-    "attack": "71",
-    "defense": "31",
-    "midfield": "66",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

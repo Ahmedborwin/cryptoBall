@@ -1,12 +1,30 @@
 {
   "name": "Sondre Milian Granaas",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "70",
-    "attack": "54",
-    "defense": "50",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

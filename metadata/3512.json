@@ -1,12 +1,30 @@
 {
   "name": "Bruno Méndez Cittadini",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "81",
-    "attack": "45",
-    "defense": "72",
-    "midfield": "61",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Enock Atta Agyei",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "80",
-    "attack": "63",
-    "defense": "32",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

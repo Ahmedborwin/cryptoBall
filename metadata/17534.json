@@ -1,12 +1,30 @@
 {
   "name": "Devin Angleberger",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "69",
-    "attack": "53",
-    "defense": "55",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

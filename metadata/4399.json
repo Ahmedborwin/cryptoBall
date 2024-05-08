@@ -1,12 +1,30 @@
 {
   "name": "Soungoutou Magassa",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "81",
-    "attack": "54",
-    "defense": "71",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

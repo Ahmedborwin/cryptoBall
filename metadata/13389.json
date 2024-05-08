@@ -1,12 +1,30 @@
 {
   "name": "Rodrigo Elías Delvalle Noguera",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "37",
-    "defense": "64",
-    "midfield": "49",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

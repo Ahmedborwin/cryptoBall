@@ -1,12 +1,30 @@
 {
   "name": "Yannick Vötter",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "68",
-    "attack": "60",
-    "defense": "25",
-    "midfield": "55",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

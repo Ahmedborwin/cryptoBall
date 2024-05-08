@@ -1,12 +1,30 @@
 {
   "name": "Markus Gustav Jensen",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "71",
-    "attack": "54",
-    "defense": "33",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

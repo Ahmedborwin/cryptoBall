@@ -1,12 +1,30 @@
 {
   "name": "António João Pereira Albuquerque Tavares Silva",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "79",
-    "potential": "88",
-    "attack": "57",
-    "defense": "79",
-    "midfield": "74",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "79"
+    },
+    {
+      "name": "potential",
+      "value": "88"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "79"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

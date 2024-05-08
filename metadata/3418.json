@@ -1,12 +1,30 @@
 {
   "name": "Christopher Téa Opéri",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "74",
-    "attack": "69",
-    "defense": "67",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Mohamed Bamba",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "76",
-    "attack": "69",
-    "defense": "35",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

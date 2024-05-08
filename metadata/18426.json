@@ -1,12 +1,30 @@
 {
   "name": "Halen Nongtdu",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "66",
-    "attack": "34",
-    "defense": "52",
-    "midfield": "35",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

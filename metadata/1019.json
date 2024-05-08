@@ -1,12 +1,30 @@
 {
   "name": "Marcin Bulka",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "85",
-    "attack": "28",
-    "defense": "25",
-    "midfield": "42",
-    "goalkeeping": "76"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "85"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "76"
+    }
+  ]
 }

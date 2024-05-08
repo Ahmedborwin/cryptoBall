@@ -1,12 +1,30 @@
 {
   "name": "Ísak Andri Sigurgeirsson",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "71",
-    "attack": "62",
-    "defense": "30",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

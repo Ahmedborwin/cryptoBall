@@ -1,12 +1,30 @@
 {
   "name": "Robin Heußer",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "63",
-    "defense": "64",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Alessio Castro-Montes",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "75",
-    "attack": "73",
-    "defense": "71",
-    "midfield": "73",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Ben Collins",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "61",
-    "attack": "50",
-    "defense": "44",
-    "midfield": "47",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "44"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

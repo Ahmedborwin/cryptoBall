@@ -1,12 +1,30 @@
 {
   "name": "Enzo Nicolás Pérez",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "69",
-    "defense": "74",
-    "midfield": "75",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

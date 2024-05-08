@@ -1,12 +1,30 @@
 {
   "name": "Lucas Lopes Beraldo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "86",
-    "attack": "54",
-    "defense": "76",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

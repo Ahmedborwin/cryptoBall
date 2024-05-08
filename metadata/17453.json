@@ -1,12 +1,30 @@
 {
   "name": "Firas Al-Ghamdi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "61",
-    "attack": "56",
-    "defense": "50",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

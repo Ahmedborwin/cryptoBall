@@ -1,12 +1,30 @@
 {
   "name": "Robert Wagner",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "82",
-    "attack": "60",
-    "defense": "64",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

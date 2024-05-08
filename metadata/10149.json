@@ -1,12 +1,30 @@
 {
   "name": "Kristijan Kahlina",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "21",
-    "defense": "18",
-    "midfield": "30",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

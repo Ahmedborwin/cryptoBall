@@ -1,12 +1,30 @@
 {
   "name": "Miguel Juan Llambrich",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "64",
-    "defense": "64",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

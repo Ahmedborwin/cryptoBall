@@ -1,12 +1,30 @@
 {
   "name": "Tomáš Čvančara",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "80",
-    "attack": "73",
-    "defense": "39",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

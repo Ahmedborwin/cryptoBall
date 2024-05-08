@@ -1,12 +1,30 @@
 {
   "name": "Ismaël Kenneth Jordan Koné",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "80",
-    "attack": "70",
-    "defense": "63",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

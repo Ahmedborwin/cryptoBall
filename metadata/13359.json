@@ -1,12 +1,30 @@
 {
   "name": "Paulo Retre",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "53",
-    "defense": "61",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

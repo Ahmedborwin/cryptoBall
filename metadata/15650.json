@@ -1,12 +1,30 @@
 {
   "name": "Robert Cristian Mustaca",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "70",
-    "attack": "59",
-    "defense": "30",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

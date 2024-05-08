@@ -1,12 +1,30 @@
 {
   "name": "Valentin André Henri Rosier",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "77",
-    "attack": "70",
-    "defense": "74",
-    "midfield": "73",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

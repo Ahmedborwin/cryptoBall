@@ -1,12 +1,30 @@
 {
   "name": "Conor Thomas",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "58",
-    "defense": "63",
-    "midfield": "63",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "José Henrique Venancio Camargo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "76",
-    "attack": "20",
-    "defense": "21",
-    "midfield": "26",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

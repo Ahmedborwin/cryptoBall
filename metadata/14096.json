@@ -1,12 +1,30 @@
 {
   "name": "Tim Erlandsson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "66",
-    "attack": "29",
-    "defense": "28",
-    "midfield": "30",
-    "goalkeeping": "62"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "62"
+    }
+  ]
 }

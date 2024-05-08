@@ -1,12 +1,30 @@
 {
   "name": "Rikelmi Valentim dos Santos",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "65",
-    "defense": "29",
-    "midfield": "60",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

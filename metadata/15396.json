@@ -1,12 +1,30 @@
 {
   "name": "Jacob Emile Dicko Eng",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "80",
-    "attack": "63",
-    "defense": "28",
-    "midfield": "54",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

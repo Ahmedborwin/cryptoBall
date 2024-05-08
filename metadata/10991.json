@@ -1,12 +1,30 @@
 {
   "name": "Aaron Appindangoye",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "45",
-    "defense": "69",
-    "midfield": "54",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

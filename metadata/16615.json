@@ -1,12 +1,30 @@
 {
   "name": "Filip Marschall",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "68",
-    "attack": "20",
-    "defense": "21",
-    "midfield": "30",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Julian Gaines",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "68",
-    "attack": "44",
-    "defense": "53",
-    "midfield": "48",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

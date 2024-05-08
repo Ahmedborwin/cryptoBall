@@ -1,12 +1,30 @@
 {
   "name": "Damián Emiliano Martínez",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "86",
-    "potential": "86",
-    "attack": "41",
-    "defense": "29",
-    "midfield": "57",
-    "goalkeeping": "84"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "86"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "84"
+    }
+  ]
 }

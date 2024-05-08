@@ -1,12 +1,30 @@
 {
   "name": "Daniel Batz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "31",
-    "defense": "26",
-    "midfield": "40",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

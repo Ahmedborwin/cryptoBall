@@ -1,12 +1,30 @@
 {
   "name": "Marcus Ferkranus",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "73",
-    "attack": "34",
-    "defense": "60",
-    "midfield": "42",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

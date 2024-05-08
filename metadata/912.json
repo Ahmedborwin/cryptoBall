@@ -1,12 +1,30 @@
 {
   "name": "Chancel Mbemba Mangulu",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "79",
-    "potential": "80",
-    "attack": "66",
-    "defense": "80",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "79"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "80"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

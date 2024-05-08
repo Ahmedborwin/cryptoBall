@@ -1,12 +1,30 @@
 {
   "name": "Joe Worrall",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "76",
-    "attack": "39",
-    "defense": "76",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

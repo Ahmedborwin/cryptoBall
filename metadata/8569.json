@@ -1,12 +1,30 @@
 {
   "name": "Joel Waterman",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "42",
-    "defense": "69",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

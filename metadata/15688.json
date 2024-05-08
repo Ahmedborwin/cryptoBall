@@ -1,12 +1,30 @@
 {
   "name": "Unai Buján Díez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "68",
-    "attack": "56",
-    "defense": "30",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

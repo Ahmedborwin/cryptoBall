@@ -1,12 +1,30 @@
 {
   "name": "Zoran Arsenić",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "56",
-    "defense": "72",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

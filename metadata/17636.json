@@ -1,12 +1,30 @@
 {
   "name": "Viktor Dryselius",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "70",
-    "attack": "22",
-    "defense": "20",
-    "midfield": "28",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

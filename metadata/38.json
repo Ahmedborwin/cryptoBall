@@ -1,12 +1,30 @@
 {
   "name": "Pedro González López",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "86",
-    "potential": "92",
-    "attack": "78",
-    "defense": "70",
-    "midfield": "87",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "86"
+    },
+    {
+      "name": "potential",
+      "value": "92"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "87"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

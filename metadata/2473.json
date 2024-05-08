@@ -1,12 +1,30 @@
 {
   "name": "Jorge Cuenca Barreno",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "80",
-    "attack": "50",
-    "defense": "73",
-    "midfield": "67",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

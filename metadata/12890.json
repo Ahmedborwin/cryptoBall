@@ -1,12 +1,30 @@
 {
   "name": "Hugo Alberto Pires da Cunha",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "73",
-    "attack": "21",
-    "defense": "23",
-    "midfield": "28",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

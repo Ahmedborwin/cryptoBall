@@ -1,12 +1,30 @@
 {
   "name": "Kasey Palmer",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "68",
-    "defense": "62",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

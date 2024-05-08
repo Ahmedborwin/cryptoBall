@@ -1,12 +1,30 @@
 {
   "name": "Joseph Lalrinawma Sailo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "60",
-    "attack": "38",
-    "defense": "50",
-    "midfield": "41",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

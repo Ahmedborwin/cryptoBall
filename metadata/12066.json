@@ -1,12 +1,30 @@
 {
   "name": "David Lennart Philipp",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "70",
-    "attack": "68",
-    "defense": "41",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

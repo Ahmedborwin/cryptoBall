@@ -1,12 +1,30 @@
 {
   "name": "Baran Mogultay",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "54",
-    "defense": "58",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "58"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

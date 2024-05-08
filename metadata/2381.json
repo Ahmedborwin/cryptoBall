@@ -1,12 +1,30 @@
 {
   "name": "Montassar Omar Talbi",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "79",
-    "attack": "46",
-    "defense": "76",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

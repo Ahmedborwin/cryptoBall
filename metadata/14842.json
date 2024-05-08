@@ -1,12 +1,30 @@
 {
   "name": "Sebastián Francisco Ramírez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "69",
-    "attack": "62",
-    "defense": "35",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

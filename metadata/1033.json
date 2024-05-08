@@ -1,12 +1,30 @@
 {
   "name": "Carlos Soler Barragán",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "79",
-    "attack": "76",
-    "defense": "70",
-    "midfield": "78",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

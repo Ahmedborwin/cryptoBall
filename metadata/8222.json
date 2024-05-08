@@ -1,12 +1,30 @@
 {
   "name": "Paul Izzo",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "37",
-    "defense": "29",
-    "midfield": "43",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

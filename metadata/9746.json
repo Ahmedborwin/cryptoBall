@@ -1,12 +1,30 @@
 {
   "name": "Sandi Ogrinec",
   "club_position": "LF",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "70",
-    "attack": "65",
-    "defense": "52",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

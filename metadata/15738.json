@@ -1,12 +1,30 @@
 {
   "name": "Răzvan Cătălin Began",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "26",
-    "defense": "26",
-    "midfield": "36",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

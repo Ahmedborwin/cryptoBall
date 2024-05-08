@@ -1,12 +1,30 @@
 {
   "name": "Aleksandr Golovin",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "80",
-    "defense": "64",
-    "midfield": "81",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

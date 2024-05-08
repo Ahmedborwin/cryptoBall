@@ -1,12 +1,30 @@
 {
   "name": "Ugo Bonnet",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "68",
-    "defense": "38",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

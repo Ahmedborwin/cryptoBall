@@ -1,12 +1,30 @@
 {
   "name": "Tygo Land",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "84",
-    "attack": "62",
-    "defense": "50",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

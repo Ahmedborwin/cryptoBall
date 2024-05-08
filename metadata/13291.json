@@ -1,12 +1,30 @@
 {
   "name": "Noah Naujoks",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "72",
-    "attack": "60",
-    "defense": "59",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Anssi Suhonen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "71",
-    "attack": "63",
-    "defense": "41",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

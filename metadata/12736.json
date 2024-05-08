@@ -1,12 +1,30 @@
 {
   "name": "Ogechika Heil",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "68",
-    "attack": "65",
-    "defense": "51",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

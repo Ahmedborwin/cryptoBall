@@ -1,12 +1,30 @@
 {
   "name": "David González Plata",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "72",
-    "defense": "43",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

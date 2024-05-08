@@ -1,12 +1,30 @@
 {
   "name": "Cole Jensen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "63",
-    "attack": "19",
-    "defense": "22",
-    "midfield": "25",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "19"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "25"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

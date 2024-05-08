@@ -1,12 +1,30 @@
 {
   "name": "Álvaro Romero Morillo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "67",
-    "defense": "36",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

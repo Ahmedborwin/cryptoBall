@@ -1,12 +1,30 @@
 {
   "name": "Johnny Adánguiz",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "63",
-    "defense": "66",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

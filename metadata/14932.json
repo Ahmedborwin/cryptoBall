@@ -1,12 +1,30 @@
 {
   "name": "Taylor Foram",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "40",
-    "defense": "62",
-    "midfield": "44",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

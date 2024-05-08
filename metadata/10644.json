@@ -1,12 +1,30 @@
 {
   "name": "Alejandro Samudio Ramírez",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "71",
-    "attack": "64",
-    "defense": "30",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

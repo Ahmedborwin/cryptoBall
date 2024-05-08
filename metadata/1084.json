@@ -1,12 +1,30 @@
 {
   "name": "Maxime Lopez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "81",
-    "attack": "74",
-    "defense": "63",
-    "midfield": "81",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

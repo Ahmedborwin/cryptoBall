@@ -1,12 +1,30 @@
 {
   "name": "Andreas Hansen",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "74",
-    "attack": "35",
-    "defense": "26",
-    "midfield": "45",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

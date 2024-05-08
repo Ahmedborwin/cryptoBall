@@ -1,12 +1,30 @@
 {
   "name": "Magnus Wolff Eikrem",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "72",
-    "defense": "38",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Mario Barwuah Balotelli",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "71",
-    "defense": "39",
-    "midfield": "71",
-    "goalkeeping": "2"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "2"
+    }
+  ]
 }

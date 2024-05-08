@@ -1,12 +1,30 @@
 {
   "name": "Lukas Stephan Horst Daschner",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "75",
-    "attack": "71",
-    "defense": "51",
-    "midfield": "69",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Anthony Partipilo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "73",
-    "defense": "46",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

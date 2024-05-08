@@ -1,12 +1,30 @@
 {
   "name": "Jens Jønsson",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "66",
-    "defense": "73",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

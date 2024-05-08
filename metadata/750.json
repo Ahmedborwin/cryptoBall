@@ -1,12 +1,30 @@
 {
   "name": "Ivan Toney",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "79",
-    "defense": "59",
-    "midfield": "77",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "79"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

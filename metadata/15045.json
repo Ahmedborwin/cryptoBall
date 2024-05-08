@@ -1,12 +1,30 @@
 {
   "name": "Timon Obermeier",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "42",
-    "defense": "62",
-    "midfield": "51",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

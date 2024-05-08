@@ -1,12 +1,30 @@
 {
   "name": "Manuel Prietl",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "59",
-    "defense": "68",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "常本 佳吾 Keigo Tsunemoto",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "72",
-    "attack": "59",
-    "defense": "61",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

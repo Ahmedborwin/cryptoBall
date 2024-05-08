@@ -1,12 +1,30 @@
 {
   "name": "João Gabriel e Costa Cesco",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "79",
-    "attack": "61",
-    "defense": "28",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Anderson Andrés Julio Santos",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "71",
-    "defense": "38",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

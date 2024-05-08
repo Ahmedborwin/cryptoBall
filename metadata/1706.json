@@ -1,12 +1,30 @@
 {
   "name": "Emmanuel Elysee Djedje Agbadou",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "79",
-    "attack": "56",
-    "defense": "77",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

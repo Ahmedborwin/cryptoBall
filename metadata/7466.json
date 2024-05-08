@@ -1,12 +1,30 @@
 {
   "name": "Hugo Labran",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "68",
-    "defense": "50",
-    "midfield": "66",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

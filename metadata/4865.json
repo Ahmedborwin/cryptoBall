@@ -1,12 +1,30 @@
 {
   "name": "Nelson Ermeño",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "69",
-    "defense": "62",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

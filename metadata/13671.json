@@ -1,12 +1,30 @@
 {
   "name": "Jorge Daniel González Marquet",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "58",
-    "defense": "56",
-    "midfield": "62",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

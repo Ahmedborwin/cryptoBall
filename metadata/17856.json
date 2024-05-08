@@ -1,12 +1,30 @@
 {
   "name": "Sahil Tavora",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "54",
-    "attack": "56",
-    "defense": "54",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "54"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

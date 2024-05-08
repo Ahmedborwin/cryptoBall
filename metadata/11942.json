@@ -1,12 +1,30 @@
 {
   "name": "池忠国 Chi Zhongguo",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "64",
-    "defense": "62",
-    "midfield": "67",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

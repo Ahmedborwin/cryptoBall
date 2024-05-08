@@ -1,12 +1,30 @@
 {
   "name": "Jahkeele Marshall-Rutty",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "75",
-    "attack": "64",
-    "defense": "48",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "崔明安 Cui Ming'an",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "55",
-    "attack": "53",
-    "defense": "55",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "55"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

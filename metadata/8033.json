@@ -1,12 +1,30 @@
 {
   "name": "James Joseph McClean",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "65",
-    "defense": "68",
-    "midfield": "66",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

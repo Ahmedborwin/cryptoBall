@@ -1,12 +1,30 @@
 {
   "name": "Pape Alassane Gueye",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "66",
-    "defense": "75",
-    "midfield": "73",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

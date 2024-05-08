@@ -1,12 +1,30 @@
 {
   "name": "Jakub Myszor",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "76",
-    "attack": "69",
-    "defense": "35",
-    "midfield": "61",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

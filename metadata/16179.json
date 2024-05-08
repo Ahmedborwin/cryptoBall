@@ -1,12 +1,30 @@
 {
   "name": "Christian Dashiell Ruhemann N'Guessan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "60",
-    "attack": "56",
-    "defense": "56",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Tommy Stopp",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "67",
-    "attack": "38",
-    "defense": "54",
-    "midfield": "46",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

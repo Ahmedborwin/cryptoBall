@@ -1,12 +1,30 @@
 {
   "name": "Ezequiel Ignacio Centurión",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "35",
-    "defense": "25",
-    "midfield": "40",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Harvey Read Saunders",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "61",
-    "attack": "66",
-    "defense": "28",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

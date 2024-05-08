@@ -1,12 +1,30 @@
 {
   "name": "Matthias Jürgen Zimmermann",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "64",
-    "defense": "70",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

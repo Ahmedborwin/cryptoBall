@@ -1,12 +1,30 @@
 {
   "name": "Luiz Santiago Sacramento Cruz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "34",
-    "defense": "23",
-    "midfield": "40",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

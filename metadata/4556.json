@@ -1,12 +1,30 @@
 {
   "name": "Mauro Luna Diale",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "76",
-    "attack": "75",
-    "defense": "63",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

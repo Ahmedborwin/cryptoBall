@@ -1,12 +1,30 @@
 {
   "name": "Michael Chibuikem Udebuluzor",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "71",
-    "attack": "60",
-    "defense": "37",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

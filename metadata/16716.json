@@ -1,12 +1,30 @@
 {
   "name": "Nawaf Al Habashi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "60",
-    "attack": "57",
-    "defense": "36",
-    "midfield": "53",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Nathan Bishop",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "70",
-    "attack": "33",
-    "defense": "28",
-    "midfield": "49",
-    "goalkeeping": "63"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "63"
+    }
+  ]
 }

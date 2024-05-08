@@ -1,12 +1,30 @@
 {
   "name": "Yorbe Vertessen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "79",
-    "attack": "77",
-    "defense": "41",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

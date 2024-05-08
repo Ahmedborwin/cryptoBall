@@ -1,12 +1,30 @@
 {
   "name": "Björn Engels",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "44",
-    "defense": "73",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

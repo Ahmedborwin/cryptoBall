@@ -1,12 +1,30 @@
 {
   "name": "Filippo Terracciano",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "83",
-    "attack": "69",
-    "defense": "66",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

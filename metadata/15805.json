@@ -1,12 +1,30 @@
 {
   "name": "方镜淇 Fang Jingqi",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "28",
-    "defense": "22",
-    "midfield": "35",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

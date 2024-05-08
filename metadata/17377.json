@@ -1,12 +1,30 @@
 {
   "name": "Jeremy Kelly",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "56",
-    "attack": "50",
-    "defense": "51",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Nicholas Williams Arthuer",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "82",
-    "potential": "88",
-    "attack": "83",
-    "defense": "41",
-    "midfield": "79",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "82"
+    },
+    {
+      "name": "potential",
+      "value": "88"
+    },
+    {
+      "name": "attack",
+      "value": "83"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "79"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

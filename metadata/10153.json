@@ -1,12 +1,30 @@
 {
   "name": "Ole ter Haar Romeny",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "73",
-    "attack": "68",
-    "defense": "34",
-    "midfield": "65",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

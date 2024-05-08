@@ -1,12 +1,30 @@
 {
   "name": "Sebastian Palmer-Houlden",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "62",
-    "defense": "39",
-    "midfield": "57",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

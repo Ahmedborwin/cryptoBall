@@ -1,12 +1,30 @@
 {
   "name": "Igor Thiago Nascimento Rodrigues",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "80",
-    "attack": "70",
-    "defense": "47",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

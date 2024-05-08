@@ -1,12 +1,30 @@
 {
   "name": "Jon Pacheco Dozagarat",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "81",
-    "attack": "38",
-    "defense": "70",
-    "midfield": "60",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

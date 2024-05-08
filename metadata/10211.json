@@ -1,12 +1,30 @@
 {
   "name": "Kelland Watts",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "71",
-    "attack": "54",
-    "defense": "67",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

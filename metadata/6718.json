@@ -1,12 +1,30 @@
 {
   "name": "Enzo Maximiliano Kalinski",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "60",
-    "defense": "69",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Devendra Dhaku Murgaokar",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "59",
-    "attack": "60",
-    "defense": "31",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

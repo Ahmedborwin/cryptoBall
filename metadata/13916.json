@@ -1,12 +1,30 @@
 {
   "name": "Adil Taoui",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "68",
-    "attack": "64",
-    "defense": "30",
-    "midfield": "58",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

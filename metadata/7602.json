@@ -1,12 +1,30 @@
 {
   "name": "Odei Onaindia Zabala",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "43",
-    "defense": "70",
-    "midfield": "57",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

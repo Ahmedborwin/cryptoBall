@@ -1,12 +1,30 @@
 {
   "name": "Juan Manuel Romero Báez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "70",
-    "attack": "58",
-    "defense": "31",
-    "midfield": "52",
-    "goalkeeping": "6"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "6"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jorge Renato Praceira Diniz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "54",
-    "defense": "75",
-    "midfield": "58",
-    "goalkeeping": "15"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "15"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Malkolm Johan Henrik Nilsson Säfqvist",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "28",
-    "defense": "28",
-    "midfield": "36",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

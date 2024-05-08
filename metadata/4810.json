@@ -1,12 +1,30 @@
 {
   "name": "Miguel Loureiro Ameijeda",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "53",
-    "defense": "67",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

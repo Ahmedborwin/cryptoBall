@@ -1,12 +1,30 @@
 {
   "name": "Arvin Appiah",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "73",
-    "attack": "70",
-    "defense": "29",
-    "midfield": "59",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

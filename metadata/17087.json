@@ -1,12 +1,30 @@
 {
   "name": "Victor Bezerra",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "63",
-    "attack": "57",
-    "defense": "27",
-    "midfield": "47",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

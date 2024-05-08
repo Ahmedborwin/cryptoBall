@@ -1,12 +1,30 @@
 {
   "name": "Alan Soñora",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "73",
-    "attack": "71",
-    "defense": "64",
-    "midfield": "74",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

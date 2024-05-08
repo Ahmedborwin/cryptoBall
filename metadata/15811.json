@@ -1,12 +1,30 @@
 {
   "name": "Williams Kokolo",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "65",
-    "attack": "54",
-    "defense": "58",
-    "midfield": "54",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "58"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

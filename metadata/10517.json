@@ -1,12 +1,30 @@
 {
   "name": "Iñaki González Zambrano",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "76",
-    "attack": "59",
-    "defense": "54",
-    "midfield": "61",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Yeon-Soo Kim",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "56",
-    "attack": "34",
-    "defense": "60",
-    "midfield": "38",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

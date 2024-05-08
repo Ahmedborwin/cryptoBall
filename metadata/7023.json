@@ -1,12 +1,30 @@
 {
   "name": "김영빈 金永斌 Young-Bin Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "47",
-    "defense": "69",
-    "midfield": "57",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

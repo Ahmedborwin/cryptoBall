@@ -1,12 +1,30 @@
 {
   "name": "Bartłomiej Jelonek",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "60",
-    "attack": "21",
-    "defense": "23",
-    "midfield": "26",
-    "goalkeeping": "53"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "53"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "朴志洙 Ji-Soo Park",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "59",
-    "defense": "73",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

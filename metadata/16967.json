@@ -1,12 +1,30 @@
 {
   "name": "Kayden Harrack",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "63",
-    "attack": "45",
-    "defense": "60",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

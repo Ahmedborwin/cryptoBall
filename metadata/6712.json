@@ -1,12 +1,30 @@
 {
   "name": "Léo Leroy",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "75",
-    "attack": "61",
-    "defense": "62",
-    "midfield": "69",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Matheus Guilherme Lins de Almeida",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "66",
-    "attack": "41",
-    "defense": "62",
-    "midfield": "47",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

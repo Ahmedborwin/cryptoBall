@@ -1,12 +1,30 @@
 {
   "name": "Yilson David Rosales Guerra",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "74",
-    "attack": "48",
-    "defense": "60",
-    "midfield": "52",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

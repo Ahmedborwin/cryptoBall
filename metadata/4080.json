@@ -1,12 +1,30 @@
 {
   "name": "Ibrahim Sissoko",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "70",
-    "defense": "38",
-    "midfield": "62",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

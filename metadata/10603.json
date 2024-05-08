@@ -1,12 +1,30 @@
 {
   "name": "Duncan McGuire",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "74",
-    "attack": "62",
-    "defense": "32",
-    "midfield": "55",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

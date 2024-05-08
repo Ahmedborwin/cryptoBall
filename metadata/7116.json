@@ -1,12 +1,30 @@
 {
   "name": "Maxime Bernauer",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "73",
-    "attack": "61",
-    "defense": "68",
-    "midfield": "71",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

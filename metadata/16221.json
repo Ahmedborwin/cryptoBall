@@ -1,12 +1,30 @@
 {
   "name": "최철원 Cheol-won Choi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "59",
-    "attack": "27",
-    "defense": "22",
-    "midfield": "33",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "33"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Antonino La Gumina",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "69",
-    "defense": "44",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "44"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

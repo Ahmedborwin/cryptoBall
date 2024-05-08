@@ -1,12 +1,30 @@
 {
   "name": "Jules-Anthony Vilsaint",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "73",
-    "attack": "60",
-    "defense": "34",
-    "midfield": "47",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

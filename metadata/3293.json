@@ -1,12 +1,30 @@
 {
   "name": "Michal Tomič",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "75",
-    "attack": "71",
-    "defense": "66",
-    "midfield": "70",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

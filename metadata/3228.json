@@ -1,12 +1,30 @@
 {
   "name": "José Antonio Rodríguez Romero",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "41",
-    "defense": "40",
-    "midfield": "38",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

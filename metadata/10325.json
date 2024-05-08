@@ -1,12 +1,30 @@
 {
   "name": "Сава Аранђел Честић Sava-Arangel Cestic",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "70",
-    "attack": "41",
-    "defense": "67",
-    "midfield": "51",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

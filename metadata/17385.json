@@ -1,12 +1,30 @@
 {
   "name": "Ebbe De Vlaeminck",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "73",
-    "attack": "21",
-    "defense": "17",
-    "midfield": "27",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "17"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

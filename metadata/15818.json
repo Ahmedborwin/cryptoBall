@@ -1,12 +1,30 @@
 {
   "name": "Keith Ward",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "56",
-    "defense": "48",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Rubén García Santos",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "77",
-    "defense": "46",
-    "midfield": "75",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Joaquín Marcelo Laso",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "52",
-    "defense": "74",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "52"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

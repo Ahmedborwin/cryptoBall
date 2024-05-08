@@ -1,12 +1,30 @@
 {
   "name": "Daniel Crowley",
   "club_position": "RF",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "68",
-    "attack": "69",
-    "defense": "46",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

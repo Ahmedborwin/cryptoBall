@@ -1,12 +1,30 @@
 {
   "name": "Lachlan Bayliss",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "68",
-    "attack": "61",
-    "defense": "43",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

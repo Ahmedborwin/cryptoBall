@@ -1,12 +1,30 @@
 {
   "name": "Erick Daniel Sánchez Ocegueda",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "83",
-    "attack": "76",
-    "defense": "53",
-    "midfield": "76",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

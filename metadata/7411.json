@@ -1,12 +1,30 @@
 {
   "name": "Simon Lorenz",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "51",
-    "defense": "71",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

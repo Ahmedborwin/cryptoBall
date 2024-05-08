@@ -1,12 +1,30 @@
 {
   "name": "Wojciech Hajda",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "62",
-    "attack": "51",
-    "defense": "63",
-    "midfield": "58",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

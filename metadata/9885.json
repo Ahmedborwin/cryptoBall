@@ -1,12 +1,30 @@
 {
   "name": "Ezechiel Banzuzi",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "80",
-    "attack": "63",
-    "defense": "61",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

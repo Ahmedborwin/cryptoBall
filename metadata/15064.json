@@ -1,12 +1,30 @@
 {
   "name": "Mason Burstow",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "61",
-    "defense": "30",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

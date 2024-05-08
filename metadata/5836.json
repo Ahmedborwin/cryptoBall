@@ -1,12 +1,30 @@
 {
   "name": "Bongokuhle Hlongwane",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "75",
-    "attack": "71",
-    "defense": "51",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

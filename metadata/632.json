@@ -1,12 +1,30 @@
 {
   "name": "Duván Esteban Zapata Banguera",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "77",
-    "defense": "46",
-    "midfield": "73",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

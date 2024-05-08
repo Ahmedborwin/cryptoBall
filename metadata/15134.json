@@ -1,12 +1,30 @@
 {
   "name": "Ángel Troncho Beltrán",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "59",
-    "defense": "35",
-    "midfield": "54",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

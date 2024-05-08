@@ -1,12 +1,30 @@
 {
   "name": "Giuseppe Ambrosino",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "82",
-    "attack": "65",
-    "defense": "47",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

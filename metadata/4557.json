@@ -1,12 +1,30 @@
 {
   "name": "Matteo Emilio Di Giusto",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "76",
-    "attack": "71",
-    "defense": "32",
-    "midfield": "71",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

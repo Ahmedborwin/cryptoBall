@@ -1,12 +1,30 @@
 {
   "name": "Stanislav Lobotka",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "83",
-    "attack": "75",
-    "defense": "77",
-    "midfield": "83",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "83"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

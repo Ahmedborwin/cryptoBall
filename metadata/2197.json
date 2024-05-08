@@ -1,12 +1,30 @@
 {
   "name": "Xherdan Shaqiri",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "74",
-    "defense": "50",
-    "midfield": "72",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

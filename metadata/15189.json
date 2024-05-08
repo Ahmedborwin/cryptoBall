@@ -1,12 +1,30 @@
 {
   "name": "Amin Mohammed Jan Bukhari",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "63",
-    "attack": "35",
-    "defense": "27",
-    "midfield": "38",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

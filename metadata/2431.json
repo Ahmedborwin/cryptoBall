@@ -1,12 +1,30 @@
 {
   "name": "Martin Baturina",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "84",
-    "attack": "72",
-    "defense": "60",
-    "midfield": "76",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

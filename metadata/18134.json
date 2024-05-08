@@ -1,12 +1,30 @@
 {
   "name": "Harrison Shillington",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "65",
-    "attack": "46",
-    "defense": "48",
-    "midfield": "43",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

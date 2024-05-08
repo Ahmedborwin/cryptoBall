@@ -1,12 +1,30 @@
 {
   "name": "Lazaros Rota",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "75",
-    "attack": "61",
-    "defense": "68",
-    "midfield": "68",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Riccardo Gagliolo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "60",
-    "defense": "70",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Ahmad Toure Ngouyamsa Nounchil",
   "club_position": "RWB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "69",
-    "attack": "60",
-    "defense": "60",
-    "midfield": "61",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

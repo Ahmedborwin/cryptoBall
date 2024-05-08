@@ -1,12 +1,30 @@
 {
   "name": "Tobías Enmanuel Gavilán Romero",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "68",
-    "attack": "61",
-    "defense": "35",
-    "midfield": "56",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Toni Kroos",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "86",
-    "potential": "86",
-    "attack": "73",
-    "defense": "70",
-    "midfield": "84",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "86"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "84"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

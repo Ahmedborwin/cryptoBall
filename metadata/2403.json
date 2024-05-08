@@ -1,12 +1,30 @@
 {
   "name": "Kaan Ayhan",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "63",
-    "defense": "74",
-    "midfield": "72",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

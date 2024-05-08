@@ -1,12 +1,30 @@
 {
   "name": "Senny Mayulu",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "83",
-    "attack": "65",
-    "defense": "49",
-    "midfield": "64",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

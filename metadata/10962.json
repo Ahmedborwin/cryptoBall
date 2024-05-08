@@ -1,12 +1,30 @@
 {
   "name": "Matthew Cox",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "80",
-    "attack": "25",
-    "defense": "16",
-    "midfield": "36",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "25"
+    },
+    {
+      "name": "defense",
+      "value": "16"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

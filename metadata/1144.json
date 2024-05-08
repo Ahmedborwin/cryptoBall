@@ -1,12 +1,30 @@
 {
   "name": "Michail Antonio",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "75",
-    "defense": "62",
-    "midfield": "73",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

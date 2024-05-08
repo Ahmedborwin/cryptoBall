@@ -1,12 +1,30 @@
 {
   "name": "Marian Danciu",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "59",
-    "defense": "32",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

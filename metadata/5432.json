@@ -1,12 +1,30 @@
 {
   "name": "Andreu Fontàs Prat",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "48",
-    "defense": "72",
-    "midfield": "68",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Luciano Nahuel Ursino Pegolo",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "69",
-    "defense": "54",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

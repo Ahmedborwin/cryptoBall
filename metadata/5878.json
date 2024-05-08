@@ -1,12 +1,30 @@
 {
   "name": "Gastón Nicolás Verón",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "76",
-    "attack": "69",
-    "defense": "42",
-    "midfield": "70",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

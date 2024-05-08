@@ -1,12 +1,30 @@
 {
   "name": "Luciano Leonel Recalde",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "43",
-    "defense": "68",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

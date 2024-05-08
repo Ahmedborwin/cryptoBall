@@ -1,12 +1,30 @@
 {
   "name": "Joseph Shaun Hodge",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "75",
-    "attack": "59",
-    "defense": "60",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

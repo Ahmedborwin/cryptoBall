@@ -1,12 +1,30 @@
 {
   "name": "Jassem Gaber Abdulsallam",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "73",
-    "attack": "51",
-    "defense": "40",
-    "midfield": "51",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

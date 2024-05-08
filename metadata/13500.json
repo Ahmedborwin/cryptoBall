@@ -1,12 +1,30 @@
 {
   "name": "金京中 Kyung-Jung Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "62",
-    "defense": "38",
-    "midfield": "58",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

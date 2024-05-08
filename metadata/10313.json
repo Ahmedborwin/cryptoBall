@@ -1,12 +1,30 @@
 {
   "name": "Joaquín Pombo",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "75",
-    "attack": "40",
-    "defense": "68",
-    "midfield": "48",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

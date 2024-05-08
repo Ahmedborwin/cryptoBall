@@ -1,12 +1,30 @@
 {
   "name": "Marash Kumbulla",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "79",
-    "attack": "46",
-    "defense": "76",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

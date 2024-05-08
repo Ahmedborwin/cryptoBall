@@ -1,12 +1,30 @@
 {
   "name": "Jordi Alba Ramos",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "83",
-    "attack": "78",
-    "defense": "74",
-    "midfield": "82",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "82"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

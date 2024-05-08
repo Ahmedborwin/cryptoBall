@@ -1,12 +1,30 @@
 {
   "name": "Cem Üstündag",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "67",
-    "attack": "60",
-    "defense": "53",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

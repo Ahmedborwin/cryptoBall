@@ -1,12 +1,30 @@
 {
   "name": "Ishaan Shishodia",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "47",
-    "potential": "60",
-    "attack": "48",
-    "defense": "42",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "47"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

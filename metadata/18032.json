@@ -1,12 +1,30 @@
 {
   "name": "Andrin Hunziker",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "67",
-    "attack": "50",
-    "defense": "35",
-    "midfield": "42",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

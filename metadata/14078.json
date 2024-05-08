@@ -1,12 +1,30 @@
 {
   "name": "Pelle Elkjær Mattsson",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "71",
-    "attack": "56",
-    "defense": "63",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

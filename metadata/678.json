@@ -1,12 +1,30 @@
 {
   "name": "Daniel Vivian Moreno",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "84",
-    "attack": "59",
-    "defense": "83",
-    "midfield": "68",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "83"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

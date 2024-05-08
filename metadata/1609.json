@@ -1,12 +1,30 @@
 {
   "name": "Daniel García Carrillo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "76",
-    "attack": "64",
-    "defense": "81",
-    "midfield": "76",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

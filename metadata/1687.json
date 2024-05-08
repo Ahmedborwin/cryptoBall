@@ -1,12 +1,30 @@
 {
   "name": "Philipp François Köhn",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "79",
-    "attack": "35",
-    "defense": "24",
-    "midfield": "42",
-    "goalkeeping": "73"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "73"
+    }
+  ]
 }

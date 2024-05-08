@@ -1,12 +1,30 @@
 {
   "name": "Mathias Hebo Rasmussen",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "61",
-    "defense": "62",
-    "midfield": "68",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

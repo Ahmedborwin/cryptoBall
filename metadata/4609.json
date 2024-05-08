@@ -1,12 +1,30 @@
 {
   "name": "Karim Boudiaf",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "63",
-    "defense": "46",
-    "midfield": "63",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

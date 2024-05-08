@@ -1,12 +1,30 @@
 {
   "name": "Alberto Facundo Costa",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "60",
-    "defense": "56",
-    "midfield": "67",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

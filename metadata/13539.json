@@ -1,12 +1,30 @@
 {
   "name": "Boluwatife Victor Ogungbayi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "74",
-    "attack": "66",
-    "defense": "27",
-    "midfield": "57",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

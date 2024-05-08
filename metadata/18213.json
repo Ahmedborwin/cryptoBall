@@ -1,12 +1,30 @@
 {
   "name": "Luke Hutchinson",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "68",
-    "attack": "22",
-    "defense": "19",
-    "midfield": "27",
-    "goalkeeping": "51"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "51"
+    }
+  ]
 }

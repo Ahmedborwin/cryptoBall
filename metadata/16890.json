@@ -1,12 +1,30 @@
 {
   "name": "Andrew Quinn",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "62",
-    "attack": "45",
-    "defense": "59",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

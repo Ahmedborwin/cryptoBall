@@ -1,12 +1,30 @@
 {
   "name": "Malcom Bokele Mputu",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "74",
-    "attack": "50",
-    "defense": "68",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

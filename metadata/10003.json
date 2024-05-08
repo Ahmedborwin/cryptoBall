@@ -1,12 +1,30 @@
 {
   "name": "Luka Đorđević",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "66",
-    "defense": "33",
-    "midfield": "60",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

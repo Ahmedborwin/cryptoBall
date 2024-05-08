@@ -1,12 +1,30 @@
 {
   "name": "Ryan Hollingshead",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "64",
-    "defense": "72",
-    "midfield": "70",
-    "goalkeeping": "20"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "20"
+    }
+  ]
 }

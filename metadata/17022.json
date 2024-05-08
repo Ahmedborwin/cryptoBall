@@ -1,12 +1,30 @@
 {
   "name": "Joe Foulkes",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "62",
-    "attack": "46",
-    "defense": "56",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "David Bingham",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "28",
-    "defense": "27",
-    "midfield": "37",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "37"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

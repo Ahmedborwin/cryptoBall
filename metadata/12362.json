@@ -1,12 +1,30 @@
 {
   "name": "Mohammed Faraj Al Rubaie Al Yami",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "66",
-    "attack": "32",
-    "defense": "32",
-    "midfield": "42",
-    "goalkeeping": "62"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "62"
+    }
+  ]
 }

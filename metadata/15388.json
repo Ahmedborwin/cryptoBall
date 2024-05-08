@@ -1,12 +1,30 @@
 {
   "name": "Magnus Riisnæs",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "78",
-    "attack": "62",
-    "defense": "56",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

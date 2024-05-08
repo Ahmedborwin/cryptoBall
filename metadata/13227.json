@@ -1,12 +1,30 @@
 {
   "name": "郑凯木 Zheng Kaimu",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "56",
-    "defense": "64",
-    "midfield": "61",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

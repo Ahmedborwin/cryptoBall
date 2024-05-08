@@ -1,12 +1,30 @@
 {
   "name": "Daniele Rugani",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "76",
-    "attack": "50",
-    "defense": "76",
-    "midfield": "62",
-    "goalkeeping": "6"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "6"
+    }
+  ]
 }

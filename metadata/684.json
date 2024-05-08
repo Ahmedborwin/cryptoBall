@@ -1,12 +1,30 @@
 {
   "name": "Samuel Chimerenka Chukwueze",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "84",
-    "attack": "81",
-    "defense": "42",
-    "midfield": "76",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "81"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

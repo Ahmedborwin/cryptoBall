@@ -1,12 +1,30 @@
 {
   "name": "Noah Pallas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "61",
-    "defense": "54",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Ramil Mustafaev",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "74",
-    "attack": "61",
-    "defense": "54",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Craig Leon Eastmond",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "61",
-    "defense": "67",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

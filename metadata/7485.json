@@ -1,12 +1,30 @@
 {
   "name": "Jérémy Frick",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "31",
-    "defense": "29",
-    "midfield": "39",
-    "goalkeeping": "67"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
 }

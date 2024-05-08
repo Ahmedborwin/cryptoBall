@@ -1,12 +1,30 @@
 {
   "name": "Pablo Leonel Gaitán",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "57",
-    "attack": "58",
-    "defense": "59",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

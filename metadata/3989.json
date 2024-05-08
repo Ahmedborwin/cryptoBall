@@ -1,12 +1,30 @@
 {
   "name": "Ashley Luke Barnes",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "66",
-    "defense": "57",
-    "midfield": "71",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

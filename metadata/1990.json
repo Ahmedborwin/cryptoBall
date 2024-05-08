@@ -1,12 +1,30 @@
 {
   "name": "Daniel Mancini",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "76",
-    "defense": "62",
-    "midfield": "73",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

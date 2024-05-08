@@ -1,12 +1,30 @@
 {
   "name": "Seilenthang Lotjem",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "65",
-    "attack": "57",
-    "defense": "25",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

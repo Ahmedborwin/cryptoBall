@@ -1,12 +1,30 @@
 {
   "name": "Hugo Álvarez Antúnez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "59",
-    "defense": "51",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Osvaldo Murilo Lodeiro Ferreira",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "57",
-    "defense": "75",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

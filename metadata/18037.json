@@ -1,12 +1,30 @@
 {
   "name": "Mohammed Salah",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "53",
-    "attack": "45",
-    "defense": "54",
-    "midfield": "45",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "53"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

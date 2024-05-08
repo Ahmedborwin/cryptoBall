@@ -1,12 +1,30 @@
 {
   "name": "José Nicolás Amasifuen de Paz",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "42",
-    "defense": "62",
-    "midfield": "49",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

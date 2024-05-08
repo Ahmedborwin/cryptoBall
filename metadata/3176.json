@@ -1,12 +1,30 @@
 {
   "name": "Jens-Lys Michel Cajuste",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "79",
-    "attack": "70",
-    "defense": "70",
-    "midfield": "74",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

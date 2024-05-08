@@ -1,12 +1,30 @@
 {
   "name": "Ernest Agyiri",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "64",
-    "attack": "62",
-    "defense": "55",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

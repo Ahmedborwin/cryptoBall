@@ -1,12 +1,30 @@
 {
   "name": "Hugo Cuypers",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "78",
-    "attack": "75",
-    "defense": "50",
-    "midfield": "73",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

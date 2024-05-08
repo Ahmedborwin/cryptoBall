@@ -1,12 +1,30 @@
 {
   "name": "Quinten Ryan Crispito Timber",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "84",
-    "attack": "76",
-    "defense": "75",
-    "midfield": "78",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

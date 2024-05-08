@@ -1,12 +1,30 @@
 {
   "name": "Diego José Conde Alcolado",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "76",
-    "attack": "34",
-    "defense": "22",
-    "midfield": "39",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

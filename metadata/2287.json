@@ -1,12 +1,30 @@
 {
   "name": "Lazar Samardžić",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "83",
-    "attack": "73",
-    "defense": "59",
-    "midfield": "75",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Bakary Haidara",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "74",
-    "attack": "40",
-    "defense": "61",
-    "midfield": "48",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

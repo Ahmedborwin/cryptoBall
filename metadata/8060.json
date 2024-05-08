@@ -1,12 +1,30 @@
 {
   "name": "Malik Batmaz",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "72",
-    "attack": "70",
-    "defense": "28",
-    "midfield": "62",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

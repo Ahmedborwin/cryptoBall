@@ -1,12 +1,30 @@
 {
   "name": "Rico Lewis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "86",
-    "attack": "66",
-    "defense": "67",
-    "midfield": "75",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

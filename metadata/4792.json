@@ -1,12 +1,30 @@
 {
   "name": "Joe Gelhardt",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "79",
-    "attack": "73",
-    "defense": "38",
-    "midfield": "69",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

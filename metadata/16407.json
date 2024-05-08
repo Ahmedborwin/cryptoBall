@@ -1,12 +1,30 @@
 {
   "name": "William Fitzgerald",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "61",
-    "attack": "59",
-    "defense": "39",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

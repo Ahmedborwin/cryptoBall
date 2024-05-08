@@ -1,12 +1,30 @@
 {
   "name": "James York",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "67",
-    "attack": "50",
-    "defense": "47",
-    "midfield": "51",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

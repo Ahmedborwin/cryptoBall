@@ -1,12 +1,30 @@
 {
   "name": "Philipp Strompf",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "68",
-    "attack": "41",
-    "defense": "66",
-    "midfield": "47",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

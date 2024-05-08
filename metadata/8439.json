@@ -1,12 +1,30 @@
 {
   "name": "Idrissa Touré",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "72",
-    "attack": "61",
-    "defense": "64",
-    "midfield": "69",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

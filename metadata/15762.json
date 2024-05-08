@@ -1,12 +1,30 @@
 {
   "name": "Ismaïl Bouneb",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "80",
-    "attack": "58",
-    "defense": "40",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Facundo Suárez",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "65",
-    "defense": "34",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

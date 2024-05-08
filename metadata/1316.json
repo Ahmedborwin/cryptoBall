@@ -1,12 +1,30 @@
 {
   "name": "Gonçalo Manuel Ganchinho Guedes",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "78",
-    "attack": "81",
-    "defense": "46",
-    "midfield": "73",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "81"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

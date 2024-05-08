@@ -1,12 +1,30 @@
 {
   "name": "Juan Gutiérrez Martínez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "71",
-    "attack": "42",
-    "defense": "64",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Keita Baldé Diao",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "75",
-    "defense": "40",
-    "midfield": "70",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

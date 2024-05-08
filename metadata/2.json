@@ -1,12 +1,30 @@
 {
   "name": "Kevin De Bruyne",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "91",
-    "potential": "91",
-    "attack": "84",
-    "defense": "68",
-    "midfield": "90",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "91"
+    },
+    {
+      "name": "potential",
+      "value": "91"
+    },
+    {
+      "name": "attack",
+      "value": "84"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "90"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

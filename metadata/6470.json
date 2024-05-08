@@ -1,12 +1,30 @@
 {
   "name": "Jacob Mikael Widell Zetterström",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "75",
-    "attack": "23",
-    "defense": "20",
-    "midfield": "25",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "25"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

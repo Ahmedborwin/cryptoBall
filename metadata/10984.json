@@ -1,12 +1,30 @@
 {
   "name": "Massamba Ndiaye",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "75",
-    "attack": "23",
-    "defense": "23",
-    "midfield": "26",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

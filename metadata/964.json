@@ -1,12 +1,30 @@
 {
   "name": "Sepe Elye Wahi",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "84",
-    "attack": "80",
-    "defense": "39",
-    "midfield": "73",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

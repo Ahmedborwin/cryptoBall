@@ -1,12 +1,30 @@
 {
   "name": "Marco Knaller",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "31",
-    "defense": "26",
-    "midfield": "32",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Moussa Diaby",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "86",
-    "attack": "83",
-    "defense": "47",
-    "midfield": "80",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "83"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

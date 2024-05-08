@@ -1,12 +1,30 @@
 {
   "name": "Dane Pharrell Scarlett",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "78",
-    "attack": "68",
-    "defense": "31",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Axel Laurent Angel Lambert Witsel",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "60",
-    "defense": "80",
-    "midfield": "77",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "80"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

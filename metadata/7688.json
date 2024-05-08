@@ -1,12 +1,30 @@
 {
   "name": "Marvin Çuni",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "76",
-    "attack": "67",
-    "defense": "34",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

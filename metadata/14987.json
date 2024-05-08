@@ -1,12 +1,30 @@
 {
   "name": "João Pedro Reginaldo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "70",
-    "attack": "40",
-    "defense": "61",
-    "midfield": "48",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

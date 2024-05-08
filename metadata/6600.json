@@ -1,12 +1,30 @@
 {
   "name": "Anderson de Oliveira da Silva",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "69",
-    "defense": "33",
-    "midfield": "65",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

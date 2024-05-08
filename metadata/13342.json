@@ -1,12 +1,30 @@
 {
   "name": "Alexis Napoleón Villa León",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "72",
-    "attack": "32",
-    "defense": "32",
-    "midfield": "35",
-    "goalkeeping": "62"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "62"
+    }
+  ]
 }

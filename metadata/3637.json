@@ -1,12 +1,30 @@
 {
   "name": "Leonardo Felipe Valencia Rossel",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "70",
-    "defense": "38",
-    "midfield": "69",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

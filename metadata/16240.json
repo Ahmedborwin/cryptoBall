@@ -1,12 +1,30 @@
 {
   "name": "Álex Ruiz Delgado",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "70",
-    "attack": "24",
-    "defense": "19",
-    "midfield": "27",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

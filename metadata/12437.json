@@ -1,12 +1,30 @@
 {
   "name": "이상기 李相吉 Sang-Gi Lee",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "65",
-    "defense": "61",
-    "midfield": "63",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

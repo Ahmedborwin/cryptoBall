@@ -1,12 +1,30 @@
 {
   "name": "Nathan Elliot Holland",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "66",
-    "attack": "66",
-    "defense": "30",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

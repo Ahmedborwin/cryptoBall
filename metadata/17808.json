@@ -1,12 +1,30 @@
 {
   "name": "吴伟 Wu Wei",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "55",
-    "attack": "54",
-    "defense": "57",
-    "midfield": "56",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "55"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

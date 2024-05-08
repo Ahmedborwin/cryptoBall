@@ -1,12 +1,30 @@
 {
   "name": "Javier Alexandro Vallejos Fleitas",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "70",
-    "attack": "36",
-    "defense": "61",
-    "midfield": "42",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Brian Gutiérrez",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "78",
-    "attack": "65",
-    "defense": "41",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Fabio César Rosales Pérez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "23",
-    "defense": "19",
-    "midfield": "30",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

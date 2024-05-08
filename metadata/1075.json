@@ -1,12 +1,30 @@
 {
   "name": "황희찬 黄喜灿 Hee-Chan Hwang",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "80",
-    "defense": "46",
-    "midfield": "77",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Marios Vrousai",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "72",
-    "attack": "71",
-    "defense": "53",
-    "midfield": "68",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

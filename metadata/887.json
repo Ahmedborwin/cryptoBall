@@ -1,12 +1,30 @@
 {
   "name": "Robin Everardus Gosens",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "79",
-    "potential": "79",
-    "attack": "75",
-    "defense": "76",
-    "midfield": "76",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "79"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

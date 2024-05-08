@@ -1,12 +1,30 @@
 {
   "name": "M. Vanderlei Paulino Kenedy",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "54",
-    "defense": "72",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

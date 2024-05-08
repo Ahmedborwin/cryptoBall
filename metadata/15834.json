@@ -1,12 +1,30 @@
 {
   "name": "Aldaír Caputa Ferreira",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "58",
-    "defense": "47",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

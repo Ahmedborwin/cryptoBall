@@ -1,12 +1,30 @@
 {
   "name": "Luciano Cingolani",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "73",
-    "attack": "68",
-    "defense": "28",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

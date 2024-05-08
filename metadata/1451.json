@@ -1,12 +1,30 @@
 {
   "name": "Josip Stanišić",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "81",
-    "attack": "59",
-    "defense": "75",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

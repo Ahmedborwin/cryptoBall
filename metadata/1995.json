@@ -1,12 +1,30 @@
 {
   "name": "Arijanet Anan Murić",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "80",
-    "attack": "34",
-    "defense": "27",
-    "midfield": "50",
-    "goalkeeping": "76"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "76"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jorge Carrillo Balea",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "66",
-    "attack": "26",
-    "defense": "20",
-    "midfield": "32",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

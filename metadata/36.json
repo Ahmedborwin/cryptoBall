@@ -1,12 +1,30 @@
 {
   "name": "Jamal Musiala",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "86",
-    "potential": "93",
-    "attack": "83",
-    "defense": "62",
-    "midfield": "84",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "86"
+    },
+    {
+      "name": "potential",
+      "value": "93"
+    },
+    {
+      "name": "attack",
+      "value": "83"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "84"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

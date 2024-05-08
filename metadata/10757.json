@@ -1,12 +1,30 @@
 {
   "name": "Josias Tusevo Lukembila",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "70",
-    "attack": "67",
-    "defense": "30",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

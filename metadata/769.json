@@ -1,12 +1,30 @@
 {
   "name": "Hans Vanaken",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "69",
-    "defense": "60",
-    "midfield": "82",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "82"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

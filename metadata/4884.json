@@ -1,12 +1,30 @@
 {
   "name": "Milutin Osmajić",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "75",
-    "attack": "71",
-    "defense": "48",
-    "midfield": "61",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Gabriel Gonçalves de Souza",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "68",
-    "attack": "24",
-    "defense": "20",
-    "midfield": "31",
-    "goalkeeping": "63"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "63"
+    }
+  ]
 }

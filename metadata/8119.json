@@ -1,12 +1,30 @@
 {
   "name": "Soufiane Bidaoui",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "69",
-    "defense": "34",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

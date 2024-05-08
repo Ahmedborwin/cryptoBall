@@ -1,12 +1,30 @@
 {
   "name": "Jeong-Won Eo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "62",
-    "defense": "50",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

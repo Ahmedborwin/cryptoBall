@@ -1,12 +1,30 @@
 {
   "name": "Wolji Jalal Abdulai",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "78",
-    "attack": "60",
-    "defense": "31",
-    "midfield": "52",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

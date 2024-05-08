@@ -1,12 +1,30 @@
 {
   "name": "Amine Boutrah",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "75",
-    "attack": "70",
-    "defense": "36",
-    "midfield": "65",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

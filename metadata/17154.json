@@ -1,12 +1,30 @@
 {
   "name": "Finn Hetzsch",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "70",
-    "attack": "53",
-    "defense": "51",
-    "midfield": "54",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

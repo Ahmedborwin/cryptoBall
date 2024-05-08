@@ -1,12 +1,30 @@
 {
   "name": "Juan José Mina González",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "80",
-    "attack": "56",
-    "defense": "60",
-    "midfield": "58",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

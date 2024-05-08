@@ -1,12 +1,30 @@
 {
   "name": "Marvin Keller",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "73",
-    "attack": "26",
-    "defense": "21",
-    "midfield": "28",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

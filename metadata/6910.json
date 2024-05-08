@@ -1,12 +1,30 @@
 {
   "name": "Lautaro Leonel Pastran Tello",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "78",
-    "attack": "74",
-    "defense": "31",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

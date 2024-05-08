@@ -1,12 +1,30 @@
 {
   "name": "Abdulaziz Making",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "67",
-    "attack": "56",
-    "defense": "38",
-    "midfield": "54",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

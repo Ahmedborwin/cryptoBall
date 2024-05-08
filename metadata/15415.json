@@ -1,12 +1,30 @@
 {
   "name": "Miliano Jonathans",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "76",
-    "attack": "59",
-    "defense": "27",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

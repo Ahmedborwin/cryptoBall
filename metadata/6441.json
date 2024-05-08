@@ -1,12 +1,30 @@
 {
   "name": "Lucas Lund Pedersen",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "76",
-    "attack": "29",
-    "defense": "23",
-    "midfield": "43",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

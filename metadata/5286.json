@@ -1,12 +1,30 @@
 {
   "name": "Kaiansu Kei Kamara",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "61",
-    "defense": "42",
-    "midfield": "62",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Weston James Earl McKennie",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "80",
-    "attack": "75",
-    "defense": "78",
-    "midfield": "77",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

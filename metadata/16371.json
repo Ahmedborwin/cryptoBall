@@ -1,12 +1,30 @@
 {
   "name": "Laxmikant Kattimani",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "58",
-    "attack": "30",
-    "defense": "23",
-    "midfield": "26",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "58"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

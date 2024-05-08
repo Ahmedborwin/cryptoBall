@@ -1,12 +1,30 @@
 {
   "name": "Erick Lenin Zúñiga Medina",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "60",
-    "defense": "55",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

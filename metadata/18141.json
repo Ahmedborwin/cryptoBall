@@ -1,12 +1,30 @@
 {
   "name": "Panagiotis Kikianis",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "69",
-    "attack": "43",
-    "defense": "54",
-    "midfield": "48",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

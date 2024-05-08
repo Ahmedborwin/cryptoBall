@@ -1,12 +1,30 @@
 {
   "name": "Prince Adu-Addae Aning",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "80",
-    "attack": "60",
-    "defense": "54",
-    "midfield": "60",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

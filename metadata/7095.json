@@ -1,12 +1,30 @@
 {
   "name": "Mats Deijl",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "60",
-    "defense": "67",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

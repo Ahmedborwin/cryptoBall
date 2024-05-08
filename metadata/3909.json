@@ -1,12 +1,30 @@
 {
   "name": "Francesco Bardi",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "35",
-    "defense": "21",
-    "midfield": "40",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

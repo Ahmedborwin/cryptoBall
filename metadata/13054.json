@@ -1,12 +1,30 @@
 {
   "name": "Attila Mocsi",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "74",
-    "attack": "43",
-    "defense": "66",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

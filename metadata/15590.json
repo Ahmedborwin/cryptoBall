@@ -1,12 +1,30 @@
 {
   "name": "Bas Van den Eynden",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "51",
-    "defense": "61",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

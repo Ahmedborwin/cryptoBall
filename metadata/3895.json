@@ -1,12 +1,30 @@
 {
   "name": "Javier Sánchez de Felipe",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "75",
-    "attack": "59",
-    "defense": "74",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

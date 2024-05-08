@@ -1,12 +1,30 @@
 {
   "name": "이승모 Seung-Mo Lee",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "69",
-    "attack": "63",
-    "defense": "61",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

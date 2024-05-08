@@ -1,12 +1,30 @@
 {
   "name": "Yulwuis José De Jesús Pérez Piamo",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "69",
-    "attack": "38",
-    "defense": "56",
-    "midfield": "40",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

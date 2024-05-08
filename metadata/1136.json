@@ -1,12 +1,30 @@
 {
   "name": "Kevin Kampl",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "73",
-    "defense": "64",
-    "midfield": "82",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "82"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

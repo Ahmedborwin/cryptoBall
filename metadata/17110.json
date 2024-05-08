@@ -1,12 +1,30 @@
 {
   "name": "Malwin Zok",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "71",
-    "attack": "25",
-    "defense": "22",
-    "midfield": "28",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "25"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

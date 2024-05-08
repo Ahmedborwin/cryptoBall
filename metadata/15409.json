@@ -1,12 +1,30 @@
 {
   "name": "David Akpan Ankeye",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "62",
-    "defense": "37",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

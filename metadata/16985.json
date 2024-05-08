@@ -1,12 +1,30 @@
 {
   "name": "Lalchungnunga Lalchungnunga",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "66",
-    "attack": "46",
-    "defense": "58",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "58"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

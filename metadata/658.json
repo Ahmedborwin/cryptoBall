@@ -1,12 +1,30 @@
 {
   "name": "Francisco Román Alarcón Suárez",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "75",
-    "defense": "57",
-    "midfield": "80",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Felix Werner Wolfgang Drinkuth",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "64",
-    "defense": "36",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

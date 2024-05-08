@@ -1,12 +1,30 @@
 {
   "name": "Thibo Baeten",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "75",
-    "attack": "66",
-    "defense": "27",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

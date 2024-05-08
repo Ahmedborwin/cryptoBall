@@ -1,12 +1,30 @@
 {
   "name": "Jacob Mendy",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "64",
-    "attack": "61",
-    "defense": "59",
-    "midfield": "59",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

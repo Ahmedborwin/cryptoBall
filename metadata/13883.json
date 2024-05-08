@@ -1,12 +1,30 @@
 {
   "name": "Jaime Vázquez Cuervo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "79",
-    "attack": "47",
-    "defense": "62",
-    "midfield": "57",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

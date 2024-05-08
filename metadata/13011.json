@@ -1,12 +1,30 @@
 {
   "name": "Ricardo Daniel Farro Caballero",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "33",
-    "defense": "29",
-    "midfield": "31",
-    "goalkeeping": "62"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "62"
+    }
+  ]
 }

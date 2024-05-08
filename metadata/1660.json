@@ -1,12 +1,30 @@
 {
   "name": "Jeffrey Gouweleeuw",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "76",
-    "attack": "65",
-    "defense": "78",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

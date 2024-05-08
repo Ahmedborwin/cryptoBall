@@ -1,12 +1,30 @@
 {
   "name": "Keane Lewis-Potter",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "80",
-    "attack": "73",
-    "defense": "48",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

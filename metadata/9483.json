@@ -1,12 +1,30 @@
 {
   "name": "Nik Prelec",
   "club_position": "RF",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "73",
-    "attack": "64",
-    "defense": "42",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

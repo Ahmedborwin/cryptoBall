@@ -1,12 +1,30 @@
 {
   "name": "Mark Helm",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "73",
-    "attack": "64",
-    "defense": "53",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

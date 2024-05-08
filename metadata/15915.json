@@ -1,12 +1,30 @@
 {
   "name": "Oskar Krzyżak",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "71",
-    "attack": "43",
-    "defense": "60",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

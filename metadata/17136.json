@@ -1,12 +1,30 @@
 {
   "name": "Isaac Asante",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "70",
-    "attack": "56",
-    "defense": "34",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

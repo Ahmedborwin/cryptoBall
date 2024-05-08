@@ -1,12 +1,30 @@
 {
   "name": "Conor Mark Chaplin",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "75",
-    "attack": "78",
-    "defense": "49",
-    "midfield": "74",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

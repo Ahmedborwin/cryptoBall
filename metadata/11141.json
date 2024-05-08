@@ -1,12 +1,30 @@
 {
   "name": "James Chester",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "46",
-    "defense": "66",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

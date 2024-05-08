@@ -1,12 +1,30 @@
 {
   "name": "Dan Sîrbu",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "77",
-    "attack": "54",
-    "defense": "62",
-    "midfield": "63",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

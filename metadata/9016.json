@@ -1,12 +1,30 @@
 {
   "name": "Cheyenne Dunkley",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "46",
-    "defense": "69",
-    "midfield": "54",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Mickaël Nade",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "75",
-    "attack": "39",
-    "defense": "74",
-    "midfield": "56",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

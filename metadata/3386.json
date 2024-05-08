@@ -1,12 +1,30 @@
 {
   "name": "Victor Oluyemi Olatunji",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "76",
-    "attack": "69",
-    "defense": "38",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

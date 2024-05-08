@@ -1,12 +1,30 @@
 {
   "name": "Max Schmitt",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "78",
-    "attack": "24",
-    "defense": "18",
-    "midfield": "28",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

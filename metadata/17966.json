@@ -1,12 +1,30 @@
 {
   "name": "전성진 Seong-jin Jeon",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "62",
-    "attack": "51",
-    "defense": "46",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

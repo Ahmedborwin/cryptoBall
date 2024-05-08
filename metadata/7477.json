@@ -1,12 +1,30 @@
 {
   "name": "Alec Hugo Deneumostier Ortmann",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "73",
-    "attack": "43",
-    "defense": "68",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

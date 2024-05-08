@@ -1,12 +1,30 @@
 {
   "name": "Tomás Jacob",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "78",
-    "attack": "54",
-    "defense": "61",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

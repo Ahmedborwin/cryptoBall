@@ -1,12 +1,30 @@
 {
   "name": "Funso-King Ojo",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "61",
-    "defense": "63",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Duirval Hélton Diniz Cabral",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "51",
-    "defense": "76",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

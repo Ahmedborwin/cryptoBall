@@ -1,12 +1,30 @@
 {
   "name": "Lucas Simon Pierre Tousart",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "80",
-    "attack": "62",
-    "defense": "78",
-    "midfield": "71",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

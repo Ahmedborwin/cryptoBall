@@ -1,12 +1,30 @@
 {
   "name": "Iñaki Williams Arthuer",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "82",
-    "potential": "82",
-    "attack": "84",
-    "defense": "53",
-    "midfield": "77",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "82"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "84"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

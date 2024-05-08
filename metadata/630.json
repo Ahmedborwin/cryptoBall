@@ -1,12 +1,30 @@
 {
   "name": "Aleksandar Mitrović",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "74",
-    "defense": "43",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Darnell Tobias Jack Johnson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "61",
-    "attack": "48",
-    "defense": "62",
-    "midfield": "47",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

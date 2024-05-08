@@ -1,12 +1,30 @@
 {
   "name": "Godberg Barry Cooper",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "67",
-    "attack": "64",
-    "defense": "39",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

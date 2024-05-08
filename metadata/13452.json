@@ -1,12 +1,30 @@
 {
   "name": "Monsef Bakrar",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "69",
-    "attack": "62",
-    "defense": "30",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

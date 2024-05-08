@@ -1,12 +1,30 @@
 {
   "name": "سعيد باعطية Saeed bin Khalid Al-Basisi",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "69",
-    "attack": "53",
-    "defense": "56",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

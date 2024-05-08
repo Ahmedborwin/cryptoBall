@@ -1,12 +1,30 @@
 {
   "name": "Dominik Szala",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "78",
-    "attack": "43",
-    "defense": "60",
-    "midfield": "43",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

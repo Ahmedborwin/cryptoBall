@@ -1,12 +1,30 @@
 {
   "name": "David Olatukunbo Alaba",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "85",
-    "potential": "85",
-    "attack": "77",
-    "defense": "83",
-    "midfield": "81",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "85"
+    },
+    {
+      "name": "potential",
+      "value": "85"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "83"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

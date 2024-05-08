@@ -1,12 +1,30 @@
 {
   "name": "Yankuba Minteh",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "85",
-    "attack": "72",
-    "defense": "32",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "85"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

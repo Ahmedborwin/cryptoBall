@@ -1,12 +1,30 @@
 {
   "name": "Leko Verbauwhede",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "70",
-    "attack": "47",
-    "defense": "51",
-    "midfield": "50",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

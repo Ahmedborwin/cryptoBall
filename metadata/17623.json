@@ -1,12 +1,30 @@
 {
   "name": "Pietro Candelari",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "74",
-    "attack": "53",
-    "defense": "48",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

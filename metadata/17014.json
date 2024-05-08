@@ -1,12 +1,30 @@
 {
   "name": "Mateo Kritzer",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "71",
-    "attack": "47",
-    "defense": "55",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

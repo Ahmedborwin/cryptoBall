@@ -1,12 +1,30 @@
 {
   "name": "Oskar Boesen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "71",
-    "attack": "54",
-    "defense": "47",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

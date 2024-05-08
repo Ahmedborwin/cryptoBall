@@ -1,12 +1,30 @@
 {
   "name": "Martin Moormann",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "70",
-    "attack": "45",
-    "defense": "68",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

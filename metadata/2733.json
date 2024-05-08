@@ -1,12 +1,30 @@
 {
   "name": "Diego Ferney Chara Zamora",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "64",
-    "defense": "73",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

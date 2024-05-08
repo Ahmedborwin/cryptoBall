@@ -1,12 +1,30 @@
 {
   "name": "Maximilian Breunig",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "69",
-    "attack": "63",
-    "defense": "35",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

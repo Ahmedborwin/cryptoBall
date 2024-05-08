@@ -1,12 +1,30 @@
 {
   "name": "Lautaro De León Billar",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "74",
-    "attack": "62",
-    "defense": "28",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

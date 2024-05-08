@@ -1,12 +1,30 @@
 {
   "name": "Antwoine Hackford",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "75",
-    "attack": "66",
-    "defense": "25",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

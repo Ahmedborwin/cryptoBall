@@ -1,12 +1,30 @@
 {
   "name": "Magnus Brøndbo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "75",
-    "attack": "26",
-    "defense": "20",
-    "midfield": "35",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Federico Dimarco",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "85",
-    "attack": "80",
-    "defense": "76",
-    "midfield": "80",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "85"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

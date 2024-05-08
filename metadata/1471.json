@@ -1,12 +1,30 @@
 {
   "name": "Petar Musa",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "75",
-    "defense": "51",
-    "midfield": "70",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

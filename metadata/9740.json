@@ -1,12 +1,30 @@
 {
   "name": "Adil Demirbağ",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "70",
-    "attack": "44",
-    "defense": "69",
-    "midfield": "54",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

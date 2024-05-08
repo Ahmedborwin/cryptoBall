@@ -1,12 +1,30 @@
 {
   "name": "Chadrac Akolo Ababa",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "77",
-    "defense": "38",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

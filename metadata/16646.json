@@ -1,12 +1,30 @@
 {
   "name": "Rayvien Rosario",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "73",
-    "attack": "60",
-    "defense": "32",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

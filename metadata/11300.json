@@ -1,12 +1,30 @@
 {
   "name": "Joshua James Vela",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "61",
-    "defense": "68",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

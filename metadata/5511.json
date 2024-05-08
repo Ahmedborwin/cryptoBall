@@ -1,12 +1,30 @@
 {
   "name": "Dante Nicolás Campisi",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "74",
-    "attack": "30",
-    "defense": "28",
-    "midfield": "37",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "37"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

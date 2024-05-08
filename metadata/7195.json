@@ -1,12 +1,30 @@
 {
   "name": "Matías Ramírez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "70",
-    "defense": "38",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

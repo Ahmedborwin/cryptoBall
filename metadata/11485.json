@@ -1,12 +1,30 @@
 {
   "name": "이상헌 Sang-Heon Lee",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "65",
-    "attack": "66",
-    "defense": "47",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

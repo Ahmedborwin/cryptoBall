@@ -1,12 +1,30 @@
 {
   "name": "Edivaldo Sagal",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "61",
-    "defense": "63",
-    "midfield": "67",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

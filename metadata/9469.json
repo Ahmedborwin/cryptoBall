@@ -1,12 +1,30 @@
 {
   "name": "Théo Luis Fonseca",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "73",
-    "attack": "68",
-    "defense": "27",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

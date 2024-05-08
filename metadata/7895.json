@@ -1,12 +1,30 @@
 {
   "name": "Stefan Kutschke",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "61",
-    "defense": "51",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

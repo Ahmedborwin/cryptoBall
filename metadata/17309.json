@@ -1,12 +1,30 @@
 {
   "name": "Fynn Talley",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "67",
-    "attack": "24",
-    "defense": "22",
-    "midfield": "27",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

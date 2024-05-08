@@ -1,12 +1,30 @@
 {
   "name": "Nassim Chadli",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "63",
-    "defense": "31",
-    "midfield": "61",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

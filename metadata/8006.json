@@ -1,12 +1,30 @@
 {
   "name": "Gjoko Zajkov",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "68",
-    "attack": "40",
-    "defense": "70",
-    "midfield": "56",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

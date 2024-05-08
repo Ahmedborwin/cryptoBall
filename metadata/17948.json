@@ -1,12 +1,30 @@
 {
   "name": "唐创 Tang Chuang",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "53",
-    "attack": "54",
-    "defense": "29",
-    "midfield": "45",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "53"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

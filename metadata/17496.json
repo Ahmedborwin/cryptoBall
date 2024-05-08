@@ -1,12 +1,30 @@
 {
   "name": "Elio Nicolas Firmino",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "64",
-    "attack": "53",
-    "defense": "41",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

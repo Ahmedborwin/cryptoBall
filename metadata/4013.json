@@ -1,12 +1,30 @@
 {
   "name": "Ryan Isaac Mendes da Graça",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "70",
-    "defense": "34",
-    "midfield": "69",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

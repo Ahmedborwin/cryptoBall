@@ -1,12 +1,30 @@
 {
   "name": "Gabriele Moncini",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "71",
-    "defense": "43",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

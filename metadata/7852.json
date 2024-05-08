@@ -1,12 +1,30 @@
 {
   "name": "Emmanuel Ntim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "50",
-    "defense": "68",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

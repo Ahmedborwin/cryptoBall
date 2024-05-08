@@ -1,12 +1,30 @@
 {
   "name": "D'Leanu Arts",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "68",
-    "attack": "53",
-    "defense": "59",
-    "midfield": "54",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

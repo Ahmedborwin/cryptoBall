@@ -1,12 +1,30 @@
 {
   "name": "邵镤亮 Shao Puliang",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "31",
-    "defense": "23",
-    "midfield": "42",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

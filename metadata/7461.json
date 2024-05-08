@@ -1,12 +1,30 @@
 {
   "name": "Cameron Lisceous Humphreys-Grant",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "74",
-    "attack": "50",
-    "defense": "69",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

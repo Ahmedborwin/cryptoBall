@@ -1,12 +1,30 @@
 {
   "name": "Christopher Gavin Scott",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "74",
-    "attack": "68",
-    "defense": "32",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

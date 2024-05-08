@@ -1,12 +1,30 @@
 {
   "name": "Everson Junior Pereira da Silva",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "73",
-    "attack": "61",
-    "defense": "29",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

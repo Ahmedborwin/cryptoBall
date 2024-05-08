@@ -1,12 +1,30 @@
 {
   "name": "Damjan Đoković",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "66",
-    "defense": "69",
-    "midfield": "69",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

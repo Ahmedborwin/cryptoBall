@@ -1,12 +1,30 @@
 {
   "name": "Hugo Miguel Almeida Costa Lopes",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "62",
-    "defense": "72",
-    "midfield": "65",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

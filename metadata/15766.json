@@ -1,12 +1,30 @@
 {
   "name": "Konstantin Heide",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "71",
-    "attack": "27",
-    "defense": "26",
-    "midfield": "39",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

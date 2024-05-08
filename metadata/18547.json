@@ -1,12 +1,30 @@
 {
   "name": "Aman Kumar Sahni",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "55",
-    "attack": "20",
-    "defense": "18",
-    "midfield": "27",
-    "goalkeeping": "49"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "55"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "49"
+    }
+  ]
 }

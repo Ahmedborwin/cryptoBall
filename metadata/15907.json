@@ -1,12 +1,30 @@
 {
   "name": "Abdulaziz bin Abdulrahman bin Abdulaziz Al-Harabi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "62",
-    "attack": "50",
-    "defense": "57",
-    "midfield": "55",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

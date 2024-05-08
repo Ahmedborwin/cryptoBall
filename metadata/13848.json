@@ -1,12 +1,30 @@
 {
   "name": "Oscar Thore Hedvall",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "66",
-    "attack": "27",
-    "defense": "23",
-    "midfield": "42",
-    "goalkeeping": "63"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "63"
+    }
+  ]
 }

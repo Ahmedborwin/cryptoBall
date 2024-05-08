@@ -1,12 +1,30 @@
 {
   "name": "Vinícius Nogueira de Oliveira",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "58",
-    "defense": "56",
-    "midfield": "59",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

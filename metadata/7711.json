@@ -1,12 +1,30 @@
 {
   "name": "Kolbeinn Birgir Finnsson",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "74",
-    "attack": "64",
-    "defense": "63",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

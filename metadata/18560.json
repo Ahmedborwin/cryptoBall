@@ -1,12 +1,30 @@
 {
   "name": "Robin Yadav",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "57",
-    "attack": "36",
-    "defense": "51",
-    "midfield": "38",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

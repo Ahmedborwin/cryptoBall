@@ -1,12 +1,30 @@
 {
   "name": "Lautaro Daniel Gianetti",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "49",
-    "defense": "76",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "49"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

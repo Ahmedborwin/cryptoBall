@@ -1,12 +1,30 @@
 {
   "name": "Rúben Ismael Valente Ramos",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "71",
-    "attack": "54",
-    "defense": "64",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

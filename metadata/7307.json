@@ -1,12 +1,30 @@
 {
   "name": "Martín Pascual Castillo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "77",
-    "attack": "37",
-    "defense": "68",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

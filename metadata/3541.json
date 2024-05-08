@@ -1,12 +1,30 @@
 {
   "name": "Sydney van Hooijdonk",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "79",
-    "attack": "71",
-    "defense": "38",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

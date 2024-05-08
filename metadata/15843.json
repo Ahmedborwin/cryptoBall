@@ -1,12 +1,30 @@
 {
   "name": "Ian Fray",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "74",
-    "attack": "44",
-    "defense": "61",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

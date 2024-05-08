@@ -1,12 +1,30 @@
 {
   "name": "Víctor Emanuel Aguilera",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "54",
-    "defense": "73",
-    "midfield": "55",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

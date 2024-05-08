@@ -1,12 +1,30 @@
 {
   "name": "中村 敬斗 Keito Nakamura",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "83",
-    "attack": "76",
-    "defense": "48",
-    "midfield": "74",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

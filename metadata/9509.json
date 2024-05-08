@@ -1,12 +1,30 @@
 {
   "name": "Tommy Conway",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "79",
-    "attack": "69",
-    "defense": "26",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

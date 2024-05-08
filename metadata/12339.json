@@ -1,12 +1,30 @@
 {
   "name": "Dennis Kaygin",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "76",
-    "attack": "64",
-    "defense": "46",
-    "midfield": "62",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Álvaro Negredo Sánchez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "69",
-    "defense": "47",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

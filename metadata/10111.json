@@ -1,12 +1,30 @@
 {
   "name": "Pontus Jacob Ragne Dahlberg",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "71",
-    "attack": "26",
-    "defense": "24",
-    "midfield": "38",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

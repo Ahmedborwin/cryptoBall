@@ -1,12 +1,30 @@
 {
   "name": "夏合扎提·吾加合买提 Shahzat Ghojaehmet",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "73",
-    "attack": "59",
-    "defense": "38",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

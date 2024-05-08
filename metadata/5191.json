@@ -1,12 +1,30 @@
 {
   "name": "Festy Ebosele",
   "club_position": "RWB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "78",
-    "attack": "66",
-    "defense": "66",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

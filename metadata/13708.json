@@ -1,12 +1,30 @@
 {
   "name": "Tae-Jun Park",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "67",
-    "attack": "61",
-    "defense": "51",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

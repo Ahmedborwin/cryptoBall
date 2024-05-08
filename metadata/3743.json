@@ -1,12 +1,30 @@
 {
   "name": "Jan Thielmann",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "81",
-    "attack": "73",
-    "defense": "50",
-    "midfield": "71",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

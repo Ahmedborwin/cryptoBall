@@ -1,12 +1,30 @@
 {
   "name": "Dermi Lusala",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "70",
-    "attack": "49",
-    "defense": "53",
-    "midfield": "50",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "49"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "杨帅 Yang Shuai",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "67",
-    "attack": "46",
-    "defense": "66",
-    "midfield": "54",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

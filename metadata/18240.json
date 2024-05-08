@@ -1,12 +1,30 @@
 {
   "name": "Mario Ilie",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "74",
-    "attack": "52",
-    "defense": "31",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "52"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Waldemar Anton",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "79",
-    "attack": "59",
-    "defense": "79",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "79"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Mohammed Essa Harbush",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "69",
-    "attack": "50",
-    "defense": "46",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

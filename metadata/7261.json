@@ -1,12 +1,30 @@
 {
   "name": "Yuri Jonathan Vitor Coelho",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "72",
-    "attack": "63",
-    "defense": "44",
-    "midfield": "60",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "44"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

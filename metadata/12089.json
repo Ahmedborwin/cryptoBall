@@ -1,12 +1,30 @@
 {
   "name": "Hans Christian Bernat",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "74",
-    "attack": "28",
-    "defense": "22",
-    "midfield": "40",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

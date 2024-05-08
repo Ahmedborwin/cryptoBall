@@ -1,12 +1,30 @@
 {
   "name": "Jean-Victor Makengo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "75",
-    "attack": "67",
-    "defense": "70",
-    "midfield": "70",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Koen Oostenbrink",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "65",
-    "attack": "51",
-    "defense": "61",
-    "midfield": "55",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Raúl Torrente Navarro",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "79",
-    "attack": "44",
-    "defense": "72",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

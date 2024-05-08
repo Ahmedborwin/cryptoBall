@@ -1,12 +1,30 @@
 {
   "name": "Jonas Urbig",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "84",
-    "attack": "25",
-    "defense": "21",
-    "midfield": "31",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "25"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

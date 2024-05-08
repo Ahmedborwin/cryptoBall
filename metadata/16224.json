@@ -1,12 +1,30 @@
 {
   "name": "Jonah Benedict Sticker",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "69",
-    "attack": "47",
-    "defense": "53",
-    "midfield": "52",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

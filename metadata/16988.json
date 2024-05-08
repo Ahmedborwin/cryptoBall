@@ -1,12 +1,30 @@
 {
   "name": "Julian Larsson",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "67",
-    "attack": "60",
-    "defense": "23",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

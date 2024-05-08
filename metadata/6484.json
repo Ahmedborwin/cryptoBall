@@ -1,12 +1,30 @@
 {
   "name": "Tom van Weert",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "69",
-    "defense": "39",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

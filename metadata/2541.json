@@ -1,12 +1,30 @@
 {
   "name": "Carlos Roberto Izquierdoz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "50",
-    "defense": "76",
-    "midfield": "60",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

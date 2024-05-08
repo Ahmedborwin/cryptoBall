@@ -1,12 +1,30 @@
 {
   "name": "Joseph Tetteh Anang",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "70",
-    "attack": "26",
-    "defense": "22",
-    "midfield": "33",
-    "goalkeeping": "63"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "33"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "63"
+    }
+  ]
 }

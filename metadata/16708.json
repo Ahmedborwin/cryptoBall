@@ -1,12 +1,30 @@
 {
   "name": "Maxime Kali Wenssens",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "64",
-    "attack": "22",
-    "defense": "20",
-    "midfield": "26",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

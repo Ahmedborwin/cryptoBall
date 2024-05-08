@@ -1,12 +1,30 @@
 {
   "name": "Seok-Joo Yoon",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "68",
-    "attack": "47",
-    "defense": "53",
-    "midfield": "53",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Janis Jonathan Blaswich",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "34",
-    "defense": "28",
-    "midfield": "42",
-    "goalkeeping": "76"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "76"
+    }
+  ]
 }

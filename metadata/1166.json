@@ -1,12 +1,30 @@
 {
   "name": "Pape Matar Sarr",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "83",
-    "attack": "72",
-    "defense": "73",
-    "midfield": "78",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

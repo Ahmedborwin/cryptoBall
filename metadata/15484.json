@@ -1,12 +1,30 @@
 {
   "name": "Archie Mair",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "68",
-    "attack": "30",
-    "defense": "21",
-    "midfield": "34",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "34"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

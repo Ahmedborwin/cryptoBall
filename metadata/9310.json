@@ -1,12 +1,30 @@
 {
   "name": "Amine Benchaib",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "71",
-    "attack": "67",
-    "defense": "45",
-    "midfield": "65",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

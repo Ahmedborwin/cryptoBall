@@ -1,12 +1,30 @@
 {
   "name": "Lewis Dunk",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "54",
-    "defense": "83",
-    "midfield": "73",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "83"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

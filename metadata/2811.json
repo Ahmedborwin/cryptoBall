@@ -1,12 +1,30 @@
 {
   "name": "Saâd Abdullah Bguir",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "72",
-    "defense": "41",
-    "midfield": "74",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

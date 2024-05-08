@@ -1,12 +1,30 @@
 {
   "name": "Thomas Rotter",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "40",
-    "defense": "67",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

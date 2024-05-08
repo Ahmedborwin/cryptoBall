@@ -1,12 +1,30 @@
 {
   "name": "Harrison Bright",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "62",
-    "attack": "51",
-    "defense": "49",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

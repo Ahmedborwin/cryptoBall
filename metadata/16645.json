@@ -1,12 +1,30 @@
 {
   "name": "Krystian Okoniewski",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "74",
-    "attack": "57",
-    "defense": "31",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

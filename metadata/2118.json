@@ -1,12 +1,30 @@
 {
   "name": "Jason Grégory Marianne Denayer",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "75",
-    "attack": "56",
-    "defense": "74",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Samuel Colin Walker",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "31",
-    "defense": "26",
-    "midfield": "35",
-    "goalkeeping": "63"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "63"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Robin Lod",
   "club_position": "CM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "71",
-    "defense": "59",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

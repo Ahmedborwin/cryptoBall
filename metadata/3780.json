@@ -1,12 +1,30 @@
 {
   "name": "Antonio Eromonsele Nordby Nusa",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "86",
-    "attack": "74",
-    "defense": "48",
-    "midfield": "68",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

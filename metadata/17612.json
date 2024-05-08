@@ -1,12 +1,30 @@
 {
   "name": "Nathan Otega Ekperuoh",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "70",
-    "attack": "19",
-    "defense": "23",
-    "midfield": "31",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "19"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Francisco Femenía Far",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "63",
-    "defense": "70",
-    "midfield": "68",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

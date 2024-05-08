@@ -1,12 +1,30 @@
 {
   "name": "Danilo Quaranta",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "67",
-    "attack": "45",
-    "defense": "63",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

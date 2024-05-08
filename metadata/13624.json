@@ -1,12 +1,30 @@
 {
   "name": "Davor Blažević",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "29",
-    "defense": "22",
-    "midfield": "34",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "34"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

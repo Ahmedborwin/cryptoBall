@@ -1,12 +1,30 @@
 {
   "name": "Liam Gibbs",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "77",
-    "attack": "63",
-    "defense": "63",
-    "midfield": "68",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

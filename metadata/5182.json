@@ -1,12 +1,30 @@
 {
   "name": "David Kinsombi",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "69",
-    "defense": "68",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Brice Samba",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "82",
-    "potential": "84",
-    "attack": "37",
-    "defense": "27",
-    "midfield": "47",
-    "goalkeeping": "81"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "82"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "81"
+    }
+  ]
 }

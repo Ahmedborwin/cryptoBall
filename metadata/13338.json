@@ -1,12 +1,30 @@
 {
   "name": "Matthew William Jay",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "69",
-    "defense": "33",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Damian Dawid Szymański",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "76",
-    "attack": "69",
-    "defense": "76",
-    "midfield": "72",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

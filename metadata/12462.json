@@ -1,12 +1,30 @@
 {
   "name": "Natanael Laureano Troncoso",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "64",
-    "defense": "32",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

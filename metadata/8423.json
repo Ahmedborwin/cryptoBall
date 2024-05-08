@@ -1,12 +1,30 @@
 {
   "name": "Bogdan Racovițan",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "75",
-    "attack": "47",
-    "defense": "68",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

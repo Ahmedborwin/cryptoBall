@@ -1,12 +1,30 @@
 {
   "name": "Sami Al Khaibari",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "39",
-    "defense": "71",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

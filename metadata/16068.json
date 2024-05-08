@@ -1,12 +1,30 @@
 {
   "name": "Garrison Tubbs",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "66",
-    "attack": "36",
-    "defense": "62",
-    "midfield": "39",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

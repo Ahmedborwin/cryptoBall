@@ -1,12 +1,30 @@
 {
   "name": "Aritz Elustondo Irribaria",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "81",
-    "attack": "53",
-    "defense": "80",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "80"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

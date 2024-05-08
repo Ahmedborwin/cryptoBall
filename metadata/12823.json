@@ -1,12 +1,30 @@
 {
   "name": "Callum Alex David Burton",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "64",
-    "attack": "32",
-    "defense": "22",
-    "midfield": "34",
-    "goalkeeping": "62"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "34"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "62"
+    }
+  ]
 }

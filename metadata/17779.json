@@ -1,12 +1,30 @@
 {
   "name": "Conrad Harder",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "72",
-    "attack": "59",
-    "defense": "31",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

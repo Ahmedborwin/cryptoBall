@@ -1,12 +1,30 @@
 {
   "name": "Hélton Luiz Celanova Vieira",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "68",
-    "defense": "34",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

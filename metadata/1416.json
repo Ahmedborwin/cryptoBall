@@ -1,12 +1,30 @@
 {
   "name": "فارس شايبي Farès Chaïbi",
   "club_position": "RF",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "86",
-    "attack": "71",
-    "defense": "69",
-    "midfield": "74",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

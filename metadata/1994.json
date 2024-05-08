@@ -1,12 +1,30 @@
 {
   "name": "Levi Samuels Colwill",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "85",
-    "attack": "55",
-    "defense": "76",
-    "midfield": "70",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "85"
+    },
+    {
+      "name": "attack",
+      "value": "55"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

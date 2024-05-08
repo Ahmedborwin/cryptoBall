@@ -1,12 +1,30 @@
 {
   "name": "Aaren D'Silva",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "56",
-    "attack": "53",
-    "defense": "31",
-    "midfield": "44",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

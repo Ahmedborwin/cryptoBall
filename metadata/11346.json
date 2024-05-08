@@ -1,12 +1,30 @@
 {
   "name": "Mouhamed Menaour Belkheir",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "68",
-    "attack": "65",
-    "defense": "40",
-    "midfield": "59",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

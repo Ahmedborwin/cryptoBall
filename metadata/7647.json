@@ -1,12 +1,30 @@
 {
   "name": "Martin Bjørnbak",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "46",
-    "defense": "69",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

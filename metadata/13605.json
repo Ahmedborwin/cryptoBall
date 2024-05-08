@@ -1,12 +1,30 @@
 {
   "name": "Abdoulaye Kamara",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "79",
-    "attack": "58",
-    "defense": "60",
-    "midfield": "65",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Aníbal Leguizamón Espínola",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "45",
-    "defense": "71",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

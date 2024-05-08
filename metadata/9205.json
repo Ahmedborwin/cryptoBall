@@ -1,12 +1,30 @@
 {
   "name": "Thomas Buitink",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "71",
-    "attack": "66",
-    "defense": "49",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

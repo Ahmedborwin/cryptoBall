@@ -1,12 +1,30 @@
 {
   "name": "Berkay Yilmaz",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "73",
-    "attack": "48",
-    "defense": "51",
-    "midfield": "50",
-    "goalkeeping": "6"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "6"
+    }
+  ]
 }

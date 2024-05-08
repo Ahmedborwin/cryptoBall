@@ -1,12 +1,30 @@
 {
   "name": "Antonio Bareiro Álvarez",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "64",
-    "defense": "37",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

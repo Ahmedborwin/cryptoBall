@@ -1,12 +1,30 @@
 {
   "name": "Maxence Lacroix",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "84",
-    "attack": "57",
-    "defense": "77",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

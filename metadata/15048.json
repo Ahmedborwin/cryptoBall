@@ -1,12 +1,30 @@
 {
   "name": "Davis Silva do Nascimento",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "54",
-    "defense": "52",
-    "midfield": "62",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Renato Pantalon",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "40",
-    "defense": "72",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

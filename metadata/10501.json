@@ -1,12 +1,30 @@
 {
   "name": "Nico Ochojski",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "70",
-    "attack": "63",
-    "defense": "60",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

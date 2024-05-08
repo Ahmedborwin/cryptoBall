@@ -1,12 +1,30 @@
 {
   "name": "Isak Vanlalruatfela",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "65",
-    "attack": "57",
-    "defense": "42",
-    "midfield": "53",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

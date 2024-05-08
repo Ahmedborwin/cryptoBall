@@ -1,12 +1,30 @@
 {
   "name": "John Robert Brayford",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "54",
-    "defense": "64",
-    "midfield": "64",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

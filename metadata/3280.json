@@ -1,12 +1,30 @@
 {
   "name": "João Pedro Barradas Novais",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "72",
-    "defense": "54",
-    "midfield": "73",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "胡家笠 Hu Jiali",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "48",
-    "defense": "59",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

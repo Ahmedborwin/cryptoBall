@@ -1,12 +1,30 @@
 {
   "name": "Canberk Yurdakul",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "51",
-    "potential": "60",
-    "attack": "23",
-    "defense": "18",
-    "midfield": "28",
-    "goalkeeping": "50"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "51"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "50"
+    }
+  ]
 }

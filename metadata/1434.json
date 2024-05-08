@@ -1,12 +1,30 @@
 {
   "name": "Ansgar Knauff",
   "club_position": "LF",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "81",
-    "attack": "76",
-    "defense": "54",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Tiago Vanderlei Fagundes Fachini",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "60",
-    "defense": "36",
-    "midfield": "58",
-    "goalkeeping": "16"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "16"
+    }
+  ]
 }

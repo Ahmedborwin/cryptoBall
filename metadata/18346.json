@@ -1,12 +1,30 @@
 {
   "name": "Gursimrat Singh Gill",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "51",
-    "potential": "54",
-    "attack": "35",
-    "defense": "55",
-    "midfield": "39",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "51"
+    },
+    {
+      "name": "potential",
+      "value": "54"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

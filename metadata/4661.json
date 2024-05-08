@@ -1,12 +1,30 @@
 {
   "name": "Florin Lucian Tănase",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "72",
-    "defense": "43",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

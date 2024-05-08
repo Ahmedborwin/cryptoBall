@@ -1,12 +1,30 @@
 {
   "name": "Daniel Olmo Carvajal",
   "club_position": "LAM",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "87",
-    "attack": "79",
-    "defense": "51",
-    "midfield": "83",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "87"
+    },
+    {
+      "name": "attack",
+      "value": "79"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "83"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

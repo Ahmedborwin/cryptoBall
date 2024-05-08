@@ -1,12 +1,30 @@
 {
   "name": "Nicolas Schmid",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "68",
-    "attack": "26",
-    "defense": "25",
-    "midfield": "32",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

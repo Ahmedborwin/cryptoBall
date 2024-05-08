@@ -1,12 +1,30 @@
 {
   "name": "Shola Maxwell Shoretire",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "79",
-    "attack": "64",
-    "defense": "41",
-    "midfield": "63",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

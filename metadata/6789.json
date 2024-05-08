@@ -1,12 +1,30 @@
 {
   "name": "Marcos Ignacio Ledesma",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "34",
-    "defense": "28",
-    "midfield": "38",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

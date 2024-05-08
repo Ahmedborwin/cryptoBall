@@ -1,12 +1,30 @@
 {
   "name": "Steven Benda",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "73",
-    "attack": "27",
-    "defense": "19",
-    "midfield": "30",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Beni Baningime",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "74",
-    "attack": "60",
-    "defense": "70",
-    "midfield": "72",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

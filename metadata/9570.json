@@ -1,12 +1,30 @@
 {
   "name": "Sten Michael Grytebust",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "31",
-    "defense": "26",
-    "midfield": "42",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

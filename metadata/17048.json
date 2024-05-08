@@ -1,12 +1,30 @@
 {
   "name": "Safwan Saud S Aljohani",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "66",
-    "attack": "46",
-    "defense": "51",
-    "midfield": "50",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

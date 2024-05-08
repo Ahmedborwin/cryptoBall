@@ -1,12 +1,30 @@
 {
   "name": "Richard Iriarte",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "71",
-    "attack": "61",
-    "defense": "56",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Luis Federico López Andúgar",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "75",
-    "attack": "25",
-    "defense": "19",
-    "midfield": "28",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "25"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

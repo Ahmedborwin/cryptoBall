@@ -1,12 +1,30 @@
 {
   "name": "Dominik Steczyk",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "63",
-    "attack": "63",
-    "defense": "34",
-    "midfield": "61",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

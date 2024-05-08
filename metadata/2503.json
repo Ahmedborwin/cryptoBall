@@ -1,12 +1,30 @@
 {
   "name": "Aarón Escandell Banacloche",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "77",
-    "attack": "33",
-    "defense": "27",
-    "midfield": "40",
-    "goalkeeping": "73"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "73"
+    }
+  ]
 }

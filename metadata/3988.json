@@ -1,12 +1,30 @@
 {
   "name": "Himad Abdelli",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "75",
-    "attack": "68",
-    "defense": "62",
-    "midfield": "70",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

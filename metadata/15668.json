@@ -1,12 +1,30 @@
 {
   "name": "Stipe Jurić",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "57",
-    "defense": "30",
-    "midfield": "52",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

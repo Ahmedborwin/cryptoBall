@@ -1,12 +1,30 @@
 {
   "name": "Tobias Bendix Thomsen",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "61",
-    "defense": "36",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Alexandru Uțiu",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "67",
-    "attack": "21",
-    "defense": "16",
-    "midfield": "27",
-    "goalkeeping": "53"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "16"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "53"
+    }
+  ]
 }

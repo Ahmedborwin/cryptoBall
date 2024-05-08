@@ -1,12 +1,30 @@
 {
   "name": "刘世博 Liu Shibo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "62",
-    "attack": "38",
-    "defense": "31",
-    "midfield": "40",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

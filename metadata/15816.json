@@ -1,12 +1,30 @@
 {
   "name": "Tom Roufosse",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "67",
-    "attack": "23",
-    "defense": "19",
-    "midfield": "28",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

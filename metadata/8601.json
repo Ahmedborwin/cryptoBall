@@ -1,12 +1,30 @@
 {
   "name": "Dylan Saint-Louis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "71",
-    "defense": "37",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

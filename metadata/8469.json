@@ -1,12 +1,30 @@
 {
   "name": "Yusuf Lawal",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "68",
-    "attack": "68",
-    "defense": "36",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

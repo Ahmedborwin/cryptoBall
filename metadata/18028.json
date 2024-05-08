@@ -1,12 +1,30 @@
 {
   "name": "Harry Politidis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "64",
-    "attack": "54",
-    "defense": "51",
-    "midfield": "50",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

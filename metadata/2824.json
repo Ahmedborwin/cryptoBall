@@ -1,12 +1,30 @@
 {
   "name": "Jeremy Toljan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "62",
-    "defense": "66",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

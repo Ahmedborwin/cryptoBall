@@ -1,12 +1,30 @@
 {
   "name": "Kevin Felida",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "69",
-    "attack": "55",
-    "defense": "63",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "55"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

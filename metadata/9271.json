@@ -1,12 +1,30 @@
 {
   "name": "Adi Nalic",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "69",
-    "attack": "70",
-    "defense": "49",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

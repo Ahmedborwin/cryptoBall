@@ -1,12 +1,30 @@
 {
   "name": "František Plach",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "29",
-    "defense": "26",
-    "midfield": "39",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

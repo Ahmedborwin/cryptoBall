@@ -1,12 +1,30 @@
 {
   "name": "Diogo Pinheiro Monteiro",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "80",
-    "attack": "41",
-    "defense": "61",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

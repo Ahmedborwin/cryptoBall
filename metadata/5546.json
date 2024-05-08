@@ -1,12 +1,30 @@
 {
   "name": "Benito Ramírez del Toro",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "73",
-    "defense": "63",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

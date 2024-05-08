@@ -1,12 +1,30 @@
 {
   "name": "Can Mehmet Pohl",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "61",
-    "attack": "48",
-    "defense": "59",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

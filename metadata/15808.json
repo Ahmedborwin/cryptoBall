@@ -1,12 +1,30 @@
 {
   "name": "Halicharan Narzary",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "61",
-    "defense": "37",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

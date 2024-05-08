@@ -1,12 +1,30 @@
 {
   "name": "Anselmo De Moraes",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "68",
-    "defense": "73",
-    "midfield": "70",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

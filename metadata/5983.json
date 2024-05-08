@@ -1,12 +1,30 @@
 {
   "name": "Klaus Gjasula",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "50",
-    "defense": "76",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

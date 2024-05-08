@@ -1,12 +1,30 @@
 {
   "name": "Mario Suver",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "69",
-    "attack": "44",
-    "defense": "63",
-    "midfield": "52",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

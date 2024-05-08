@@ -1,12 +1,30 @@
 {
   "name": "Mihai Maximilian Popa",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "78",
-    "attack": "34",
-    "defense": "23",
-    "midfield": "41",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

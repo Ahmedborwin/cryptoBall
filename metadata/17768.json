@@ -1,12 +1,30 @@
 {
   "name": "Gustavo Alexis Marecos Benítez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "61",
-    "attack": "50",
-    "defense": "50",
-    "midfield": "55",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Solomon Owusu",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "65",
-    "attack": "54",
-    "defense": "64",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

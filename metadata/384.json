@@ -1,12 +1,30 @@
 {
   "name": "Jeremie Agyekum Frimpong",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "84",
-    "potential": "88",
-    "attack": "77",
-    "defense": "75",
-    "midfield": "80",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "84"
+    },
+    {
+      "name": "potential",
+      "value": "88"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

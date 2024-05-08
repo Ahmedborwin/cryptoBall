@@ -1,12 +1,30 @@
 {
   "name": "Nathaniel Blair",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "64",
-    "attack": "57",
-    "defense": "39",
-    "midfield": "46",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Darius Mihai Iurasciuc",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "73",
-    "attack": "44",
-    "defense": "56",
-    "midfield": "51",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

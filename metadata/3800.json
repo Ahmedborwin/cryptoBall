@@ -1,12 +1,30 @@
 {
   "name": "Alberth Josué Elis Martínez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "75",
-    "defense": "42",
-    "midfield": "71",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

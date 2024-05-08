@@ -1,12 +1,30 @@
 {
   "name": "Daniel Oyegoke",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "53",
-    "defense": "60",
-    "midfield": "54",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

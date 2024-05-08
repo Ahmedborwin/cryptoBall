@@ -1,12 +1,30 @@
 {
   "name": "Víctor Mollejo Carpintero",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "78",
-    "attack": "72",
-    "defense": "48",
-    "midfield": "70",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

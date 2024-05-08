@@ -1,12 +1,30 @@
 {
   "name": "Mohameth Djibril Ibrahima Sow",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "79",
-    "attack": "74",
-    "defense": "76",
-    "midfield": "79",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "79"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

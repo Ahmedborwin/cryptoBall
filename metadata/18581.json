@@ -1,12 +1,30 @@
 {
   "name": "Eanna Fitzgerald",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "47",
-    "potential": "62",
-    "attack": "53",
-    "defense": "47",
-    "midfield": "53",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "47"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

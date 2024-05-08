@@ -1,12 +1,30 @@
 {
   "name": "Ali Yeşilyurt",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "72",
-    "attack": "45",
-    "defense": "59",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

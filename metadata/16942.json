@@ -1,12 +1,30 @@
 {
   "name": "Pierre Jouan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "64",
-    "attack": "51",
-    "defense": "57",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

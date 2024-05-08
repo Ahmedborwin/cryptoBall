@@ -1,12 +1,30 @@
 {
   "name": "Will Johnson",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "62",
-    "attack": "41",
-    "defense": "55",
-    "midfield": "42",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

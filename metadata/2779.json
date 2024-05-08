@@ -1,12 +1,30 @@
 {
   "name": "Fredrik André Bjørkan",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "77",
-    "attack": "67",
-    "defense": "67",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

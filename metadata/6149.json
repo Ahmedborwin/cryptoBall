@@ -1,12 +1,30 @@
 {
   "name": "Mario Alberto Pineida Martínez",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "58",
-    "defense": "66",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

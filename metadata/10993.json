@@ -1,12 +1,30 @@
 {
   "name": "Michael Steinwender",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "71",
-    "attack": "38",
-    "defense": "68",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Luka Jović",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "80",
-    "attack": "77",
-    "defense": "38",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

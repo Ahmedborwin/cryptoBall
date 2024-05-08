@@ -1,12 +1,30 @@
 {
   "name": "Alberto Baedas",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "31",
-    "defense": "28",
-    "midfield": "46",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

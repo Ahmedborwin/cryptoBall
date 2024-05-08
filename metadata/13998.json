@@ -1,12 +1,30 @@
 {
   "name": "Odeluga Offiah",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "76",
-    "attack": "50",
-    "defense": "62",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

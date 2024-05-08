@@ -1,12 +1,30 @@
 {
   "name": "石炎 Shi Yan",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "71",
-    "attack": "61",
-    "defense": "38",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

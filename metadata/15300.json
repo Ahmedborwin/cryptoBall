@@ -1,12 +1,30 @@
 {
   "name": "Aidan Thomas Stone",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "64",
-    "attack": "32",
-    "defense": "28",
-    "midfield": "41",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

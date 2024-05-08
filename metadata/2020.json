@@ -1,12 +1,30 @@
 {
   "name": "Illan Meslier",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "82",
-    "attack": "33",
-    "defense": "26",
-    "midfield": "52",
-    "goalkeeping": "74"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "74"
+    }
+  ]
 }

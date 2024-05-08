@@ -1,12 +1,30 @@
 {
   "name": "Alex Sposito",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "66",
-    "attack": "20",
-    "defense": "22",
-    "midfield": "24",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "24"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Rekeil Leshaun Pyke",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "61",
-    "attack": "63",
-    "defense": "48",
-    "midfield": "54",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

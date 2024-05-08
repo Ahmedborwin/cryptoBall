@@ -1,12 +1,30 @@
 {
   "name": "Patryk Kun",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "68",
-    "defense": "59",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

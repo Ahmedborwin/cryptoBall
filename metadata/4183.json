@@ -1,12 +1,30 @@
 {
   "name": "El Fardou Mohamed Ben Nabouhane",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "73",
-    "defense": "38",
-    "midfield": "68",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

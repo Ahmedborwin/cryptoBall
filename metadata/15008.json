@@ -1,12 +1,30 @@
 {
   "name": "Kacper Michalski",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "57",
-    "defense": "58",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "58"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Danilo Manuel Vieira Espíndola",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "51",
-    "defense": "81",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Augusto Cambón Rosas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "71",
-    "attack": "62",
-    "defense": "38",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

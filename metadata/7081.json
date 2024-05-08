@@ -1,12 +1,30 @@
 {
   "name": "Eduardo José Sosa Vegas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "69",
-    "attack": "69",
-    "defense": "46",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

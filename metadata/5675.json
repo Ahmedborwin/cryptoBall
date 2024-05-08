@@ -1,12 +1,30 @@
 {
   "name": "Cristian Rivero Sabater",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "74",
-    "attack": "27",
-    "defense": "22",
-    "midfield": "35",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

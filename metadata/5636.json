@@ -1,12 +1,30 @@
 {
   "name": "Emeka Friday Eze",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "70",
-    "attack": "70",
-    "defense": "39",
-    "midfield": "65",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

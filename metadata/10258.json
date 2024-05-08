@@ -1,12 +1,30 @@
 {
   "name": "Giorgio Cittadini",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "80",
-    "attack": "41",
-    "defense": "67",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

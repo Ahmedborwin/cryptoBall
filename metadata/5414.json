@@ -1,12 +1,30 @@
 {
   "name": "Andreas Evald Cornelius",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "65",
-    "defense": "46",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

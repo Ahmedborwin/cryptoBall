@@ -1,12 +1,30 @@
 {
   "name": "Tomasz Wojcinowicz",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "46",
-    "defense": "61",
-    "midfield": "50",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

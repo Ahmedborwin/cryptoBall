@@ -1,12 +1,30 @@
 {
   "name": "Eren Altıntaş",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "73",
-    "attack": "58",
-    "defense": "37",
-    "midfield": "58",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

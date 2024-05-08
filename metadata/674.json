@@ -1,12 +1,30 @@
 {
   "name": "Joey Veerman",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "84",
-    "attack": "69",
-    "defense": "66",
-    "midfield": "81",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

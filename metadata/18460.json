@@ -1,12 +1,30 @@
 {
   "name": "单欢欢 Shan Huanhuan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "55",
-    "attack": "49",
-    "defense": "33",
-    "midfield": "42",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "55"
+    },
+    {
+      "name": "attack",
+      "value": "49"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

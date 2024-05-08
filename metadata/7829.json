@@ -1,12 +1,30 @@
 {
   "name": "Jason Berthomier",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "67",
-    "defense": "54",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

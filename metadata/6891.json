@@ -1,12 +1,30 @@
 {
   "name": "Malte Meineche Amundsen",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "61",
-    "defense": "67",
-    "midfield": "63",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

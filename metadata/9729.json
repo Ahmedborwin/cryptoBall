@@ -1,12 +1,30 @@
 {
   "name": "John Verhoek",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "62",
-    "defense": "41",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

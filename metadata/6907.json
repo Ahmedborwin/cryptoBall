@@ -1,12 +1,30 @@
 {
   "name": "Julián Fernández",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "80",
-    "attack": "70",
-    "defense": "42",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

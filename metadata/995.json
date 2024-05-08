@@ -1,12 +1,30 @@
 {
   "name": "Лунін Андрій Олексійович Andriy Lunin",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "84",
-    "attack": "31",
-    "defense": "25",
-    "midfield": "41",
-    "goalkeeping": "76"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "76"
+    }
+  ]
 }

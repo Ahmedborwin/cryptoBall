@@ -1,12 +1,30 @@
 {
   "name": "刘君 Liu Jun",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "50",
-    "attack": "24",
-    "defense": "22",
-    "midfield": "27",
-    "goalkeeping": "50"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "50"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "50"
+    }
+  ]
 }

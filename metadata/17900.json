@@ -1,12 +1,30 @@
 {
   "name": "James Dadge",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "69",
-    "attack": "23",
-    "defense": "18",
-    "midfield": "30",
-    "goalkeeping": "53"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "53"
+    }
+  ]
 }

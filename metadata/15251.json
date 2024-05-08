@@ -1,12 +1,30 @@
 {
   "name": "冯卓毅 Feng Zhuoyi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "60",
-    "attack": "57",
-    "defense": "65",
-    "midfield": "63",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "65"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

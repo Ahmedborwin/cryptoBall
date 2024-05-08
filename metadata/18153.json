@@ -1,12 +1,30 @@
 {
   "name": "Stuart Hawkins",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "77",
-    "attack": "37",
-    "defense": "52",
-    "midfield": "43",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

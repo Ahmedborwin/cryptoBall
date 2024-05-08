@@ -1,12 +1,30 @@
 {
   "name": "Adriano Bertaccini",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "71",
-    "attack": "68",
-    "defense": "37",
-    "midfield": "60",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

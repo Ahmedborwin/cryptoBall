@@ -1,12 +1,30 @@
 {
   "name": "Kurtis Guthrie",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "59",
-    "defense": "50",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

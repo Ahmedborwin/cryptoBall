@@ -1,12 +1,30 @@
 {
   "name": "Adrià Giner Pedrosa",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "81",
-    "attack": "74",
-    "defense": "70",
-    "midfield": "75",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

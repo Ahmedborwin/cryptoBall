@@ -1,12 +1,30 @@
 {
   "name": "Petru Neagu",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "65",
-    "attack": "63",
-    "defense": "32",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

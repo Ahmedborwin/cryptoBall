@@ -1,12 +1,30 @@
 {
   "name": "Dominic Solanke",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "79",
-    "attack": "75",
-    "defense": "41",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Dennis Egel",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "68",
-    "attack": "37",
-    "defense": "50",
-    "midfield": "38",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

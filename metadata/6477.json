@@ -1,12 +1,30 @@
 {
   "name": "Jamilu Collins",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "59",
-    "defense": "67",
-    "midfield": "63",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

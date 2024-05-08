@@ -1,12 +1,30 @@
 {
   "name": "Franco Manuel Saravia Rojas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "74",
-    "attack": "24",
-    "defense": "19",
-    "midfield": "29",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

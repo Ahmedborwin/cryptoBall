@@ -1,12 +1,30 @@
 {
   "name": "Nawaf Alsadi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "61",
-    "defense": "36",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

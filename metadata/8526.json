@@ -1,12 +1,30 @@
 {
   "name": "Donatien Gomis",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "68",
-    "attack": "39",
-    "defense": "68",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

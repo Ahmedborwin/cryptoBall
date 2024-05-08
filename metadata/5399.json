@@ -1,12 +1,30 @@
 {
   "name": "Christ Junior Tiéhi",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "74",
-    "attack": "61",
-    "defense": "70",
-    "midfield": "69",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

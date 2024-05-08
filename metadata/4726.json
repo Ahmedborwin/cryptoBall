@@ -1,12 +1,30 @@
 {
   "name": "Mikkel Kaufmann Sørensen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "76",
-    "attack": "72",
-    "defense": "34",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

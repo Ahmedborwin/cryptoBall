@@ -1,12 +1,30 @@
 {
   "name": "Thomas George Pett",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "61",
-    "defense": "53",
-    "midfield": "68",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Georges Mikautadze",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "83",
-    "attack": "78",
-    "defense": "45",
-    "midfield": "74",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

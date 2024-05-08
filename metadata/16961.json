@@ -1,12 +1,30 @@
 {
   "name": "Bachirou Yaméogo",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "74",
-    "attack": "46",
-    "defense": "61",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

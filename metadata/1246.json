@@ -1,12 +1,30 @@
 {
   "name": "Roberto Carlos Alvarado Hernández",
   "club_position": "",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "80",
-    "attack": "71",
-    "defense": "49",
-    "midfield": "73",
-    "goalkeeping": "NaN"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "NaN"
+    }
+  ]
 }

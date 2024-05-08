@@ -1,12 +1,30 @@
 {
   "name": "Issiar Dramé",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "46",
-    "defense": "63",
-    "midfield": "52",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

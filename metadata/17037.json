@@ -1,12 +1,30 @@
 {
   "name": "Mustapha Olagunju",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "68",
-    "attack": "41",
-    "defense": "57",
-    "midfield": "41",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Glenn McConnell",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "63",
-    "attack": "53",
-    "defense": "45",
-    "midfield": "54",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "檀崎 竜孔 Riku Danzaki",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "68",
-    "attack": "65",
-    "defense": "35",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "António José Pinheiro de Carvalho",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "76",
-    "defense": "53",
-    "midfield": "78",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

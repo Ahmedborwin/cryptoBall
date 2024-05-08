@@ -1,12 +1,30 @@
 {
   "name": "Diego Fernando Herazo Moreno",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "71",
-    "defense": "33",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Denis Tomic",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "62",
-    "defense": "27",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Diogo Meireles Costa",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "83",
-    "potential": "89",
-    "attack": "34",
-    "defense": "25",
-    "midfield": "50",
-    "goalkeeping": "81"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "83"
+    },
+    {
+      "name": "potential",
+      "value": "89"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "81"
+    }
+  ]
 }

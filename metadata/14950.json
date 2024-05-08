@@ -1,12 +1,30 @@
 {
   "name": "Elias-Geoffrey Bakatukanda",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "77",
-    "attack": "41",
-    "defense": "63",
-    "midfield": "41",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

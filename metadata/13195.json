@@ -1,12 +1,30 @@
 {
   "name": "Max Oliver Clark",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "58",
-    "defense": "62",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

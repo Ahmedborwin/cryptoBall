@@ -1,12 +1,30 @@
 {
   "name": "Franco David Moyano",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "65",
-    "defense": "70",
-    "midfield": "73",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

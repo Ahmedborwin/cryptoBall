@@ -1,12 +1,30 @@
 {
   "name": "Samuel Moutoussamy",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "72",
-    "attack": "66",
-    "defense": "71",
-    "midfield": "73",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "George David Eric Hirst",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "75",
-    "attack": "68",
-    "defense": "46",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

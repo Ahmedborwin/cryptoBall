@@ -1,12 +1,30 @@
 {
   "name": "Cristiano Biraghi",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "75",
-    "defense": "76",
-    "midfield": "77",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

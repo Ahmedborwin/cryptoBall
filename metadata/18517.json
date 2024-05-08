@@ -1,12 +1,30 @@
 {
   "name": "郭芸齐 Guo Yunqi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "52",
-    "attack": "48",
-    "defense": "47",
-    "midfield": "49",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "52"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

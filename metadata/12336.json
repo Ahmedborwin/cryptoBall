@@ -1,12 +1,30 @@
 {
   "name": "Torbjørn Lysaker Heggem",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "50",
-    "defense": "63",
-    "midfield": "57",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

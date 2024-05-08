@@ -1,12 +1,30 @@
 {
   "name": "Jorge Nicolás Figal",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "76",
-    "attack": "60",
-    "defense": "76",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

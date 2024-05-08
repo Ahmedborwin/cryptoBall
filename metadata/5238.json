@@ -1,12 +1,30 @@
 {
   "name": "Mattéo Tramoni",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "77",
-    "attack": "72",
-    "defense": "51",
-    "midfield": "71",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

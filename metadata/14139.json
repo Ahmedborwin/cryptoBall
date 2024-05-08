@@ -1,12 +1,30 @@
 {
   "name": "Diego de Pedro Marroquí",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "71",
-    "attack": "62",
-    "defense": "52",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

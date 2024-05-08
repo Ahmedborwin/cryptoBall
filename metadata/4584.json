@@ -1,12 +1,30 @@
 {
   "name": "Bernardo Joshua Mota Damasco",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "62",
-    "defense": "67",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

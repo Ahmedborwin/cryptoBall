@@ -1,12 +1,30 @@
 {
   "name": "Gabriele Zappa",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "75",
-    "attack": "66",
-    "defense": "66",
-    "midfield": "65",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

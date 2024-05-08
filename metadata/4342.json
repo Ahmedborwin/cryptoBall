@@ -1,12 +1,30 @@
 {
   "name": "Lee Nicholls",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "32",
-    "defense": "21",
-    "midfield": "42",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

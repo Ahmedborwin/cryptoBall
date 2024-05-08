@@ -1,12 +1,30 @@
 {
   "name": "Misael Aldair Dávila Carvajal",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "71",
-    "defense": "57",
-    "midfield": "70",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

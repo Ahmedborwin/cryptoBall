@@ -1,12 +1,30 @@
 {
   "name": "Aaron Keller",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "74",
-    "attack": "58",
-    "defense": "39",
-    "midfield": "62",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

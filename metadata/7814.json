@@ -1,12 +1,30 @@
 {
   "name": "Gilles Dewaele",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "63",
-    "defense": "64",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

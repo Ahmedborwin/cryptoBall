@@ -1,12 +1,30 @@
 {
   "name": "Lewuis Nerban Peña Díaz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "75",
-    "attack": "59",
-    "defense": "32",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

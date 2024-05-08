@@ -1,12 +1,30 @@
 {
   "name": "Víctor Campuzano Bonilla",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "71",
-    "defense": "29",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

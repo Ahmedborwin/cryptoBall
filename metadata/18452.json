@@ -1,12 +1,30 @@
 {
   "name": "George Pedley",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "62",
-    "attack": "28",
-    "defense": "19",
-    "midfield": "27",
-    "goalkeeping": "50"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "50"
+    }
+  ]
 }

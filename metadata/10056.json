@@ -1,12 +1,30 @@
 {
   "name": "Tim Rönning",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "70",
-    "attack": "25",
-    "defense": "22",
-    "midfield": "40",
-    "goalkeeping": "65"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "25"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "65"
+    }
+  ]
 }

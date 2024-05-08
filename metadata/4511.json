@@ -1,12 +1,30 @@
 {
   "name": "Facundo Nicolás Cambeses",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "72",
-    "attack": "37",
-    "defense": "28",
-    "midfield": "42",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Vágner José Dias Gonçalves",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "72",
-    "defense": "39",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

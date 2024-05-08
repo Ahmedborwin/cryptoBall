@@ -1,12 +1,30 @@
 {
   "name": "Renaldo Showayne Cephas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "74",
-    "attack": "75",
-    "defense": "37",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Daniel Samek",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "58",
-    "defense": "53",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

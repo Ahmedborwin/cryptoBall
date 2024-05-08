@@ -1,12 +1,30 @@
 {
   "name": "José Guillermo Rodríguez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "66",
-    "defense": "49",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

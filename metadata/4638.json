@@ -1,12 +1,30 @@
 {
   "name": "Amor Yonas Layouni",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "73",
-    "defense": "49",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

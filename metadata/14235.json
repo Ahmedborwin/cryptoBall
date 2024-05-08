@@ -1,12 +1,30 @@
 {
   "name": "Lucas Ricoy Serrano",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "74",
-    "attack": "57",
-    "defense": "31",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

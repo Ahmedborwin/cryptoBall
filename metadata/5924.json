@@ -1,12 +1,30 @@
 {
   "name": "Denil Omar Maldonado Munguía",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "76",
-    "attack": "42",
-    "defense": "71",
-    "midfield": "53",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

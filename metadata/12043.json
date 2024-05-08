@@ -1,12 +1,30 @@
 {
   "name": "Gaute Høberg Vetti",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "69",
-    "attack": "58",
-    "defense": "60",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

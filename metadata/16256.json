@@ -1,12 +1,30 @@
 {
   "name": "Mokrane Bentoumi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "76",
-    "attack": "60",
-    "defense": "38",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

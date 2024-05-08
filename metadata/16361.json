@@ -1,12 +1,30 @@
 {
   "name": "Isak Steiner Jensen",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "72",
-    "attack": "59",
-    "defense": "42",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

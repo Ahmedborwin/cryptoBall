@@ -1,12 +1,30 @@
 {
   "name": "Martim Carvalho Neto",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "81",
-    "attack": "69",
-    "defense": "57",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

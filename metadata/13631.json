@@ -1,12 +1,30 @@
 {
   "name": "Sidney Raebiger",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "82",
-    "attack": "61",
-    "defense": "53",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

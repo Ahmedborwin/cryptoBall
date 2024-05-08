@@ -1,12 +1,30 @@
 {
   "name": "三戸 舜介 Shunsuke Mito",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "80",
-    "attack": "68",
-    "defense": "31",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Felipe Sebastián Chamorro Aspe",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "74",
-    "attack": "63",
-    "defense": "43",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

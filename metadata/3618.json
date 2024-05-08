@@ -1,12 +1,30 @@
 {
   "name": "Kenny McLean",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "69",
-    "defense": "67",
-    "midfield": "73",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

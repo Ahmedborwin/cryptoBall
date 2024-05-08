@@ -1,12 +1,30 @@
 {
   "name": "Bradley Walker",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "61",
-    "defense": "64",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

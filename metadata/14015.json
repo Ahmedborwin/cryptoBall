@@ -1,12 +1,30 @@
 {
   "name": "Enzo Rivamar",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "73",
-    "attack": "58",
-    "defense": "53",
-    "midfield": "63",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

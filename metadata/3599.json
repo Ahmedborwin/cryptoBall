@@ -1,12 +1,30 @@
 {
   "name": "Hamilton Emanuel Piedra Ordóñez",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "37",
-    "defense": "25",
-    "midfield": "36",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Sultan Al Shamsi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "60",
-    "attack": "64",
-    "defense": "34",
-    "midfield": "58",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

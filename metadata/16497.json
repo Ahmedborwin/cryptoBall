@@ -1,12 +1,30 @@
 {
   "name": "Rasmus Semundseth Sandberg",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "68",
-    "attack": "24",
-    "defense": "20",
-    "midfield": "32",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

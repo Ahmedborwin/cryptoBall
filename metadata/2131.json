@@ -1,12 +1,30 @@
 {
   "name": "Unai Vencedor París",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "78",
-    "attack": "70",
-    "defense": "74",
-    "midfield": "74",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

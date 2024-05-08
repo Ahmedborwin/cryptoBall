@@ -1,12 +1,30 @@
 {
   "name": "Patrick Amoako Nuamah",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "82",
-    "attack": "64",
-    "defense": "59",
-    "midfield": "61",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

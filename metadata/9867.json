@@ -1,12 +1,30 @@
 {
   "name": "Lucas Cañizares Conchello",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "80",
-    "attack": "28",
-    "defense": "20",
-    "midfield": "42",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

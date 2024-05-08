@@ -1,12 +1,30 @@
 {
   "name": "Luis Fernando Miranda Molinarez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "69",
-    "attack": "70",
-    "defense": "30",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

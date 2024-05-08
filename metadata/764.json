@@ -1,12 +1,30 @@
 {
   "name": "Jesús Joaquín Fernández Sáez de la Torre",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "77",
-    "defense": "33",
-    "midfield": "77",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

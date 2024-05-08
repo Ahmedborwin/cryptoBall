@@ -1,12 +1,30 @@
 {
   "name": "Louis Tyler John",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "60",
-    "attack": "46",
-    "defense": "62",
-    "midfield": "52",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

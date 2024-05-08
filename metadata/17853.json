@@ -1,12 +1,30 @@
 {
   "name": "Dong-Won Lee",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "63",
-    "attack": "56",
-    "defense": "31",
-    "midfield": "49",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Edward McGinty",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "67",
-    "attack": "33",
-    "defense": "23",
-    "midfield": "40",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "40"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

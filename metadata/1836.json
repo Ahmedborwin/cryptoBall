@@ -1,12 +1,30 @@
 {
   "name": "Silvan Dominic Widmer",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "71",
-    "defense": "71",
-    "midfield": "74",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

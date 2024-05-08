@@ -1,12 +1,30 @@
 {
   "name": "Óscar de Marcos Arana",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "72",
-    "defense": "78",
-    "midfield": "76",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

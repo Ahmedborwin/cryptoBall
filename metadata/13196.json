@@ -1,12 +1,30 @@
 {
   "name": "Mateusz Żukowski",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "74",
-    "attack": "62",
-    "defense": "59",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

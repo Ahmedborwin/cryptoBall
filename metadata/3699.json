@@ -1,12 +1,30 @@
 {
   "name": "Asmir Begović",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "30",
-    "defense": "30",
-    "midfield": "39",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

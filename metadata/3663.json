@@ -1,12 +1,30 @@
 {
   "name": "Luka Romero Bezzana",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "84",
-    "attack": "72",
-    "defense": "55",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

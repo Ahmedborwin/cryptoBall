@@ -1,12 +1,30 @@
 {
   "name": "周正凯 Zhou Zhengkai",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "54",
-    "attack": "20",
-    "defense": "21",
-    "midfield": "22",
-    "goalkeeping": "48"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "54"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "22"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "48"
+    }
+  ]
 }

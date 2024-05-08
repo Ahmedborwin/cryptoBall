@@ -1,12 +1,30 @@
 {
   "name": "Timo Schlieck",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "77",
-    "attack": "23",
-    "defense": "21",
-    "midfield": "29",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

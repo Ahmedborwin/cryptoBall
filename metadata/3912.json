@@ -1,12 +1,30 @@
 {
   "name": "Sam Byram",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "66",
-    "defense": "70",
-    "midfield": "69",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

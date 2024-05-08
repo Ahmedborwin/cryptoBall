@@ -1,12 +1,30 @@
 {
   "name": "Javier Llabrés Exposito",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "81",
-    "attack": "69",
-    "defense": "33",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

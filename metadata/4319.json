@@ -1,12 +1,30 @@
 {
   "name": "Darnell Furlong",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "57",
-    "defense": "69",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Tomi Horvat",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "76",
-    "attack": "72",
-    "defense": "55",
-    "midfield": "72",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

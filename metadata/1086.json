@@ -1,12 +1,30 @@
 {
   "name": "Alexander Nübel",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "80",
-    "attack": "36",
-    "defense": "27",
-    "midfield": "42",
-    "goalkeeping": "78"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "78"
+    }
+  ]
 }

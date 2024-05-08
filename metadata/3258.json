@@ -1,12 +1,30 @@
 {
   "name": "Stanley Pierre N",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "78",
-    "attack": "58",
-    "defense": "73",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

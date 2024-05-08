@@ -1,12 +1,30 @@
 {
   "name": "Yusuf Demir",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "76",
-    "attack": "69",
-    "defense": "27",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

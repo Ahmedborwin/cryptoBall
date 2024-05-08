@@ -1,12 +1,30 @@
 {
   "name": "Maximilian Wöber",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "79",
-    "attack": "62",
-    "defense": "79",
-    "midfield": "68",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "79"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

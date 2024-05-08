@@ -1,12 +1,30 @@
 {
   "name": "Noah Marec",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "72",
-    "attack": "21",
-    "defense": "23",
-    "midfield": "31",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

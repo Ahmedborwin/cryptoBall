@@ -1,12 +1,30 @@
 {
   "name": "Khalid Mohamed Ahmed Hussain Al-Attas Hashemi",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "68",
-    "attack": "44",
-    "defense": "66",
-    "midfield": "52",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

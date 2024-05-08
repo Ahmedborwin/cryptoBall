@@ -1,12 +1,30 @@
 {
   "name": "Tristan Blackmon",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "70",
-    "attack": "62",
-    "defense": "68",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

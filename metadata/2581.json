@@ -1,12 +1,30 @@
 {
   "name": "Pablo Solari",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "81",
-    "attack": "78",
-    "defense": "43",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

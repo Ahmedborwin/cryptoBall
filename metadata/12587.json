@@ -1,12 +1,30 @@
 {
   "name": "Momodou Lamin Sonko",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "84",
-    "attack": "68",
-    "defense": "23",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

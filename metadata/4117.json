@@ -1,12 +1,30 @@
 {
   "name": "Dimitrios Goutas",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "51",
-    "defense": "72",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

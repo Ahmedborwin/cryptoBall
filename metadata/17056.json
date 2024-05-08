@@ -1,12 +1,30 @@
 {
   "name": "Tim Hoops",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "66",
-    "attack": "39",
-    "defense": "55",
-    "midfield": "48",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "48"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

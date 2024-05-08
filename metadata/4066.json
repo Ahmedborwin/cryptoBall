@@ -1,12 +1,30 @@
 {
   "name": "Adrian Šemper",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "74",
-    "attack": "29",
-    "defense": "22",
-    "midfield": "38",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "29"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

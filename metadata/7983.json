@@ -1,12 +1,30 @@
 {
   "name": "Victor Adeboyejo",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "70",
-    "attack": "69",
-    "defense": "36",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

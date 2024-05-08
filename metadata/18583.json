@@ -1,12 +1,30 @@
 {
   "name": "Callum Warren",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "47",
-    "potential": "59",
-    "attack": "47",
-    "defense": "34",
-    "midfield": "47",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "47"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

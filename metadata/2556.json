@@ -1,12 +1,30 @@
 {
   "name": "Salvatore Sirigu",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "34",
-    "defense": "27",
-    "midfield": "42",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

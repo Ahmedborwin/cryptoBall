@@ -1,12 +1,30 @@
 {
   "name": "Luca Denk",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "43",
-    "defense": "61",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Granit Xhaka",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "84",
-    "potential": "84",
-    "attack": "68",
-    "defense": "80",
-    "midfield": "79",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "84"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "80"
+    },
+    {
+      "name": "midfield",
+      "value": "79"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

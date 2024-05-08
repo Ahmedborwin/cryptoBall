@@ -1,12 +1,30 @@
 {
   "name": "Jakob Tånnander",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "72",
-    "attack": "30",
-    "defense": "21",
-    "midfield": "36",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

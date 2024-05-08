@@ -1,12 +1,30 @@
 {
   "name": "Marcello Falzerano",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "74",
-    "defense": "64",
-    "midfield": "70",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

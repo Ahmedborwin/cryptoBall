@@ -1,12 +1,30 @@
 {
   "name": "Julian Kudala",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "68",
-    "attack": "61",
-    "defense": "32",
-    "midfield": "54",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

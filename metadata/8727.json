@@ -1,12 +1,30 @@
 {
   "name": "Sayfallah Ltaief",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "76",
-    "attack": "69",
-    "defense": "41",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

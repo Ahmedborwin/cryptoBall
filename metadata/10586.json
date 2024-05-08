@@ -1,12 +1,30 @@
 {
   "name": "Daniel Tiefenbach",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "70",
-    "attack": "62",
-    "defense": "62",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

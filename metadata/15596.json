@@ -1,12 +1,30 @@
 {
   "name": "Alexandro Calut",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "50",
-    "defense": "56",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

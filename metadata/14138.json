@@ -1,12 +1,30 @@
 {
   "name": "Ahmed Mostafa Taher",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "63",
-    "attack": "64",
-    "defense": "41",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

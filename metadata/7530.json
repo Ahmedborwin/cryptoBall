@@ -1,12 +1,30 @@
 {
   "name": "Muhannad Mustafa Al-Shanqeeti",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "73",
-    "attack": "60",
-    "defense": "64",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

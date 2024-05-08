@@ -1,12 +1,30 @@
 {
   "name": "付浩 Fu Hao",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "58",
-    "attack": "46",
-    "defense": "48",
-    "midfield": "47",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "58"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

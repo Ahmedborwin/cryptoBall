@@ -1,12 +1,30 @@
 {
   "name": "Harry Maguire",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "57",
-    "defense": "81",
-    "midfield": "71",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Chukwubuike Junior Adamu",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "78",
-    "attack": "73",
-    "defense": "31",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

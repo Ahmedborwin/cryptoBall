@@ -1,12 +1,30 @@
 {
   "name": "Sander Tangvik",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "75",
-    "attack": "35",
-    "defense": "23",
-    "midfield": "39",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "35"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

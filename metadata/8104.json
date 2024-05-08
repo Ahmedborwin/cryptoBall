@@ -1,12 +1,30 @@
 {
   "name": "Will Norris",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "31",
-    "defense": "24",
-    "midfield": "47",
-    "goalkeeping": "67"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
 }

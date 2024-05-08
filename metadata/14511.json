@@ -1,12 +1,30 @@
 {
   "name": "Johannes Schenk",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "74",
-    "attack": "21",
-    "defense": "23",
-    "midfield": "27",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

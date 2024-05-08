@@ -1,12 +1,30 @@
 {
   "name": "徐浩峰 Xu Haofeng",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "63",
-    "attack": "47",
-    "defense": "57",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

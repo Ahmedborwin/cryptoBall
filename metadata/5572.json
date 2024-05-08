@@ -1,12 +1,30 @@
 {
   "name": "Walter Uriel Mazzantti",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "75",
-    "defense": "27",
-    "midfield": "65",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

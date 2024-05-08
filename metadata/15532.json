@@ -1,12 +1,30 @@
 {
   "name": "Muhammad Ashique Kuruniyan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "64",
-    "defense": "47",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

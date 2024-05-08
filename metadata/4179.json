@@ -1,12 +1,30 @@
 {
   "name": "Michael John Cooper",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "79",
-    "attack": "28",
-    "defense": "20",
-    "midfield": "43",
-    "goalkeeping": "69"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
 }

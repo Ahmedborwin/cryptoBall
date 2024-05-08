@@ -1,12 +1,30 @@
 {
   "name": "Vhakka Eddy Stelh Gnahoré",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "63",
-    "defense": "66",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

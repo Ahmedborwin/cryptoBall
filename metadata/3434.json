@@ -1,12 +1,30 @@
 {
   "name": "Lucas Adrián Hoyos",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "42",
-    "defense": "33",
-    "midfield": "50",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

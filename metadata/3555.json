@@ -1,12 +1,30 @@
 {
   "name": "Sead Hakšabanović",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "76",
-    "attack": "73",
-    "defense": "35",
-    "midfield": "71",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

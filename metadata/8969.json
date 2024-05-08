@@ -1,12 +1,30 @@
 {
   "name": "Enzo Daniel Giménez Rojas",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "67",
-    "attack": "66",
-    "defense": "47",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

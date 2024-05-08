@@ -1,12 +1,30 @@
 {
   "name": "Shaun James Whalley",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "65",
-    "defense": "50",
-    "midfield": "62",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Stefan Frei",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "31",
-    "defense": "28",
-    "midfield": "41",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Will Evans",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "67",
-    "attack": "65",
-    "defense": "54",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

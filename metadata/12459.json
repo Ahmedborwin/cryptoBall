@@ -1,12 +1,30 @@
 {
   "name": "徐皓阳 Xu Haoyang",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "66",
-    "attack": "64",
-    "defense": "52",
-    "midfield": "63",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

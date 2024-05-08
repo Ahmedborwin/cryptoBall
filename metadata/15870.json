@@ -1,12 +1,30 @@
 {
   "name": "佐藤 恵允 Kein Sato",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "70",
-    "attack": "62",
-    "defense": "32",
-    "midfield": "56",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

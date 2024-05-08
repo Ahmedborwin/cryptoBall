@@ -1,12 +1,30 @@
 {
   "name": "Tiago André Rajão Machado",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "60",
-    "defense": "31",
-    "midfield": "51",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

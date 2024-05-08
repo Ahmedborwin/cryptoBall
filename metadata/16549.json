@@ -1,12 +1,30 @@
 {
   "name": "Logan Ketterer",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "58",
-    "attack": "27",
-    "defense": "20",
-    "midfield": "36",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "58"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

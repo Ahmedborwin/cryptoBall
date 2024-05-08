@@ -1,12 +1,30 @@
 {
   "name": "Federico Agustín Gattoni",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "80",
-    "attack": "64",
-    "defense": "75",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

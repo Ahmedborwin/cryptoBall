@@ -1,12 +1,30 @@
 {
   "name": "Josep Martínez Riera",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "78",
-    "attack": "27",
-    "defense": "23",
-    "midfield": "38",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

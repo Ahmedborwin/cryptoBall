@@ -1,12 +1,30 @@
 {
   "name": "Aldo Sebastián Pérez Ramos",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "70",
-    "attack": "24",
-    "defense": "23",
-    "midfield": "29",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

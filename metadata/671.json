@@ -1,12 +1,30 @@
 {
   "name": "Mickey van de Ven",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "86",
-    "attack": "63",
-    "defense": "81",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

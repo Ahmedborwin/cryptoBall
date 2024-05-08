@@ -1,12 +1,30 @@
 {
   "name": "Presnel Kimpembe",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "83",
-    "attack": "61",
-    "defense": "83",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "83"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Cody Callum Pierre Drameh",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "79",
-    "attack": "58",
-    "defense": "68",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

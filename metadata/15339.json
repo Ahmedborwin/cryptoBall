@@ -1,12 +1,30 @@
 {
   "name": "Lewis Rhys Thomas",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "34",
-    "defense": "22",
-    "midfield": "35",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "35"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

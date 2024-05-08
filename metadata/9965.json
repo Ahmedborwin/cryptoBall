@@ -1,12 +1,30 @@
 {
   "name": "Jon Mikel Aramburu Mejías",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "78",
-    "attack": "58",
-    "defense": "61",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

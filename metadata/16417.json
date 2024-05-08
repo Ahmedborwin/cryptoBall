@@ -1,12 +1,30 @@
 {
   "name": "Kristoffer Hoven",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "59",
-    "attack": "57",
-    "defense": "35",
-    "midfield": "49",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

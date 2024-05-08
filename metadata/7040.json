@@ -1,12 +1,30 @@
 {
   "name": "Saúl Savin Salcedo Zárate",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "45",
-    "defense": "70",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

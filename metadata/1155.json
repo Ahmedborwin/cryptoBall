@@ -1,12 +1,30 @@
 {
   "name": "Igor Guilherme Barbosa da Paixão",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "83",
-    "attack": "78",
-    "defense": "37",
-    "midfield": "75",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

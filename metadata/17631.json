@@ -1,12 +1,30 @@
 {
   "name": "Stian Aarønes Holte",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "68",
-    "attack": "37",
-    "defense": "56",
-    "midfield": "39",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

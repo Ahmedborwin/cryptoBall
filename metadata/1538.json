@@ -1,12 +1,30 @@
 {
   "name": "Trevoh Chalobah",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "80",
-    "attack": "58",
-    "defense": "77",
-    "midfield": "68",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

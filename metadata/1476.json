@@ -1,12 +1,30 @@
 {
   "name": "Altay Bayındır",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "31",
-    "defense": "25",
-    "midfield": "46",
-    "goalkeeping": "76"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "76"
+    }
+  ]
 }

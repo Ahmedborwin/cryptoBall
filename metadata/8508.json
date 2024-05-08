@@ -1,12 +1,30 @@
 {
   "name": "Daniel Rebollo Franco",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "75",
-    "attack": "27",
-    "defense": "22",
-    "midfield": "39",
-    "goalkeeping": "67"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
 }

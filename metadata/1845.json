@@ -1,12 +1,30 @@
 {
   "name": "Mauro Jaqueson Júnior Ferreira dos Santos",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "80",
-    "attack": "75",
-    "defense": "64",
-    "midfield": "78",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

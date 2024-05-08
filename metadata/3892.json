@@ -1,12 +1,30 @@
 {
   "name": "Even Hovland",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "39",
-    "defense": "73",
-    "midfield": "60",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Nicolás González Iglesias",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "82",
-    "attack": "67",
-    "defense": "74",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

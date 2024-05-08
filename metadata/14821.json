@@ -1,12 +1,30 @@
 {
   "name": "Hampus Näsström",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "61",
-    "attack": "44",
-    "defense": "62",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jayson Papeau",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "68",
-    "defense": "52",
-    "midfield": "68",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

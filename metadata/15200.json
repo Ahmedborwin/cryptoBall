@@ -1,12 +1,30 @@
 {
   "name": "Felix Omoruyi Irorere",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "68",
-    "attack": "40",
-    "defense": "61",
-    "midfield": "43",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "João Pedro Gomes Camacho",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "74",
-    "defense": "39",
-    "midfield": "71",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "74"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

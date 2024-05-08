@@ -1,12 +1,30 @@
 {
   "name": "Luke Harris",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "83",
-    "attack": "63",
-    "defense": "43",
-    "midfield": "63",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

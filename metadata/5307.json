@@ -1,12 +1,30 @@
 {
   "name": "Samuel Christopher Bastien",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "70",
-    "defense": "64",
-    "midfield": "72",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

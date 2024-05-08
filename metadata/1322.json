@@ -1,12 +1,30 @@
 {
   "name": "Nico Elvedi",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "78",
-    "attack": "58",
-    "defense": "77",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

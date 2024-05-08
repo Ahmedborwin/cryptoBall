@@ -1,12 +1,30 @@
 {
   "name": "Oliver Arblaster",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "79",
-    "attack": "62",
-    "defense": "57",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

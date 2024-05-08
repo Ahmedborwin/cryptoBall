@@ -1,12 +1,30 @@
 {
   "name": "Santiago Burgos",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "75",
-    "attack": "48",
-    "defense": "55",
-    "midfield": "45",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

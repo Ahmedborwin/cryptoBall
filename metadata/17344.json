@@ -1,12 +1,30 @@
 {
   "name": "Saad bin Fahad Al-Sharfa",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "72",
-    "attack": "59",
-    "defense": "26",
-    "midfield": "50",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

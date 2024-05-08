@@ -1,12 +1,30 @@
 {
   "name": "Oisin Michael McEntee",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "49",
-    "defense": "61",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "49"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

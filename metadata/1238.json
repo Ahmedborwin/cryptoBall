@@ -1,12 +1,30 @@
 {
   "name": "Dan-Axel Zagadou",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "79",
-    "attack": "46",
-    "defense": "78",
-    "midfield": "62",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

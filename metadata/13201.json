@@ -1,12 +1,30 @@
 {
   "name": "Wilmar Jordán Gil",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "59",
-    "defense": "43",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Aleksander Nadolski",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "74",
-    "attack": "57",
-    "defense": "39",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

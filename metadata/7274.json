@@ -1,12 +1,30 @@
 {
   "name": "Roberto Fabián Ramírez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "72",
-    "attack": "34",
-    "defense": "28",
-    "midfield": "37",
-    "goalkeeping": "67"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "37"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Gastón Luciano Ávila",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "79",
-    "attack": "59",
-    "defense": "71",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

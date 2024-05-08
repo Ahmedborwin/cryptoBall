@@ -1,12 +1,30 @@
 {
   "name": "Jacob Ramsey",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "83",
-    "attack": "78",
-    "defense": "70",
-    "midfield": "77",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

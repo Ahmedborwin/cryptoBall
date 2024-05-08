@@ -1,12 +1,30 @@
 {
   "name": "Bart Nieuwkoop",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "68",
-    "defense": "72",
-    "midfield": "73",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Aldair Edgardo Peña Torres",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "22",
-    "defense": "17",
-    "midfield": "25",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "17"
+    },
+    {
+      "name": "midfield",
+      "value": "25"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

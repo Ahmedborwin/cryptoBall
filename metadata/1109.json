@@ -1,12 +1,30 @@
 {
   "name": "Romário Ricardo da Silva",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "81",
-    "defense": "35",
-    "midfield": "80",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "81"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

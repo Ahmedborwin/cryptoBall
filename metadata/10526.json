@@ -1,12 +1,30 @@
 {
   "name": "Orri Steinn Óskarsson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "80",
-    "attack": "65",
-    "defense": "39",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

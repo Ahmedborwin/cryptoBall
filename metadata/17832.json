@@ -1,12 +1,30 @@
 {
   "name": "Mitchell Glasson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "76",
-    "attack": "56",
-    "defense": "33",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

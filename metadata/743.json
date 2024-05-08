@@ -1,12 +1,30 @@
 {
   "name": "Pau López Sabata",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "81",
-    "attack": "38",
-    "defense": "26",
-    "midfield": "56",
-    "goalkeeping": "80"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "80"
+    }
+  ]
 }

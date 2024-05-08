@@ -1,12 +1,30 @@
 {
   "name": "Mourtada Serigne Fall",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "68",
-    "attack": "45",
-    "defense": "70",
-    "midfield": "55",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

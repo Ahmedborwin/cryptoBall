@@ -1,12 +1,30 @@
 {
   "name": "Lucas Mika Wolf",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "67",
-    "attack": "58",
-    "defense": "35",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

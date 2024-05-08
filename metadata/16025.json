@@ -1,12 +1,30 @@
 {
   "name": "Simone D'Uffizi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "75",
-    "attack": "58",
-    "defense": "27",
-    "midfield": "56",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

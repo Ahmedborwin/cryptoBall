@@ -1,12 +1,30 @@
 {
   "name": "Jamie Bichis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "69",
-    "attack": "55",
-    "defense": "24",
-    "midfield": "53",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "55"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Pratik Prabhakar Chowdhary",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "55",
-    "attack": "38",
-    "defense": "60",
-    "midfield": "44",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "55"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

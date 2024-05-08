@@ -1,12 +1,30 @@
 {
   "name": "周緣德 Oliver Benjamin Gerbig",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "66",
-    "attack": "46",
-    "defense": "63",
-    "midfield": "50",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

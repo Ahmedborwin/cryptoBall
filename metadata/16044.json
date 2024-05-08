@@ -1,12 +1,30 @@
 {
   "name": "Nicolas Pignatel Jenssen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "70",
-    "attack": "41",
-    "defense": "60",
-    "midfield": "49",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

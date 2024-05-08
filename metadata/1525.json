@@ -1,12 +1,30 @@
 {
   "name": "Orel Mangala",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "68",
-    "defense": "72",
-    "midfield": "78",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "72"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

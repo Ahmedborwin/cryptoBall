@@ -1,12 +1,30 @@
 {
   "name": "Ryan Jack Barnett",
   "club_position": "RWB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "63",
-    "attack": "61",
-    "defense": "50",
-    "midfield": "60",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

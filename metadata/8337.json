@@ -1,12 +1,30 @@
 {
   "name": "Massimiliano Mangraviti",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "70",
-    "attack": "60",
-    "defense": "68",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

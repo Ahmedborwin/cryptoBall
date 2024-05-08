@@ -1,12 +1,30 @@
 {
   "name": "Jeremy Alberto Arévalo Mera",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "78",
-    "attack": "61",
-    "defense": "29",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Rares Ispas",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "73",
-    "attack": "51",
-    "defense": "61",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

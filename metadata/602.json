@@ -1,12 +1,30 @@
 {
   "name": "Richarlison de Andrade",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "83",
-    "attack": "80",
-    "defense": "59",
-    "midfield": "77",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

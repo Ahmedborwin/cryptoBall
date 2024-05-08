@@ -1,12 +1,30 @@
 {
   "name": "Joshua Myles Abraham Key",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "72",
-    "attack": "64",
-    "defense": "59",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

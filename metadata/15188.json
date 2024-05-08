@@ -1,12 +1,30 @@
 {
   "name": "Omar Kolawole Olufemi Sowunmi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "42",
-    "defense": "64",
-    "midfield": "44",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jonas Skjøtt Gemmer",
   "club_position": "CM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "60",
-    "defense": "66",
-    "midfield": "64",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

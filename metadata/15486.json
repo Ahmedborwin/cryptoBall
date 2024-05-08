@@ -1,12 +1,30 @@
 {
   "name": "Diego Espinosa García de Muro",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "41",
-    "defense": "60",
-    "midfield": "49",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

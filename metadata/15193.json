@@ -1,12 +1,30 @@
 {
   "name": "Ricardo Sandoval",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "52",
-    "defense": "60",
-    "midfield": "56",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "52"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

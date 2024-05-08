@@ -1,12 +1,30 @@
 {
   "name": "Cameron Harper",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "74",
-    "attack": "67",
-    "defense": "50",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

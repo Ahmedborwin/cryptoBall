@@ -1,12 +1,30 @@
 {
   "name": "Frank Ronstadt",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "63",
-    "defense": "63",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

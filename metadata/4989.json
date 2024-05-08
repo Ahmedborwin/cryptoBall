@@ -1,12 +1,30 @@
 {
   "name": "Michal Ševčík",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "78",
-    "attack": "70",
-    "defense": "53",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

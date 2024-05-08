@@ -1,12 +1,30 @@
 {
   "name": "Ludovic Blas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "78",
-    "attack": "77",
-    "defense": "59",
-    "midfield": "77",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

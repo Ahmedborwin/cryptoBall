@@ -1,12 +1,30 @@
 {
   "name": "Andrés Josué Romero Tocuyo",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "74",
-    "attack": "63",
-    "defense": "63",
-    "midfield": "70",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

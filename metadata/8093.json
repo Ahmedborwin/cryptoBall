@@ -1,12 +1,30 @@
 {
   "name": "Iago Justen Maidana Martins",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "68",
-    "attack": "47",
-    "defense": "70",
-    "midfield": "51",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

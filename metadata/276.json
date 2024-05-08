@@ -1,12 +1,30 @@
 {
   "name": "Manuel Ugarte Ribeiro",
   "club_position": "CM",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "86",
-    "attack": "72",
-    "defense": "81",
-    "midfield": "78",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

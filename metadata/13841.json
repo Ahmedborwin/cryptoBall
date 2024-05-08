@@ -1,12 +1,30 @@
 {
   "name": "Tyrese Jay Francois",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "58",
-    "defense": "56",
-    "midfield": "66",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Ivan Tarek Fjellstad Näsberg",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "50",
-    "defense": "68",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

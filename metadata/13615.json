@@ -1,12 +1,30 @@
 {
   "name": "Elliot Newby",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "62",
-    "attack": "60",
-    "defense": "51",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Tomás Martín Molina",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "72",
-    "defense": "30",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

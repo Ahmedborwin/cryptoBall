@@ -1,12 +1,30 @@
 {
   "name": "Faride Alidou",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "78",
-    "attack": "68",
-    "defense": "36",
-    "midfield": "61",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

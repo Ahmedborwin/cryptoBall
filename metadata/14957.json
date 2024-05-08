@@ -1,12 +1,30 @@
 {
   "name": "Diogo de Carvalho Pinto",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "76",
-    "attack": "23",
-    "defense": "16",
-    "midfield": "29",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "16"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

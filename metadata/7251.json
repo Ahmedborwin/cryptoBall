@@ -1,12 +1,30 @@
 {
   "name": "Tobias Raschl",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "74",
-    "attack": "62",
-    "defense": "60",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

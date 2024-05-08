@@ -1,12 +1,30 @@
 {
   "name": "孙健祥 Sun Jianxiang",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "57",
-    "attack": "20",
-    "defense": "19",
-    "midfield": "27",
-    "goalkeeping": "52"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "52"
+    }
+  ]
 }

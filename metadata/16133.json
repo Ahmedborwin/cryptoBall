@@ -1,12 +1,30 @@
 {
   "name": "Louis Köster",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "71",
-    "attack": "58",
-    "defense": "59",
-    "midfield": "58",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

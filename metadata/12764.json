@@ -1,12 +1,30 @@
 {
   "name": "Darko Gyabi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "79",
-    "attack": "56",
-    "defense": "62",
-    "midfield": "63",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

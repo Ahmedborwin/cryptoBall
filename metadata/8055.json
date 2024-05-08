@@ -1,12 +1,30 @@
 {
   "name": "Michael Andrés Fuentes Vadulli",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "70",
-    "attack": "67",
-    "defense": "34",
-    "midfield": "62",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

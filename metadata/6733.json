@@ -1,12 +1,30 @@
 {
   "name": "Lucas Bartlett",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "39",
-    "defense": "70",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

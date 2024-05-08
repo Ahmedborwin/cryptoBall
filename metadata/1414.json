@@ -1,12 +1,30 @@
 {
   "name": "Pablo Barrios Rivas",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "86",
-    "attack": "73",
-    "defense": "67",
-    "midfield": "74",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Franculino Gluda Djú",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "76",
-    "attack": "66",
-    "defense": "41",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

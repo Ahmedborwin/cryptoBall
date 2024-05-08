@@ -1,12 +1,30 @@
 {
   "name": "Daniel Kanu",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "72",
-    "attack": "62",
-    "defense": "37",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

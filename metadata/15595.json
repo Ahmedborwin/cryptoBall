@@ -1,12 +1,30 @@
 {
   "name": "Jaime Andrés Peralta Gonzalez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "59",
-    "defense": "24",
-    "midfield": "50",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Diego Otoya",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "58",
-    "defense": "32",
-    "midfield": "51",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "32"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

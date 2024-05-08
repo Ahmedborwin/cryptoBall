@@ -1,12 +1,30 @@
 {
   "name": "김유성 Yu-sung Kim",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "65",
-    "attack": "19",
-    "defense": "19",
-    "midfield": "25",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "19"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "25"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

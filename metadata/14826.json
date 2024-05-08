@@ -1,12 +1,30 @@
 {
   "name": "Caleb Cassius Watts",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "69",
-    "attack": "62",
-    "defense": "51",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

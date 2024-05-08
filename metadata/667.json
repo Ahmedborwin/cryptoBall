@@ -1,12 +1,30 @@
 {
   "name": "Etienne Capoue",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "69",
-    "defense": "79",
-    "midfield": "76",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "79"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

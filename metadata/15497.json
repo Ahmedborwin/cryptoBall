@@ -1,12 +1,30 @@
 {
   "name": "Josh Brooking",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "75",
-    "attack": "42",
-    "defense": "62",
-    "midfield": "44",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

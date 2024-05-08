@@ -1,12 +1,30 @@
 {
   "name": "Umberto Saracco",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "65",
-    "attack": "31",
-    "defense": "26",
-    "midfield": "32",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "한희훈 韩献熙 Hee-Hoon Han",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "60",
-    "attack": "40",
-    "defense": "62",
-    "midfield": "52",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

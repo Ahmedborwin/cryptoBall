@@ -1,12 +1,30 @@
 {
   "name": "Kane Smith",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "63",
-    "attack": "62",
-    "defense": "57",
-    "midfield": "58",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Aaron Basenach",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "66",
-    "attack": "55",
-    "defense": "53",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "55"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

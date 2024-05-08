@@ -1,12 +1,30 @@
 {
   "name": "Noussair Mazraoui",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "83",
-    "attack": "76",
-    "defense": "76",
-    "midfield": "81",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

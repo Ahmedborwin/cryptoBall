@@ -1,12 +1,30 @@
 {
   "name": "Mark Dignam",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "56",
-    "attack": "48",
-    "defense": "52",
-    "midfield": "54",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

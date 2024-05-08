@@ -1,12 +1,30 @@
 {
   "name": "Stefan Daniel Cleveland",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "65",
-    "attack": "34",
-    "defense": "25",
-    "midfield": "42",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

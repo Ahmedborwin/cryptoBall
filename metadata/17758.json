@@ -1,12 +1,30 @@
 {
   "name": "Rylan Brownlie",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "72",
-    "attack": "61",
-    "defense": "40",
-    "midfield": "51",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

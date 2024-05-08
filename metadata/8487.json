@@ -1,12 +1,30 @@
 {
   "name": "Luca Lezzerini",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "69",
-    "attack": "33",
-    "defense": "27",
-    "midfield": "38",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

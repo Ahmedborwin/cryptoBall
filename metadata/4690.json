@@ -1,12 +1,30 @@
 {
   "name": "Harry Jack Darling",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "76",
-    "attack": "57",
-    "defense": "70",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

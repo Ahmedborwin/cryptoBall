@@ -1,12 +1,30 @@
 {
   "name": "Chrislain Iris Aurel Matsima",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "78",
-    "attack": "50",
-    "defense": "70",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

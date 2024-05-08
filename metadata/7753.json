@@ -1,12 +1,30 @@
 {
   "name": "Danny Gabriel Luna Morán",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "68",
-    "defense": "53",
-    "midfield": "67",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Marcel Engelhardt",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "33",
-    "defense": "31",
-    "midfield": "32",
-    "goalkeeping": "64"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "64"
+    }
+  ]
 }

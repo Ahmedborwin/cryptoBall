@@ -1,12 +1,30 @@
 {
   "name": "Marten Elco de Roon",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "70",
-    "defense": "82",
-    "midfield": "75",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "82"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

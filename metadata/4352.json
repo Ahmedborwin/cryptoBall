@@ -1,12 +1,30 @@
 {
   "name": "Bakery Jatta",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "73",
-    "attack": "73",
-    "defense": "52",
-    "midfield": "68",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

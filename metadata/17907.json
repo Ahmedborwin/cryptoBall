@@ -1,12 +1,30 @@
 {
   "name": "Nickson Okosun",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "71",
-    "attack": "54",
-    "defense": "38",
-    "midfield": "46",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

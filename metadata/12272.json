@@ -1,12 +1,30 @@
 {
   "name": "Fedde Leysen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "74",
-    "attack": "45",
-    "defense": "64",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

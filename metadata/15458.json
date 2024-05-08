@@ -1,12 +1,30 @@
 {
   "name": "Derlis Darío Martínez González",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "62",
-    "defense": "26",
-    "midfield": "56",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

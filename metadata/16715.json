@@ -1,12 +1,30 @@
 {
   "name": "Aibanbha Kupar Dohling",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "57",
-    "attack": "47",
-    "defense": "57",
-    "midfield": "50",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

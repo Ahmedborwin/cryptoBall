@@ -1,12 +1,30 @@
 {
   "name": "Arne Schulz",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "73",
-    "attack": "24",
-    "defense": "22",
-    "midfield": "31",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

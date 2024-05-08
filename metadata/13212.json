@@ -1,12 +1,30 @@
 {
   "name": "Carlos Sánchez Jiménez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "71",
-    "attack": "54",
-    "defense": "60",
-    "midfield": "51",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

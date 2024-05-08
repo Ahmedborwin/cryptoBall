@@ -1,12 +1,30 @@
 {
   "name": "Andries Noppert",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "75",
-    "attack": "34",
-    "defense": "24",
-    "midfield": "42",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Valgeir Lunddal Friðriksson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "77",
-    "attack": "49",
-    "defense": "67",
-    "midfield": "57",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "77"
+    },
+    {
+      "name": "attack",
+      "value": "49"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

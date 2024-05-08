@@ -1,12 +1,30 @@
 {
   "name": "Tommaso Pittino",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "69",
-    "attack": "41",
-    "defense": "56",
-    "midfield": "43",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "43"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

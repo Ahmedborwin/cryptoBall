@@ -1,12 +1,30 @@
 {
   "name": "Allan Saint-Maximin",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "81",
-    "attack": "82",
-    "defense": "36",
-    "midfield": "79",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "82"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "79"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

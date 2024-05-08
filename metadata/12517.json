@@ -1,12 +1,30 @@
 {
   "name": "Juan Antonio Portales Villarreal",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "65",
-    "attack": "53",
-    "defense": "64",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

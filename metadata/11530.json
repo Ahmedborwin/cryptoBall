@@ -1,12 +1,30 @@
 {
   "name": "Niklas Kölle",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "71",
-    "attack": "60",
-    "defense": "62",
-    "midfield": "60",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

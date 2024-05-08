@@ -1,12 +1,30 @@
 {
   "name": "Logi Tómasson",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "73",
-    "attack": "64",
-    "defense": "56",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

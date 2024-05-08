@@ -1,12 +1,30 @@
 {
   "name": "Lucas Eduardo Carrizo",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "66",
-    "attack": "52",
-    "defense": "63",
-    "midfield": "59",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "52"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

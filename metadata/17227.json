@@ -1,12 +1,30 @@
 {
   "name": "李永佳 Li Yongjia",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "64",
-    "attack": "51",
-    "defense": "51",
-    "midfield": "57",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Mateusz Mędrala",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "76",
-    "attack": "22",
-    "defense": "24",
-    "midfield": "30",
-    "goalkeeping": "56"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "56"
+    }
+  ]
 }

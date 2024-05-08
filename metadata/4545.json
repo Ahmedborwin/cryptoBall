@@ -1,12 +1,30 @@
 {
   "name": "王大雷 Wang Dalei",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "40",
-    "defense": "26",
-    "midfield": "50",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

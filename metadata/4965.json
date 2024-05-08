@@ -1,12 +1,30 @@
 {
   "name": "Lorenzo Maria Dickmann",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "62",
-    "defense": "67",
-    "midfield": "66",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

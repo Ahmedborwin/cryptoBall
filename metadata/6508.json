@@ -1,12 +1,30 @@
 {
   "name": "Daniele Padelli",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "31",
-    "defense": "17",
-    "midfield": "39",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "17"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

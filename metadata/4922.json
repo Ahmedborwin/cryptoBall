@@ -1,12 +1,30 @@
 {
   "name": "Pablo Ínsua Blanco",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "44",
-    "defense": "71",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

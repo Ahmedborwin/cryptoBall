@@ -1,12 +1,30 @@
 {
   "name": "Triantafyllos Pasalidis",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "75",
-    "attack": "54",
-    "defense": "74",
-    "midfield": "60",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "74"
+    },
+    {
+      "name": "midfield",
+      "value": "60"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

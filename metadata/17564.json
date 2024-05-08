@@ -1,12 +1,30 @@
 {
   "name": "Mohammed bin Saleh bin Mohammed Al-Aqel",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "61",
-    "attack": "57",
-    "defense": "31",
-    "midfield": "51",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "31"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

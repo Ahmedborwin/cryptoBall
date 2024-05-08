@@ -1,12 +1,30 @@
 {
   "name": "William Conner Antley",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "52",
-    "attack": "46",
-    "defense": "53",
-    "midfield": "41",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "52"
+    },
+    {
+      "name": "attack",
+      "value": "46"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

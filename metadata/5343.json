@@ -1,12 +1,30 @@
 {
   "name": "Ricardo César Lagos Puyén",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "71",
-    "attack": "61",
-    "defense": "61",
-    "midfield": "67",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

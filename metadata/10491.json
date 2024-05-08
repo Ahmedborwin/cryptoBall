@@ -1,12 +1,30 @@
 {
   "name": "Forzan Assan Ouedraogo",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "84",
-    "attack": "62",
-    "defense": "48",
-    "midfield": "66",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

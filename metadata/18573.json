@@ -1,12 +1,30 @@
 {
   "name": "邓雄涛 Deng Xiongtao",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "61",
-    "attack": "20",
-    "defense": "21",
-    "midfield": "23",
-    "goalkeeping": "50"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "23"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "50"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "曹康 Cao Kang",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "53",
-    "defense": "59",
-    "midfield": "57",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

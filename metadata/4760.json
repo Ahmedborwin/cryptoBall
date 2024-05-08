@@ -1,12 +1,30 @@
 {
   "name": "Andrés Martín García",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "76",
-    "attack": "72",
-    "defense": "35",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

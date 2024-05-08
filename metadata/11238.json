@@ -1,12 +1,30 @@
 {
   "name": "Neluț Stelian Roșu",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "64",
-    "attack": "65",
-    "defense": "56",
-    "midfield": "68",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

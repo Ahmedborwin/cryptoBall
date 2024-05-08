@@ -1,12 +1,30 @@
 {
   "name": "Diego Martín Rossi Marachlian",
   "club_position": "LF",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "76",
-    "attack": "77",
-    "defense": "36",
-    "midfield": "73",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

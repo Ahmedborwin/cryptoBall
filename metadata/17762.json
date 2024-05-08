@@ -1,12 +1,30 @@
 {
   "name": "Gabriele Alesi",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "62",
-    "attack": "54",
-    "defense": "28",
-    "midfield": "50",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

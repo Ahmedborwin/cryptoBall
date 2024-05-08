@@ -1,12 +1,30 @@
 {
   "name": "Wilson Waweru",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "59",
-    "attack": "60",
-    "defense": "34",
-    "midfield": "53",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

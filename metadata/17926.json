@@ -1,12 +1,30 @@
 {
   "name": "Mehmet Erdoğan",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "68",
-    "attack": "21",
-    "defense": "23",
-    "midfield": "27",
-    "goalkeeping": "53"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "53"
+    }
+  ]
 }

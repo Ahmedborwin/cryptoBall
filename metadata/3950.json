@@ -1,12 +1,30 @@
 {
   "name": "シュミット・ダニエル Daniel Yuji Yabuki Schmidt",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "24",
-    "defense": "23",
-    "midfield": "38",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

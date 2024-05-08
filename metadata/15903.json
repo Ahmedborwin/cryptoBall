@@ -1,12 +1,30 @@
 {
   "name": "Ellis Darren Chapman",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "62",
-    "attack": "56",
-    "defense": "52",
-    "midfield": "62",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

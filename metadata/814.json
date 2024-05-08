@@ -1,12 +1,30 @@
 {
   "name": "Jérémy Doku",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "79",
-    "potential": "87",
-    "attack": "80",
-    "defense": "37",
-    "midfield": "75",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "79"
+    },
+    {
+      "name": "potential",
+      "value": "87"
+    },
+    {
+      "name": "attack",
+      "value": "80"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

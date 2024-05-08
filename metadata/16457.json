@@ -1,12 +1,30 @@
 {
   "name": "Djibrill Diagouraga",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "58",
-    "potential": "71",
-    "attack": "63",
-    "defense": "34",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "34"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

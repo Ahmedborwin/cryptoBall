@@ -1,12 +1,30 @@
 {
   "name": "Sebastián Tomás Meza",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "80",
-    "attack": "30",
-    "defense": "25",
-    "midfield": "33",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "33"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

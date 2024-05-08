@@ -1,12 +1,30 @@
 {
   "name": "Faïz Selemani",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "75",
-    "defense": "57",
-    "midfield": "72",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Rafael José Castrillo Belisario",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "69",
-    "attack": "64",
-    "defense": "53",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Carlos Jonas Alcaraz",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "83",
-    "attack": "77",
-    "defense": "55",
-    "midfield": "72",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

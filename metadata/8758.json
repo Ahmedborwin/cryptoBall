@@ -1,12 +1,30 @@
 {
   "name": "Lucas Stassin",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "80",
-    "attack": "69",
-    "defense": "36",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

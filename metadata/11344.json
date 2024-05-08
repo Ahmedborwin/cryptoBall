@@ -1,12 +1,30 @@
 {
   "name": "Álvaro Daniel Rodríguez Muñoz",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "81",
-    "attack": "63",
-    "defense": "26",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

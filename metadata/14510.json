@@ -1,12 +1,30 @@
 {
   "name": "Joe Cameron Lewis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "65",
-    "attack": "50",
-    "defense": "63",
-    "midfield": "54",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

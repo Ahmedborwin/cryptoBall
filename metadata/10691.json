@@ -1,12 +1,30 @@
 {
   "name": "Isak Snær Þorvaldsson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "73",
-    "attack": "64",
-    "defense": "59",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

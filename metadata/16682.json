@@ -1,12 +1,30 @@
 {
   "name": "Johan Meyer",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "69",
-    "attack": "38",
-    "defense": "57",
-    "midfield": "47",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

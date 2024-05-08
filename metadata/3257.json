@@ -1,12 +1,30 @@
 {
   "name": "Emanuel Vignato",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "80",
-    "attack": "69",
-    "defense": "39",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

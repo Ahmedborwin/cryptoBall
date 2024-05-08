@@ -1,12 +1,30 @@
 {
   "name": "Isaac Price",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "78",
-    "attack": "66",
-    "defense": "59",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

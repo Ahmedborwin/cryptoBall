@@ -1,12 +1,30 @@
 {
   "name": "Calvin Bassey Ughelumba",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "83",
-    "attack": "63",
-    "defense": "76",
-    "midfield": "67",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

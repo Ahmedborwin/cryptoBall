@@ -1,12 +1,30 @@
 {
   "name": "Harrison Nejman",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "65",
-    "attack": "53",
-    "defense": "49",
-    "midfield": "55",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "49"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

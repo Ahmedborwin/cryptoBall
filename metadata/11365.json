@@ -1,12 +1,30 @@
 {
   "name": "Rodney Iván Redes Cáceres",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "67",
-    "attack": "65",
-    "defense": "46",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

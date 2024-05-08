@@ -1,12 +1,30 @@
 {
   "name": "Jeff Reine-Adélaïde",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "74",
-    "attack": "69",
-    "defense": "53",
-    "midfield": "71",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

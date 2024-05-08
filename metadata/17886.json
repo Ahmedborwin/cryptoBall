@@ -1,12 +1,30 @@
 {
   "name": "Ziyad Adel Freej Al Refaei",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "65",
-    "attack": "42",
-    "defense": "56",
-    "midfield": "45",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

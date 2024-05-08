@@ -1,12 +1,30 @@
 {
   "name": "Benjamin Uphoff",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "28",
-    "defense": "21",
-    "midfield": "31",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "31"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

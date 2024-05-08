@@ -1,12 +1,30 @@
 {
   "name": "季胜攀 Ji Shengpan",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "59",
-    "attack": "56",
-    "defense": "42",
-    "midfield": "51",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

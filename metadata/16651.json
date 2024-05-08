@@ -1,12 +1,30 @@
 {
   "name": "Jethren Barr",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "57",
-    "attack": "30",
-    "defense": "29",
-    "midfield": "38",
-    "goalkeeping": "56"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "30"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "56"
+    }
+  ]
 }

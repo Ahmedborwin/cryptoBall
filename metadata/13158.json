@@ -1,12 +1,30 @@
 {
   "name": "Thierry Small",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "72",
-    "attack": "58",
-    "defense": "57",
-    "midfield": "56",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

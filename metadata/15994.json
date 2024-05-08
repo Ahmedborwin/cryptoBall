@@ -1,12 +1,30 @@
 {
   "name": "Fahad Al-Hamad",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "63",
-    "attack": "41",
-    "defense": "61",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

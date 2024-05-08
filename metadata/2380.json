@@ -1,12 +1,30 @@
 {
   "name": "Lucas Ezequiel Janson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "76",
-    "defense": "45",
-    "midfield": "73",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

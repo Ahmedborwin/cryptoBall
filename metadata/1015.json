@@ -1,12 +1,30 @@
 {
   "name": "Nemanja Maksimović",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "78",
-    "attack": "68",
-    "defense": "78",
-    "midfield": "76",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

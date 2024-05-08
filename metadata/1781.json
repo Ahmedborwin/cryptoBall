@@ -1,12 +1,30 @@
 {
   "name": "Patrik Hrošovský",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "71",
-    "defense": "69",
-    "midfield": "77",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "77"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

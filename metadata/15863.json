@@ -1,12 +1,30 @@
 {
   "name": "김이석 Yi-seok Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "60",
-    "defense": "39",
-    "midfield": "61",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

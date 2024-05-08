@@ -1,12 +1,30 @@
 {
   "name": "Michaël Bruno Dominique Cuisance",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "78",
-    "attack": "71",
-    "defense": "55",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

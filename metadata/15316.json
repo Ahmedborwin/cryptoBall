@@ -1,12 +1,30 @@
 {
   "name": "Cristian Mihai",
   "club_position": "LDM",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "75",
-    "attack": "54",
-    "defense": "55",
-    "midfield": "62",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

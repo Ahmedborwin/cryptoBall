@@ -1,12 +1,30 @@
 {
   "name": "Curtis Ofori",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "74",
-    "attack": "53",
-    "defense": "47",
-    "midfield": "49",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "49"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

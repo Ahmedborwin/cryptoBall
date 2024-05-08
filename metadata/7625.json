@@ -1,12 +1,30 @@
 {
   "name": "Jesper Löfgren",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "72",
-    "attack": "40",
-    "defense": "71",
-    "midfield": "51",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

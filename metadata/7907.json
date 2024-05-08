@@ -1,12 +1,30 @@
 {
   "name": "Harrinson Mancilla Mulato",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "67",
-    "attack": "47",
-    "defense": "66",
-    "midfield": "65",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "47"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

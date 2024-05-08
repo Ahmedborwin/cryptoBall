@@ -1,12 +1,30 @@
 {
   "name": "Yerson Ronaldo Chacón Ramírez",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "78",
-    "attack": "70",
-    "defense": "28",
-    "midfield": "63",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

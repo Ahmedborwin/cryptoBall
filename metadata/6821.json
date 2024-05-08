@@ -1,12 +1,30 @@
 {
   "name": "Daniel George Paraschiv",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "75",
-    "attack": "70",
-    "defense": "40",
-    "midfield": "65",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

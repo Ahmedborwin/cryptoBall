@@ -1,12 +1,30 @@
 {
   "name": "Tom Meynadier",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "66",
-    "attack": "56",
-    "defense": "55",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

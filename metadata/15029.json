@@ -1,12 +1,30 @@
 {
   "name": "Marcel Łubik",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "71",
-    "attack": "32",
-    "defense": "27",
-    "midfield": "37",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "37"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

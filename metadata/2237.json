@@ -1,12 +1,30 @@
 {
   "name": "Timothy Tarpeh Weah",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "79",
-    "attack": "76",
-    "defense": "64",
-    "midfield": "72",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

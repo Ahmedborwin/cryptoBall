@@ -1,12 +1,30 @@
 {
   "name": "Héctor Junior Firpo Adames",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "74",
-    "attack": "67",
-    "defense": "71",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "71"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

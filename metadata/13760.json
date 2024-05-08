@@ -1,12 +1,30 @@
 {
   "name": "Hampus Zackrisson",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "63",
-    "attack": "51",
-    "defense": "64",
-    "midfield": "56",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "64"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

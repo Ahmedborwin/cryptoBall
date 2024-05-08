@@ -1,12 +1,30 @@
 {
   "name": "闫炳良 Yan Bingliang",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "56",
-    "attack": "24",
-    "defense": "26",
-    "midfield": "26",
-    "goalkeeping": "49"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "49"
+    }
+  ]
 }

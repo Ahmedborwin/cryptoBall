@@ -1,12 +1,30 @@
 {
   "name": "Leonardo Sernicola",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "73",
-    "attack": "66",
-    "defense": "67",
-    "midfield": "70",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

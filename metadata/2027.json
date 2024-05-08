@@ -1,12 +1,30 @@
 {
   "name": "José Manuel Arias Copete",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "83",
-    "attack": "45",
-    "defense": "75",
-    "midfield": "61",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "45"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

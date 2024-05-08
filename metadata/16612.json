@@ -1,12 +1,30 @@
 {
   "name": "金勝友 Seung-Woo Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "59",
-    "attack": "37",
-    "defense": "59",
-    "midfield": "45",
-    "goalkeeping": "7"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "7"
+    }
+  ]
 }

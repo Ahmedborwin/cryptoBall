@@ -1,12 +1,30 @@
 {
   "name": "Viktor Einar Gyökeres",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "86",
-    "attack": "79",
-    "defense": "47",
-    "midfield": "73",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "79"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

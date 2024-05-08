@@ -1,12 +1,30 @@
 {
   "name": "Vegard Solheim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "75",
-    "attack": "54",
-    "defense": "52",
-    "midfield": "55",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "54"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Francisco Joel Gerometta",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "71",
-    "attack": "63",
-    "defense": "63",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

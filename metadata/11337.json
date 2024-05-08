@@ -1,12 +1,30 @@
 {
   "name": "Mathis Lachuer",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "64",
-    "potential": "73",
-    "attack": "63",
-    "defense": "50",
-    "midfield": "66",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "64"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

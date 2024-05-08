@@ -1,12 +1,30 @@
 {
   "name": "王建明 Chien-ming Wang",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "61",
-    "attack": "50",
-    "defense": "61",
-    "midfield": "52",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

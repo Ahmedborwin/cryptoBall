@@ -1,12 +1,30 @@
 {
   "name": "Francisco Javier Báez Ramírez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "41",
-    "defense": "65",
-    "midfield": "51",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "65"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

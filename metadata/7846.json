@@ -1,12 +1,30 @@
 {
   "name": "Pascal Klemens",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "78",
-    "attack": "50",
-    "defense": "68",
-    "midfield": "62",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

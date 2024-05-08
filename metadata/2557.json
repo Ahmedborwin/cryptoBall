@@ -1,12 +1,30 @@
 {
   "name": "Felipe de Sousa Silva",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "70",
-    "defense": "42",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

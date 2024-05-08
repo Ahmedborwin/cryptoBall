@@ -1,12 +1,30 @@
 {
   "name": "Mateo Del Blanco",
   "club_position": "LWB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "79",
-    "attack": "71",
-    "defense": "60",
-    "midfield": "70",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

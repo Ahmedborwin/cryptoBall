@@ -1,12 +1,30 @@
 {
   "name": "김민재 金敏在 Min-Jae Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "84",
-    "potential": "86",
-    "attack": "58",
-    "defense": "86",
-    "midfield": "70",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "84"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "86"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

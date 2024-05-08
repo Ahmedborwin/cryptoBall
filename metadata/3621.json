@@ -1,12 +1,30 @@
 {
   "name": "Santiago Simón",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "80",
-    "attack": "70",
-    "defense": "67",
-    "midfield": "74",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

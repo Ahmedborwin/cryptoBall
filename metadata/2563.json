@@ -1,12 +1,30 @@
 {
   "name": "Guilherme Costa Marques",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "76",
-    "defense": "57",
-    "midfield": "74",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

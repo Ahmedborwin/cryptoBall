@@ -1,12 +1,30 @@
 {
   "name": "Thomas Robinet",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "66",
-    "attack": "66",
-    "defense": "40",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "40"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

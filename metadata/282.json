@@ -1,12 +1,30 @@
 {
   "name": "João Félix Sequeira",
   "club_position": "LW",
-  "attributes": {
-    "overall_rating": "81",
-    "potential": "87",
-    "attack": "82",
-    "defense": "46",
-    "midfield": "81",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "81"
+    },
+    {
+      "name": "potential",
+      "value": "87"
+    },
+    {
+      "name": "attack",
+      "value": "82"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "81"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Oliver Marc Rose-Villadsen",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "78",
-    "attack": "66",
-    "defense": "63",
-    "midfield": "69",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

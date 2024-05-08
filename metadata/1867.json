@@ -1,12 +1,30 @@
 {
   "name": "Rodrigo Román Villagra",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "82",
-    "attack": "62",
-    "defense": "75",
-    "midfield": "72",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "75"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

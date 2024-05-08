@@ -1,12 +1,30 @@
 {
   "name": "Mohammed Kudus",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "86",
-    "attack": "81",
-    "defense": "63",
-    "midfield": "78",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "86"
+    },
+    {
+      "name": "attack",
+      "value": "81"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "78"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

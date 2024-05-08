@@ -1,12 +1,30 @@
 {
   "name": "Teodoro Castrofeito",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "60",
-    "attack": "64",
-    "defense": "36",
-    "midfield": "56",
-    "goalkeeping": "54"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "54"
+    }
+  ]
 }

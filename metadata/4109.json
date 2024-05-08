@@ -1,12 +1,30 @@
 {
   "name": "Fernando Carlos De Paul Lanciotti",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "33",
-    "defense": "25",
-    "midfield": "46",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

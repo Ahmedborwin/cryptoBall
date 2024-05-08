@@ -1,12 +1,30 @@
 {
   "name": "Marcel Halstenberg",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "76",
-    "attack": "68",
-    "defense": "76",
-    "midfield": "72",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "72"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

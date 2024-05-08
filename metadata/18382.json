@@ -1,12 +1,30 @@
 {
   "name": "Devin Padelford",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "60",
-    "attack": "44",
-    "defense": "50",
-    "midfield": "47",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "60"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

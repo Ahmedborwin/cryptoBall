@@ -1,12 +1,30 @@
 {
   "name": "Maximilian Kilman",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "81",
-    "attack": "56",
-    "defense": "78",
-    "midfield": "69",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

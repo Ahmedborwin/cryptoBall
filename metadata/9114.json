@@ -1,12 +1,30 @@
 {
   "name": "Stipe Perica",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "62",
-    "defense": "38",
-    "midfield": "56",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

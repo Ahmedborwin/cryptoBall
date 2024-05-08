@@ -1,12 +1,30 @@
 {
   "name": "Brian Villana",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "34",
-    "defense": "29",
-    "midfield": "42",
-    "goalkeeping": "71"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "71"
+    }
+  ]
 }

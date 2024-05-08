@@ -1,12 +1,30 @@
 {
   "name": "Juan Camilo Portilla Orozco",
   "club_position": "RDM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "75",
-    "attack": "66",
-    "defense": "68",
-    "midfield": "68",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

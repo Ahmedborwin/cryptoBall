@@ -1,12 +1,30 @@
 {
   "name": "Kayne Bonnevie",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "71",
-    "attack": "22",
-    "defense": "22",
-    "midfield": "30",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

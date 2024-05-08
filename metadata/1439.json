@@ -1,12 +1,30 @@
 {
   "name": "Youssouf Ndayishimiye",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "81",
-    "attack": "62",
-    "defense": "76",
-    "midfield": "73",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "73"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

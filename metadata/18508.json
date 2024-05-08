@@ -1,12 +1,30 @@
 {
   "name": "Ahan Prakash",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "49",
-    "potential": "64",
-    "attack": "22",
-    "defense": "18",
-    "midfield": "27",
-    "goalkeeping": "49"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "49"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "27"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "49"
+    }
+  ]
 }

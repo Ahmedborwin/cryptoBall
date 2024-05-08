@@ -1,12 +1,30 @@
 {
   "name": "Kevin Andrés Zenón",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "79",
-    "attack": "72",
-    "defense": "61",
-    "midfield": "74",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

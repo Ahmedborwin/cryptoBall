@@ -1,12 +1,30 @@
 {
   "name": "Darren Yapi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "78",
-    "attack": "60",
-    "defense": "28",
-    "midfield": "50",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "28"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

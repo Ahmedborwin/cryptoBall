@@ -1,12 +1,30 @@
 {
   "name": "Luis Javier Navea Tolmos",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "70",
-    "attack": "53",
-    "defense": "56",
-    "midfield": "56",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

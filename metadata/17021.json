@@ -1,12 +1,30 @@
 {
   "name": "Gianluca Saro",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "64",
-    "attack": "20",
-    "defense": "20",
-    "midfield": "24",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "24"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Thomas Christopher Davies",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "63",
-    "attack": "42",
-    "defense": "66",
-    "midfield": "53",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "63"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Matteo Politano",
   "club_position": "RW",
-  "attributes": {
-    "overall_rating": "80",
-    "potential": "80",
-    "attack": "81",
-    "defense": "44",
-    "midfield": "80",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "80"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "81"
+    },
+    {
+      "name": "defense",
+      "value": "44"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

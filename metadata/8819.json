@@ -1,12 +1,30 @@
 {
   "name": "Tim Melia",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "32",
-    "defense": "29",
-    "midfield": "45",
-    "goalkeeping": "66"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "66"
+    }
+  ]
 }

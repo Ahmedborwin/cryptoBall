@@ -1,12 +1,30 @@
 {
   "name": "Valentin Eysseric",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "72",
-    "potential": "72",
-    "attack": "71",
-    "defense": "53",
-    "midfield": "74",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "72"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "53"
+    },
+    {
+      "name": "midfield",
+      "value": "74"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

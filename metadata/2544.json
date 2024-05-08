@@ -1,12 +1,30 @@
 {
   "name": "Duje Ćaleta-Car",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "51",
-    "defense": "76",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

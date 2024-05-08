@@ -1,12 +1,30 @@
 {
   "name": "Elkan Baggott",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "69",
-    "attack": "38",
-    "defense": "62",
-    "midfield": "45",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "45"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

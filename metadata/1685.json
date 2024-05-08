@@ -1,12 +1,30 @@
 {
   "name": "Fabio Miretti",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "88",
-    "attack": "71",
-    "defense": "69",
-    "midfield": "76",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "88"
+    },
+    {
+      "name": "attack",
+      "value": "71"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

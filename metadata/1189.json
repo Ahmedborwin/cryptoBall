@@ -1,12 +1,30 @@
 {
   "name": "Melvin Michel Maxence Bard",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "82",
-    "attack": "68",
-    "defense": "76",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

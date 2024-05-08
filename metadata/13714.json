@@ -1,12 +1,30 @@
 {
   "name": "Gonzalo Silva",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "65",
-    "attack": "62",
-    "defense": "52",
-    "midfield": "63",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Erico Cuello Gutiérrez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "73",
-    "attack": "62",
-    "defense": "61",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

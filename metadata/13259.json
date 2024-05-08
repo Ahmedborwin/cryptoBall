@@ -1,12 +1,30 @@
 {
   "name": "Erdem Çetinkaya",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "63",
-    "defense": "33",
-    "midfield": "59",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

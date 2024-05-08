@@ -1,12 +1,30 @@
 {
   "name": "Egil Selvik",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "73",
-    "attack": "23",
-    "defense": "18",
-    "midfield": "38",
-    "goalkeeping": "67"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
 }

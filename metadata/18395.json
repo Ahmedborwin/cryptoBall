@@ -1,12 +1,30 @@
 {
   "name": "Aaron Braithwaite",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "50",
-    "potential": "56",
-    "attack": "50",
-    "defense": "48",
-    "midfield": "52",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "50"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "48"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

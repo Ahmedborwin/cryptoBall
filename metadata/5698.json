@@ -1,12 +1,30 @@
 {
   "name": "Ivan Prtajin",
   "club_position": "ST",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "70",
-    "attack": "66",
-    "defense": "39",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

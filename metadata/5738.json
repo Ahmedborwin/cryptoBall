@@ -1,12 +1,30 @@
 {
   "name": "Mauro Andrés Méndez Acosta",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "72",
-    "attack": "66",
-    "defense": "45",
-    "midfield": "63",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

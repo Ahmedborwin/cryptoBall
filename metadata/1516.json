@@ -1,12 +1,30 @@
 {
   "name": "Rasmus Schmidt Nicolaisen",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "50",
-    "defense": "77",
-    "midfield": "67",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

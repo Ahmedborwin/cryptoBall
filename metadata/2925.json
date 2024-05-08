@@ -1,12 +1,30 @@
 {
   "name": "Facundo Tomás Garcés",
   "club_position": "RCB",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "79",
-    "attack": "50",
-    "defense": "76",
-    "midfield": "64",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

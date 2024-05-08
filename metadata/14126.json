@@ -1,12 +1,30 @@
 {
   "name": "Roman Yakuba",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "40",
-    "defense": "66",
-    "midfield": "46",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "40"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

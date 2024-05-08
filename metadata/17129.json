@@ -1,12 +1,30 @@
 {
   "name": "孙正傲 Sun Zheng'ao",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "56",
-    "attack": "36",
-    "defense": "59",
-    "midfield": "42",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "56"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

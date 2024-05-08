@@ -1,12 +1,30 @@
 {
   "name": "Viktor Andersson",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "72",
-    "attack": "23",
-    "defense": "23",
-    "midfield": "29",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

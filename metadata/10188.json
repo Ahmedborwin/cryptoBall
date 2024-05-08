@@ -1,12 +1,30 @@
 {
   "name": "Rhys Williams",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "75",
-    "attack": "48",
-    "defense": "66",
-    "midfield": "57",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "48"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

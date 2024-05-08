@@ -1,12 +1,30 @@
 {
   "name": "Roque Luis Santa Cruz Cantero",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "56",
-    "defense": "45",
-    "midfield": "55",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

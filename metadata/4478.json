@@ -1,12 +1,30 @@
 {
   "name": "Amari'i Bell",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "62",
-    "defense": "68",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

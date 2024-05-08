@@ -1,12 +1,30 @@
 {
   "name": "Felix Winther",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "70",
-    "attack": "61",
-    "defense": "63",
-    "midfield": "64",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

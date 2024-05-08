@@ -1,12 +1,30 @@
 {
   "name": "Filippo Missori",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "79",
-    "attack": "50",
-    "defense": "59",
-    "midfield": "50",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

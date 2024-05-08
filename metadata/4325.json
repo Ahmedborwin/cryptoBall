@@ -1,12 +1,30 @@
 {
   "name": "Carleto Adilson Costinha Caldeira",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "70",
-    "defense": "41",
-    "midfield": "70",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "41"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

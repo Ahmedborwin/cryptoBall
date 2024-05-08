@@ -1,12 +1,30 @@
 {
   "name": "Carl Rushworth",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "80",
-    "attack": "36",
-    "defense": "23",
-    "midfield": "44",
-    "goalkeeping": "70"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "70"
+    }
+  ]
 }

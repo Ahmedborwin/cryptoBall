@@ -1,12 +1,30 @@
 {
   "name": "Šimun Hrgović",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "76",
-    "attack": "60",
-    "defense": "52",
-    "midfield": "57",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "52"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

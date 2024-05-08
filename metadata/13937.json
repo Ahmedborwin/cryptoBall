@@ -1,12 +1,30 @@
 {
   "name": "Jakob Axel Krister Voelkerling-Persson",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "72",
-    "attack": "44",
-    "defense": "63",
-    "midfield": "56",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "72"
+    },
+    {
+      "name": "attack",
+      "value": "44"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

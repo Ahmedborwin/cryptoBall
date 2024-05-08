@@ -1,12 +1,30 @@
 {
   "name": "Víctor Moya Martínez",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "68",
-    "attack": "62",
-    "defense": "51",
-    "midfield": "65",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "62"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jorge Alberto Páez Santamaría",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "66",
-    "defense": "47",
-    "midfield": "67",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

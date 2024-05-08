@@ -1,12 +1,30 @@
 {
   "name": "Alvaro Daniel Quiroga",
   "club_position": "CDM",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "69",
-    "attack": "63",
-    "defense": "59",
-    "midfield": "69",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

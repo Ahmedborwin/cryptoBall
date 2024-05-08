@@ -1,12 +1,30 @@
 {
   "name": "Raphaël Adiceam",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "59",
-    "attack": "21",
-    "defense": "21",
-    "midfield": "26",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "59"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "26"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

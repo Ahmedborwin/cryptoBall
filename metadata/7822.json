@@ -1,12 +1,30 @@
 {
   "name": "Matías Ezequiel Abaldo Menyou",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "78",
-    "attack": "65",
-    "defense": "35",
-    "midfield": "64",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

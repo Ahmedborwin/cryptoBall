@@ -1,12 +1,30 @@
 {
   "name": "Yakup Arda Kılıç",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "73",
-    "attack": "60",
-    "defense": "35",
-    "midfield": "56",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "35"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

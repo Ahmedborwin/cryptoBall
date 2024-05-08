@@ -1,12 +1,30 @@
 {
   "name": "唐淼 Tang Miao",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "58",
-    "defense": "66",
-    "midfield": "70",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

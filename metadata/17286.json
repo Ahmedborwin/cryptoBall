@@ -1,12 +1,30 @@
 {
   "name": "Filippo Veneran",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "70",
-    "attack": "20",
-    "defense": "18",
-    "midfield": "29",
-    "goalkeeping": "57"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "18"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "57"
+    }
+  ]
 }

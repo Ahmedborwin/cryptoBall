@@ -1,12 +1,30 @@
 {
   "name": "Cheick Mamadou Diabaté",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "67",
-    "attack": "42",
-    "defense": "59",
-    "midfield": "42",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "42"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

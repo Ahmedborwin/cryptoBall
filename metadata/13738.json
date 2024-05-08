@@ -1,12 +1,30 @@
 {
   "name": "James Anthony Talbot",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "66",
-    "attack": "32",
-    "defense": "27",
-    "midfield": "34",
-    "goalkeeping": "60"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "32"
+    },
+    {
+      "name": "defense",
+      "value": "27"
+    },
+    {
+      "name": "midfield",
+      "value": "34"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
 }

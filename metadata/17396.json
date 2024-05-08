@@ -1,12 +1,30 @@
 {
   "name": "Hubert Dawid Idasiak",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "55",
-    "potential": "66",
-    "attack": "22",
-    "defense": "19",
-    "midfield": "30",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "30"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Joaquín Panichelli",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "75",
-    "attack": "60",
-    "defense": "26",
-    "midfield": "52",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "26"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

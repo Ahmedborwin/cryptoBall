@@ -1,12 +1,30 @@
 {
   "name": "Martin Kreuzriegler",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "65",
-    "potential": "65",
-    "attack": "43",
-    "defense": "66",
-    "midfield": "52",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "65"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "66"
+    },
+    {
+      "name": "midfield",
+      "value": "52"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Carles Gil de Pareja Vicent",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "79",
-    "potential": "79",
-    "attack": "73",
-    "defense": "43",
-    "midfield": "80",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "79"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "73"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

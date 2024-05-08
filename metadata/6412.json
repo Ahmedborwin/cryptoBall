@@ -1,12 +1,30 @@
 {
   "name": "Daniel Martín Fernández",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "75",
-    "attack": "34",
-    "defense": "25",
-    "midfield": "42",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "34"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Leonardo Diaz Laffore",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "74",
-    "attack": "43",
-    "defense": "63",
-    "midfield": "55",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "43"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

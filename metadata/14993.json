@@ -1,12 +1,30 @@
 {
   "name": "Mohammed Saeed Bu Sanda Ahmed Theyab Al Falahi",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "61",
-    "attack": "26",
-    "defense": "21",
-    "midfield": "32",
-    "goalkeeping": "58"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "32"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "58"
+    }
+  ]
 }

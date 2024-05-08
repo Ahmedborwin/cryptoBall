@@ -1,12 +1,30 @@
 {
   "name": "Sebastiano Luperto",
   "club_position": "CB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "79",
-    "attack": "63",
-    "defense": "77",
-    "midfield": "65",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "63"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

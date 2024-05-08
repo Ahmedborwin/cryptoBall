@@ -1,12 +1,30 @@
 {
   "name": "Jusuf Gazibegović",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "75",
-    "attack": "64",
-    "defense": "68",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

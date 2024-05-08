@@ -1,12 +1,30 @@
 {
   "name": "Sebastian Kowalczyk",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "71",
-    "attack": "72",
-    "defense": "45",
-    "midfield": "71",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "45"
+    },
+    {
+      "name": "midfield",
+      "value": "71"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

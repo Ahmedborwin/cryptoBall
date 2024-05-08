@@ -1,12 +1,30 @@
 {
   "name": "Joel Anker",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "68",
-    "attack": "53",
-    "defense": "39",
-    "midfield": "54",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "39"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

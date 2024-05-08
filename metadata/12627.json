@@ -1,12 +1,30 @@
 {
   "name": "Román Vega",
   "club_position": "LB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "75",
-    "attack": "51",
-    "defense": "60",
-    "midfield": "58",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

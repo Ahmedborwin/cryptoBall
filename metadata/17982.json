@@ -1,12 +1,30 @@
 {
   "name": "Patryk Kusztal",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "69",
-    "attack": "57",
-    "defense": "25",
-    "midfield": "51",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "51"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Alejandro Blesa Pina",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "62",
-    "potential": "69",
-    "attack": "60",
-    "defense": "50",
-    "midfield": "64",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "62"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "50"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

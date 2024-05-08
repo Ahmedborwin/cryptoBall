@@ -1,12 +1,30 @@
 {
   "name": "Zac Bowling",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "64",
-    "attack": "24",
-    "defense": "21",
-    "midfield": "29",
-    "goalkeeping": "52"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "24"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "52"
+    }
+  ]
 }

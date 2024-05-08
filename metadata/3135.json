@@ -1,12 +1,30 @@
 {
   "name": "Jesse Pekka Joronen",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "73",
-    "potential": "73",
-    "attack": "36",
-    "defense": "30",
-    "midfield": "42",
-    "goalkeeping": "72"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "73"
+    },
+    {
+      "name": "potential",
+      "value": "73"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "42"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "72"
+    }
+  ]
 }

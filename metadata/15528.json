@@ -1,12 +1,30 @@
 {
   "name": "Muhamed Šahinović",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "75",
-    "attack": "26",
-    "defense": "22",
-    "midfield": "33",
-    "goalkeeping": "61"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "26"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "33"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "61"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Iva Gelashvili",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "64",
-    "attack": "37",
-    "defense": "60",
-    "midfield": "39",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "64"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "60"
+    },
+    {
+      "name": "midfield",
+      "value": "39"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

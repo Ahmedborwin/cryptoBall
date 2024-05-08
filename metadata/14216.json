@@ -1,12 +1,30 @@
 {
   "name": "Gvidas Gineitis",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "61",
-    "potential": "80",
-    "attack": "59",
-    "defense": "55",
-    "midfield": "59",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "61"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "59"
+    },
+    {
+      "name": "defense",
+      "value": "55"
+    },
+    {
+      "name": "midfield",
+      "value": "59"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

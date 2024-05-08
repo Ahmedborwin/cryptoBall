@@ -1,12 +1,30 @@
 {
   "name": "李威 Li Wei",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "48",
-    "potential": "54",
-    "attack": "50",
-    "defense": "42",
-    "midfield": "50",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "48"
+    },
+    {
+      "name": "potential",
+      "value": "54"
+    },
+    {
+      "name": "attack",
+      "value": "50"
+    },
+    {
+      "name": "defense",
+      "value": "42"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

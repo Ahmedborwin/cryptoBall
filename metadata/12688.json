@@ -1,12 +1,30 @@
 {
   "name": "Regan Hendry",
   "club_position": "LCM",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "65",
-    "attack": "65",
-    "defense": "58",
-    "midfield": "66",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "65"
+    },
+    {
+      "name": "defense",
+      "value": "58"
+    },
+    {
+      "name": "midfield",
+      "value": "66"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

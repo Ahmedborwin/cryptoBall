@@ -1,12 +1,30 @@
 {
   "name": "Gabriel Martínez Aguilera",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "67",
-    "potential": "80",
-    "attack": "68",
-    "defense": "36",
-    "midfield": "63",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "67"
+    },
+    {
+      "name": "potential",
+      "value": "80"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "36"
+    },
+    {
+      "name": "midfield",
+      "value": "63"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

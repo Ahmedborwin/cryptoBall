@@ -1,12 +1,30 @@
 {
   "name": "Vegard Østraat Erlien",
   "club_position": "LS",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "67",
-    "attack": "64",
-    "defense": "38",
-    "midfield": "61",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "38"
+    },
+    {
+      "name": "midfield",
+      "value": "61"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

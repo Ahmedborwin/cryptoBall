@@ -1,12 +1,30 @@
 {
   "name": "Ibrahim Diakité",
   "club_position": "RWB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "75",
-    "attack": "56",
-    "defense": "61",
-    "midfield": "55",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "55"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

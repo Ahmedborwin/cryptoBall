@@ -1,12 +1,30 @@
 {
   "name": "Jodi Jones",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "67",
-    "attack": "69",
-    "defense": "47",
-    "midfield": "65",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "67"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

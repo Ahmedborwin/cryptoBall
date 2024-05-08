@@ -1,12 +1,30 @@
 {
   "name": "Taylor Ellis Allen",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "62",
-    "attack": "61",
-    "defense": "56",
-    "midfield": "57",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "62"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "57"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

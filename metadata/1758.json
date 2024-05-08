@@ -1,12 +1,30 @@
 {
   "name": "Niclas Eliasson Santana",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "75",
-    "defense": "47",
-    "midfield": "75",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "47"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

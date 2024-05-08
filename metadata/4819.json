@@ -1,12 +1,30 @@
 {
   "name": "Kyle Bartley",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "70",
-    "potential": "70",
-    "attack": "41",
-    "defense": "73",
-    "midfield": "56",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "73"
+    },
+    {
+      "name": "midfield",
+      "value": "56"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

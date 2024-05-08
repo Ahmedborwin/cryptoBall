@@ -1,12 +1,30 @@
 {
   "name": "Michael Obafemi",
   "club_position": "RS",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "76",
-    "attack": "72",
-    "defense": "33",
-    "midfield": "64",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "33"
+    },
+    {
+      "name": "midfield",
+      "value": "64"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

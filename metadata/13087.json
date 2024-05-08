@@ -1,12 +1,30 @@
 {
   "name": "Mathis Lambourde",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "81",
-    "attack": "66",
-    "defense": "29",
-    "midfield": "58",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "66"
+    },
+    {
+      "name": "defense",
+      "value": "29"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

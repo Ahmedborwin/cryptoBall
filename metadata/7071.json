@@ -1,12 +1,30 @@
 {
   "name": "Jack McGlynn",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "81",
-    "attack": "64",
-    "defense": "56",
-    "midfield": "70",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "81"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "56"
+    },
+    {
+      "name": "midfield",
+      "value": "70"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

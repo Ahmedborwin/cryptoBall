@@ -1,12 +1,30 @@
 {
   "name": "Chris Führich",
   "club_position": "LM",
-  "attributes": {
-    "overall_rating": "77",
-    "potential": "78",
-    "attack": "76",
-    "defense": "51",
-    "midfield": "75",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "77"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "76"
+    },
+    {
+      "name": "defense",
+      "value": "51"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

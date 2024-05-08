@@ -1,12 +1,30 @@
 {
   "name": "Alexis Claude Maurice",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "76",
-    "attack": "75",
-    "defense": "67",
-    "midfield": "75",
-    "goalkeeping": "14"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "67"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "14"
+    }
+  ]
 }

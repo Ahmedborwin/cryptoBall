@@ -1,12 +1,30 @@
 {
   "name": "Valentyn Morgun",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "70",
-    "attack": "28",
-    "defense": "20",
-    "midfield": "29",
-    "goalkeeping": "59"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "29"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
 }

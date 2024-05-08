@@ -1,12 +1,30 @@
 {
   "name": "Fernando Zuqui",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "75",
-    "attack": "69",
-    "defense": "69",
-    "midfield": "75",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "75"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

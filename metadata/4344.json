@@ -1,12 +1,30 @@
 {
   "name": "Rodrigo Andrés Ureña Reyes",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "71",
-    "attack": "60",
-    "defense": "70",
-    "midfield": "68",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "60"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "68"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Jack Gibson",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "53",
-    "potential": "61",
-    "attack": "23",
-    "defense": "20",
-    "midfield": "28",
-    "goalkeeping": "55"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "53"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "23"
+    },
+    {
+      "name": "defense",
+      "value": "20"
+    },
+    {
+      "name": "midfield",
+      "value": "28"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "55"
+    }
+  ]
 }

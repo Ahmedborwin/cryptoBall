@@ -1,12 +1,30 @@
 {
   "name": "Giovanni Leoni",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "56",
-    "potential": "79",
-    "attack": "41",
-    "defense": "57",
-    "midfield": "46",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "56"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "57"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

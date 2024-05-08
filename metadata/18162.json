@@ -1,12 +1,30 @@
 {
   "name": "Abdi Salim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "52",
-    "potential": "65",
-    "attack": "39",
-    "defense": "54",
-    "midfield": "41",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "52"
+    },
+    {
+      "name": "potential",
+      "value": "65"
+    },
+    {
+      "name": "attack",
+      "value": "39"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "41"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

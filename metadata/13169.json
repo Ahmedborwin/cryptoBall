@@ -1,12 +1,30 @@
 {
   "name": "Barne Pernot",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "70",
-    "attack": "51",
-    "defense": "62",
-    "midfield": "58",
-    "goalkeeping": "11"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
 }

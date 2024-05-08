@@ -1,12 +1,30 @@
 {
   "name": "Filip Marchwiński",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "68",
-    "potential": "79",
-    "attack": "67",
-    "defense": "43",
-    "midfield": "69",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "79"
+    },
+    {
+      "name": "attack",
+      "value": "67"
+    },
+    {
+      "name": "defense",
+      "value": "43"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

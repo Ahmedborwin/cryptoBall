@@ -1,12 +1,30 @@
 {
   "name": "Teenage Lingani Hadebe",
   "club_position": "LCB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "71",
-    "attack": "51",
-    "defense": "70",
-    "midfield": "54",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "51"
+    },
+    {
+      "name": "defense",
+      "value": "70"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

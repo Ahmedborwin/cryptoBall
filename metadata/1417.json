@@ -1,12 +1,30 @@
 {
   "name": "Arthur Vermeeren",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "76",
-    "potential": "87",
-    "attack": "68",
-    "defense": "69",
-    "midfield": "79",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "76"
+    },
+    {
+      "name": "potential",
+      "value": "87"
+    },
+    {
+      "name": "attack",
+      "value": "68"
+    },
+    {
+      "name": "defense",
+      "value": "69"
+    },
+    {
+      "name": "midfield",
+      "value": "79"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

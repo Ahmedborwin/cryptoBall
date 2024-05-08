@@ -1,12 +1,30 @@
 {
   "name": "Thomas Petrus Johannes Kok",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "63",
-    "potential": "68",
-    "attack": "56",
-    "defense": "62",
-    "midfield": "62",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "63"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "56"
+    },
+    {
+      "name": "defense",
+      "value": "62"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

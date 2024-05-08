@@ -1,12 +1,30 @@
 {
   "name": "Abdulmuhsen Fallatah",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "57",
-    "potential": "57",
-    "attack": "38",
-    "defense": "59",
-    "midfield": "44",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "38"
+    },
+    {
+      "name": "defense",
+      "value": "59"
+    },
+    {
+      "name": "midfield",
+      "value": "44"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

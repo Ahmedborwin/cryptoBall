@@ -1,12 +1,30 @@
 {
   "name": "Ben Godfrey",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "76",
-    "attack": "61",
-    "defense": "76",
-    "midfield": "65",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "61"
+    },
+    {
+      "name": "defense",
+      "value": "76"
+    },
+    {
+      "name": "midfield",
+      "value": "65"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Baba Fernandes",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "59",
-    "potential": "61",
-    "attack": "41",
-    "defense": "61",
-    "midfield": "46",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "59"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "61"
+    },
+    {
+      "name": "midfield",
+      "value": "46"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

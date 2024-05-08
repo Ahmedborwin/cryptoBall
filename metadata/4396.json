@@ -1,12 +1,30 @@
 {
   "name": "Stéphane Imad Diarra",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "71",
-    "potential": "74",
-    "attack": "70",
-    "defense": "46",
-    "midfield": "69",
-    "goalkeeping": "13"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "71"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "70"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "69"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "13"
+    }
+  ]
 }

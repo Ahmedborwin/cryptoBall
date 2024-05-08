@@ -1,12 +1,30 @@
 {
   "name": "Marcos Navarro Blázquez",
   "club_position": "RES",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "53",
-    "defense": "54",
-    "midfield": "54",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "53"
+    },
+    {
+      "name": "defense",
+      "value": "54"
+    },
+    {
+      "name": "midfield",
+      "value": "54"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

@@ -1,12 +1,30 @@
 {
   "name": "Stian Sjøvold Thorstensen",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "54",
-    "potential": "75",
-    "attack": "57",
-    "defense": "37",
-    "midfield": "58",
-    "goalkeeping": "12"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "57"
+    },
+    {
+      "name": "defense",
+      "value": "37"
+    },
+    {
+      "name": "midfield",
+      "value": "58"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "12"
+    }
+  ]
 }

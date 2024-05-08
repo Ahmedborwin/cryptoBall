@@ -1,12 +1,30 @@
 {
   "name": "Matteo Rover",
   "club_position": "RM",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "69",
-    "attack": "69",
-    "defense": "44",
-    "midfield": "62",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "69"
+    },
+    {
+      "name": "attack",
+      "value": "69"
+    },
+    {
+      "name": "defense",
+      "value": "44"
+    },
+    {
+      "name": "midfield",
+      "value": "62"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

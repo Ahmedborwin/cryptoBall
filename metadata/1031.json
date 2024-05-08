@@ -1,12 +1,30 @@
 {
   "name": "Gedson Carvalho Fernandes",
   "club_position": "CAM",
-  "attributes": {
-    "overall_rating": "78",
-    "potential": "83",
-    "attack": "78",
-    "defense": "77",
-    "midfield": "80",
-    "goalkeeping": "9"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "78"
+    },
+    {
+      "name": "potential",
+      "value": "83"
+    },
+    {
+      "name": "attack",
+      "value": "78"
+    },
+    {
+      "name": "defense",
+      "value": "77"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
 }

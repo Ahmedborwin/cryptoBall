@@ -1,12 +1,30 @@
 {
   "name": "Julien Faussurier",
   "club_position": "RB",
-  "attributes": {
-    "overall_rating": "66",
-    "potential": "66",
-    "attack": "58",
-    "defense": "68",
-    "midfield": "67",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "66"
+    },
+    {
+      "name": "potential",
+      "value": "66"
+    },
+    {
+      "name": "attack",
+      "value": "58"
+    },
+    {
+      "name": "defense",
+      "value": "68"
+    },
+    {
+      "name": "midfield",
+      "value": "67"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

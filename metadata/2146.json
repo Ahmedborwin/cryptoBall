@@ -1,12 +1,30 @@
 {
   "name": "Fernando Pacheco Flores",
   "club_position": "GK",
-  "attributes": {
-    "overall_rating": "74",
-    "potential": "74",
-    "attack": "37",
-    "defense": "30",
-    "midfield": "47",
-    "goalkeeping": "73"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "74"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "37"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "47"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "73"
+    }
+  ]
 }

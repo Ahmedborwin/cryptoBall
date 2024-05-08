@@ -1,12 +1,30 @@
 {
   "name": "Álvaro Aguado Méndez",
   "club_position": "RCM",
-  "attributes": {
-    "overall_rating": "75",
-    "potential": "76",
-    "attack": "72",
-    "defense": "63",
-    "midfield": "76",
-    "goalkeeping": "10"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "75"
+    },
+    {
+      "name": "potential",
+      "value": "76"
+    },
+    {
+      "name": "attack",
+      "value": "72"
+    },
+    {
+      "name": "defense",
+      "value": "63"
+    },
+    {
+      "name": "midfield",
+      "value": "76"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
 }

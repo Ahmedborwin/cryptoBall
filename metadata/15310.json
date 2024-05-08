@@ -1,12 +1,30 @@
 {
   "name": "Min-Seog Kim",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "60",
-    "potential": "74",
-    "attack": "64",
-    "defense": "46",
-    "midfield": "53",
-    "goalkeeping": "8"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "64"
+    },
+    {
+      "name": "defense",
+      "value": "46"
+    },
+    {
+      "name": "midfield",
+      "value": "53"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "8"
+    }
+  ]
 }

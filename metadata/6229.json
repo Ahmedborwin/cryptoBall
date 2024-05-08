@@ -1,12 +1,30 @@
 {
   "name": "Lionel Mpasi-Nzau",
   "club_position": "SUB",
-  "attributes": {
-    "overall_rating": "69",
-    "potential": "70",
-    "attack": "36",
-    "defense": "24",
-    "midfield": "38",
-    "goalkeeping": "68"
-  }
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "69"
+    },
+    {
+      "name": "potential",
+      "value": "70"
+    },
+    {
+      "name": "attack",
+      "value": "36"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "38"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "68"
+    }
+  ]
 }

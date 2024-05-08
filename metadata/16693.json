@@ -1,0 +1,30 @@
+{
+  "name": "حسين شيعان Hussain Abdoh Yahya Al-Shae'an",
+  "club_position": "SUB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "57"
+    },
+    {
+      "name": "potential",
+      "value": "57"
+    },
+    {
+      "name": "attack",
+      "value": "31"
+    },
+    {
+      "name": "defense",
+      "value": "25"
+    },
+    {
+      "name": "midfield",
+      "value": "36"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "56"
+    }
+  ]
+}

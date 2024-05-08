@@ -1,0 +1,30 @@
+{
+  "name": "Jorge Resurrección Merodio",
+  "club_position": "CDM",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "84"
+    },
+    {
+      "name": "potential",
+      "value": "84"
+    },
+    {
+      "name": "attack",
+      "value": "75"
+    },
+    {
+      "name": "defense",
+      "value": "78"
+    },
+    {
+      "name": "midfield",
+      "value": "83"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "11"
+    }
+  ]
+}

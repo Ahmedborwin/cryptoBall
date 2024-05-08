@@ -1,0 +1,30 @@
+{
+  "name": "Holden Trent",
+  "club_position": "SUB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "54"
+    },
+    {
+      "name": "potential",
+      "value": "61"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "21"
+    },
+    {
+      "name": "midfield",
+      "value": "25"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "53"
+    }
+  ]
+}

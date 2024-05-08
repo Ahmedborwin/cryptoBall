@@ -1,0 +1,30 @@
+{
+  "name": "Fabian de Keijzer",
+  "club_position": "SUB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "68"
+    },
+    {
+      "name": "potential",
+      "value": "74"
+    },
+    {
+      "name": "attack",
+      "value": "28"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "37"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "67"
+    }
+  ]
+}

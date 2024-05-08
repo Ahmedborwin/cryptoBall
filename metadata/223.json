@@ -1,0 +1,30 @@
+{
+  "name": "Ferland Mendy",
+  "club_position": "LB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "82"
+    },
+    {
+      "name": "potential",
+      "value": "82"
+    },
+    {
+      "name": "attack",
+      "value": "77"
+    },
+    {
+      "name": "defense",
+      "value": "79"
+    },
+    {
+      "name": "midfield",
+      "value": "80"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "10"
+    }
+  ]
+}

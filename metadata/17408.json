@@ -1,0 +1,30 @@
+{
+  "name": "Adam Jeremy Pavlesic",
+  "club_position": "SUB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "55"
+    },
+    {
+      "name": "potential",
+      "value": "68"
+    },
+    {
+      "name": "attack",
+      "value": "22"
+    },
+    {
+      "name": "defense",
+      "value": "16"
+    },
+    {
+      "name": "midfield",
+      "value": "23"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "56"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Gianluigi Donnarumma",
+  "club_position": "GK",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "87"
+    },
+    {
+      "name": "potential",
+      "value": "90"
+    },
+    {
+      "name": "attack",
+      "value": "41"
+    },
+    {
+      "name": "defense",
+      "value": "30"
+    },
+    {
+      "name": "midfield",
+      "value": "50"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "83"
+    }
+  ]
+}

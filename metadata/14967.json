@@ -1,0 +1,30 @@
+{
+  "name": "Luís Henrique Moraes Pires",
+  "club_position": "RES",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "27"
+    },
+    {
+      "name": "defense",
+      "value": "23"
+    },
+    {
+      "name": "midfield",
+      "value": "33"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "59"
+    }
+  ]
+}

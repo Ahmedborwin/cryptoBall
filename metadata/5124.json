@@ -1,0 +1,30 @@
+{
+  "name": "Şahrudin Məhəmməd oğlu Məhəmmədəliyev",
+  "club_position": "GK",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "70"
+    },
+    {
+      "name": "potential",
+      "value": "71"
+    },
+    {
+      "name": "attack",
+      "value": "33"
+    },
+    {
+      "name": "defense",
+      "value": "24"
+    },
+    {
+      "name": "midfield",
+      "value": "34"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "69"
+    }
+  ]
+}

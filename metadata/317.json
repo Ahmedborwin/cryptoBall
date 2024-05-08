@@ -1,0 +1,30 @@
+{
+  "name": "Federico Santiago Valverde Dipetta",
+  "club_position": "RCM",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "88"
+    },
+    {
+      "name": "potential",
+      "value": "92"
+    },
+    {
+      "name": "attack",
+      "value": "85"
+    },
+    {
+      "name": "defense",
+      "value": "81"
+    },
+    {
+      "name": "midfield",
+      "value": "86"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "9"
+    }
+  ]
+}

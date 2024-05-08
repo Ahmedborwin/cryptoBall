@@ -1,0 +1,30 @@
+{
+  "name": "Hugo Johannes Walter Rölleke",
+  "club_position": "RES",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "60"
+    },
+    {
+      "name": "potential",
+      "value": "75"
+    },
+    {
+      "name": "attack",
+      "value": "21"
+    },
+    {
+      "name": "defense",
+      "value": "22"
+    },
+    {
+      "name": "midfield",
+      "value": "22"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Emmanuel Ochoa",
+  "club_position": "SUB",
+  "attributes": [
+    {
+      "name": "overall_rating",
+      "value": "58"
+    },
+    {
+      "name": "potential",
+      "value": "78"
+    },
+    {
+      "name": "attack",
+      "value": "20"
+    },
+    {
+      "name": "defense",
+      "value": "19"
+    },
+    {
+      "name": "midfield",
+      "value": "24"
+    },
+    {
+      "name": "goalkeeping",
+      "value": "60"
+    }
+  ]
+}

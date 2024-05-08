@@ -11,11 +11,8 @@ contract MatchManager {
     address creator; //address of creator
     address challenger; //address of challenger
     address winner; //address of winner
-    uint256 wager; //amount for each player to send
-    address erc20Address; //address of desired erc20 token
     uint256 creationTime; //unix time (seconds) when game was created
     uint256 completionTime; //unix time (seconds) when completed and paid out
-    uint256 blockAccepted; //block number when challenger accepted
     uint256 status;
     //0 = null (untouched)
     //1 = active
@@ -81,7 +78,7 @@ contract MatchManager {
   function acceptGame(uint256 _id) public {
     require(games[_id].creator != msg.sender, "Challenger can not be creator...");
     require(_checkActive(_id), "Game is not active...");
-    //require(!_checkExpired(_id), "Game is expired...");
+    require(_rosterFilled(msg.sender));
 
     games[_id].challenger = msg.sender;
     games[_id].blockAccepted = block.number;

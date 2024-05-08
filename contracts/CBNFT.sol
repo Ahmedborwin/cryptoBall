@@ -9,19 +9,31 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 error CBNFT__AlreadyInitialized();
 
 contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
+  //Modifiers
+  modifier onlyAdmin(address _caller) {
+    require(_caller == VRF_RequestHandler || _caller == contract_Admin, "Only Conract Admins Can Make This Call");
+    _;
+  }
+
   //variables
   uint8 private s_tokenCounter;
   string[] internal s_BallURIs;
+  string s_CB_BaseURI;
   bool private s_initialized;
 
-  //NFT to address storage mapping
-  mapping(address => mapping(uint256 => string)) public s_addressToTokenURI;
+  //Admins
+  address internal VRF_RequestHandler;
+  address internal contract_Admin;
+
   //All NFT's to address storage mapping
   mapping(address => string[]) public s_addressToAllTokenURIs;
 
-  constructor(string[] memory _tokenURIs) ERC721("CB_PLAYERS", "CBNFT") {
+  event NFTMinted(address player, string tokenURI);
+
+  constructor(string[] memory _tokenURIs, address _contractAdmin) ERC721("CB_PLAYERS", "CBNFT") {
     s_tokenCounter = 1;
     _initializeTokenURIArray(_tokenURIs);
+    contract_Admin = _contractAdmin;
   }
 
   function _initializeTokenURIArray(string[] memory tokenUris) private {
@@ -32,16 +44,18 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     s_initialized = true;
   }
 
-  function minNFT(uint8 _uriIndex) external {
+  function minNFT(uint8 _uriIndex, address _player) external onlyAdmin(msg.sender) {
     uint8 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
     //Mint NFT and set the TokenURI
-    _safeMint(msg.sender, _tokenCounter);
+    _safeMint(_player, _tokenCounter);
+    //TODO how to create URI based on the players index here??
+    string memory playerURI = s_CB_BaseURI;
     _setTokenURI(_tokenCounter, s_BallURIs[_uriIndex]);
     // push new token URI to list of tokens owned by address
-    s_addressToAllTokenURIs[msg.sender].push(s_BallURIs[_uriIndex]);
+    s_addressToAllTokenURIs[msg.sender].push(playerURI);
     // //emit event
-    // emit nftMinted(_athlete, s_RunnerSeriesURI[uint256(nftWon)]);
+    emit NFTMinted(_player, playerURI);
   }
 
   function updateTokenURI(uint8 _tokenID, string calldata _newURI) external onlyOwner {
@@ -49,11 +63,12 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   }
 
   //getter functions
-  function getTokenURIArray() external view returns (string[] memory) {
-    return s_BallURIs;
-  }
 
   function getTokenURIByAddress(address _address) external view returns (string[] memory) {
     return s_addressToAllTokenURIs[_address];
+  }
+
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
+    VRF_RequestHandler = _vrfHandler;
   }
 }

@@ -69,6 +69,7 @@ contract MatchManager {
     games[totalGames].status = 1; //set game to active
 
     //Update creator's created game count and list
+    //QUERY: Should active games update on game accepted rather than create?
     stats[msg.sender].activeGames++;
     stats[msg.sender].totalUserGames++;
     stats[msg.sender].userGameIds[stats[msg.sender].totalUserGames] = totalGames;

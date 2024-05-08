@@ -19,7 +19,6 @@
     "format:fix": "prettier --write ."
   },
   "dependencies": {
-    "@chainlink/contracts": "^1.0.0",
     "@chainlink/env-enc": "^1.0.5",
     "@chainlink/functions-toolkit": "^0.2.7",
     "@ethersproject/abi": "^5.7.0",
@@ -67,6 +66,7 @@
     "printWidth": 120
   },
   "devDependencies": {
+    "@chainlink/contracts": "^1.1.0",
     "@pinata/sdk": "^2.1.0"
   }
 }

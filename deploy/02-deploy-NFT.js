@@ -4,8 +4,7 @@ const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-too
 const hre = require("hardhat")
 const { SubscriptionManager } = require("@chainlink/functions-toolkit")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
-const { storeImages, storeTokenUriMetadata } = require("../scripts/utils/uploadPinata")
-const { playerMetaData } = require("../simulationData/playersData")
+const { uploadMetadataAsBatch } = require("../scripts/utils/uploadPinata")
 
 let tokenUris = [
   "ipfs://QmYNiyyaiwVNmCLeG6Ahe4wPWz3jqVnCUfRhXwZuKevWaA",
@@ -71,18 +70,16 @@ let tokenUris = [
 ]
 
 async function handleTokenUris() {
-  tokenUris = []
-  counter = 1
-  for (const player of playerMetaData) {
-    console.log(`Uploading ${player.name}...`)
-    const metadataUploadResponse = await storeTokenUriMetadata(player)
-    tokenUris.push(`ipfs://${metadataUploadResponse.IpfsHash}`)
-  }
-  console.log("Token URIs uploaded! They are:")
-  console.log(tokenUris)
-  return tokenUris
-}
+  // Upload player metadata and get responses
+  console.log("Uploading player metadata...")
+  const uploads = await uploadMetadataAsBatch()
 
+  // // Update tokenUris array with new IPFS URIs
+  // tokenUris = uploads.map(upload => `ipfs://${upload.ipfsHash}`);
+  // console.log("Token URIs uploaded! They are:");
+  // console.log(tokenUris);
+  // return tokenUris;
+}
 /**
  *
  * @param hre HardhatRuntimeEnvironment object.
@@ -90,6 +87,7 @@ async function handleTokenUris() {
 const deployNFTContract = async function () {
   const signer = await hre.ethers.getSigner()
 
+  tokenUris = await handleTokenUris()
   if (process.env.UPLOAD_TO_PINATA == "true") {
     tokenUris = await handleTokenUris()
   }
@@ -100,11 +98,11 @@ const deployNFTContract = async function () {
   //write address and ABI to config
   await updateContractInfo({ undefined, NFTAddress: CBNFT.address })
 
-  await CBNFT.minNFT(2)
-  await CBNFT.minNFT(4)
-  await CBNFT.minNFT(5)
-  await CBNFT.minNFT(23)
-  await CBNFT.minNFT(56)
+  // await CBNFT.minNFT(2)
+  // await CBNFT.minNFT(4)
+  // await CBNFT.minNFT(5)
+  // await CBNFT.minNFT(23)
+  // await CBNFT.minNFT(56)
 
   return { CBNFT }
 }

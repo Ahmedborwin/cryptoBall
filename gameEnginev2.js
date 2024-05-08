@@ -47,6 +47,8 @@ function simulateMatch() {
   let team2Goals = computeScoreFromChance(team2Skill)
   team2Goals = team2Goals - team2Goals * shotsToGoalsRatio * (team1GkSkill * eliteGoalSavePercentage)
 
+  //Call adjust player attributes here??
+
   //Hardcoded for now. Match simulaiton is not working.
   return { team1Goals: 1, team2Goals: 2, team1, team2 }
 }
@@ -112,25 +114,3 @@ function encodeMatchResult(matchResult) {
 const matchResult = simulateMatch()
 const encodedMatchResult = encodeMatchResult(matchResult)
 return encodedMatchResult
-
-// async function compressBuffer(buffer) {
-//   try {
-//     const compressed = await gzipAsync(buffer)
-//     console.log(`Original size: ${buffer.length}, Compressed size: ${compressed.length}`)
-//     return compressed
-//   } catch (error) {
-//     console.error("Compression error:", error)
-//     return null
-//   }
-// }
-
-// Simulate and encode the match
-
-// compressBuffer(encodedMatchResult).then((compressedResult) => {
-//   if (compressedResult) {
-//     console.log("Compression successful")
-//     console.log(`The size of the encodedMatchResult buffer is: ${compressedResult.length} bytes`)
-//     console.log(compressedResult)
-//     return compressedResult
-//   }
-// })

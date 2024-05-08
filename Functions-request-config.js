@@ -9,7 +9,6 @@ let ArgsArray = []
 const requestConfig = {
   // String containing the source code to be executed
   source: fs.readFileSync("./gameEnginev2.js").toString(),
-  //source: fs.readFileSync("./API-request-example.js").toString(),
   // Location of source code (only Inline is currently supported)
   codeLocation: Location.Inline,
   // Optional. Secrets can be accessed within the source code with `secrets.varName` (ie: secrets.apiKey). The secrets object can only contain string values.
@@ -48,8 +47,7 @@ const requestConfig = {
     "49865512548201940331497870868259804087523822397160632906748146731461641992538",
     "99447542792168611910106130817135939407384337273156693590731325457909168497777",
     "40098077993620304526693857714772172778452867398273480542892209412996872016597",
-    "49865512548201940331497870868259804087523822397160632906748146731461641992538"
-    
+    "49865512548201940331497870868259804087523822397160632906748146731461641992538",
   ],
 
   // Code language (only JavaScript is currently supported)

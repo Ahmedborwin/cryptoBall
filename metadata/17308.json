@@ -1,0 +1,12 @@
+{
+  "name": "Jack Wills",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "55",
+    "potential": "65",
+    "attack": "23",
+    "defense": "16",
+    "midfield": "23",
+    "goalkeeping": "55"
+  }
+}

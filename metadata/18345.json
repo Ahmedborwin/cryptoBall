@@ -1,0 +1,12 @@
+{
+  "name": "John O'Sullivan",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "51",
+    "potential": "64",
+    "attack": "52",
+    "defense": "50",
+    "midfield": "53",
+    "goalkeeping": "9"
+  }
+}

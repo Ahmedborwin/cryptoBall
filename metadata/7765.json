@@ -1,0 +1,12 @@
+{
+  "name": "Tom Lees",
+  "club_position": "LCB",
+  "attributes": {
+    "overall_rating": "67",
+    "potential": "67",
+    "attack": "48",
+    "defense": "68",
+    "midfield": "62",
+    "goalkeeping": "13"
+  }
+}

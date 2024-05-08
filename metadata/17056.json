@@ -1,0 +1,12 @@
+{
+  "name": "Tim Hoops",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "56",
+    "potential": "66",
+    "attack": "39",
+    "defense": "55",
+    "midfield": "48",
+    "goalkeeping": "12"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Harvey Vale",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "64",
+    "potential": "80",
+    "attack": "64",
+    "defense": "50",
+    "midfield": "64",
+    "goalkeeping": "13"
+  }
+}

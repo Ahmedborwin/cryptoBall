@@ -1,0 +1,12 @@
+{
+  "name": "Jodi Jones",
+  "club_position": "LM",
+  "attributes": {
+    "overall_rating": "66",
+    "potential": "67",
+    "attack": "69",
+    "defense": "47",
+    "midfield": "65",
+    "goalkeeping": "9"
+  }
+}

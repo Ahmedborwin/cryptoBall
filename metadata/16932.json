@@ -1,0 +1,12 @@
+{
+  "name": "Oliver Jones",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "56",
+    "potential": "68",
+    "attack": "51",
+    "defense": "58",
+    "midfield": "55",
+    "goalkeeping": "11"
+  }
+}

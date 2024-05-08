@@ -1,0 +1,12 @@
+{
+  "name": "Robert Lewandowski",
+  "club_position": "ST",
+  "attributes": {
+    "overall_rating": "90",
+    "potential": "90",
+    "attack": "85",
+    "defense": "53",
+    "midfield": "82",
+    "goalkeeping": "10"
+  }
+}

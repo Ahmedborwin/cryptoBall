@@ -1,0 +1,12 @@
+{
+  "name": "William Wilson",
+  "club_position": "RM",
+  "attributes": {
+    "overall_rating": "58",
+    "potential": "68",
+    "attack": "60",
+    "defense": "54",
+    "midfield": "58",
+    "goalkeeping": "8"
+  }
+}

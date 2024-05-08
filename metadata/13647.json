@@ -1,0 +1,12 @@
+{
+  "name": "John Mahon",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "62",
+    "potential": "66",
+    "attack": "42",
+    "defense": "65",
+    "midfield": "51",
+    "goalkeeping": "10"
+  }
+}

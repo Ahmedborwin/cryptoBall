@@ -1,0 +1,12 @@
+{
+  "name": "Max Anchor",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "50",
+    "potential": "70",
+    "attack": "21",
+    "defense": "17",
+    "midfield": "25",
+    "goalkeeping": "51"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "John McGinn",
+  "club_position": "RDM",
+  "attributes": {
+    "overall_rating": "80",
+    "potential": "80",
+    "attack": "75",
+    "defense": "77",
+    "midfield": "80",
+    "goalkeeping": "11"
+  }
+}

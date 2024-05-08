@@ -1,0 +1,12 @@
+{
+  "name": "Tom Sanne",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "60",
+    "potential": "76",
+    "attack": "62",
+    "defense": "29",
+    "midfield": "56",
+    "goalkeeping": "8"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Tom Smith",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "57",
+    "potential": "69",
+    "attack": "25",
+    "defense": "20",
+    "midfield": "28",
+    "goalkeeping": "57"
+  }
+}

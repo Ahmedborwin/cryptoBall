@@ -1,0 +1,12 @@
+{
+  "name": "Sadio Mané",
+  "club_position": "LM",
+  "attributes": {
+    "overall_rating": "85",
+    "potential": "85",
+    "attack": "84",
+    "defense": "50",
+    "midfield": "82",
+    "goalkeeping": "11"
+  }
+}

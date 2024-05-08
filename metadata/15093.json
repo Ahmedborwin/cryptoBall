@@ -1,0 +1,12 @@
+{
+  "name": "Patrick Jones",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "60",
+    "potential": "77",
+    "attack": "62",
+    "defense": "33",
+    "midfield": "53",
+    "goalkeeping": "11"
+  }
+}

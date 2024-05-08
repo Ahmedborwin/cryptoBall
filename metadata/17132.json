@@ -1,0 +1,12 @@
+{
+  "name": "Walter Scott",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "56",
+    "potential": "62",
+    "attack": "52",
+    "defense": "56",
+    "midfield": "52",
+    "goalkeeping": "9"
+  }
+}

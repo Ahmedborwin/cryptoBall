@@ -1,0 +1,12 @@
+{
+  "name": "John Ruddy",
+  "club_position": "GK",
+  "attributes": {
+    "overall_rating": "70",
+    "potential": "70",
+    "attack": "31",
+    "defense": "25",
+    "midfield": "37",
+    "goalkeeping": "69"
+  }
+}

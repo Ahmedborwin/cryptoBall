@@ -1,0 +1,12 @@
+{
+  "name": "William Fish",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "68",
+    "potential": "78",
+    "attack": "47",
+    "defense": "68",
+    "midfield": "59",
+    "goalkeeping": "11"
+  }
+}

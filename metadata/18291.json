@@ -1,0 +1,12 @@
+{
+  "name": "Harrison Smith",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "51",
+    "potential": "63",
+    "attack": "52",
+    "defense": "33",
+    "midfield": "45",
+    "goalkeeping": "11"
+  }
+}

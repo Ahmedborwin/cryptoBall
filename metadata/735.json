@@ -1,0 +1,12 @@
+{
+  "name": "Joe Gomez",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "80",
+    "potential": "83",
+    "attack": "58",
+    "defense": "80",
+    "midfield": "73",
+    "goalkeeping": "10"
+  }
+}

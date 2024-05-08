@@ -1,0 +1,12 @@
+{
+  "name": "Ben Nelson",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "61",
+    "potential": "75",
+    "attack": "48",
+    "defense": "62",
+    "midfield": "54",
+    "goalkeeping": "12"
+  }
+}

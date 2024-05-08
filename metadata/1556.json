@@ -1,0 +1,12 @@
+{
+  "name": "Joe Rodon",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "76",
+    "potential": "80",
+    "attack": "51",
+    "defense": "77",
+    "midfield": "63",
+    "goalkeeping": "10"
+  }
+}

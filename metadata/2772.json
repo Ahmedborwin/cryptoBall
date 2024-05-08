@@ -1,0 +1,12 @@
+{
+  "name": "Jake O'Brien",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "73",
+    "potential": "80",
+    "attack": "53",
+    "defense": "73",
+    "midfield": "57",
+    "goalkeeping": "11"
+  }
+}

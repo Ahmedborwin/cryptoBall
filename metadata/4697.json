@@ -1,0 +1,12 @@
+{
+  "name": "Joe Williams",
+  "club_position": "RDM",
+  "attributes": {
+    "overall_rating": "70",
+    "potential": "73",
+    "attack": "60",
+    "defense": "70",
+    "midfield": "66",
+    "goalkeeping": "10"
+  }
+}

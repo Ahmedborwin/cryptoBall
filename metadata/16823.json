@@ -1,0 +1,12 @@
+{
+  "name": "Joe Walsh",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "57",
+    "potential": "70",
+    "attack": "35",
+    "defense": "22",
+    "midfield": "41",
+    "goalkeeping": "59"
+  }
+}

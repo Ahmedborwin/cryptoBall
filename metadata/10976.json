@@ -1,0 +1,12 @@
+{
+  "name": "Sinclair Armstrong",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "65",
+    "potential": "80",
+    "attack": "68",
+    "defense": "39",
+    "midfield": "56",
+    "goalkeeping": "9"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Ivan Ilić",
+  "club_position": "RCM",
+  "attributes": {
+    "overall_rating": "77",
+    "potential": "85",
+    "attack": "73",
+    "defense": "69",
+    "midfield": "76",
+    "goalkeeping": "11"
+  }
+}

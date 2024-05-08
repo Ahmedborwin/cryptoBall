@@ -1,0 +1,12 @@
+{
+  "name": "Ed Turns",
+  "club_position": "CB",
+  "attributes": {
+    "overall_rating": "64",
+    "potential": "75",
+    "attack": "45",
+    "defense": "65",
+    "midfield": "55",
+    "goalkeeping": "12"
+  }
+}

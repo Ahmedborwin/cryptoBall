@@ -1,0 +1,12 @@
+{
+  "name": "Jack Grealish",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "85",
+    "potential": "85",
+    "attack": "80",
+    "defense": "58",
+    "midfield": "85",
+    "goalkeeping": "10"
+  }
+}

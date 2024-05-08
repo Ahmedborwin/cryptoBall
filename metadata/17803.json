@@ -1,0 +1,12 @@
+{
+  "name": "Law McCabe",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "54",
+    "potential": "74",
+    "attack": "56",
+    "defense": "41",
+    "midfield": "56",
+    "goalkeeping": "10"
+  }
+}

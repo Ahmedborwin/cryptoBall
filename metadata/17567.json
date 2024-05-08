@@ -1,0 +1,12 @@
+{
+  "name": "George Cooper",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "55",
+    "potential": "62",
+    "attack": "46",
+    "defense": "55",
+    "midfield": "49",
+    "goalkeeping": "8"
+  }
+}

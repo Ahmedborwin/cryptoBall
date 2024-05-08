@@ -1,0 +1,12 @@
+{
+  "name": "Wouter Goes",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "67",
+    "potential": "82",
+    "attack": "50",
+    "defense": "68",
+    "midfield": "59",
+    "goalkeeping": "9"
+  }
+}

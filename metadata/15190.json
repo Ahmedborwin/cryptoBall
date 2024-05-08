@@ -1,0 +1,12 @@
+{
+  "name": "Ethan Pye",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "60",
+    "potential": "67",
+    "attack": "44",
+    "defense": "62",
+    "midfield": "51",
+    "goalkeeping": "13"
+  }
+}

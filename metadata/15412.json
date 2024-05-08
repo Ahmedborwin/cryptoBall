@@ -1,0 +1,12 @@
+{
+  "name": "Louis Jones",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "60",
+    "potential": "64",
+    "attack": "30",
+    "defense": "27",
+    "midfield": "35",
+    "goalkeeping": "59"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Sam Tickle",
+  "club_position": "GK",
+  "attributes": {
+    "overall_rating": "65",
+    "potential": "74",
+    "attack": "27",
+    "defense": "21",
+    "midfield": "42",
+    "goalkeeping": "64"
+  }
+}

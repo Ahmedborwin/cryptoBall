@@ -1,0 +1,12 @@
+{
+  "name": "Joe Hilton",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "58",
+    "potential": "65",
+    "attack": "25",
+    "defense": "25",
+    "midfield": "30",
+    "goalkeeping": "58"
+  }
+}

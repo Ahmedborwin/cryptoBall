@@ -1,0 +1,12 @@
+{
+  "name": "Max Bird",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "67",
+    "potential": "73",
+    "attack": "62",
+    "defense": "64",
+    "midfield": "69",
+    "goalkeeping": "10"
+  }
+}

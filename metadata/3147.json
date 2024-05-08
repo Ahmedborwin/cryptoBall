@@ -1,0 +1,12 @@
+{
+  "name": "Jack Cork",
+  "club_position": "RES",
+  "attributes": {
+    "overall_rating": "73",
+    "potential": "73",
+    "attack": "59",
+    "defense": "72",
+    "midfield": "70",
+    "goalkeeping": "10"
+  }
+}

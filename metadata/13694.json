@@ -1,0 +1,12 @@
+{
+  "name": "Robert Street",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "62",
+    "potential": "69",
+    "attack": "61",
+    "defense": "42",
+    "midfield": "58",
+    "goalkeeping": "11"
+  }
+}

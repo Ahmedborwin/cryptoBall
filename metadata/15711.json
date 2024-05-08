@@ -1,0 +1,12 @@
+{
+  "name": "Jackson Smith",
+  "club_position": "GK",
+  "attributes": {
+    "overall_rating": "59",
+    "potential": "65",
+    "attack": "23",
+    "defense": "20",
+    "midfield": "28",
+    "goalkeeping": "58"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Harry Kane",
+  "club_position": "ST",
+  "attributes": {
+    "overall_rating": "90",
+    "potential": "90",
+    "attack": "83",
+    "defense": "56",
+    "midfield": "85",
+    "goalkeeping": "11"
+  }
+}

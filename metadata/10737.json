@@ -1,0 +1,12 @@
+{
+  "name": "Benjamin House",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "65",
+    "potential": "70",
+    "attack": "64",
+    "defense": "54",
+    "midfield": "61",
+    "goalkeeping": "10"
+  }
+}

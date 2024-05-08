@@ -1,0 +1,12 @@
+{
+  "name": "Jack Roles",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "57",
+    "potential": "58",
+    "attack": "62",
+    "defense": "47",
+    "midfield": "58",
+    "goalkeeping": "10"
+  }
+}

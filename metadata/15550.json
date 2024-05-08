@@ -1,0 +1,12 @@
+{
+  "name": "Ivan Glavinovich",
+  "club_position": "LCB",
+  "attributes": {
+    "overall_rating": "60",
+    "potential": "71",
+    "attack": "47",
+    "defense": "60",
+    "midfield": "50",
+    "goalkeeping": "12"
+  }
+}

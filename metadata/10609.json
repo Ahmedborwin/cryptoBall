@@ -1,0 +1,12 @@
+{
+  "name": "Joe Wright",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "65",
+    "potential": "66",
+    "attack": "46",
+    "defense": "66",
+    "midfield": "56",
+    "goalkeeping": "9"
+  }
+}

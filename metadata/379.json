@@ -1,0 +1,12 @@
+{
+  "name": "John Stones",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "85",
+    "potential": "86",
+    "attack": "65",
+    "defense": "83",
+    "midfield": "80",
+    "goalkeeping": "10"
+  }
+}

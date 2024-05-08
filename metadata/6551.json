@@ -1,0 +1,12 @@
+{
+  "name": "Emile Dorval",
+  "club_position": "RB",
+  "attributes": {
+    "overall_rating": "68",
+    "potential": "77",
+    "attack": "58",
+    "defense": "60",
+    "midfield": "64",
+    "goalkeeping": "12"
+  }
+}

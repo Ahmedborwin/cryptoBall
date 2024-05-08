@@ -1,0 +1,12 @@
+{
+  "name": "Freddie Draper",
+  "club_position": "RS",
+  "attributes": {
+    "overall_rating": "63",
+    "potential": "74",
+    "attack": "61",
+    "defense": "46",
+    "midfield": "57",
+    "goalkeeping": "12"
+  }
+}

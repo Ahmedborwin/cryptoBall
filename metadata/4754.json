@@ -1,0 +1,12 @@
+{
+  "name": "Alfie Jones",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "70",
+    "potential": "75",
+    "attack": "51",
+    "defense": "72",
+    "midfield": "65",
+    "goalkeeping": "11"
+  }
+}

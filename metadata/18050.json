@@ -1,0 +1,12 @@
+{
+  "name": "Sachin Suresh",
+  "club_position": "GK",
+  "attributes": {
+    "overall_rating": "53",
+    "potential": "63",
+    "attack": "19",
+    "defense": "21",
+    "midfield": "29",
+    "goalkeeping": "53"
+  }
+}

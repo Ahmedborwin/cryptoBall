@@ -1,0 +1,12 @@
+{
+  "name": "Scott Wootton",
+  "club_position": "RCB",
+  "attributes": {
+    "overall_rating": "64",
+    "potential": "64",
+    "attack": "43",
+    "defense": "66",
+    "midfield": "56",
+    "goalkeeping": "12"
+  }
+}

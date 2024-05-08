@@ -1,0 +1,12 @@
+{
+  "name": "John O'Donovan",
+  "club_position": "SUB",
+  "attributes": {
+    "overall_rating": "52",
+    "potential": "59",
+    "attack": "40",
+    "defense": "52",
+    "midfield": "46",
+    "goalkeeping": "10"
+  }
+}

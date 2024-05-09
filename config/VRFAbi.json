@@ -1,0 +1,137 @@
+[
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "vrfCoordinatorV2" },
+      { "type": "uint256", "name": "subscriptionId" },
+      { "type": "bytes32", "name": "gasLane" },
+      { "type": "uint32", "name": "callbackGasLimit" },
+      { "type": "address", "name": "_CBNFTAddress" },
+      { "type": "address", "name": "_contract_Admin" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "OnlyCoordinatorCanFulfill",
+    "inputs": [
+      { "type": "address", "name": "have" },
+      { "type": "address", "name": "want" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "OnlyOwnerOrCoordinator",
+    "inputs": [
+      { "type": "address", "name": "have" },
+      { "type": "address", "name": "owner" },
+      { "type": "address", "name": "coordinator" }
+    ]
+  },
+  { "type": "error", "name": "ZeroAddress", "inputs": [] },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "CoordinatorSet",
+    "inputs": [{ "type": "address", "name": "vrfCoordinator", "indexed": false }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "OwnershipTransferRequested",
+    "inputs": [
+      { "type": "address", "name": "from", "indexed": true },
+      { "type": "address", "name": "to", "indexed": true }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "OwnershipTransferred",
+    "inputs": [
+      { "type": "address", "name": "from", "indexed": true },
+      { "type": "address", "name": "to", "indexed": true }
+    ]
+  },
+  { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "owner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "rawFulfillRandomWords",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "requestId" },
+      { "type": "uint256[]", "name": "randomWords" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "requestRandomNumber",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint8", "name": "_requestType" },
+      { "type": "address", "name": "_player" },
+      { "type": "uint256", "name": "_challengeId" },
+      { "type": "uint32", "name": "_randomNumbersReq" }
+    ],
+    "outputs": [{ "type": "uint256", "name": "requestId" }]
+  },
+  {
+    "type": "function",
+    "name": "s_RequestTable",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [
+      { "type": "uint8", "name": "requestType" },
+      { "type": "address", "name": "player" },
+      { "type": "uint256", "name": "challengeId" }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "s_vrfCoordinator",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "setCoordinator",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_vrfCoordinator" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "testMapping",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "to" }],
+    "outputs": []
+  }
+]

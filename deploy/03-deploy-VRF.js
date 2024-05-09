@@ -9,25 +9,25 @@ const NFTContractFile = require("../config/NFT_AddressList.json")
  * constructor arguments set to the deployer address
  *
  * @param hre HardhatRuntimeEnvironment object.
+ *
  */
+
+const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
+console.log("coordinatorAddress", coordinatorAddress)
+const vrfSubID = networks[hre.network.name]["vrfSubscriptionId"]
+console.log("vrfSubID", vrfSubID)
+const gasLane = networks[hre.network.name]["gasLane"]
+console.log("gasLane", gasLane)
+const callbackGasLimit = networks[hre.network.name]["callbackGasLimit"]
+console.log("callbackGasLimit", callbackGasLimit)
+const linkToken = networks[hre.network.name]["linkToken"]
+//const chainId = (await hre.ethers.provider.getNetwork()).chainId.toString()
+const chainId = 421614
+console.log("chainId", chainId)
+const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
+
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
-
-  const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
-  console.log("coordinatorAddress", coordinatorAddress)
-  const vrfSubID = networks[hre.network.name]["vrfSubscriptionId"]
-  console.log("vrfSubID", vrfSubID)
-  const gasLane = networks[hre.network.name]["gasLane"]
-  console.log("gasLane", gasLane)
-  const callbackGasLimit = networks[hre.network.name]["callbackGasLimit"]
-  console.log("callbackGasLimit", callbackGasLimit)
-  const linkToken = networks[hre.network.name]["linkToken"]
-
-  // const chainId = (await hre.ethers.provider.getNetwork()).chainId.toString()
-  const chainId = 421614
-  console.log("chainId", chainId)
-  const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
-  console.log("NFTAddress", NFTAddress)
   // Get the deployed contract to interact with it after deploying.
   const VRFRequestHandler = await hre.ethers.deployContract("VRFRequestHandler", [
     coordinatorAddress,
@@ -41,9 +41,9 @@ const deployVRFHandler = async function () {
   console.log("@@VRFHandler Address", VRFRequestHandler.address)
 
   //write address and ABI to config
-  await updateContractInfo(VRFRequestHandler.address)
+  await updateContractInfo({ undefined, undefined, VRFHandlerAddress: VRFRequestHandler.address })
 
-  return { VRFRequestHandler }
+  return { signer, VRFRequestHandler }
 }
 
 deployVRFHandler()
@@ -51,7 +51,14 @@ deployVRFHandler()
     //verify contracts
     await hre.run("verify:verify", {
       address: result.VRFRequestHandler.address,
-      constructorArguments: [coordinatorAddress, vrfSubID, gasLane, callbackGasLimit, NFTAddress, signer.address],
+      constructorArguments: [
+        coordinatorAddress,
+        vrfSubID,
+        gasLane,
+        callbackGasLimit,
+        NFTAddress,
+        result.signer.address,
+      ],
     })
   })
   .catch((e) => {

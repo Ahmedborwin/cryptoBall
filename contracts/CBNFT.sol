@@ -49,17 +49,42 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     s_tokenCounter++;
     //Mint NFT and set the TokenURI
     _safeMint(_player, _tokenCounter);
+
     //TODO how to create URI based on the players index here??
-    string memory playerURI = s_CB_BaseURI;
+    string memory tokenURIString = uint2str(_uriIndex);
+    string memory playerURI = string(abi.encodePacked(s_CB_BaseURI, string("/"), tokenURIString));
+
     _setTokenURI(_tokenCounter, s_BallURIs[_uriIndex]);
+
     // push new token URI to list of tokens owned by address
-    s_addressToAllTokenURIs[msg.sender].push(playerURI);
+    s_addressToAllTokenURIs[_player].push(playerURI);
     // //emit event
     emit NFTMinted(_player, playerURI);
   }
 
   function updateTokenURI(uint8 _tokenID, string calldata _newURI) external onlyOwner {
     _setTokenURI(_tokenID, _newURI);
+  }
+
+  //Helper Functions
+
+  function uint2str(uint256 _i) internal pure returns (string memory) {
+    if (_i == 0) {
+      return "0";
+    }
+    uint256 j = _i;
+    uint256 len;
+    while (j != 0) {
+      len++;
+      j /= 10;
+    }
+    bytes memory bstr = new bytes(len);
+    uint256 k = len - 1;
+    while (_i != 0) {
+      bstr[k--] = bytes1(uint8(48 + (_i % 10)));
+      _i /= 10;
+    }
+    return string(bstr);
   }
 
   //getter functions

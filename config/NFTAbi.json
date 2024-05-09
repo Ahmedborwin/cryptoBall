@@ -1,5 +1,12 @@
 [
-  { "type": "constructor", "payable": false, "inputs": [{ "type": "string[]", "name": "_tokenURIs" }] },
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [
+      { "type": "string[]", "name": "_tokenURIs" },
+      { "type": "address", "name": "_contractAdmin" }
+    ]
+  },
   { "type": "error", "name": "CBNFT__AlreadyInitialized", "inputs": [] },
   {
     "type": "event",
@@ -35,6 +42,15 @@
     "anonymous": false,
     "name": "MetadataUpdate",
     "inputs": [{ "type": "uint256", "name": "_tokenId", "indexed": false }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "NFTMinted",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": false },
+      { "type": "string", "name": "tokenURI", "indexed": false }
+    ]
   },
   {
     "type": "event",
@@ -86,15 +102,6 @@
   },
   {
     "type": "function",
-    "name": "getTokenURIArray",
-    "constant": true,
-    "stateMutability": "view",
-    "payable": false,
-    "inputs": [],
-    "outputs": [{ "type": "string[]" }]
-  },
-  {
-    "type": "function",
     "name": "getTokenURIByAddress",
     "constant": true,
     "stateMutability": "view",
@@ -119,7 +126,10 @@
     "name": "minNFT",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "uint8", "name": "_uriIndex" }],
+    "inputs": [
+      { "type": "uint8", "name": "_uriIndex" },
+      { "type": "address", "name": "_player" }
+    ],
     "outputs": []
   },
   {
@@ -161,15 +171,6 @@
   },
   {
     "type": "function",
-    "name": "s_addressToTokenURI",
-    "constant": true,
-    "stateMutability": "view",
-    "payable": false,
-    "inputs": [{ "type": "address" }, { "type": "uint256" }],
-    "outputs": [{ "type": "string" }]
-  },
-  {
-    "type": "function",
     "name": "safeTransferFrom",
     "constant": false,
     "payable": false,
@@ -202,6 +203,14 @@
       { "type": "address", "name": "operator" },
       { "type": "bool", "name": "approved" }
     ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setVRFHandlerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_vrfHandler" }],
     "outputs": []
   },
   {

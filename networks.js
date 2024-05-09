@@ -160,8 +160,8 @@ const networks = {
     //VRF Variables
     vrfCoordinatorV2: "0x5CE8D5A2BC84beb22a398CCA51996F7930313D61",
     gasLane: "0x1770bdc7eec7771f7ba4ffd640f34260d7f095b79c92d34a5b2551d6f6cfd2be",
-    callbackGasLimit: "500000", // 500,000 gas
-    vrfSubscriptionId: "20214844033880888205091865342092934110496179937850397192050651574761593789054", // add your ID here!
+    callbackGasLimit: "2500000", // 2,500,000 gas
+    vrfSubscriptionId: "48125460975452738352769560243362603208942727282100407618626170760680889733130", // add your ID here!
   },
   baseSepolia: {
     url: process.env.BASE_SEPOLIA_RPC_URL || "UNSET", // https://docs.basescan.org/v/sepolia-basescan/

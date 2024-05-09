@@ -1,14 +1,15 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.19;
 
-import "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol";
-import "@chainlink/contracts/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol";
-import "contracts/interfaces/CB_NFTInterface.sol";
+import {IVRFCoordinatorV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol";
+import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
+import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
+import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 
-contract VRFRequestHandler is VRFConsumerBaseV2 {
+contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //Modifiers
   modifier onlyAdmin(address _caller) {
-    require(_caller == contract_Admin, "Only Conract Admins Can Make This Call");
+    require(_caller == contract_Admin, "Only Contract Admins Can Make This Call");
     _;
   }
 
@@ -25,35 +26,34 @@ contract VRFRequestHandler is VRFConsumerBaseV2 {
 
   //store address of player
   mapping(uint256 => RequestDetails) public s_RequestTable;
+  mapping(uint256 => bool) public testMapping;
 
   // Chainlink VRF Variables
-  VRFCoordinatorV2Interface private immutable i_vrfCoordinator;
-  uint64 private immutable i_subscriptionId;
-  bytes32 private immutable i_gasLane;
-  uint32 private immutable i_callbackGasLimit;
+  IVRFCoordinatorV2Plus private immutable i_vrfCoordinator;
+  uint256 private immutable s_subscriptionId;
+  bytes32 private immutable s_gasLane;
+  uint32 private immutable s_callbackGasLimit;
   uint16 private constant REQUEST_CONFIRMATIONS = 3;
 
   //initialise structs
   RequestDetails requestDetails;
-
   //Interfaces
   CB_NFTInterface i_NFT;
-
   //admin
   address contract_Admin;
 
   constructor(
     address vrfCoordinatorV2,
-    uint64 subscriptionId,
+    uint256 subscriptionId,
     bytes32 gasLane, // keyHash
     uint32 callbackGasLimit,
     address _CBNFTAddress,
     address _contract_Admin
-  ) VRFConsumerBaseV2(vrfCoordinatorV2) {
-    i_vrfCoordinator = VRFCoordinatorV2Interface(vrfCoordinatorV2);
-    i_gasLane = gasLane;
-    i_subscriptionId = subscriptionId;
-    i_callbackGasLimit = callbackGasLimit;
+  ) VRFConsumerBaseV2Plus(vrfCoordinatorV2) {
+    i_vrfCoordinator = IVRFCoordinatorV2Plus(vrfCoordinatorV2);
+    s_gasLane = gasLane;
+    s_subscriptionId = subscriptionId;
+    s_callbackGasLimit = callbackGasLimit;
     i_NFT = CB_NFTInterface(_CBNFTAddress);
     contract_Admin = _contract_Admin;
   }
@@ -65,11 +65,14 @@ contract VRFRequestHandler is VRFConsumerBaseV2 {
     uint32 _randomNumbersReq
   ) public returns (uint256 requestId) {
     requestId = i_vrfCoordinator.requestRandomWords(
-      i_gasLane,
-      i_subscriptionId,
-      REQUEST_CONFIRMATIONS,
-      i_callbackGasLimit,
-      _randomNumbersReq
+      VRFV2PlusClient.RandomWordsRequest({
+        keyHash: s_gasLane,
+        subId: s_subscriptionId,
+        requestConfirmations: REQUEST_CONFIRMATIONS,
+        callbackGasLimit: s_callbackGasLimit,
+        numWords: _randomNumbersReq,
+        extraArgs: VRFV2PlusClient._argsToBytes(VRFV2PlusClient.ExtraArgsV1({nativePayment: false}))
+      })
     );
     //if loot box request
     if (_requestType == 1) {
@@ -96,8 +99,12 @@ contract VRFRequestHandler is VRFConsumerBaseV2 {
   //handleLootBox Logic
   function handleLootBoxLogic(uint256 _randomNumber, address _player) internal {
     //TODO add logic here to get to the random player index
-    uint256 playerIndex = _randomNumber % 1000;
+    uint256 playerIndex = _randomNumber % 3;
     //send random numbers to nft contract
     i_NFT.minNFT(playerIndex, _player);
   }
+
+  //TODO: set cooridnator address
+  //TODO: set NFT address
+  //TODO: set game address
 }

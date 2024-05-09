@@ -87,24 +87,21 @@ async function handleTokenUris() {
 const deployNFTContract = async function () {
   const signer = await hre.ethers.getSigner()
 
-  tokenUris = await handleTokenUris()
   if (process.env.UPLOAD_TO_PINATA == "true") {
     tokenUris = await handleTokenUris()
   }
 
   // Get the deployed contract to interact with it after deploying.
-  const CBNFT = await hre.ethers.deployContract("CBNFT", [tokenUris])
+  const CBNFT = await hre.ethers.deployContract("CBNFT", [tokenUris, signer.address])
 
   //write address and ABI to config
-  await updateContractInfo({ undefined, NFTAddress: CBNFT.address })
+  await updateContractInfo({ undefined, NFTAddress: CBNFT.address, undefined })
 
-  // await CBNFT.minNFT(2)
-  // await CBNFT.minNFT(4)
-  // await CBNFT.minNFT(5)
-  // await CBNFT.minNFT(23)
-  // await CBNFT.minNFT(56)
+  // await CBNFT.minNFT(2, signer.address)
+  // await CBNFT.minNFT(4, signer.address)
+  // await CBNFT.minNFT(5, signer.address)
 
-  return { CBNFT }
+  return { CBNFT, signer }
 }
 
 deployNFTContract()
@@ -112,7 +109,7 @@ deployNFTContract()
     if (hre.network.name !== "localhost" && hre.network.name !== "localFunctionsTestnet") {
       await hre.run("verify:verify", {
         address: result.CBNFT.address,
-        constructorArguments: [tokenUris],
+        constructorArguments: [tokenUris, result.signer.address],
       })
     }
   })

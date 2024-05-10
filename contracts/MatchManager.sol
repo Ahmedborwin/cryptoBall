@@ -176,7 +176,7 @@ contract MatchManager {
 
   function _rosterFilled(address _user) internal view returns (bool) {
     for (uint256 i = 0; i < 11; i++) {
-      if (profiles[_user].roster[_position] == false) {
+      if (profiles[_user].roster[i].active == false) {
         return false;
       }
     }

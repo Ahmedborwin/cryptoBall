@@ -5,11 +5,19 @@ contract MatchManager {
   uint256 public totalGames; //Total number of games created
 
   //Data Structures
+  struct Player {
+    uint256 tokenID;
+    bool active;
+  }
+
+  mapping(address => Player[]) public rosters;
 
   struct Game {
     uint256 id; //id of game
     address creator; //address of creator
+    Player[] creatorRoster;
     address challenger; //address of challenger
+    Player[] challengerRoster;
     address winner; //address of winner
     uint256 creationTime; //unix time (seconds) when game was created
     uint256 completionTime; //unix time (seconds) when completed and paid out
@@ -45,7 +53,7 @@ contract MatchManager {
 
   event CreateGame(uint256 id, address creator, uint256 creationTime);
 
-  event AcceptGame(uint256 id, address challenger, uint256 blockAccepted);
+  event AcceptGame(uint256 id, address challenger);
 
   event CancelGame(uint256 id);
 
@@ -64,6 +72,7 @@ contract MatchManager {
     //This timestamp is early by one block, but this minor
     //innaccuracy does not hurt performance
     games[totalGames].status = 1; //set game to active
+    games[totalGames].creatorRoster = rosters[msg.sender];
 
     //Update creator's created game count and list
     stats[msg.sender].activeGames++;
@@ -80,8 +89,8 @@ contract MatchManager {
     require(_rosterFilled(msg.sender));
 
     games[_id].challenger = msg.sender;
-    games[_id].blockAccepted = block.number;
     games[_id].status = 2; //Set status to pending
+    games[totalGames].challengerRoster = rosters[msg.sender];
 
     stats[games[_id].creator].activeGames--;
 
@@ -90,7 +99,7 @@ contract MatchManager {
     stats[msg.sender].userAcceptedGameIds[stats[msg.sender].totalUserAcceptedGames] = _id;
     //Set latest game in challenger's accepted game list to this game
 
-    emit AcceptGame(_id, games[_id].challenger, games[_id].blockAccepted);
+    emit AcceptGame(_id, games[_id].challenger);
   }
 
   function finalizeGame(uint256 _id) public {
@@ -143,6 +152,14 @@ contract MatchManager {
     }
   }
 
+  function setRosterPosition(address _user, uint256 _position, uint256 _tokenID) public {
+    //uncomment this when NFT is implemented
+    //require(userOwnsTokenID(), "Player does not own this token.");
+
+    rosters[_user][_position].tokenID = _tokenID;
+    rosters[_user][_position].active = true;
+  }
+
   //Internal Utility Functions
 
   function _checkActive(uint256 _id) internal view returns (bool) {
@@ -150,6 +167,11 @@ contract MatchManager {
   }
 
   function _rosterFilled(address _user) internal view returns (bool) {
-    return false;
+    for (uint256 i = 0; i < 11; i++) {
+      if (rosters[_user][i].active == false) {
+        return false;
+      }
+    }
+    return true;
   }
 }

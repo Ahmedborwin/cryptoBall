@@ -97,10 +97,12 @@ const deployNFTContract = async function () {
   //write address and ABI to config
   await updateContractInfo({ undefined, NFTAddress: CBNFT.address, undefined })
 
-  // await CBNFT.minNFT(2, signer.address)
-  // await CBNFT.minNFT(4, signer.address)
-  // await CBNFT.minNFT(5, signer.address)
-
+  await CBNFT.populateBaseHash("ipfs://bafybeif7c3gb2v4pxi3zoodsoi5wtve5lhkcp7ibs37ow3f3mwehrdd5ne/")
+  console.log(await CBNFT.s_CB_BaseURI())
+  // await CBNFT.minNFT(1, signer.address)
+  await CBNFT.minNFT(10907, signer.address)
+  await CBNFT.minNFT(109, signer.address)
+  console.log(await CBNFT.tokenURI(1))
   return { CBNFT, signer }
 }
 

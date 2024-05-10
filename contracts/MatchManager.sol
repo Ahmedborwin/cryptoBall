@@ -12,6 +12,7 @@ contract MatchManager {
     address challenger; //address of challenger
     address winner; //address of winner
     uint256 creationTime; //unix time (seconds) when game was created
+    uint256 blockAccepted; //unix time (seconds) when game was accepted
     uint256 completionTime; //unix time (seconds) when completed and paid out
     uint256 status;
     //0 = null (untouched)

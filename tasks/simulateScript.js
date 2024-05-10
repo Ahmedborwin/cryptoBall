@@ -70,7 +70,7 @@ task("functions-simulate-script", "Executes the JavaScript source code locally")
           const metaData = await fetchNFTMetadata(hre, decodedData)
         }
       } else {
-        console.error("Buffer is too short to decode properly.")
+        console.error("Buffer is too short to decode.")
       }
     }
     if (errorString) {

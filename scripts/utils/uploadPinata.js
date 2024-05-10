@@ -1,294 +1,77 @@
 const pinataSDK = require("@pinata/sdk")
 const fs = require("fs")
-require("dotenv").config()
+const path = require("path")
+// Loads environment variables from .env.enc file (if it exists)
+require("@chainlink/env-enc").config("../../.env.enc")
 
 const pinataApiKey = process.env.PINATA_API_KEY || ""
 const pinataApiSecret = process.env.PINATA_API_SECRET || ""
 const pinata = new pinataSDK(pinataApiKey, pinataApiSecret)
 
-const jsonData = [
-  {
-    name: "Erling Braut Haaland",
-    overall_rating: "91",
-    potential: "94",
-    club_position: "ST",
-    country_name: "Norway",
-    attack: 89,
-    defense: 56,
-    midfield: 79,
-    goalkeeping: 10,
-  },
-  {
-    name: "Kylian Mbappé Lottin",
-    overall_rating: "91",
-    potential: "94",
-    club_position: "ST",
-    country_name: "France",
-    attack: 93,
-    defense: 45,
-    midfield: 87,
-    goalkeeping: 8,
-  },
-  {
-    name: "Kevin De Bruyne",
-    overall_rating: "91",
-    potential: "91",
-    club_position: "RCM",
-    country_name: "Belgium",
-    attack: 84,
-    defense: 68,
-    midfield: 90,
-    goalkeeping: 11,
-  },
-  {
-    name: "Rodrigo Hernández Cascante",
-    overall_rating: "90",
-    potential: "91",
-    club_position: "LCM",
-    country_name: "Spain",
-    attack: 77,
-    defense: 85,
-    midfield: 86,
-    goalkeeping: 10,
-  },
-  {
-    name: "Harry Kane",
-    overall_rating: "90",
-    potential: "90",
-    club_position: "ST",
-    country_name: "England",
-    attack: 83,
-    defense: 56,
-    midfield: 85,
-    goalkeeping: 11,
-  },
-  {
-    name: "Thibaut Nicolas Marc Courtois",
-    overall_rating: "90",
-    potential: "90",
-    club_position: "SUB",
-    country_name: "Belgium",
-    attack: 40,
-    defense: 27,
-    midfield: 49,
-    goalkeeping: 87,
-  },
-  {
-    name: "Robert Lewandowski",
-    overall_rating: "90",
-    potential: "90",
-    club_position: "ST",
-    country_name: "Poland",
-    attack: 85,
-    defense: 53,
-    midfield: 82,
-    goalkeeping: 10,
-  },
-  {
-    name: "Lionel Andrés Messi Cuccittini",
-    overall_rating: "90",
-    potential: "90",
-    club_position: "RW",
-    country_name: "Argentina",
-    attack: 88,
-    defense: 39,
-    midfield: 89,
-    goalkeeping: 11,
-  },
-  {
-    name: "Rúben dos Santos Gato Alves Dias",
-    overall_rating: "89",
-    potential: "90",
-    club_position: "RCB",
-    country_name: "Portugal",
-    attack: 56,
-    defense: 90,
-    midfield: 74,
-    goalkeeping: 9,
-  },
-  {
-    name: "Vinícius José Paixão de Oliveira Júnior",
-    overall_rating: "89",
-    potential: "94",
-    club_position: "LS",
-    country_name: "",
-    attack: 88,
-    defense: 37,
-    midfield: 84,
-    goalkeeping: 7,
-  },
-  {
-    name: "Alisson Ramsés Becker",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "GK",
-    country_name: "",
-    attack: 41,
-    defense: 28,
-    midfield: 56,
-    goalkeeping: 87,
-  },
-  {
-    name: "Mohamed Salah Ghaly",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "RW",
-    country_name: "",
-    attack: 89,
-    defense: 53,
-    midfield: 87,
-    goalkeeping: 12,
-  },
-  {
-    name: "Virgil van Dijk",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "LCB",
-    country_name: "Netherlands",
-    attack: 68,
-    defense: 89,
-    midfield: 77,
-    goalkeeping: 12,
-  },
-  {
-    name: "Marc-André ter Stegen",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "GK",
-    country_name: "Germany",
-    attack: 38,
-    defense: 32,
-    midfield: 57,
-    goalkeeping: 87,
-  },
-  {
-    name: "Neymar da Silva Santos Júnior",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "RES",
-    country_name: "",
-    attack: 86,
-    defense: 41,
-    midfield: 88,
-    goalkeeping: 12,
-  },
-  {
-    name: "Karim Benzema",
-    overall_rating: "89",
-    potential: "89",
-    club_position: "ST",
-    country_name: "",
-    attack: 84,
-    defense: 45,
-    midfield: 85,
-    goalkeeping: 8,
-  },
-  {
-    name: "Jude Victor William Bellingham",
-    overall_rating: "88",
-    potential: "92",
-    club_position: "CAM",
-    country_name: "England",
-    attack: 84,
-    defense: 79,
-    midfield: 87,
-    goalkeeping: 10,
-  },
-  {
-    name: "Federico Santiago Valverde Dipetta",
-    overall_rating: "88",
-    potential: "92",
-    club_position: "RCM",
-    country_name: "",
-    attack: 85,
-    defense: 81,
-    midfield: 86,
-    goalkeeping: 9,
-  },
-  {
-    name: "Lautaro Javier Martínez",
-    overall_rating: "88",
-    potential: "90",
-    club_position: "LS",
-    country_name: "Argentina",
-    attack: 85,
-    defense: 58,
-    midfield: 83,
-    goalkeeping: 10,
-  },
-  {
-    name: "Bernardo Mota Veiga de Carvalho e Silva",
-    overall_rating: "88",
-    potential: "88",
-    club_position: "SUB",
-    country_name: "Portugal",
-    attack: 83,
-    defense: 69,
-    midfield: 90,
-    goalkeeping: 11,
-  },
-  {
-    name: "Ederson Santana de Moraes",
-    overall_rating: "88",
-    potential: "89",
-    club_position: "GK",
-    country_name: "",
-    attack: 47,
-    defense: 33,
-    midfield: 64,
-    goalkeeping: 87,
-  },
-  {
-    name: "Jan Oblak",
-    overall_rating: "88",
-    potential: "88",
-    club_position: "GK",
-    country_name: "",
-    attack: 39,
-    defense: 33,
-    midfield: 55,
-    goalkeeping: 85,
-  },
-  {
-    name: "Antoine Griezmann",
-    overall_rating: "88",
-    potential: "88",
-    club_position: "RS",
-    country_name: "France",
-    attack: 87,
-    defense: 62,
-    midfield: 88,
-    goalkeeping: 13,
-  },
-]
+const metadataFolder = path.resolve(__dirname, "../../CB_MetaData")
+const tempBatchFolder = path.resolve(__dirname, "../../tempBatchFolder")
 
-async function uploadMetadataAsBatch() {
+// Helper function to split array into chunks
+function chunkArray(array, chunkSize) {
+  const results = []
+  for (let i = 0; i < array.length; i += chunkSize) {
+    results.push(array.slice(i, i + chunkSize))
+  }
+  return results
+}
+
+async function uploadMetadataAsDirectory() {
   let responses = []
   try {
-    for (let i = 0; i < jsonData.length; i++) {
-      const data = jsonData[i]
-      const options = {
+    // Read all files in the metadata directory
+    const files = fs.readdirSync(metadataFolder).filter((file) => file.endsWith(".json"))
+
+    // Define the batch size
+    const batchSize = 100 // Adjust this number based on your system's limits
+    const fileChunks = chunkArray(files, batchSize)
+
+    // Ensure tempBatchFolder is clean
+    if (fs.existsSync(tempBatchFolder)) {
+      fs.rmSync(tempBatchFolder, { recursive: true, force: true })
+    }
+    fs.mkdirSync(tempBatchFolder)
+
+    // Upload each batch sequentially
+    for (let i = 0; i < fileChunks.length; i++) {
+      const currentBatchFolder = path.join(tempBatchFolder, `batch_${i}`)
+      fs.mkdirSync(currentBatchFolder)
+
+      // Copy files to the batch folder
+      fileChunks[i].forEach((file) => {
+        fs.copyFileSync(path.join(metadataFolder, file), path.join(currentBatchFolder, file))
+      })
+
+      // Upload the batch folder to IPFS
+      const result = await pinata.pinFromFS(currentBatchFolder, {
         pinataMetadata: {
-          name: `metadata_${i}`,
+          name: `metadata_directory`,
         },
         pinataOptions: {
           wrapWithDirectory: false,
         },
-      }
-      const result = await pinata.pinJSONToIPFS(data, options)
-      responses.push({
-        fileName: `metadata_${i}.json`,
-        IpfsHash: result.IpfsHash,
       })
+
+      responses.push(result)
+      console.log(`Batch ${i} uploaded with hash:`, result.IpfsHash)
+
+      // Clean up the batch folder
+      fs.rmSync(currentBatchFolder, { recursive: true, force: true })
     }
 
     // Optionally, create a manifest file listing all hashes
     const manifest = {
-      files: responses.map((r) => ({
-        name: r.fileName,
+      files: responses.map((r, index) => ({
+        name: `batch_${index}`,
         hash: r.IpfsHash,
       })),
     }
+
+    // Upload the manifest file to IPFS
     const manifestResponse = await pinata.pinJSONToIPFS(manifest, {
       pinataMetadata: {
         name: "metadata_manifest",
@@ -296,10 +79,22 @@ async function uploadMetadataAsBatch() {
     })
     console.log("Manifest uploaded:", manifestResponse)
 
+    // Clean up tempBatchFolder
+    fs.rmSync(tempBatchFolder, { recursive: true, force: true })
+
     return manifestResponse
   } catch (error) {
-    console.error("Failed to upload metadata batch:", error)
+    console.error("Failed to upload metadata directory:", error)
   }
 }
 
-module.exports = { uploadMetadataAsBatch }
+module.exports = { uploadMetadataAsDirectory }
+
+// Execute the function if this script is run directly
+if (require.main === module) {
+  uploadMetadataAsDirectory().then((response) => {
+    if (response) {
+      console.log("Batch upload complete:", response)
+    }
+  })
+}

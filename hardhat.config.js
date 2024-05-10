@@ -15,7 +15,7 @@ const SOLC_SETTINGS = {
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  defaultNetwork: "arbitrumSepolia",
+  defaultNetwork: "localFunctionsTestnet",
   solidity: {
     compilers: [
       {

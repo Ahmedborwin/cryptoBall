@@ -4,11 +4,13 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-// import "hardhat/console.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+// import {console} from "hardhat/console.sol";
 
 error CBNFT__AlreadyInitialized();
 
 contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
+  using Strings for uint256;
   //Modifiers
   modifier onlyAdmin(address _caller) {
     require(_caller == VRF_RequestHandler || _caller == contract_Admin, "Only Conract Admins Can Make This Call");
@@ -16,9 +18,9 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   }
 
   //variables
-  uint8 private s_tokenCounter;
+  uint8 public s_tokenCounter;
   string[] internal s_BallURIs;
-  string s_CB_BaseURI;
+  string public s_CB_BaseURI;
   bool private s_initialized;
 
   //Admins
@@ -44,17 +46,16 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     s_initialized = true;
   }
 
-  function minNFT(uint8 _uriIndex, address _player) external onlyAdmin(msg.sender) {
+  function minNFT(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
     uint8 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
+
     //Mint NFT and set the TokenURI
     _safeMint(_player, _tokenCounter);
 
-    //TODO how to create URI based on the players index here??
-    string memory tokenURIString = uint2str(_uriIndex);
-    string memory playerURI = string(abi.encodePacked(s_CB_BaseURI, string("/"), tokenURIString));
+    string memory playerURI = tokenURI(_uriIndex);
 
-    _setTokenURI(_tokenCounter, s_BallURIs[_uriIndex]);
+    _setTokenURI(_tokenCounter, playerURI);
 
     // push new token URI to list of tokens owned by address
     s_addressToAllTokenURIs[_player].push(playerURI);
@@ -68,23 +69,20 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
   //Helper Functions
 
-  function uint2str(uint256 _i) internal pure returns (string memory) {
-    if (_i == 0) {
-      return "0";
-    }
-    uint256 j = _i;
-    uint256 len;
-    while (j != 0) {
-      len++;
-      j /= 10;
-    }
-    bytes memory bstr = new bytes(len);
-    uint256 k = len - 1;
-    while (_i != 0) {
-      bstr[k--] = bytes1(uint8(48 + (_i % 10)));
-      _i /= 10;
-    }
-    return string(bstr);
+  function uintToString(uint256 value) internal pure returns (string memory) {
+    return Strings.toString(value);
+  }
+
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
+    VRF_RequestHandler = _vrfHandler;
+  }
+
+  function populateBaseHash(string calldata _baseHash) external onlyAdmin(msg.sender) {
+    s_CB_BaseURI = _baseHash;
+  }
+
+  function _baseURI() internal view override returns (string memory) {
+    return s_CB_BaseURI;
   }
 
   //getter functions
@@ -93,7 +91,9 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return s_addressToAllTokenURIs[_address];
   }
 
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
-    VRF_RequestHandler = _vrfHandler;
+  function tokenURI(uint256 tokenId) public view override returns (string memory) {
+    _requireMinted(tokenId);
+    string memory baseURI = _baseURI();
+    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json")) : "";
   }
 }

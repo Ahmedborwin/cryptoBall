@@ -127,7 +127,7 @@
     "constant": false,
     "payable": false,
     "inputs": [
-      { "type": "uint8", "name": "_uriIndex" },
+      { "type": "uint256", "name": "_uriIndex" },
       { "type": "address", "name": "_player" }
     ],
     "outputs": []
@@ -159,7 +159,24 @@
     "inputs": [{ "type": "uint256", "name": "tokenId" }],
     "outputs": [{ "type": "address" }]
   },
+  {
+    "type": "function",
+    "name": "populateBaseHash",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "string", "name": "_baseHash" }],
+    "outputs": []
+  },
   { "type": "function", "name": "renounceOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "s_CB_BaseURI",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "string" }]
+  },
   {
     "type": "function",
     "name": "s_addressToAllTokenURIs",
@@ -168,6 +185,15 @@
     "payable": false,
     "inputs": [{ "type": "address" }, { "type": "uint256" }],
     "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "s_tokenCounter",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint8" }]
   },
   {
     "type": "function",

@@ -18,8 +18,11 @@ async function fetchNFTMetadata(hre, decodedData) {
 
   try {
     // Call the contract's tokenURI function to get the IPFS Hash
+    console.log("decodedData.team1[0]", decodedData.team1[0])
+    console.log("decodedData.team1[0].player_id", decodedData.team1[0].player_id)
+    //TESTING PURPOSES ONLY
     const tokenURI = await NFTContract.tokenURI(decodedData.team1[0].player_id)
-
+    console.log(tokenURI)
     // Extract the IPFS hash from the tokenURI
     const ipfsHash = tokenURI.split("ipfs://")[1]
 

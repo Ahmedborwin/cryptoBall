@@ -5,12 +5,16 @@ contract MatchManager {
   uint256 public totalGames; //Total number of games created
 
   //Data Structures
+
+  struct ManagerProfile {
+    string teamName;
+    Player[] roster;
+  }
   struct Player {
     uint256 tokenID;
     bool active;
   }
-
-  mapping(address => Player[]) public rosters;
+  mapping(address => ManagerProfile) public profiles;
 
   struct Game {
     uint256 id; //id of game
@@ -72,7 +76,7 @@ contract MatchManager {
     //This timestamp is early by one block, but this minor
     //innaccuracy does not hurt performance
     games[totalGames].status = 1; //set game to active
-    games[totalGames].creatorRoster = rosters[msg.sender];
+    games[totalGames].creatorRoster = profiles[msg.sender].roster;
 
     //Update creator's created game count and list
     stats[msg.sender].activeGames++;
@@ -90,7 +94,7 @@ contract MatchManager {
 
     games[_id].challenger = msg.sender;
     games[_id].status = 2; //Set status to pending
-    games[totalGames].challengerRoster = rosters[msg.sender];
+    games[totalGames].challengerRoster = profiles[msg.sender].roster;
 
     stats[games[_id].creator].activeGames--;
 
@@ -152,12 +156,16 @@ contract MatchManager {
     }
   }
 
-  function setRosterPosition(address _user, uint256 _position, uint256 _tokenID) public {
+  function setTeamName(string memory _name) public {
+    profiles[msg.sender].teamName = _name;
+  }
+
+  function setRosterPosition(uint256 _position, uint256 _tokenID) public {
     //uncomment this when NFT is implemented
     //require(userOwnsTokenID(), "Player does not own this token.");
 
-    rosters[_user][_position].tokenID = _tokenID;
-    rosters[_user][_position].active = true;
+    profiles[msg.sender].roster[_position].tokenID = _tokenID;
+    profiles[msg.sender].roster[_position].active = true;
   }
 
   //Internal Utility Functions
@@ -168,7 +176,7 @@ contract MatchManager {
 
   function _rosterFilled(address _user) internal view returns (bool) {
     for (uint256 i = 0; i < 11; i++) {
-      if (rosters[_user][i].active == false) {
+      if (profiles[_user].roster[_position] == false) {
         return false;
       }
     }

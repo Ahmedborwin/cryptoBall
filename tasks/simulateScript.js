@@ -24,7 +24,7 @@ function decodeMatchResult(buffer) {
         Goalkeeping: buffer.readUInt8(offset + 10),
       }
       team.push(player)
-      offset += 9 // Move to the next player
+      offset += 10 // Move to the next player
     }
     return team
   }

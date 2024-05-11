@@ -1,35 +1,38 @@
 const fetch = require("node-fetch")
 const { networks } = require("../networks")
 const { storeTokenUriMetadata } = require("../scripts/utils/uploadPinata")
+const https = require("https")
 const NFT_AddressList = require("../config/NFT_AddressList.json")
 const NFT_ABI = require("../config/NFTAbi.json")
 
-const networkName = "arbitrumSepolia"
+const networkName = "localFunctionsTestnet"
 const chainId = networks[networkName]["chainId"]
 
 async function fetchNFTMetadata(hre, decodedData) {
   // Replace these values with your actual contract address and ABI
   const NFTAddress = NFT_AddressList[chainId]
+  console.log("NFTAddress", NFTAddress)
 
   // Connect to the Ethereum network
   const signer = await hre.ethers.getSigner()
   // Get the contract instance
+
   const NFTContract = await hre.ethers.getContractAt("CBNFT", NFTAddress, signer)
 
   try {
     // Call the contract's tokenURI function to get the IPFS Hash
-    console.log("decodedData.team1[0]", decodedData.team1[0])
-    console.log("decodedData.team1[0].player_id", decodedData.team1[0].player_id)
-    //TESTING PURPOSES ONLY
-    const tokenURI = await NFTContract.tokenURI(decodedData.team1[0].player_id)
-    console.log(tokenURI)
+
+    const tokenURI = await NFTContract.getTokenUriFromTokenId(2)
+    console.log("tokenURI", tokenURI)
     // Extract the IPFS hash from the tokenURI
     const ipfsHash = tokenURI.split("ipfs://")[1]
 
-    // Fetch the metadata from IPFS
-    const response = await fetch(`https://gateway.pinata.cloud/ipfs/${ipfsHash}`)
-    const metadata = await response.json()
+    const agent = new https.Agent({
+      rejectUnauthorized: false, // This disables SSL certificate validation
+    })
 
+    const response = await fetch(`https://gateway.pinata.cloud/ipfs/${ipfsHash}`, { agent })
+    const metadata = await response.json()
     console.log("metadata", metadata)
 
     //update metaData to reflect changes to attributes

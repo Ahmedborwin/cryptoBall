@@ -97,9 +97,9 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   }
 
   //handleLootBox Logic
-  function handleLootBoxLogic(uint256 _randomNumber, address _player) internal {
+  function handleLootBoxLogic(uint256 _randomNumber, address _player) public {
     //TODO add logic here to get to the random player index
-    uint256 playerIndex = _randomNumber % 3;
+    uint256 playerIndex = _randomNumber % 1000;
     //send random numbers to nft contract
     i_NFT.minNFT(playerIndex, _player);
   }

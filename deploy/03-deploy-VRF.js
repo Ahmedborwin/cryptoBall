@@ -11,7 +11,7 @@ const NFTContractFile = require("../config/NFT_AddressList.json")
  * @param hre HardhatRuntimeEnvironment object.
  *
  */
-
+console.log("NetworkName: ", hre.network.name)
 const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
 console.log("coordinatorAddress", coordinatorAddress)
 const vrfSubID = networks[hre.network.name]["vrfSubscriptionId"]
@@ -23,11 +23,14 @@ console.log("callbackGasLimit", callbackGasLimit)
 const linkToken = networks[hre.network.name]["linkToken"]
 //const chainId = (await hre.ethers.provider.getNetwork()).chainId.toString()
 const chainId = 421614
-console.log("chainId", chainId)
-const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
 
+const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
+console.log("NFTAddress", NFTAddress)
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
+
+  //deploy VRF sub manager contract to fund and add consumer programatically
+  const VRFManager = await hre.ethers.deployContract("VRFv2SubscriptionManager", [])
   // Get the deployed contract to interact with it after deploying.
   const VRFRequestHandler = await hre.ethers.deployContract("VRFRequestHandler", [
     coordinatorAddress,
@@ -42,6 +45,8 @@ const deployVRFHandler = async function () {
 
   //write address and ABI to config
   await updateContractInfo({ undefined, undefined, VRFHandlerAddress: VRFRequestHandler.address })
+
+  // await requestRandomNumber(1, "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", 1, 1)
 
   return { signer, VRFRequestHandler }
 }

@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
-// import {console} from "hardhat/console.sol";
+//import {console} from "hardhat/console.sol";
 
 error CBNFT__AlreadyInitialized();
 
@@ -19,7 +19,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
   //variables
   uint8 public s_tokenCounter;
-  string[] internal s_BallURIs;
+  mapping(uint256 => string) private _tokenURIs;
   string public s_CB_BaseURI;
   bool private s_initialized;
 
@@ -32,18 +32,10 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
   event NFTMinted(address player, string tokenURI);
 
-  constructor(string[] memory _tokenURIs, address _contractAdmin) ERC721("CB_PLAYERS", "CBNFT") {
-    s_tokenCounter = 1;
-    _initializeTokenURIArray(_tokenURIs);
+  constructor(string memory _baseHash, address _contractAdmin) ERC721("CB_PLAYERS", "CBNFT") {
+    s_tokenCounter = 0;
+    s_CB_BaseURI = _baseHash;
     contract_Admin = _contractAdmin;
-  }
-
-  function _initializeTokenURIArray(string[] memory tokenUris) private {
-    if (s_initialized) {
-      revert CBNFT__AlreadyInitialized();
-    }
-    s_BallURIs = tokenUris;
-    s_initialized = true;
   }
 
   function minNFT(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
@@ -53,9 +45,10 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     //Mint NFT and set the TokenURI
     _safeMint(_player, _tokenCounter);
 
-    string memory playerURI = tokenURI(_uriIndex);
+    string memory playerURI = tokenURI(_tokenCounter, _uriIndex);
 
     _setTokenURI(_tokenCounter, playerURI);
+    _tokenURIs[s_tokenCounter] = playerURI; //set tokenURI to mapping
 
     // push new token URI to list of tokens owned by address
     s_addressToAllTokenURIs[_player].push(playerURI);
@@ -91,9 +84,13 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return s_addressToAllTokenURIs[_address];
   }
 
-  function tokenURI(uint256 tokenId) public view override returns (string memory) {
+  function tokenURI(uint256 tokenId, uint256 _URIIndex) public view returns (string memory) {
     _requireMinted(tokenId);
     string memory baseURI = _baseURI();
-    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString(), ".json")) : "";
+    return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, _URIIndex.toString(), ".json")) : "";
+  }
+
+  function getTokenUriFromTokenId(uint256 tokenId) external view returns (string memory) {
+    return _tokenURIs[tokenId];
   }
 }

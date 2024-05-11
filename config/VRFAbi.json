@@ -56,6 +56,17 @@
   { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
     "type": "function",
+    "name": "handleLootBoxLogic",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_randomNumber" },
+      { "type": "address", "name": "_player" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
     "name": "owner",
     "constant": true,
     "stateMutability": "view",

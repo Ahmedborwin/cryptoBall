@@ -3,11 +3,10 @@
     "type": "constructor",
     "payable": false,
     "inputs": [
-      { "type": "string[]", "name": "_tokenURIs" },
+      { "type": "string", "name": "_baseHash" },
       { "type": "address", "name": "_contractAdmin" }
     ]
   },
-  { "type": "error", "name": "CBNFT__AlreadyInitialized", "inputs": [] },
   {
     "type": "event",
     "anonymous": false,
@@ -108,6 +107,15 @@
     "payable": false,
     "inputs": [{ "type": "address", "name": "_address" }],
     "outputs": [{ "type": "string[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getTokenUriFromTokenId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "tokenId" }],
+    "outputs": [{ "type": "string" }]
   },
   {
     "type": "function",
@@ -255,6 +263,18 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenURI",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "tokenId" },
+      { "type": "uint256", "name": "_URIIndex" }
+    ],
     "outputs": [{ "type": "string" }]
   },
   {

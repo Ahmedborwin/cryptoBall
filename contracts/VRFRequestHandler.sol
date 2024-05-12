@@ -90,7 +90,12 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     if (s_RequestTable[requestId].requestType == RequestType.GameSimulation) {
       // trigger start game simulation
     } else if (s_RequestTable[requestId].requestType == RequestType.LootBox) {
+      //TODO: is there a better way to do this?
       handleLootBoxLogic(randomWords[0], s_RequestTable[requestId].player);
+      handleLootBoxLogic(randomWords[1], s_RequestTable[requestId].player);
+      handleLootBoxLogic(randomWords[2], s_RequestTable[requestId].player);
+      handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
+      handleLootBoxLogic(randomWords[4], s_RequestTable[requestId].player);
     } else {
       //event here to deal with edge case?
     }
@@ -101,7 +106,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     //TODO add logic here to get to the random player index
     uint256 playerIndex = _randomNumber % 1000;
     //send random numbers to nft contract
-    i_NFT.minNFT(playerIndex, _player);
+    i_NFT.openLootBox(playerIndex, _player);
   }
 
   //TODO: set cooridnator address

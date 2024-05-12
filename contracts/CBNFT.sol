@@ -7,8 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 //import {console} from "hardhat/console.sol";
 
-error CBNFT__AlreadyInitialized();
-
 contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   using Strings for uint256;
   //Modifiers
@@ -31,6 +29,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   mapping(address => string[]) public s_addressToAllTokenURIs;
 
   event NFTMinted(address player, string tokenURI);
+  event LootBoxOpened(address player, string tokenURI);
 
   constructor(string memory _baseHash, address _contractAdmin) ERC721("CB_PLAYERS", "CBNFT") {
     s_tokenCounter = 0;
@@ -56,6 +55,24 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     emit NFTMinted(_player, playerURI);
   }
 
+  function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
+    uint8 _tokenCounter = s_tokenCounter;
+    s_tokenCounter++;
+
+    //Mint NFT and set the TokenURI
+    _safeMint(_player, _tokenCounter);
+
+    string memory playerURI = tokenURI(_tokenCounter, _uriIndex);
+
+    _setTokenURI(_tokenCounter, playerURI);
+    _tokenURIs[s_tokenCounter] = playerURI; //set tokenURI to mapping
+
+    // push new token URI to list of tokens owned by address
+    s_addressToAllTokenURIs[_player].push(playerURI);
+    // //emit event
+    emit LootBoxOpened(_player, playerURI);
+  }
+
   function updateTokenURI(uint8 _tokenID, string calldata _newURI) external onlyOwner {
     _setTokenURI(_tokenID, _newURI);
   }
@@ -76,6 +93,14 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
   function _baseURI() internal view override returns (string memory) {
     return s_CB_BaseURI;
+  }
+
+  function isNFTOwner(address _player, uint256 tokenId) external returns (bool) {
+    if (_player != ownerOf(tokenId)) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
   //getter functions

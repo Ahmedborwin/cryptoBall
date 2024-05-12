@@ -1,6 +1,19 @@
 pragma solidity ^0.8.19;
 
+import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
+import {CB_VRFInterface} from "contracts/interfaces/CB_VRFInterface.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+
+error CBNFT__NotTokenOwner();
+
 contract MatchManager {
+  using Strings for uint256;
+  //Function Modifiers
+  modifier onlyOwner() {
+    require(msg.sender == owner);
+    _;
+  }
+
   address public owner;
   uint256 public totalGames; //Total number of games created
 
@@ -43,23 +56,30 @@ contract MatchManager {
   }
   mapping(address => Stats) public stats;
 
-  //Function Modifiers
-
-  modifier onlyOwner() {
-    require(msg.sender == owner);
-    _;
-  }
+  //Interfaces
+  CB_NFTInterface i_NFT;
+  CB_VRFInterface i_VRF;
 
   //Events
+
+  event StakingProcessFailed(address _player, bytes Reason);
 
   event CreateGame(uint256 id, address creator, uint256 creationTime);
 
   event AcceptGame(uint256 id, address challenger);
 
+  event StartGame(uint256 id);
+
   event CancelGame(uint256 id);
 
   event FinalizeGame(uint256 id, address winner, uint256 completionTime);
 
+  //constructor
+
+  constructor(address _CBNFTAddress, address _VRFAddress) {
+    i_NFT = CB_NFTInterface(_CBNFTAddress);
+    i_VRF = CB_VRFInterface(_VRFAddress);
+  }
   //Publicly Accessible Functions
 
   function createGame() public {
@@ -102,6 +122,17 @@ contract MatchManager {
     //Set latest game in challenger's accepted game list to this game
 
     emit AcceptGame(_id, games[_id].challenger);
+  }
+
+  function startGame(uint256 _id) public {
+    require(games[_id].creator != msg.sender, "Challenger can not be creator...");
+    require(_checkActive(_id), "Game is not active...");
+    require(_rosterFilled(msg.sender));
+
+    //request Random Number from BRFHandler
+    i_VRFHandler.requestRandomNumber(2, address(0), _id, 10);
+
+    emit StartGame(_id);
   }
 
   function finalizeGame(uint256 _id) public {
@@ -156,8 +187,10 @@ contract MatchManager {
 
   function setRosterPosition(address _user, uint256 _position, uint256 _tokenID) public {
     //uncomment this when NFT is implemented
-    //require(userOwnsTokenID(), "Player does not own this token.");
-
+    if (!i_NFT.isNFTOwner(_user, _tokenID)) {
+      emit StakingProcessFailed(_user, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
+      revert CBNFT__NotTokenOwner();
+    }
     rosters[_user][_position].tokenID = _tokenID;
     rosters[_user][_position].active = true;
   }
@@ -175,5 +208,15 @@ contract MatchManager {
       }
     }
     return true;
+  }
+
+  //External Helper Functions
+  //set nft address
+  function setNFTAddress(address _NFTAddress) external onlyOwner(msg.sender) {
+    i_NFT = CB_NFTInterface(_NFTAddress);
+  }
+  //set VRF Address
+  function setVRFHandlerAddress(address _vrfHandler) external onlyOwner(msg.sender) {
+    i_VRF = CB_VRFInterface(_vrfHandler);
   }
 }

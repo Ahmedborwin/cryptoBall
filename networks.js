@@ -204,10 +204,9 @@ const networks = {
     url: "http://localhost:8545/",
     accounts,
     confirmations: 1,
-    chainId: 1337,
     nativeCurrencySymbol: "ETH",
-    linkToken: "0xDD3d48Ee30E3633fF28076943b987D82a1d9cd66",
-    functionsRouter: "0x782bf0D0E7678841559CC5798D845564651c6CaE",
+    linkToken: "0xf73494Fb41d801F0Aa30bF572b1b5ca14F452FF2",
+    functionsRouter: "0x63f9dF5F7637297693265927A83FF9a208E23Cb9",
     donId: "local-functions-testnet",
   },
 }

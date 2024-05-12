@@ -22,11 +22,12 @@ const team2Args = args.slice(12, 22)
 //build team by reading player details from ipfs
 async function buildTeams() {
   const promises = team1Args.map((hash, index) => {
-    console.log("hash", hash)
     return Functions.makeHttpRequest({
+      headers: {
+        "Content-Type": "application/json",
+      },
       url: hash,
       method: "GET", // Optional
-      // Other optional parameters
     })
       .then((response) => {
         team1.push(response.data)

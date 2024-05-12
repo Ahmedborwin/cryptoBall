@@ -5,6 +5,7 @@ import {IVRFCoordinatorV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/inter
 import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
 import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
+import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
 
 contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //Modifiers
@@ -39,6 +40,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   RequestDetails requestDetails;
   //Interfaces
   CB_NFTInterface i_NFT;
+  CB_ConsumerInterface i_Consumer;
   //admin
   address contract_Admin;
 
@@ -48,7 +50,8 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     bytes32 gasLane, // keyHash
     uint32 callbackGasLimit,
     address _CBNFTAddress,
-    address _contract_Admin
+    address _contract_Admin,
+    address _consumerAddress
   ) VRFConsumerBaseV2Plus(vrfCoordinatorV2) {
     i_vrfCoordinator = IVRFCoordinatorV2Plus(vrfCoordinatorV2);
     s_gasLane = gasLane;
@@ -56,6 +59,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     s_callbackGasLimit = callbackGasLimit;
     i_NFT = CB_NFTInterface(_CBNFTAddress);
     contract_Admin = _contract_Admin;
+    i_Consumer = CB_ConsumerInterface(_consumerAddress);
   }
 
   function requestRandomNumber(
@@ -89,6 +93,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     //get requestId Details
     if (s_RequestTable[requestId].requestType == RequestType.GameSimulation) {
       // trigger start game simulation
+      handleGameSimulationTrigger(s_RequestTable[requestId].challengeId, randomWords);
     } else if (s_RequestTable[requestId].requestType == RequestType.LootBox) {
       //TODO: is there a better way to do this?
       handleLootBoxLogic(randomWords[0], s_RequestTable[requestId].player);
@@ -97,7 +102,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[4], s_RequestTable[requestId].player);
     } else {
-      //event here to deal with edge case?
+      //TODO://event here to deal with edge case?
     }
   }
 
@@ -107,6 +112,10 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     uint256 playerIndex = _randomNumber % 1000;
     //send random numbers to nft contract
     i_NFT.openLootBox(playerIndex, _player);
+  }
+
+  function handleGameSimulationTrigger(uint256 _gameId, uint256[] memory _randomWords) internal {
+    //Call from here or send the call back to game manager to call function consumer?
   }
 
   //TODO: set cooridnator address

@@ -18,7 +18,7 @@ const isSimulation = process.argv.length === 3 && process.argv[2] === "functions
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 
 // TODO @dev - set this to run the accept.js task.
-const SECOND_PRIVATE_KEY = process.env.SECOND_PRIVATE_KEY
+const PRIVATE_KEY_2 = process.env.PRIVATE_KEY_2
 
 const providerApiKey = process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF"
 
@@ -30,8 +30,8 @@ const accounts = []
 if (PRIVATE_KEY) {
   accounts.push(PRIVATE_KEY)
 }
-if (SECOND_PRIVATE_KEY) {
-  accounts.push(SECOND_PRIVATE_KEY)
+if (PRIVATE_KEY_2) {
+  accounts.push(PRIVATE_KEY_2)
 }
 
 const networks = {
@@ -143,9 +143,9 @@ const networks = {
     url: `https://arb-sepolia.g.alchemy.com/v2/${providerApiKey}` || "UNSET",
     gasPrice: undefined,
     nonce: undefined,
+    accounts,
     subscriptionId: 59,
     verifyApiKey: process.env.ARBISCAN_API_KEY || "UNSET",
-    accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
     chainId: 421614,
     confirmations: DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS,
     nativeCurrencySymbol: "ETH",

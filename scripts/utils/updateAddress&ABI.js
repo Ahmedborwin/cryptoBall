@@ -2,14 +2,16 @@ const fs = require("fs")
 const { ethers } = require("hardhat")
 
 const CONSUMER_ADDRESS_FILE = "config/consumer_AddressList.json"
+const MANAGER_ADDRESS_FILE = "config/Manager_AddressList.json"
 const NFT_ADDRESS_FILE = "config/NFT_AddressList.json"
 const VRF_ADDRESS_FILE = "config/VRF_AddressList.json"
 
 const CONSUMER_ABI_FILE = "config/consumerAbi.json"
+const MANAGER_ABI_FILE = "config/managerAbi.json"
 const NFT_ABI_FILE = "config/NFTAbi.json"
 const VRF_ABI_FILE = "config/VRFAbi.json"
 
-module.exports = async ({ chainFunctionsConsumerAddress, NFTAddress, VRFHandlerAddress }) => {
+module.exports = async ({ chainFunctionsConsumerAddress, NFTAddress, VRFHandlerAddress, gameManagerAddress }) => {
   const chainId = ethers.provider.network.chainId.toString()
   if (chainFunctionsConsumerAddress) {
     console.log("--------Consumer UPDATE Address and ABI--------")
@@ -26,6 +28,31 @@ module.exports = async ({ chainFunctionsConsumerAddress, NFTAddress, VRFHandlerA
     await updateVRFAddress(chainId, VRFHandlerAddress)
     await updateVRFABI(VRFHandlerAddress)
   }
+  if (gameManagerAddress) {
+    console.log("--------Game Manager Update Address and ABI--------")
+    await updateManagerAddress(chainId, gameManagerAddress)
+    await updateManagerABI(gameManagerAddress)
+  }
+}
+
+async function updateManagerAddress(chainId, gameManagerAddress) {
+  //get contract
+
+  const managerAddressList = JSON.parse(fs.readFileSync(MANAGER_ADDRESS_FILE, "utf8"))
+
+  if (chainId in managerAddressList) {
+    if (!managerAddressList[chainId].includes(gameManagerAddress)) {
+      managerAddressList[chainId] = gameManagerAddress
+    }
+  } else {
+    managerAddressList[chainId] = gameManagerAddress
+  }
+  fs.writeFileSync(MANAGER_ADDRESS_FILE, JSON.stringify(managerAddressList, null, 2))
+}
+
+async function updateManagerABI(gameManagerAddress) {
+  const GameManager = await ethers.getContractAt("MatchManager", gameManagerAddress)
+  fs.writeFileSync(MANAGER_ABI_FILE, GameManager.interface.format(ethers.utils.FormatTypes.json))
 }
 
 async function updateConsumerAddress(chainId, consumerAddress) {

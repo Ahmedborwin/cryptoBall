@@ -2,6 +2,7 @@ pragma solidity ^0.8.19;
 
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 import {CB_VRFInterface} from "contracts/interfaces/CB_VRFInterface.sol";
+import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 error CBNFT__NotTokenOwner();
@@ -14,6 +15,13 @@ contract MatchManager {
     _;
   }
 
+  enum Position {
+    GoalKeeper,
+    Defence,
+    Midfield,
+    Striker
+  }
+
   address public owner;
   uint256 public totalGames; //Total number of games created
 
@@ -21,9 +29,11 @@ contract MatchManager {
   struct Player {
     uint256 tokenID;
     bool active;
+    Position playerPosition;
   }
 
   mapping(address => Player[]) public rosters;
+  mapping(address => string[]) public tokenIdStringTable; //TODO: RENAME THIS!!
 
   struct Game {
     uint256 id; //id of game
@@ -57,8 +67,9 @@ contract MatchManager {
   mapping(address => Stats) public stats;
 
   //Interfaces
-  CB_NFTInterface i_NFT;
-  CB_VRFInterface i_VRF;
+  CB_NFTInterface public i_NFT;
+  CB_VRFInterface public i_VRF;
+  CB_ConsumerInterface public i_Consumer;
 
   //Events
 
@@ -76,13 +87,14 @@ contract MatchManager {
 
   //constructor
 
-  constructor(address _CBNFTAddress, address _VRFAddress) {
+  constructor(address _CBNFTAddress, address _VRFAddress, address _consumerAddress) {
     i_NFT = CB_NFTInterface(_CBNFTAddress);
     i_VRF = CB_VRFInterface(_VRFAddress);
+    i_Consumer = CB_ConsumerInterface(_consumerAddress);
   }
   //Publicly Accessible Functions
 
-  function createGame() public {
+  function createGame() public returns (uint256) {
     require(_rosterFilled(msg.sender));
 
     //setup game
@@ -101,8 +113,8 @@ contract MatchManager {
     stats[msg.sender].totalUserGames++;
     stats[msg.sender].userGameIds[stats[msg.sender].totalUserGames] = totalGames;
     //Set latest game in creator's created game list to this game
-
     emit CreateGame(games[totalGames].id, games[totalGames].creator, games[totalGames].creationTime);
+    return totalGames;
   }
 
   function acceptGame(uint256 _id) public {
@@ -124,16 +136,40 @@ contract MatchManager {
     emit AcceptGame(_id, games[_id].challenger);
   }
 
-  function startGame(uint256 _id) public {
+  function requestRandomNumbers(uint256 _id) public {
     require(games[_id].creator != msg.sender, "Challenger can not be creator...");
     require(_checkActive(_id), "Game is not active...");
     require(_rosterFilled(msg.sender));
 
     //request Random Number from BRFHandler
-    i_VRFHandler.requestRandomNumber(2, address(0), _id, 10);
-
-    emit StartGame(_id);
+    i_VRF.requestRandomNumber(2, address(0), _id, 10);
   }
+
+  // function startGame(uint256 _id, uint256[] calldata _randomNumbers) public {
+  //   string[] storage _args;
+  //   Player[] memory creatorTeam = games[_id].creatorRoster;
+  //   Player[] memory challengerTeam = games[_id].challengerRoster;
+  //   //How to get the staked Player lists as an array of Strings
+  //   //TODO: There must be a better way to do this. Can we store the tokenIds as string when we first stake them?
+  //   for (uint8 i; i < creatorTeam.length; i++) {
+  //     string memory tokenIdString = creatorTeam[i].tokenID.toString();
+  //     _args.push(tokenIdString);
+  //   }
+
+  //   for (uint8 i; i < challengerTeam.length; i++) {
+  //     string memory tokenIdString = challengerTeam[i].tokenID.toString();
+  //     _args.push(tokenIdString);
+  //   }
+
+  //   for (uint8 i; i < _randomNumbers.length; i++) {
+  //     string memory randomNumberString = _randomNumbers[i].toString();
+  //     _args.push(randomNumberString);
+  //   }
+
+  //   i_Consumer.sendRequest(_args);
+
+  //   emit StartGame(_id);
+  // }
 
   function finalizeGame(uint256 _id) public {
     require(games[_id].status == 2, "Game status is not pending...");
@@ -185,18 +221,27 @@ contract MatchManager {
     }
   }
 
-  function setRosterPosition(address _user, uint256 _position, uint256 _tokenID) public {
-    //uncomment this when NFT is implemented
+  function setRosterPosition(address _user, Position _position, uint256 _tokenID, uint8 _index) public {
     if (!i_NFT.isNFTOwner(_user, _tokenID)) {
       emit StakingProcessFailed(_user, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
       revert CBNFT__NotTokenOwner();
     }
-    rosters[_user][_position].tokenID = _tokenID;
-    rosters[_user][_position].active = true;
+    //TODO: Need to think about this + Clean up
+    // By default _index should be 99 to indicate adding a new player
+    if (_index == 99) {
+      // Extend the array if the index is beyond current length
+      rosters[_user].push(Player(_tokenID, true, _position));
+    } else if (_index <= 10 && _index >= 0) {
+      // Otherwise Update the existing player at the index
+      rosters[_user][_index].tokenID = _tokenID;
+      rosters[_user][_index].playerPosition = _position;
+      rosters[_user][_index].active = true;
+    } else {
+      revert("Invalid TokenId");
+    }
   }
 
   //Internal Utility Functions
-
   function _checkActive(uint256 _id) internal view returns (bool) {
     return (games[_id].status == 1);
   }
@@ -212,11 +257,15 @@ contract MatchManager {
 
   //External Helper Functions
   //set nft address
-  function setNFTAddress(address _NFTAddress) external onlyOwner(msg.sender) {
+  function setNFTAddress(address _NFTAddress) external onlyOwner {
     i_NFT = CB_NFTInterface(_NFTAddress);
   }
   //set VRF Address
-  function setVRFHandlerAddress(address _vrfHandler) external onlyOwner(msg.sender) {
+  function setVRFHandlerAddress(address _vrfHandler) external onlyOwner {
     i_VRF = CB_VRFInterface(_vrfHandler);
+  }
+
+  function getGameDetails(uint256 _gameID) public view returns (Game memory) {
+    return games[_gameID];
   }
 }

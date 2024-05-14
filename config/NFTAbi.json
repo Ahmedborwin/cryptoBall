@@ -39,6 +39,15 @@
   {
     "type": "event",
     "anonymous": false,
+    "name": "LootBoxOpened",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": false },
+      { "type": "string", "name": "tokenURI", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
     "name": "MetadataUpdate",
     "inputs": [{ "type": "uint256", "name": "_tokenId", "indexed": false }]
   },
@@ -131,6 +140,18 @@
   },
   {
     "type": "function",
+    "name": "isNFTOwner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_player" },
+      { "type": "uint256", "name": "tokenId" }
+    ],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
     "name": "minNFT",
     "constant": false,
     "payable": false,
@@ -148,6 +169,17 @@
     "payable": false,
     "inputs": [],
     "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "openLootBox",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_uriIndex" },
+      { "type": "address", "name": "_player" }
+    ],
+    "outputs": []
   },
   {
     "type": "function",

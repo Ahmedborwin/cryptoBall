@@ -1,5 +1,6 @@
 const { Buffer } = await import("node:buffer")
 const { promisify } = await import("node:util")
+const ethers = await import("npm:ethers@6.10.0")
 
 //Declare Variables
 
@@ -19,31 +20,604 @@ let team2GkSkill
 const team1Args = args.slice(0, 11)
 const team2Args = args.slice(12, 22)
 
-//build team by reading player details from ipfs
-async function buildTeams() {
-  const promises = team1Args.map((hash, index) => {
-    return Functions.makeHttpRequest({
-      headers: {
-        "Content-Type": "application/json",
-      },
-      url: hash,
-      method: "GET", // Optional
-    })
-      .then((response) => {
-        team1.push(response.data)
-        console.log(`Player ${index + 1} data:`, response.data)
-      })
-      .catch((error) => {
-        console.error(`Error fetching data for player ${index + 1}:`, error.message)
-      })
-  })
+//-------------------------------------------------------------
+//call smart contract to get gameStruct Data
+//-------------------------------------------------------------
 
-  await Promise.all(promises)
-  console.log("Final Team 1 Data:", team1)
+const ABI = [
+  {
+    type: "constructor",
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+        name: "_CBNFTAddress",
+      },
+      {
+        type: "address",
+        name: "_VRFAddress",
+      },
+      {
+        type: "address",
+        name: "_consumerAddress",
+      },
+    ],
+  },
+  {
+    type: "error",
+    name: "CBNFT__NotTokenOwner",
+    inputs: [],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "AcceptGame",
+    inputs: [
+      {
+        type: "uint256",
+        name: "id",
+        indexed: false,
+      },
+      {
+        type: "address",
+        name: "challenger",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "CancelGame",
+    inputs: [
+      {
+        type: "uint256",
+        name: "id",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "CreateGame",
+    inputs: [
+      {
+        type: "uint256",
+        name: "id",
+        indexed: false,
+      },
+      {
+        type: "address",
+        name: "creator",
+        indexed: false,
+      },
+      {
+        type: "uint256",
+        name: "creationTime",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "FinalizeGame",
+    inputs: [
+      {
+        type: "uint256",
+        name: "id",
+        indexed: false,
+      },
+      {
+        type: "address",
+        name: "winner",
+        indexed: false,
+      },
+      {
+        type: "uint256",
+        name: "completionTime",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "StakingProcessFailed",
+    inputs: [
+      {
+        type: "address",
+        name: "_player",
+        indexed: false,
+      },
+      {
+        type: "bytes",
+        name: "Reason",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "event",
+    anonymous: false,
+    name: "StartGame",
+    inputs: [
+      {
+        type: "uint256",
+        name: "id",
+        indexed: false,
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "acceptGame",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+        name: "_id",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "cancelAllGames",
+    constant: false,
+    payable: false,
+    inputs: [],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "cancelGame",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+        name: "_id",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "createGame",
+    constant: false,
+    payable: false,
+    inputs: [],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "finalizeGame",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+        name: "_id",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "games",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+      },
+    ],
+    outputs: [
+      {
+        type: "uint256",
+        name: "id",
+      },
+      {
+        type: "address",
+        name: "creator",
+      },
+      {
+        type: "address",
+        name: "challenger",
+      },
+      {
+        type: "address",
+        name: "winner",
+      },
+      {
+        type: "uint256",
+        name: "creationTime",
+      },
+      {
+        type: "uint256",
+        name: "blockAccepted",
+      },
+      {
+        type: "uint256",
+        name: "completionTime",
+      },
+      {
+        type: "uint256",
+        name: "status",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "getGameDetails",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+        name: "_gameID",
+      },
+    ],
+    outputs: [
+      {
+        type: "tuple",
+        components: [
+          {
+            type: "uint256",
+            name: "id",
+          },
+          {
+            type: "address",
+            name: "creator",
+          },
+          {
+            type: "tuple[]",
+            name: "creatorRoster",
+            components: [
+              {
+                type: "uint256",
+                name: "tokenID",
+              },
+              {
+                type: "bool",
+                name: "active",
+              },
+              {
+                type: "uint8",
+                name: "playerPosition",
+              },
+            ],
+          },
+          {
+            type: "address",
+            name: "challenger",
+          },
+          {
+            type: "tuple[]",
+            name: "challengerRoster",
+            components: [
+              {
+                type: "uint256",
+                name: "tokenID",
+              },
+              {
+                type: "bool",
+                name: "active",
+              },
+              {
+                type: "uint8",
+                name: "playerPosition",
+              },
+            ],
+          },
+          {
+            type: "address",
+            name: "winner",
+          },
+          {
+            type: "uint256",
+            name: "creationTime",
+          },
+          {
+            type: "uint256",
+            name: "blockAccepted",
+          },
+          {
+            type: "uint256",
+            name: "completionTime",
+          },
+          {
+            type: "uint256",
+            name: "status",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "i_Consumer",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [],
+    outputs: [
+      {
+        type: "address",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "i_NFT",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [],
+    outputs: [
+      {
+        type: "address",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "i_VRF",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [],
+    outputs: [
+      {
+        type: "address",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "owner",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [],
+    outputs: [
+      {
+        type: "address",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "requestRandomNumbers",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "uint256",
+        name: "_id",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "rosters",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+      },
+      {
+        type: "uint256",
+      },
+    ],
+    outputs: [
+      {
+        type: "uint256",
+        name: "tokenID",
+      },
+      {
+        type: "bool",
+        name: "active",
+      },
+      {
+        type: "uint8",
+        name: "playerPosition",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "setNFTAddress",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+        name: "_NFTAddress",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "setRosterPosition",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+        name: "_user",
+      },
+      {
+        type: "uint8",
+        name: "_position",
+      },
+      {
+        type: "uint256",
+        name: "_tokenID",
+      },
+      {
+        type: "uint8",
+        name: "_index",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "setVRFHandlerAddress",
+    constant: false,
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+        name: "_vrfHandler",
+      },
+    ],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "stats",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+      },
+    ],
+    outputs: [
+      {
+        type: "uint256",
+        name: "wins",
+      },
+      {
+        type: "uint256",
+        name: "losses",
+      },
+      {
+        type: "uint256",
+        name: "activeGames",
+      },
+      {
+        type: "uint256",
+        name: "totalUserGames",
+      },
+      {
+        type: "uint256",
+        name: "totalUserAcceptedGames",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "tokenIdStringTable",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [
+      {
+        type: "address",
+      },
+      {
+        type: "uint256",
+      },
+    ],
+    outputs: [
+      {
+        type: "string",
+      },
+    ],
+  },
+  {
+    type: "function",
+    name: "totalGames",
+    constant: true,
+    stateMutability: "view",
+    payable: false,
+    inputs: [],
+    outputs: [
+      {
+        type: "uint256",
+      },
+    ],
+  },
+]
+const Address = "0xD776437E7e54687693f248C592A370844a0dbB2A"
+//Personal Alchemy api
+const rpcurl = "https://arb-sepolia.g.alchemy.com/v2/U4KPgXJi3FAILfXVYloxhngoXfSLZnER"
+
+// Chainlink Functions compatible Ethers JSON RPC provider class
+// (this is required for making Ethers RPC calls with Chainlink Functions)
+class FunctionsJsonRpcProvider extends ethers.JsonRpcProvider {
+  constructor(url) {
+    super(url)
+    this.url = url
+  }
+
+  async _send(payload) {
+    let resp = await fetch(this.url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
+    return resp.json()
+  }
 }
 
-// Call the function
-buildTeams()
+const provider = new FunctionsJsonRpcProvider(rpcurl)
+
+//Initialize contract
+const gameManager = new ethers.Contract(Address, ABI, provider)
+
+const game = await gameManager.getGameDetails(1)
+
+//-------------------------------------------------------------
+//Build Array of tokenIds for Both Teams
+const Team1Roster = game[2]
+const team1Ids = Team1Roster?.map((subArray) => parseInt(subArray[0]))
+const Team2Roster = game[4]
+const team2Ids = Team2Roster?.map((subArray) => parseInt(subArray[0]))
+
+//-------------------------------------------------------------
+//build team by reading player details from ipfs
+//-------------------------------------------------------------
+async function buildTeam(teamIds, gatewayBaseUrl, teamArray) {
+  const fetchPromises = teamIds.map((id) =>
+    Functions.makeHttpRequest({
+      headers: {
+        "Content-Type": `application/json`,
+      },
+      url: `${gatewayBaseUrl}/${id}.json`,
+    })
+      .then((response) => response.json())
+      .then((data) => teamArray.push(data))
+      .catch((error) => console.error(`Failed to fetch data for player ${id}: ${error}`))
+  )
+
+  // Wait for all fetch operations to complete
+  await Promise.all(fetchPromises)
+}
+
+// Define the base URL for the IPFS gateway
+const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmPp7Tgav8SwPWufZkGaePziMcDHXXCev6DPtHHrHpKHGG"
+
+// Build both teams
+await buildTeam(team1Ids, gatewayBaseUrl, team1)
+console.log("team1", team1)
+
+await buildTeam(team2Ids, gatewayBaseUrl, team2)
+console.log("team2", team2)
+//-------------------------------------------------------------
 
 // Parsing player data into arrays of values
 

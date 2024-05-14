@@ -58,6 +58,7 @@ module.exports = {
     customChains: [
       {
         network: "arbitrumSepolia",
+        name: "arbitrumSepolia",
         chainId: 421614,
         urls: {
           apiURL: "https://api-sepolia.arbiscan.io/api",

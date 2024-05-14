@@ -1,0 +1,273 @@
+[
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_CBNFTAddress" },
+      { "type": "address", "name": "_VRFAddress" },
+      { "type": "address", "name": "_consumerAddress" }
+    ]
+  },
+  { "type": "error", "name": "CBNFT__NotTokenOwner", "inputs": [] },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "AcceptGame",
+    "inputs": [
+      { "type": "uint256", "name": "id", "indexed": false },
+      { "type": "address", "name": "challenger", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "CancelGame",
+    "inputs": [{ "type": "uint256", "name": "id", "indexed": false }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "CreateGame",
+    "inputs": [
+      { "type": "uint256", "name": "id", "indexed": false },
+      { "type": "address", "name": "creator", "indexed": false },
+      { "type": "uint256", "name": "creationTime", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "FinalizeGame",
+    "inputs": [
+      { "type": "uint256", "name": "id", "indexed": false },
+      { "type": "address", "name": "winner", "indexed": false },
+      { "type": "uint256", "name": "completionTime", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "StakingProcessFailed",
+    "inputs": [
+      { "type": "address", "name": "_player", "indexed": false },
+      { "type": "bytes", "name": "Reason", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "StartGame",
+    "inputs": [{ "type": "uint256", "name": "id", "indexed": false }]
+  },
+  {
+    "type": "function",
+    "name": "acceptGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "outputs": []
+  },
+  { "type": "function", "name": "cancelAllGames", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "cancelGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "createGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "finalizeGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "games",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [
+      { "type": "uint256", "name": "id" },
+      { "type": "address", "name": "creator" },
+      { "type": "address", "name": "challenger" },
+      { "type": "address", "name": "winner" },
+      { "type": "uint256", "name": "creationTime" },
+      { "type": "uint256", "name": "blockAccepted" },
+      { "type": "uint256", "name": "completionTime" },
+      { "type": "uint256", "name": "status" }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "getGameDetails",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_gameID" }],
+    "outputs": [
+      {
+        "type": "tuple",
+        "components": [
+          { "type": "uint256", "name": "id" },
+          { "type": "address", "name": "creator" },
+          {
+            "type": "tuple[]",
+            "name": "creatorRoster",
+            "components": [
+              { "type": "uint256", "name": "tokenID" },
+              { "type": "bool", "name": "active" },
+              { "type": "uint8", "name": "playerPosition" }
+            ]
+          },
+          { "type": "address", "name": "challenger" },
+          {
+            "type": "tuple[]",
+            "name": "challengerRoster",
+            "components": [
+              { "type": "uint256", "name": "tokenID" },
+              { "type": "bool", "name": "active" },
+              { "type": "uint8", "name": "playerPosition" }
+            ]
+          },
+          { "type": "address", "name": "winner" },
+          { "type": "uint256", "name": "creationTime" },
+          { "type": "uint256", "name": "blockAccepted" },
+          { "type": "uint256", "name": "completionTime" },
+          { "type": "uint256", "name": "status" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "i_Consumer",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_NFT",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_VRF",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "requestRandomNumbers",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "rosters",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }, { "type": "uint256" }],
+    "outputs": [
+      { "type": "uint256", "name": "tokenID" },
+      { "type": "bool", "name": "active" },
+      { "type": "uint8", "name": "playerPosition" }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "setNFTAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_NFTAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setRosterPosition",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_user" },
+      { "type": "uint8", "name": "_position" },
+      { "type": "uint256", "name": "_tokenID" },
+      { "type": "uint8", "name": "_index" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setVRFHandlerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_vrfHandler" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "stats",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }],
+    "outputs": [
+      { "type": "uint256", "name": "wins" },
+      { "type": "uint256", "name": "losses" },
+      { "type": "uint256", "name": "activeGames" },
+      { "type": "uint256", "name": "totalUserGames" },
+      { "type": "uint256", "name": "totalUserAcceptedGames" }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "tokenIdStringTable",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }, { "type": "uint256" }],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "totalGames",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint256" }]
+  }
+]

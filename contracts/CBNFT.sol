@@ -32,7 +32,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   event LootBoxOpened(address player, string tokenURI);
 
   constructor(string memory _baseHash, address _contractAdmin) ERC721("CB_PLAYERS", "CBNFT") {
-    s_tokenCounter = 0;
+    s_tokenCounter = 1;
     s_CB_BaseURI = _baseHash;
     contract_Admin = _contractAdmin;
   }
@@ -95,11 +95,11 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return s_CB_BaseURI;
   }
 
-  function isNFTOwner(address _player, uint256 tokenId) external returns (bool) {
-    if (_player != ownerOf(tokenId)) {
-      return false;
-    } else {
+  function isNFTOwner(address _player, uint256 tokenId) external view returns (bool) {
+    if (_player == ownerOf(tokenId)) {
       return true;
+    } else {
+      return false;
     }
   }
 

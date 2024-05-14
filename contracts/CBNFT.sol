@@ -10,20 +10,34 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   using Strings for uint256;
   //Modifiers
-  modifier onlyAdmin(address _caller) {
-    require(_caller == VRF_RequestHandler || _caller == contract_Admin, "Only Conract Admins Can Make This Call");
+  modifier onlyAdmin() {
+    require(
+      msg.sender == VRF_RequestHandler || msg.sender == contract_Admin || msg.sender == MatchManager,
+      "Only Conract Admins Can Make This Call"
+    );
     _;
   }
 
   //variables
   uint8 public s_tokenCounter;
   mapping(uint256 => string) private _tokenURIs;
+  mapping(uint256 => uint8[4]) public tokenUpgrades;
+  //0 = attacking
+  //1 = defending
+  //2 = midfield
+  //3 = goalkeeping
   string public s_CB_BaseURI;
   bool private s_initialized;
 
   //Admins
   address internal VRF_RequestHandler;
   address internal contract_Admin;
+
+  address public MatchManager;
+
+  function setMatchManager(address _matchManager) public onlyAdmin {
+    MatchManager = _matchManager;
+  }
 
   //All NFT's to address storage mapping
   mapping(address => string[]) public s_addressToAllTokenURIs;
@@ -35,9 +49,14 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     s_tokenCounter = 1;
     s_CB_BaseURI = _baseHash;
     contract_Admin = _contractAdmin;
+    MatchManager = _contractAdmin;
   }
 
-  function minNFT(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
+  function modifyUpgrade(uint256 _tokenID, uint8[4] memory _newValues) public onlyAdmin {
+    tokenUpgrades[_tokenID] = _newValues;
+  }
+
+  function minNFT(uint256 _uriIndex, address _player) external onlyAdmin {
     uint8 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
 
@@ -55,7 +74,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     emit NFTMinted(_player, playerURI);
   }
 
-  function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
+  function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin {
     uint8 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
 
@@ -83,11 +102,11 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return Strings.toString(value);
   }
 
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin {
     VRF_RequestHandler = _vrfHandler;
   }
 
-  function populateBaseHash(string calldata _baseHash) external onlyAdmin(msg.sender) {
+  function populateBaseHash(string calldata _baseHash) external onlyAdmin {
     s_CB_BaseURI = _baseHash;
   }
 

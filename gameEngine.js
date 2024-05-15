@@ -626,7 +626,7 @@ function simulateMatch() {
 
   const homeBias = 0.25
   const eliteGoalSavePercentage = 0.85
-  const shotsToGoalsRatio = 7
+  const shotsToGoalsRatio = 0.7
 
   let team1Attack = 0
   let team1Defense = 0
@@ -652,7 +652,9 @@ function simulateMatch() {
           team1Midfield += parseInt(attr.value)
           break
         case "goalkeeping":
-          team1GkSkill += parseInt(attr.value)
+          if (player.team_position === "GK") {
+            team1GkSkill += parseInt(attr.value)
+          }
           break
       }
     })
@@ -683,7 +685,9 @@ function simulateMatch() {
           team2Midfield += parseInt(attr.value)
           break
         case "goalkeeping":
-          team2GkSkill += parseInt(attr.value)
+          if (player.team_position === "GK") {
+            team1GkSkill += parseInt(attr.value)
+          }
           break
       }
     })
@@ -703,14 +707,28 @@ function simulateMatch() {
   const homeTeam = randomFactors[0] % 2
 
   const team1Skill = team1Attack + team1Defense + team1Midfield
-  console.log(team1Skill, randomFactors[2] % 3000)
+
+  // Compute initial goals
   let team1Goals = computeScoreFromChance(team1Skill, randomFactors[2] % 3000) * shotsToGoalsRatio
-  console.log(team1Goals)
-  team1Goals = team1Goals - team1Goals * (team2GkSkill * eliteGoalSavePercentage)
-  console.log(team1Goals)
+  console.log("team1Goals (initial)", team1Goals)
+
+  // Compute goals saved by the goalkeeper
+  const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
+  console.log("goals saved by team2 GK", team2Saves)
+
+  // Adjust goals after saves
+  team1Goals = team1Goals - team2Saves
+  console.log("team1Goals (adjusted)", team1Goals)
+
   const team2Skill = team2Attack + team2Defense + team2Midfield
   let team2Goals = computeScoreFromChance(team2Skill, randomFactors[3] % 3000) * shotsToGoalsRatio
-  team2Goals = team2Goals - team2Goals * (team1GkSkill * eliteGoalSavePercentage)
+  console.log("team2Goals (initial)", team2Goals)
+
+  const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
+  console.log("goals saved by team1 GK", team1Saves)
+
+  team2Goals = team2Goals - team1Saves
+  console.log("team2Goals (adjusted)", team2Goals)
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
@@ -726,26 +744,24 @@ function simulateMatch() {
   return { winner, team1Goals, team2Goals, adjustedTeam1Stats, adjustedTeam2Stats }
 }
 
-function computeScoreFromChance(skill, chance) {
-  // Ensure the chance is within the 0-10000 range
-  if (chance < 0 || chance > 3000) {
-    return "Chance must be between 0 and 10000"
-  }
+function computeScoreFromChance(skill, _chance) {
+  // Ensure the chance is within the 0-3000 range
+  const chance = _chance % 3000
+  console.log("skill", skill)
+  console.log("chance", chance)
+  // Normalize the skill to a 0-1 range (assuming max skill is 4356)
+  const normalizedSkill = skill / 4356
 
-  // Convert chance to a probability between 0 and 2
-  const chanceBias = 0.25
-  const probability = (chance * chanceBias * skill) / 2 / 3000
-  console.log("probability", probability)
-  // Define the base value for the adjustment
-  const base = Math.exp(-3.5)
-  console.log("base", base)
-  // Adjust the computation to ensure the score is scaled from 0 to 10
-  // Calculate the score using the inverse of the exponential function adjusted correctly
-  // This formula now starts at 0 and increases to 10 as the chance decreases
-  const score = (Math.log((2 - probability) * (2 - base) + base) / Math.log(base)) * 8
+  // Normalize the chance to a 0-1 range
+  const normalizedChance = chance / 3000
+
+  console.log("normalizedSkill", normalizedSkill)
+  console.log("normalizedChance", normalizedChance)
+  // Calculate the raw score using a sigmoid function for smooth scaling
+  const score = 10 / (1 + Math.exp(-(normalizedSkill - normalizedChance)))
   console.log("score", score)
-  // Return the score directly without rounding
-  return score + 2
+  // Ensure the score is in the 0-10 range
+  return Math.round(score)
 }
 function adjustPlayerAttributes(team, outcomeFactor) {
   team.forEach((player) => {

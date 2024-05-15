@@ -591,25 +591,23 @@ const team2Ids = Team2Roster?.map((subArray) => parseInt(subArray[0]))
 //-------------------------------------------------------------
 //build team by reading player details from ipfs
 //-------------------------------------------------------------
-async function buildTeam(teamIds, gatewayBaseUrl, teamArray) {
-  const fetchPromises = teamIds.map((id) =>
-    Functions.makeHttpRequest({
-      headers: {
-        "Content-Type": `application/json`,
-      },
-      url: `${gatewayBaseUrl}/${id}.json`,
-    })
-      .then((response) => response.json())
-      .then((data) => teamArray.push(data))
-      .catch((error) => console.error(`Failed to fetch data for player ${id}: ${error}`))
-  )
+async function buildTeam(teamIds, gatewayBaseUrl, team) {
+  const { data } = await Functions.makeHttpRequest({
+    headers: {
+      "Content-Type": `application/json`,
+    },
+    url: `${gatewayBaseUrl}`,
+  })
 
-  // Wait for all fetch operations to complete
-  await Promise.all(fetchPromises)
+  console.log("teamIds", teamIds)
+
+  for (let i = 0; i < teamIds.length; i++) {
+    team.push(data[teamIds[i].toString()])
+  }
 }
 
 // Define the base URL for the IPFS gateway
-const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmPp7Tgav8SwPWufZkGaePziMcDHXXCev6DPtHHrHpKHGG"
+const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmY59zJCpS9ChBWxBau85XpGYSi5zcpixczARXnfrLFm6k"
 
 // Build both teams
 await buildTeam(team1Ids, gatewayBaseUrl, team1)
@@ -621,9 +619,7 @@ console.log("team2", team2)
 
 // Parsing player data into arrays of values
 
-team1 = args.slice(0, 11).map((playerJson) => Object.values(JSON.parse(playerJson)))
-team2 = args.slice(11, 22).map((playerJson) => Object.values(JSON.parse(playerJson)))
-const randomFactors = args.slice(22, 27).map(Number)
+const randomFactors = args.slice(1, 9).map(Number)
 
 function simulateMatch() {
   console.log("Starting match simulation...")
@@ -642,43 +638,94 @@ function simulateMatch() {
   let team2Midfield = 0
   let team2GkSkill = 0
 
-  console.log(team1, team2)
+  // Calculate team1 attributes
+  team1.forEach((player) => {
+    player.attributes.forEach((attr) => {
+      switch (attr.name) {
+        case "attack":
+          team1Attack += parseInt(attr.value)
+          break
+        case "defense":
+          team1Defense += parseInt(attr.value)
+          break
+        case "midfield":
+          team1Midfield += parseInt(attr.value)
+          break
+        case "goalkeeping":
+          team1GkSkill += parseInt(attr.value)
+          break
+      }
+    })
+  })
+
+  console.log(
+    "Team 1 - Attack:",
+    team1Attack,
+    "Defense:",
+    team1Defense,
+    "Midfield:",
+    team1Midfield,
+    "GK Skill:",
+    team1GkSkill
+  )
+
+  // Calculate team2 attributes
+  team2.forEach((player) => {
+    player.attributes.forEach((attr) => {
+      switch (attr.name) {
+        case "attack":
+          team2Attack += parseInt(attr.value)
+          break
+        case "defense":
+          team2Defense += parseInt(attr.value)
+          break
+        case "midfield":
+          team2Midfield += parseInt(attr.value)
+          break
+        case "goalkeeping":
+          team2GkSkill += parseInt(attr.value)
+          break
+      }
+    })
+  })
+
+  console.log(
+    "Team 2 - Attack:",
+    team2Attack,
+    "Defense:",
+    team2Defense,
+    "Midfield:",
+    team2Midfield,
+    "GK Skill:",
+    team2GkSkill
+  )
 
   const homeTeam = randomFactors[0] % 2
 
-  for (let i = 0; i < 11; i++) {
-    team1Attack += team1[i][6]
-    team1Midfield += team1[i][7]
-    team1Defense += team1[i][8]
-    team1GkSkill += team1[i][9]
-    console.log(team1Attack, team1Defense, team1Midfield, team1GkSkill)
-  }
   const team1Skill = team1Attack + team1Defense + team1Midfield
+  console.log(team1Skill, randomFactors[2] % 3000)
   let team1Goals = computeScoreFromChance(team1Skill, randomFactors[2] % 3000) * shotsToGoalsRatio
+  console.log(team1Goals)
   team1Goals = team1Goals - team1Goals * (team2GkSkill * eliteGoalSavePercentage)
-
-  for (let i = 0; i < 11; i++) {
-    team2Attack += team2[i][6]
-    team2Midfield += team2[i][7]
-    team2Defense += team2[i][8]
-    team2GkSkill += team2[i][9]
-    console.log(team2Attack, team2Defense, team2Midfield, team2GkSkill)
-  }
+  console.log(team1Goals)
   const team2Skill = team2Attack + team2Defense + team2Midfield
   let team2Goals = computeScoreFromChance(team2Skill, randomFactors[3] % 3000) * shotsToGoalsRatio
   team2Goals = team2Goals - team2Goals * (team1GkSkill * eliteGoalSavePercentage)
 
-  const winner = team1Goals < team2Goals ? 2 : 2
-  console.log("@@@winner", winner)
+  console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
-  const outcomeFactorTeam1 = winner == 2 ? 2 : -2
+  const winner = team1Goals > team2Goals ? 1 : team1Goals < team2Goals ? 2 : "draw"
+  console.log("Winner: Team", winner)
+
+  const outcomeFactorTeam1 = winner === 1 ? 2 : -2
   const adjustedTeam1Stats = adjustPlayerAttributes(team1, outcomeFactorTeam1)
 
-  const outcomeFactorTeam2 = winner == 2 ? 2 : -2
+  const outcomeFactorTeam2 = winner === 2 ? 2 : -2
   const adjustedTeam2Stats = adjustPlayerAttributes(team2, outcomeFactorTeam2)
 
   return { winner, team1Goals, team2Goals, adjustedTeam1Stats, adjustedTeam2Stats }
 }
+
 function computeScoreFromChance(skill, chance) {
   // Ensure the chance is within the 0-10000 range
   if (chance < 0 || chance > 3000) {
@@ -688,15 +735,15 @@ function computeScoreFromChance(skill, chance) {
   // Convert chance to a probability between 0 and 2
   const chanceBias = 0.25
   const probability = (chance * chanceBias * skill) / 2 / 3000
-
+  console.log("probability", probability)
   // Define the base value for the adjustment
   const base = Math.exp(-3.5)
-
+  console.log("base", base)
   // Adjust the computation to ensure the score is scaled from 0 to 10
   // Calculate the score using the inverse of the exponential function adjusted correctly
   // This formula now starts at 0 and increases to 10 as the chance decreases
   const score = (Math.log((2 - probability) * (2 - base) + base) / Math.log(base)) * 8
-
+  console.log("score", score)
   // Return the score directly without rounding
   return score + 2
 }
@@ -739,7 +786,7 @@ function encodeMatchResult(matchResult) {
 }
 
 //runs simulate match and returns object of winner, team 2 and 2 score, adjusted team 2 and two metadata
-const matchResult = simulateMatch()
+const matchResult = simulateMatch(randomFactors)
 //encode match result into custom Bugger
 const encodedMatchResult = encodeMatchResult(matchResult)
 return encodedMatchResult

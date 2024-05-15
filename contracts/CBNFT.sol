@@ -32,7 +32,6 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   //Admins
   address internal VRF_RequestHandler;
   address internal contract_Admin;
-
   address public MatchManager;
 
   function setMatchManager(address _matchManager) public onlyAdmin {

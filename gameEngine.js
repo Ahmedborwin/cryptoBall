@@ -17,9 +17,6 @@ let team2Defense
 let team2Midfield
 let team2GkSkill
 
-const team1Args = args.slice(0, 11)
-const team2Args = args.slice(12, 22)
-
 //-------------------------------------------------------------
 //call smart contract to get gameStruct Data
 //-------------------------------------------------------------
@@ -585,9 +582,10 @@ const game = await gameManager.getGameDetails(1)
 //Build Array of tokenIds for Both Teams
 const Team1Roster = game[2]
 const team1Ids = Team1Roster?.map((subArray) => parseInt(subArray[0]))
+console.log(team1Ids)
 const Team2Roster = game[4]
 const team2Ids = Team2Roster?.map((subArray) => parseInt(subArray[0]))
-
+console.log(team2Ids)
 //-------------------------------------------------------------
 //build team by reading player details from ipfs
 //-------------------------------------------------------------
@@ -599,8 +597,6 @@ async function buildTeam(teamIds, gatewayBaseUrl, team) {
     url: `${gatewayBaseUrl}`,
   })
 
-  console.log("teamIds", teamIds)
-
   for (let i = 0; i < teamIds.length; i++) {
     team.push(data[teamIds[i].toString()])
   }
@@ -611,10 +607,9 @@ const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmY59zJCpS9ChBWxBau85X
 
 // Build both teams
 await buildTeam(team1Ids, gatewayBaseUrl, team1)
-console.log("team1", team1)
 
 await buildTeam(team2Ids, gatewayBaseUrl, team2)
-console.log("team2", team2)
+
 //-------------------------------------------------------------
 
 // Parsing player data into arrays of values
@@ -710,25 +705,19 @@ function simulateMatch() {
 
   // Compute initial goals
   let team1Goals = computeScoreFromChance(team1Skill, randomFactors[2] % 3000) * shotsToGoalsRatio
-  console.log("team1Goals (initial)", team1Goals)
 
   // Compute goals saved by the goalkeeper
   const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
-  console.log("goals saved by team2 GK", team2Saves)
 
   // Adjust goals after saves
   team1Goals = team1Goals - team2Saves
-  console.log("team1Goals (adjusted)", team1Goals)
 
   const team2Skill = team2Attack + team2Defense + team2Midfield
   let team2Goals = computeScoreFromChance(team2Skill, randomFactors[3] % 3000) * shotsToGoalsRatio
-  console.log("team2Goals (initial)", team2Goals)
 
   const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
-  console.log("goals saved by team1 GK", team1Saves)
 
   team2Goals = team2Goals - team1Saves
-  console.log("team2Goals (adjusted)", team2Goals)
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
@@ -743,23 +732,19 @@ function simulateMatch() {
 
   return { winner, team1Goals, team2Goals, adjustedTeam1Stats, adjustedTeam2Stats }
 }
-
 function computeScoreFromChance(skill, _chance) {
   // Ensure the chance is within the 0-3000 range
   const chance = _chance % 3000
-  console.log("skill", skill)
-  console.log("chance", chance)
+
   // Normalize the skill to a 0-1 range (assuming max skill is 4356)
   const normalizedSkill = skill / 4356
 
   // Normalize the chance to a 0-1 range
   const normalizedChance = chance / 3000
 
-  console.log("normalizedSkill", normalizedSkill)
-  console.log("normalizedChance", normalizedChance)
   // Calculate the raw score using a sigmoid function for smooth scaling
   const score = 10 / (1 + Math.exp(-(normalizedSkill - normalizedChance)))
-  console.log("score", score)
+
   // Ensure the score is in the 0-10 range
   return Math.round(score)
 }
@@ -782,12 +767,13 @@ function encodeMatchResult(matchResult) {
   const buffer = Buffer.alloc(256) // Total buffer allocation
   buffer.writeUInt8(matchResult.team1Goals, 0) // First team score
 
-  buffer.writeUInt8(matchResult.team2Goals, 2) // Second team score
+  buffer.writeUInt8(matchResult.team2Goals, 1) // Second team score
 
   let offset = 2
-  const encodeTeamData = (team) => {
+
+  const encodeTeamData = (team, tokenIds) => {
     team.forEach((player) => {
-      buffer.writeUInt32BE(player[0], offset) // Player ID (6 bytes)
+      buffer.writeUInt8(tokenIds[0], offset) // Player ID (6 bytes)
       offset += 6
       buffer.writeUInt8(player[3], offset++) // Overall rating (2 byte)
       buffer.writeUInt8(player[6], offset++) // Attack rating (2 byte)
@@ -796,7 +782,7 @@ function encodeMatchResult(matchResult) {
       buffer.writeUInt8(player[9], offset++) // Goalkeeping rating (2 byte)
     })
   }
-  encodeTeamData(matchResult.adjustedTeam1Stats)
+  encodeTeamData(team1, team1Ids)
   encodeTeamData(matchResult.adjustedTeam2Stats)
   return buffer
 }

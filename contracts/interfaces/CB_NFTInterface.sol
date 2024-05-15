@@ -6,4 +6,6 @@ interface CB_NFTInterface {
 
   //check NFT owned by Address
   function isNFTOwner(address _player, uint256 tokenId) external returns (bool);
+
+  function getTokenUriFromTokenId(uint256 tokenId) external view returns (string memory);
 }

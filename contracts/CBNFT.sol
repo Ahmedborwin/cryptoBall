@@ -13,7 +13,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   modifier onlyAdmin() {
     require(
       msg.sender == VRF_RequestHandler || msg.sender == contract_Admin || msg.sender == MatchManager,
-      "Only Conract Admins Can Make This Call"
+      "Only Contract Admins Can Make This Call"
     );
     _;
   }
@@ -131,6 +131,10 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     _requireMinted(tokenId);
     string memory baseURI = _baseURI();
     return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, _URIIndex.toString(), ".json")) : "";
+  }
+
+  function getTokenUriFromTokenId(uint256 tokenId) external view returns (string memory) {
+    return _tokenURIs[tokenId];
   }
 
   function getTokenUriFromTokenId(uint256 tokenId) external view returns (string memory) {

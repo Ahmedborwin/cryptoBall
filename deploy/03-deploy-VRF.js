@@ -4,6 +4,7 @@ const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-too
 const hre = require("hardhat")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 const NFTContractFile = require("../config/NFT_AddressList.json")
+const CONSUMERCONTRACTFILE = require("../config/consumer_AddressList.json")
 /**
  * Deploys a contract named "YourContract" using the deployer account and
  * constructor arguments set to the deployer address
@@ -26,6 +27,9 @@ const chainId = 421614
 
 const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
 console.log("NFTAddress", NFTAddress)
+const consumerAddress = CONSUMERCONTRACTFILE[chainId] ? CONSUMERCONTRACTFILE[chainId] : address(0)
+console.log("consumerAddress", consumerAddress)
+
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
 
@@ -39,6 +43,7 @@ const deployVRFHandler = async function () {
     callbackGasLimit,
     NFTAddress,
     signer.address,
+    consumerAddress,
   ])
 
   console.log("@@VRFHandler Address", VRFRequestHandler.address)

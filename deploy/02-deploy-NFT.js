@@ -21,17 +21,17 @@ const deployNFTContract = async function () {
   //write address and ABI to config
   await updateContractInfo({ undefined, NFTAddress: CBNFT.address, undefined })
 
-  await CBNFT.minNFT(1, signer.address)
-  await CBNFT.minNFT(2, signer.address)
-  await CBNFT.minNFT(3, signer.address)
-  await CBNFT.minNFT(4, signer.address)
-  await CBNFT.minNFT(5, signer.address)
-  await CBNFT.minNFT(6, signer.address)
-  await CBNFT.minNFT(7, signer.address)
-  await CBNFT.minNFT(8, signer.address)
-  await CBNFT.minNFT(9, signer.address)
   await CBNFT.minNFT(10, signer.address)
-  await CBNFT.minNFT(11, signer.address)
+  await CBNFT.minNFT(20, signer.address)
+  await CBNFT.minNFT(30, signer.address)
+  await CBNFT.minNFT(40, signer.address)
+  await CBNFT.minNFT(50, signer.address)
+  await CBNFT.minNFT(60, signer.address)
+  await CBNFT.minNFT(70, signer.address)
+  await CBNFT.minNFT(80, signer.address)
+  await CBNFT.minNFT(90, signer.address)
+  await CBNFT.minNFT(100, signer.address)
+  await CBNFT.minNFT(110, signer.address)
 
   const privateKey_2 = process.env.PRIVATE_KEY_2 // fetch PRIVATE KEY of second account }
   const wallet_2 = new hre.ethers.Wallet(privateKey_2)
@@ -39,17 +39,17 @@ const deployNFTContract = async function () {
   const player2 = wallet_2.connect(provider)
 
   //second player
-  await CBNFT.minNFT(12, player2.address)
-  await CBNFT.minNFT(13, player2.address)
-  await CBNFT.minNFT(14, player2.address)
-  await CBNFT.minNFT(15, player2.address)
-  await CBNFT.minNFT(16, player2.address)
-  await CBNFT.minNFT(17, player2.address)
-  await CBNFT.minNFT(18, player2.address)
-  await CBNFT.minNFT(19, player2.address)
-  await CBNFT.minNFT(20, player2.address)
-  await CBNFT.minNFT(21, player2.address)
-  await CBNFT.minNFT(22, player2.address)
+  await CBNFT.minNFT(120, player2.address)
+  await CBNFT.minNFT(134, player2.address)
+  await CBNFT.minNFT(142, player2.address)
+  await CBNFT.minNFT(159, player2.address)
+  await CBNFT.minNFT(165, player2.address)
+  await CBNFT.minNFT(178, player2.address)
+  await CBNFT.minNFT(182, player2.address)
+  await CBNFT.minNFT(191, player2.address)
+  await CBNFT.minNFT(208, player2.address)
+  await CBNFT.minNFT(219, player2.address)
+  await CBNFT.minNFT(224, player2.address)
 
   return { CBNFT, signer }
 }

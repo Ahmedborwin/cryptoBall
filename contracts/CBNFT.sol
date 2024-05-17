@@ -22,6 +22,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   uint8 public s_tokenCounter;
   mapping(uint256 => string) private _tokenURIs;
   mapping(uint256 => uint8[4]) public tokenUpgrades;
+  mapping(uint256 => uint256) public tokenIdToURIIndex;
   //0 = attacking
   //1 = defending
   //2 = midfield
@@ -82,6 +83,8 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
     string memory playerURI = tokenURI(_tokenCounter, _uriIndex);
 
+    tokenIdToURIIndex[_tokenCounter] = _uriIndex;
+
     _setTokenURI(_tokenCounter, playerURI);
     _tokenURIs[s_tokenCounter] = playerURI; //set tokenURI to mapping
 
@@ -137,7 +140,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return _tokenURIs[tokenId];
   }
 
-  function getTokenUriFromTokenId(uint256 tokenId) external view returns (string memory) {
-    return _tokenURIs[tokenId];
+  function getBasePlayerIndexFromId(uint256 _tokenId) external view returns (uint256) {
+    return tokenIdToURIIndex[_tokenId];
   }
 }

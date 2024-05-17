@@ -81,6 +81,15 @@
   },
   {
     "type": "function",
+    "name": "MatchManager",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
     "name": "approve",
     "constant": false,
     "payable": false,
@@ -107,6 +116,15 @@
     "payable": false,
     "inputs": [{ "type": "uint256", "name": "tokenId" }],
     "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "getBasePlayerIndexFromId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": [{ "type": "uint256" }]
   },
   {
     "type": "function",
@@ -158,6 +176,17 @@
     "inputs": [
       { "type": "uint256", "name": "_uriIndex" },
       { "type": "address", "name": "_player" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "modifyUpgrade",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_tokenID" },
+      { "type": "uint8[4]", "name": "_newValues" }
     ],
     "outputs": []
   },
@@ -273,6 +302,14 @@
   },
   {
     "type": "function",
+    "name": "setMatchManager",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_matchManager" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
     "name": "setVRFHandlerAddress",
     "constant": false,
     "payable": false,
@@ -299,6 +336,15 @@
   },
   {
     "type": "function",
+    "name": "tokenIdToURIIndex",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
     "name": "tokenURI",
     "constant": true,
     "stateMutability": "view",
@@ -317,6 +363,15 @@
     "payable": false,
     "inputs": [{ "type": "uint256", "name": "tokenId" }],
     "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenUpgrades",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }, { "type": "uint256" }],
+    "outputs": [{ "type": "uint8" }]
   },
   {
     "type": "function",

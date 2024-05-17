@@ -6,6 +6,7 @@ import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFCo
 import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
+//TODO: import game manager interface
 
 contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //Modifiers
@@ -119,6 +120,15 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   }
 
   //TODO: set cooridnator address
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
+    i_VRF = CB_VRFInterface(_vrfHandler);
+  }
   //TODO: set NFT address
+  function setNFTAddress(address _nftAddress) external onlyAdmin(msg.sender) {
+    i_NFT = CB_NFTInterface(_nftAddress);
+  }
   //TODO: set game address
+  // function setGameManagerAddress(address _gameManagerAddress) external onlyAdmin(msg.sender) {
+  //    = (_gameManagerAddress);
+  // }
 }

@@ -28,6 +28,7 @@ contract MatchManager {
   //Data Structures
   struct Player {
     uint256 tokenID;
+    uint256 uriIndex;
     bool active;
     Position playerPosition;
   }
@@ -226,14 +227,17 @@ contract MatchManager {
       emit StakingProcessFailed(_user, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
       revert CBNFT__NotTokenOwner();
     }
+    //get URI Index
+    uint256 _index = i_NFT.getBasePlayerIndexFromId(_tokenID);
     //TODO: Need to think about this + Clean up
     // By default _index should be 99 to indicate adding a new player
     if (_index == 99) {
       // Extend the array if the index is beyond current length
-      rosters[_user].push(Player(_tokenID, true, _position));
+      rosters[_user].push(Player(_tokenID, _index, true, _position));
     } else if (_index <= 10 && _index >= 0) {
       // Otherwise Update the existing player at the index
       rosters[_user][_index].tokenID = _tokenID;
+      rosters[_user][_index].uriIndex = _index;
       rosters[_user][_index].playerPosition = _position;
       rosters[_user][_index].active = true;
     } else {

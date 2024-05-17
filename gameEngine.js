@@ -576,16 +576,16 @@ const provider = new FunctionsJsonRpcProvider(rpcurl)
 //Initialize contract
 const gameManager = new ethers.Contract(Address, ABI, provider)
 
-const game = await gameManager.getGameDetails(1)
+const game = await gameManager.getGameDetails(args[0])
 
 //-------------------------------------------------------------
 //Build Array of tokenIds for Both Teams
 const Team1Roster = game[2]
 const team1Ids = Team1Roster?.map((subArray) => parseInt(subArray[0]))
-console.log(team1Ids)
+
 const Team2Roster = game[4]
 const team2Ids = Team2Roster?.map((subArray) => parseInt(subArray[0]))
-console.log(team2Ids)
+
 //-------------------------------------------------------------
 //build team by reading player details from ipfs
 //-------------------------------------------------------------
@@ -607,6 +607,7 @@ const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmY59zJCpS9ChBWxBau85X
 
 // Build both teams
 await buildTeam(team1Ids, gatewayBaseUrl, team1)
+console.log(team1)
 
 await buildTeam(team2Ids, gatewayBaseUrl, team2)
 
@@ -615,6 +616,18 @@ await buildTeam(team2Ids, gatewayBaseUrl, team2)
 // Parsing player data into arrays of values
 
 const randomFactors = args.slice(1, 9).map(Number)
+
+let counter = 0
+
+function getRandomNumber() {
+  const output = randomFactors[counter]
+  if (counter == randomFactors.length - 1) {
+    counter = 0
+  } else {
+    counter++
+  }
+  return output
+}
 
 function simulateMatch() {
   console.log("Starting match simulation...")
@@ -721,16 +734,12 @@ function simulateMatch() {
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
-  const winner = team1Goals > team2Goals ? 1 : team1Goals < team2Goals ? 2 : "draw"
+  const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 0 : "draw"
   console.log("Winner: Team", winner)
 
-  const outcomeFactorTeam1 = winner === 1 ? 2 : -2
-  const adjustedTeam1Stats = adjustPlayerAttributes(team1, outcomeFactorTeam1)
+  const playersUpgrades = adjustPlayerAttributes()
 
-  const outcomeFactorTeam2 = winner === 2 ? 2 : -2
-  const adjustedTeam2Stats = adjustPlayerAttributes(team2, outcomeFactorTeam2)
-
-  return { winner, team1Goals, team2Goals, adjustedTeam1Stats, adjustedTeam2Stats }
+  return { winner, team1Goals, team2Goals, playersUpgrades }
 }
 function computeScoreFromChance(skill, _chance) {
   // Ensure the chance is within the 0-3000 range
@@ -748,42 +757,50 @@ function computeScoreFromChance(skill, _chance) {
   // Ensure the score is in the 0-10 range
   return Math.round(score)
 }
-function adjustPlayerAttributes(team, outcomeFactor) {
-  team.forEach((player) => {
-    const changeFactor = 0.01 * outcomeFactor // Change factor based on the outcome
-    // Apply the change factor and round to the nearest whole number
-    if (player[3] == "Goalkeeper") {
-      player[10] = Math.round(player[10] + player[10] * changeFactor) // Goalkeeping, assuming it's at index 10
-    } else {
-      player[7] = Math.round(player[7] + player[7] * changeFactor) // Attack
-      player[8] = Math.round(player[8] + player[8] * changeFactor) // Midfield
-      player[9] = Math.round(player[9] + player[9] * changeFactor) // Defense
-    }
-  })
-  return team
+
+function adjustPlayerAttributes() {
+  //TODO only goalkeeper should have their GK skills increased?
+
+  let playersToUpgrade = []
+
+  const playerUpgraded = getRandomNumber() % 11
+
+  //TODO: is there an issue with randomness?
+  //Attribute is always 0...
+  for (let i = 0; i < playerUpgraded; i++) {
+    const player = getRandomNumber() % 11
+    const attribute = (getRandomNumber() % 4) + 1
+    console.log("attribute", attribute)
+
+    //an array where every two items refer to the players index in the team
+
+    playersToUpgrade.push(player, attribute)
+  }
+
+  return playersToUpgrade
 }
 //Create Custom Buffer
 function encodeMatchResult(matchResult) {
   const buffer = Buffer.alloc(256) // Total buffer allocation
-  buffer.writeUInt8(matchResult.team1Goals, 0) // First team score
+  let offset = 0
 
-  buffer.writeUInt8(matchResult.team2Goals, 1) // Second team score
+  buffer.writeUInt32BE(args[0], offset) // gameId
+  offset += 4
+  buffer.writeUInt8(matchResult.winner, offset) // winner
+  offset++
+  buffer.writeUInt8(matchResult.team1Goals, offset) // First team score
+  offset++
+  buffer.writeUInt8(matchResult.team2Goals, offset) // Second team score
+  offset++
 
-  let offset = 2
-
-  const encodeTeamData = (team, tokenIds) => {
-    team.forEach((player) => {
-      buffer.writeUInt8(tokenIds[0], offset) // Player ID (6 bytes)
-      offset += 6
-      buffer.writeUInt8(player[3], offset++) // Overall rating (2 byte)
-      buffer.writeUInt8(player[6], offset++) // Attack rating (2 byte)
-      buffer.writeUInt8(player[7], offset++) // Midfield rating (2 byte)
-      buffer.writeUInt8(player[8], offset++) // Defense rating (2 byte)
-      buffer.writeUInt8(player[9], offset++) // Goalkeeping rating (2 byte)
-    })
+  for (let i = 0; i < 4; i++) {
+    buffer.writeUInt8(matchResult.playersUpgrades[i * 2], offset)
+    offset++
+    buffer.writeUInt8(matchResult.playersUpgrades[i * 2 + 1], offset)
+    offset++
   }
-  encodeTeamData(team1, team1Ids)
-  encodeTeamData(matchResult.adjustedTeam2Stats)
+  console.log(buffer)
+  console.log(buffer.length)
   return buffer
 }
 

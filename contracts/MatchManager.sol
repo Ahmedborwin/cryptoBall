@@ -259,6 +259,11 @@ contract MatchManager {
     return true;
   }
 
+  //Getter Calls
+  function getRosterForPlayer(address _managerAddress) external view returns (Player[]) {
+    return rosters[_managerAddress];
+  }
+
   //External Helper Functions
   //set nft address
   function setNFTAddress(address _NFTAddress) external onlyOwner {

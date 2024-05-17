@@ -41,6 +41,7 @@ const LootBoxOpenPage = () => {
           />
         </div>
         <SubmitButton onClick={handleOpenBox}>Open Box</SubmitButton>
+        <div>MatchManager -- handleLootBox(manager address) function - NFT contract</div>
       </div>
     </>
   )

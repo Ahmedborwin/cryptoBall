@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import FormBox from "../components/common/Form/FormBox"
 import FormField from "../components/common/Form/FormField"
 import { AlchemySigner } from "@alchemy/aa-alchemy"
@@ -7,6 +8,8 @@ import SubmitButton from "../components/common/Button/SubmitButton"
 const LoginPage = () => {
   const [email, setEmail] = useState("")
   const [signer, setSigner] = useState(null) // State to hold the signer instance
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const container = document.getElementById("turnkey-iframe-container")
@@ -37,6 +40,8 @@ const LoginPage = () => {
       const result = await signer.authenticate({ type: "email", email })
       console.log(result, "@@@@result")
       console.log("Login successful")
+
+      navigate("/team-create")
       // Redirect or manage session
     } catch (error) {
       console.error("Login failed", error)
@@ -50,7 +55,9 @@ const LoginPage = () => {
         <FormField type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </FormBox>
       <SubmitButton onClick={handleLogin}>Log In</SubmitButton>
-      <div id="turnkey-iframe-container" />
+      <FormBox>
+        <div id="turnkey-iframe-container" />
+      </FormBox>
     </div>
   )
 }

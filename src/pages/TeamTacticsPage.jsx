@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SubmitButton from "../components/common/Button/SubmitButton";
 
 const formations = {
   "4-4-2": { defenders: 4, midfielders: 4, forwards: 2, goalkeeper: 1 },
@@ -64,6 +65,11 @@ const TeamTacticsPage = () => {
             </option>
           ))}
         </select>
+        <div>ROSTERS -- Struct -- Player -- tokenId & URIIndex</div>
+        <div>ROSTER less than 11 -- You cannot play a game </div>
+        <div>getRoaster function (manager address) -- on the left side</div>
+        <div>Player NFTs number: (getURI(manager address) function -- NFT contract [playersTokens]) -- on the right side</div>
+        <SubmitButton>STAKE PLAYER/TEAM</SubmitButton>
       </div>
     </div>
   );

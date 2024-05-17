@@ -18,7 +18,7 @@ const PageRoutes = () => (
     <Navigation />
     <Routes>
       <Route exact path="/" element={<LoginPage />} />
-      <Route path="team-create" element={<TeamCreationPage />} />
+      <Route path="/team-create" element={<TeamCreationPage />} />
       <Route path="/team-tactics" element={<TeamTacticsPage />} />
       <Route path="/team-statistics" element={<TeamStatisticsPage />} />
       <Route path="/loot-open" element={<LootBoxOpenPage />} />

@@ -245,6 +245,50 @@ contract MatchManager {
     }
   }
 
+  function _finalizeGameResults(bytes memory buffer) internal {
+
+
+    uint256 offset = 0;
+  
+    uint256 gameId = uint32(bytes4(buffer[offset:offset + 4]));
+    offset += 4;
+    uint8 winner = uint8(buffer[offset]);
+    offset++;
+    uint256 team1Goals = uint8(buffer[offset]);
+    offset++;
+    uint256 team2Goals = uint8(buffer[offset]);
+    offset++;
+
+    for (uint i = 0; i < 4; i++) {
+
+        if (winner == 0) {
+          uint256 upgradedTokenID = games[gameId].creatorRoster[uint8(buffer[offset * 2])].tokenID;
+          uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
+
+          _upgradeToken(upgradedTokenID, upgradedAttribute);
+
+        } else {
+
+          uint256 upgradedTokenID = games[gameId].challengerRoster[uint8(buffer[offset * 2])].tokenID;
+          uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
+
+          _upgradeToken(upgradedTokenID, upgradedAttribute);
+
+        }
+
+    }
+
+    games[gameId].winner = winner;
+    //update both team's total goals count here
+  
+  }
+
+  function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
+
+    //call upgrade on NFT contract
+
+  }
+
   //Internal Utility Functions
   function _checkActive(uint256 _id) internal view returns (bool) {
     return (games[_id].status == 1);

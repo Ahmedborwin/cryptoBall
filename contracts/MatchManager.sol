@@ -80,6 +80,7 @@ contract MatchManager {
     string teamName;
     uint256 wins; //number of wins
     uint256 losses; //number of losses
+    uint256 totalGoals; //number of total goals
     uint256 activeGames; //number of active games created by given user
     uint256 totalUserGames; //number of total games ever created by given user
     mapping(uint256 => uint256) userGameIds; //ids of all games created by user
@@ -291,6 +292,43 @@ contract MatchManager {
     } else {
       revert("Invalid TokenId");
     }
+  }
+
+  function _finalizeGameResults(bytes memory buffer) internal {
+    uint256 offset = 0;
+
+    uint256 gameId = uint32(bytes4(buffer[offset:offset + 4]));
+    offset += 4;
+    uint8 winner = uint8(buffer[offset]);
+    offset++;
+    uint256 team1Goals = uint8(buffer[offset]);
+    offset++;
+    uint256 team2Goals = uint8(buffer[offset]);
+    offset++;
+
+    for (uint i = 0; i < 4; i++) {
+      if (winner == 0) {
+        uint256 upgradedTokenID = games[gameId].creatorRoster[uint8(buffer[offset * 2])].tokenID;
+        uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
+
+        _upgradeToken(upgradedTokenID, upgradedAttribute);
+      } else {
+        uint256 upgradedTokenID = games[gameId].challengerRoster[uint8(buffer[offset * 2])].tokenID;
+        uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
+
+        _upgradeToken(upgradedTokenID, upgradedAttribute);
+      }
+    }
+
+    games[gameId].winner = winner;
+
+    status[games[gamesId].creator].totalGoals += team1Goals;
+    status[games[gamesId].challenger].totalGoals += team2Goals;
+  }
+
+  function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
+    uint8 previousValue = NFT_CONTRACT.tokenUpgrades[_tokenID][_attribute];
+    CB_NFTInterface.modifyUpgrades(_tokenID, _attribute, previousValue + 1);
   }
 
   //Internal Utility Functions

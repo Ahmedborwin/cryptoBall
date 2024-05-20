@@ -53,8 +53,8 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     MatchManager = _contractAdmin;
   }
 
-  function modifyUpgrade(uint256 _tokenID, uint8[4] memory _newValues) public onlyAdmin {
-    tokenUpgrades[_tokenID] = _newValues;
+  function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) public onlyAdmin {
+    tokenUpgrades[_tokenID][_attribute] = _newValue;
   }
 
   function minNFT(uint256 _uriIndex, address _player) external onlyAdmin {

@@ -297,7 +297,11 @@ contract MatchManager {
   function _finalizeGameResults(bytes memory buffer) internal {
     uint256 offset = 0;
 
-    uint256 gameId = uint32(bytes4(buffer[offset:offset + 4]));
+    uint256 gameId;
+
+    assembly {
+      gameId := mload(add(buffer, add(offset, 32)))
+    }
     offset += 4;
     uint8 winner = uint8(buffer[offset]);
     offset++;
@@ -320,15 +324,19 @@ contract MatchManager {
       }
     }
 
-    games[gameId].winner = winner;
+    if (winner == 0) {
+      games[gameId].winner = games[gameId].creator;
+    } else if (winner == 1) {
+      games[gameId].winner = games[gameId].challenger;
+    }
 
-    status[games[gamesId].creator].totalGoals += team1Goals;
-    status[games[gamesId].challenger].totalGoals += team2Goals;
+    ManagerStats[games[gameId].creator].totalGoals += team1Goals;
+    ManagerStats[games[gameId].challenger].totalGoals += team2Goals;
   }
 
   function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
-    uint8 previousValue = NFT_CONTRACT.tokenUpgrades[_tokenID][_attribute];
-    CB_NFTInterface.modifyUpgrades(_tokenID, _attribute, previousValue + 1);
+    uint8 previousValue = i_NFT.getTokenUpgradeValue(_tokenID, _attribute);
+    i_NFT.modifyUpgrade(_tokenID, _attribute, previousValue + 1);
   }
 
   //Internal Utility Functions

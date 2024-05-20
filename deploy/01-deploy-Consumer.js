@@ -4,6 +4,7 @@ const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-too
 const hre = require("hardhat")
 const { SubscriptionManager } = require("@chainlink/functions-toolkit")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
+const GameManagerAddressList = require("../cryptoBall/config/Manager_AddressList.json")
 
 /**
  * Deploys a contract named "YourContract" using the deployer account and
@@ -16,8 +17,13 @@ const FunctionsConsumerContract = async function () {
   const functionsRouterAddress = networks[hre.network.name]["functionsRouter"]
   const donIdBytes32 = hre.ethers.utils.formatBytes32String(networks[hre.network.name]["donId"])
   const subId = networks[hre.network.name]["subscriptionId"]
+  const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
   // Get the deployed contract to interact with it after deploying.
-  const functionsConsumer = await hre.ethers.deployContract("FunctionsConsumer", [functionsRouterAddress, donIdBytes32])
+  const functionsConsumer = await hre.ethers.deployContract("FunctionsConsumer", [
+    functionsRouterAddress,
+    donIdBytes32,
+    gameManagerAddress,
+  ])
 
   console.log(functionsConsumer.address)
 

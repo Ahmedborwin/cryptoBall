@@ -587,6 +587,9 @@ const Team2Roster = game[4]
 const team2Ids = Team2Roster?.map((subArray) => parseInt(subArray[0]))
 
 //-------------------------------------------------------------
+//Need Player URI Index before calling IPFS
+
+//-------------------------------------------------------------
 //build team by reading player details from ipfs
 //-------------------------------------------------------------
 async function buildTeam(teamIds, gatewayBaseUrl, team) {

@@ -6,12 +6,29 @@ import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.so
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 error CBNFT__NotTokenOwner();
+error CBNFT__TeamNameTaken();
+error CBNFT__ManagerAlreadyRegistered();
+error CBNFT__ManagerNotYetRegistered();
 
 contract MatchManager {
   using Strings for uint256;
   //Function Modifiers
   modifier onlyOwner() {
     require(msg.sender == owner);
+    _;
+  }
+
+  modifier isManagerRegistered(address _caller) {
+    if (!isManagerRegisteredTable[_caller]) {
+      revert CBNFT__ManagerNotYetRegistered();
+    }
+    _;
+  }
+
+  modifier isManagerNotRegistered(address _caller) {
+    if (isManagerRegisteredTable[_caller]) {
+      revert CBNFT__ManagerAlreadyRegistered();
+    }
     _;
   }
 
@@ -56,7 +73,11 @@ contract MatchManager {
   }
   mapping(uint256 => Game) public games;
 
+  mapping(string => bool) public isTeamNameTaken;
+  mapping(address => bool) public isManagerRegisteredTable;
+
   struct Stats {
+    string teamName;
     uint256 wins; //number of wins
     uint256 losses; //number of losses
     uint256 activeGames; //number of active games created by given user
@@ -65,7 +86,7 @@ contract MatchManager {
     uint256 totalUserAcceptedGames; //number of total games ever accepted by given user
     mapping(uint256 => uint256) userAcceptedGameIds; //ids of all games accepted by user
   }
-  mapping(address => Stats) public stats;
+  mapping(address => Stats) public ManagerStats;
 
   //Interfaces
   CB_NFTInterface public i_NFT;
@@ -73,6 +94,8 @@ contract MatchManager {
   CB_ConsumerInterface public i_Consumer;
 
   //Events
+
+  event NewManagerRegistered(address _player, string teamname);
 
   event StakingProcessFailed(address _player, bytes Reason);
 
@@ -93,9 +116,29 @@ contract MatchManager {
     i_VRF = CB_VRFInterface(_VRFAddress);
     i_Consumer = CB_ConsumerInterface(_consumerAddress);
   }
+
+  //Create New Manager Pofile
+  function registerNewManager(string calldata _teamName) external isManagerNotRegistered(msg.sender) {
+    if (isTeamNameTaken[_teamName]) {
+      revert CBNFT__TeamNameTaken();
+    }
+
+    // Initialize the new team stats
+    Stats storage newTeam = ManagerStats[msg.sender];
+    newTeam.teamName = _teamName;
+    newTeam.wins = 0;
+    newTeam.losses = 0;
+    newTeam.activeGames = 0;
+    newTeam.totalUserGames = 0;
+    newTeam.totalUserAcceptedGames = 0;
+
+    //emit New Manager Event
+    emit NewManagerRegistered(msg.sender, _teamName);
+  }
+
   //Publicly Accessible Functions
 
-  function createGame() public returns (uint256) {
+  function createGame() public isManagerRegistered(msg.sender) returns (uint256) {
     require(_rosterFilled(msg.sender));
 
     //setup game
@@ -110,15 +153,15 @@ contract MatchManager {
 
     //Update creator's created game count and list
     //QUERY: Should active games update on game accepted rather than create?
-    stats[msg.sender].activeGames++;
-    stats[msg.sender].totalUserGames++;
-    stats[msg.sender].userGameIds[stats[msg.sender].totalUserGames] = totalGames;
+    ManagerStats[msg.sender].activeGames++;
+    ManagerStats[msg.sender].totalUserGames++;
+    ManagerStats[msg.sender].userGameIds[ManagerStats[msg.sender].totalUserGames] = totalGames;
     //Set latest game in creator's created game list to this game
     emit CreateGame(games[totalGames].id, games[totalGames].creator, games[totalGames].creationTime);
     return totalGames;
   }
 
-  function acceptGame(uint256 _id) public {
+  function acceptGame(uint256 _id) public isManagerRegistered(msg.sender) {
     require(games[_id].creator != msg.sender, "Challenger can not be creator...");
     require(_checkActive(_id), "Game is not active...");
     require(_rosterFilled(msg.sender));
@@ -127,11 +170,11 @@ contract MatchManager {
     games[_id].status = 2; //Set status to pending
     games[totalGames].challengerRoster = rosters[msg.sender];
 
-    stats[games[_id].creator].activeGames--;
+    ManagerStats[games[_id].creator].activeGames--;
 
     //Update challenger's accepted game count and list
-    stats[msg.sender].totalUserAcceptedGames++;
-    stats[msg.sender].userAcceptedGameIds[stats[msg.sender].totalUserAcceptedGames] = _id;
+    ManagerStats[msg.sender].totalUserAcceptedGames++;
+    ManagerStats[msg.sender].userAcceptedGameIds[ManagerStats[msg.sender].totalUserAcceptedGames] = _id;
     //Set latest game in challenger's accepted game list to this game
 
     emit AcceptGame(_id, games[_id].challenger);
@@ -180,12 +223,12 @@ contract MatchManager {
     //Updates user statistics and winner of current game
     if (winner == 0) {
       games[_id].winner = games[_id].creator;
-      stats[games[_id].creator].wins++;
-      stats[games[_id].challenger].losses++;
+      ManagerStats[games[_id].creator].wins++;
+      ManagerStats[games[_id].challenger].losses++;
     } else if (winner == 1) {
       games[_id].winner = games[_id].challenger;
-      stats[games[_id].challenger].wins++;
-      stats[games[_id].creator].losses++;
+      ManagerStats[games[_id].challenger].wins++;
+      ManagerStats[games[_id].creator].losses++;
     }
 
     //Update state of game with further details
@@ -195,7 +238,7 @@ contract MatchManager {
     emit FinalizeGame(_id, games[_id].winner, games[_id].completionTime);
   }
 
-  function cancelGame(uint256 _id) public {
+  function cancelGame(uint256 _id) public isManagerRegistered(msg.sender) {
     require(games[_id].creator == msg.sender, "Attempted to cancel game without ownership...");
     require(_checkActive(_id), "Game is already pending or inactive...");
 
@@ -203,32 +246,37 @@ contract MatchManager {
 
     games[_id].status = 4; //set game status to cancelled
 
-    stats[msg.sender].activeGames--; //decrease number of active games for user
+    ManagerStats[msg.sender].activeGames--; //decrease number of active games for user
 
     emit CancelGame(_id);
   }
 
-  function cancelAllGames() public {
-    require(stats[msg.sender].activeGames > 0, "User has no active games to cancel...");
+  function cancelAllGames() public isManagerRegistered(msg.sender) {
+    require(ManagerStats[msg.sender].activeGames > 0, "User has no active games to cancel...");
 
-    uint256 _totalUserGames = stats[msg.sender].totalUserGames;
+    uint256 _totalUserGames = ManagerStats[msg.sender].totalUserGames;
     //mapping(uint256 => uint256) userGameIds; //ids of all games created by user
 
-    while (stats[msg.sender].activeGames > 0) {
-      if (_checkActive(stats[msg.sender].userGameIds[_totalUserGames])) {
-        cancelGame(stats[msg.sender].userGameIds[_totalUserGames]);
+    while (ManagerStats[msg.sender].activeGames > 0) {
+      if (_checkActive(ManagerStats[msg.sender].userGameIds[_totalUserGames])) {
+        cancelGame(ManagerStats[msg.sender].userGameIds[_totalUserGames]);
       }
       _totalUserGames--;
     }
   }
 
-  function setRosterPosition(address _user, Position _position, uint256 _tokenID, uint8 _index) public {
+  function setRosterPosition(
+    address _user,
+    Position _position,
+    uint256 _tokenID,
+    uint8 _index
+  ) public isManagerRegistered(msg.sender) {
     if (!i_NFT.isNFTOwner(_user, _tokenID)) {
       emit StakingProcessFailed(_user, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
       revert CBNFT__NotTokenOwner();
     }
     //get URI Index
-    uint256 _index = i_NFT.getBasePlayerIndexFromId(_tokenID);
+    uint256 _BaseURIndex = i_NFT.getBasePlayerIndexFromId(_tokenID);
     //TODO: Need to think about this + Clean up
     // By default _index should be 99 to indicate adding a new player
     if (_index == 99) {
@@ -237,7 +285,7 @@ contract MatchManager {
     } else if (_index <= 10 && _index >= 0) {
       // Otherwise Update the existing player at the index
       rosters[_user][_index].tokenID = _tokenID;
-      rosters[_user][_index].uriIndex = _index;
+      rosters[_user][_index].uriIndex = _BaseURIndex;
       rosters[_user][_index].playerPosition = _position;
       rosters[_user][_index].active = true;
     } else {
@@ -260,7 +308,7 @@ contract MatchManager {
   }
 
   //Getter Calls
-  function getRosterForPlayer(address _managerAddress) external view returns (Player[]) {
+  function getRosterForPlayer(address _managerAddress) external view returns (Player[] memory) {
     return rosters[_managerAddress];
   }
 

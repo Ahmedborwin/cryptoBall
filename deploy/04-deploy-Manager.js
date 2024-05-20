@@ -5,7 +5,7 @@ const hre = require("hardhat")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 const NFTContractFile = require("../config/NFT_AddressList.json")
 const VRFContractFile = require("../config/VRF_AddressList.json")
-const ConsumerContractFile = require("../config/Consumer_AddressList.json")
+const ConsumerContractFile = require("../config/consumer_AddressList.json")
 
 //----------------variables---------------------//
 
@@ -35,6 +35,10 @@ const deployManager = async function () {
 
   //write address and ABI to config
   await updateContractInfo({ undefined, undefined, undefined, gameManagerAddress: gameManager.address })
+
+  //set GameManager address on consumer
+  const functionsConsumerContract = new hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
+  await functionsConsumerContract.setMatchManagerAddress(gameManager.address)
 
   //Create Game
   const gameId = await gameManager.createGame()

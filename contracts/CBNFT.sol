@@ -23,6 +23,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   mapping(uint256 => string) private _tokenURIs;
   mapping(uint256 => uint8[4]) public tokenUpgrades;
   mapping(uint256 => uint256) public tokenIdToURIIndex;
+  mapping(address => mapping(uint256 => bool)) public isTokenOwnedByAddress;
   //0 = attacking
   //1 = defending
   //2 = midfield
@@ -33,7 +34,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   //Admins
   address internal VRF_RequestHandler;
   address internal contract_Admin;
-  address public MatchManager;
+  address internal MatchManager;
 
   function setMatchManager(address _matchManager) public onlyAdmin {
     MatchManager = _matchManager;
@@ -70,6 +71,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
     // push new token URI to list of tokens owned by address
     s_addressToAllTokenURIs[_player].push(playerURI);
+    isTokenOwnedByAddress[msg.sender][s_tokenCounter] = true;
     // //emit event
     emit NFTMinted(_player, playerURI);
   }
@@ -90,6 +92,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
     // push new token URI to list of tokens owned by address
     s_addressToAllTokenURIs[_player].push(playerURI);
+    isTokenOwnedByAddress[msg.sender][s_tokenCounter] = true;
     // //emit event
     emit LootBoxOpened(_player, playerURI);
   }

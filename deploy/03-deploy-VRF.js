@@ -33,8 +33,8 @@ console.log("consumerAddress", consumerAddress)
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
 
-  //deploy VRF sub manager contract to fund and add consumer programatically
-  const VRFManager = await hre.ethers.deployContract("VRFv2SubscriptionManager", [])
+  // //deploy VRF sub manager contract to fund and add consumer programatically
+  // const VRFManager = await hre.ethers.deployContract("VRFv2SubscriptionManager", [])
   // Get the deployed contract to interact with it after deploying.
   const VRFRequestHandler = await hre.ethers.deployContract("VRFRequestHandler", [
     coordinatorAddress,
@@ -45,8 +45,6 @@ const deployVRFHandler = async function () {
     signer.address,
     consumerAddress,
   ])
-
-  console.log("@@VRFHandler Address", VRFRequestHandler.address)
 
   //write address and ABI to config
   await updateContractInfo({ undefined, undefined, VRFHandlerAddress: VRFRequestHandler.address })

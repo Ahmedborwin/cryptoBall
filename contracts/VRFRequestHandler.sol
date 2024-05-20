@@ -6,9 +6,12 @@ import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFCo
 import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
-//TODO: import game manager interface
+import {CB_MatchManagerInterface} from "contracts/interfaces/CB_MatchManagerInterface.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract VRFRequestHandler is VRFConsumerBaseV2Plus {
+  using Strings for uint256;
+
   //Modifiers
   modifier onlyAdmin(address _caller) {
     require(_caller == contract_Admin, "Only Contract Admins Can Make This Call");
@@ -42,6 +45,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //Interfaces
   CB_NFTInterface i_NFT;
   CB_ConsumerInterface i_Consumer;
+  CB_MatchManagerInterface i_MatchManager;
   //admin
   address contract_Admin;
 
@@ -52,15 +56,17 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     uint32 callbackGasLimit,
     address _CBNFTAddress,
     address _contract_Admin,
-    address _consumerAddress
+    address _consumerAddress,
+    address _matchManagerAddress
   ) VRFConsumerBaseV2Plus(vrfCoordinatorV2) {
     i_vrfCoordinator = IVRFCoordinatorV2Plus(vrfCoordinatorV2);
     s_gasLane = gasLane;
     s_subscriptionId = subscriptionId;
     s_callbackGasLimit = callbackGasLimit;
-    i_NFT = CB_NFTInterface(_CBNFTAddress);
     contract_Admin = _contract_Admin;
+    i_NFT = CB_NFTInterface(_CBNFTAddress);
     i_Consumer = CB_ConsumerInterface(_consumerAddress);
+    i_MatchManager = CB_MatchManagerInterface(_matchManagerAddress);
   }
 
   function requestRandomNumber(
@@ -116,19 +122,26 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   }
 
   function handleGameSimulationTrigger(uint256 _gameId, uint256[] memory _randomWords) internal {
-    //Call from here or send the call back to game manager to call function consumer?
+    //create an array of strings and send to consumer contract
+    string[] memory requestArguments = new string[](_randomWords.length + 1);
+    requestArguments[0] = Strings.toString(_gameId);
+
+    for (uint8 i = 1; i < _randomWords.length; i++) {
+      requestArguments[i] = Strings.toString(_randomWords[i]);
+    }
+    i_Consumer.sendRequest(requestArguments);
   }
 
-  //TODO: set cooridnator address
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
-    i_VRF = CB_VRFInterface(_vrfHandler);
+  // set functions consumer address
+  function setFunctionsConsumerAddress(address _consumerAddress) external onlyAdmin(msg.sender) {
+    i_Consumer = CB_ConsumerInterface(_consumerAddress);
   }
-  //TODO: set NFT address
+  // set NFT address
   function setNFTAddress(address _nftAddress) external onlyAdmin(msg.sender) {
     i_NFT = CB_NFTInterface(_nftAddress);
   }
-  //TODO: set game address
-  // function setGameManagerAddress(address _gameManagerAddress) external onlyAdmin(msg.sender) {
-  //    = (_gameManagerAddress);
-  // }
+  // set game address
+  function setMatchManagerAddress(address _matchManagerAddress) external onlyAdmin(msg.sender) {
+    i_MatchManager = CB_MatchManagerInterface(_matchManagerAddress);
+  }
 }

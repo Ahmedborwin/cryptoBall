@@ -4,7 +4,8 @@
     "payable": false,
     "inputs": [
       { "type": "string", "name": "_baseHash" },
-      { "type": "address", "name": "_contractAdmin" }
+      { "type": "address", "name": "_contractAdmin" },
+      { "type": "address", "name": "_MatchManager" }
     ]
   },
   {
@@ -90,6 +91,15 @@
   },
   {
     "type": "function",
+    "name": "VRF_RequestHandler",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
     "name": "approve",
     "constant": false,
     "payable": false,
@@ -107,6 +117,15 @@
     "payable": false,
     "inputs": [{ "type": "address", "name": "owner" }],
     "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "contract_Admin",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
   },
   {
     "type": "function",
@@ -134,6 +153,17 @@
     "payable": false,
     "inputs": [{ "type": "address", "name": "_address" }],
     "outputs": [{ "type": "string[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getTokenUpgradeValue",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_tokenId" },
+      { "type": "uint8", "name": "_attribute" }
+    ],
+    "outputs": [{ "type": "uint8" }]
   },
   {
     "type": "function",
@@ -170,6 +200,15 @@
   },
   {
     "type": "function",
+    "name": "isTokenOwnedByAddress",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }, { "type": "uint256" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
     "name": "minNFT",
     "constant": false,
     "payable": false,
@@ -186,7 +225,8 @@
     "payable": false,
     "inputs": [
       { "type": "uint256", "name": "_tokenID" },
-      { "type": "uint8[4]", "name": "_newValues" }
+      { "type": "uint8", "name": "_attribute" },
+      { "type": "uint8", "name": "_newValue" }
     ],
     "outputs": []
   },

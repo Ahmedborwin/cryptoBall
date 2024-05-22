@@ -22,7 +22,11 @@ const deployManager = async function () {
 
   //deploy VRF sub manager contract to fund and add consumer programatically
   const gameManager = await hre.ethers.deployContract("MatchManager", [NFTAddress, VRFAddress, ConsumerAddress])
-
+  console.log("@@@gameManager", gameManager.address)
+  //register Managers
+  await gameManager.registerNewManager("blueTeam")
+  await gameManager.connect(player2).registerNewManager("redTeam")
+  console.log("managers registered")
   //fill creator Roster
   for (let i = 12; i < 23; i++) {
     await gameManager.connect(player2).setRosterPosition(player2.address, 2, i, 99)
@@ -37,8 +41,9 @@ const deployManager = async function () {
   await updateContractInfo({ undefined, undefined, undefined, gameManagerAddress: gameManager.address })
 
   //set GameManager address on consumer
-  const functionsConsumerContract = new hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
-  await functionsConsumerContract.setMatchManagerAddress(gameManager.address)
+  // const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
+  // console.log("functionsConsumer Address:", functionsConsumerContract.address)
+  // await functionsConsumerContract.setMatchManagerAddress(gameManager.address)
 
   //Create Game
   const gameId = await gameManager.createGame()

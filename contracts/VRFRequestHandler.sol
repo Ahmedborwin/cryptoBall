@@ -9,12 +9,16 @@ import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.so
 import {CB_MatchManagerInterface} from "contracts/interfaces/CB_MatchManagerInterface.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
+error CBVRF__CallerNotAdmin(address);
+
 contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   using Strings for uint256;
 
   //Modifiers
   modifier onlyAdmin(address _caller) {
-    require(_caller == contract_Admin, "Only Contract Admins Can Make This Call");
+    if (_caller != address(contract_Admin) && _caller != address(i_MatchManager)) {
+      revert CBVRF__CallerNotAdmin(_caller);
+    }
     _;
   }
 
@@ -35,19 +39,19 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
 
   // Chainlink VRF Variables
   IVRFCoordinatorV2Plus private immutable i_vrfCoordinator;
-  uint256 private immutable s_subscriptionId;
-  bytes32 private immutable s_gasLane;
-  uint32 private immutable s_callbackGasLimit;
-  uint16 private constant REQUEST_CONFIRMATIONS = 3;
+  uint256 public immutable s_subscriptionId;
+  bytes32 public immutable s_gasLane;
+  uint32 public immutable s_callbackGasLimit;
+  uint16 public constant REQUEST_CONFIRMATIONS = 3;
 
   //initialise structs
   RequestDetails requestDetails;
   //Interfaces
-  CB_NFTInterface i_NFT;
-  CB_ConsumerInterface i_Consumer;
-  CB_MatchManagerInterface i_MatchManager;
+  CB_NFTInterface public i_NFT;
+  CB_ConsumerInterface public i_Consumer;
+  CB_MatchManagerInterface public i_MatchManager;
   //admin
-  address contract_Admin;
+  address public contract_Admin;
 
   constructor(
     address vrfCoordinatorV2,
@@ -74,7 +78,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     address _player,
     uint256 _challengeId,
     uint32 _randomNumbersReq
-  ) public returns (uint256 requestId) {
+  ) external onlyAdmin(msg.sender) returns (uint256 requestId) {
     requestId = i_vrfCoordinator.requestRandomWords(
       VRFV2PlusClient.RandomWordsRequest({
         keyHash: s_gasLane,
@@ -108,13 +112,11 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       handleLootBoxLogic(randomWords[2], s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[4], s_RequestTable[requestId].player);
-    } else {
-      //TODO://event here to deal with edge case?
     }
   }
 
   //handleLootBox Logic
-  function handleLootBoxLogic(uint256 _randomNumber, address _player) public {
+  function handleLootBoxLogic(uint256 _randomNumber, address _player) internal {
     //TODO add logic here to get to the random player index
     uint256 playerIndex = _randomNumber % 1000;
     //send random numbers to nft contract
@@ -130,6 +132,23 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       requestArguments[i] = Strings.toString(_randomWords[i]);
     }
     i_Consumer.sendRequest(requestArguments);
+  }
+
+  //TEST FUNCTIONS
+
+  function testHandleGameSimulationTrigger(
+    uint256 _gameId,
+    uint256[] memory _randomWords
+  ) external returns (string[] memory) {
+    //create an array of strings and send to consumer contract
+    string[] memory requestArguments = new string[](_randomWords.length + 1);
+    requestArguments[0] = Strings.toString(_gameId);
+
+    for (uint8 i = 1; i < _randomWords.length; i++) {
+      requestArguments[i] = Strings.toString(_randomWords[i]);
+    }
+    i_Consumer.sendRequest(requestArguments);
+    return requestArguments;
   }
 
   // set functions consumer address

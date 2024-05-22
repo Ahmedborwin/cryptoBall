@@ -3,18 +3,29 @@ pragma solidity ^0.8.19;
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 import {CB_VRFInterface} from "contracts/interfaces/CB_VRFInterface.sol";
 import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
+
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 error CBNFT__NotTokenOwner();
 error CBNFT__TeamNameTaken();
 error CBNFT__ManagerAlreadyRegistered();
 error CBNFT__ManagerNotYetRegistered();
+error CBNFT__CallerNotAdmin(address Caller);
 
 contract MatchManager {
   using Strings for uint256;
+
   //Function Modifiers
-  modifier onlyOwner() {
-    require(msg.sender == owner);
+
+  modifier onlyAdmin(address _caller) {
+    if (
+      _caller != address(admin) &&
+      _caller != address(i_Consumer) &&
+      _caller != address(i_NFT) &&
+      _caller != address(i_VRF)
+    ) {
+      revert CBNFT__CallerNotAdmin(_caller);
+    }
     _;
   }
 
@@ -39,8 +50,9 @@ contract MatchManager {
     Striker
   }
 
-  address public owner;
+  address public admin;
   uint256 public totalGames; //Total number of games created
+  bytes public testVariable;
 
   //Data Structures
   struct Player {
@@ -52,6 +64,7 @@ contract MatchManager {
 
   mapping(address => Player[]) public rosters;
   mapping(address => string[]) public tokenIdStringTable; //TODO: RENAME THIS!!
+  mapping(address => bool) public rosterFilled;
 
   struct Game {
     uint256 id; //id of game
@@ -116,6 +129,7 @@ contract MatchManager {
     i_NFT = CB_NFTInterface(_CBNFTAddress);
     i_VRF = CB_VRFInterface(_VRFAddress);
     i_Consumer = CB_ConsumerInterface(_consumerAddress);
+    admin = msg.sender;
   }
 
   //Create New Manager Pofile
@@ -132,6 +146,8 @@ contract MatchManager {
     newTeam.activeGames = 0;
     newTeam.totalUserGames = 0;
     newTeam.totalUserAcceptedGames = 0;
+
+    isManagerRegisteredTable[msg.sender] = true; //register new manager
 
     //emit New Manager Event
     emit NewManagerRegistered(msg.sender, _teamName);
@@ -182,9 +198,10 @@ contract MatchManager {
   }
 
   function requestRandomNumbers(uint256 _id) public {
-    require(games[_id].creator != msg.sender, "Challenger can not be creator...");
-    require(_checkActive(_id), "Game is not active...");
-    require(_rosterFilled(msg.sender));
+    require(games[_id].creator == msg.sender, "Only Creator Can Start a Game...");
+    require(_checkAccepted(_id), "Game is not Accepted...");
+    require(_rosterFilled(games[_id].creator));
+    require(_rosterFilled(games[_id].challenger));
 
     //request Random Number from BRFHandler
     i_VRF.requestRandomNumber(2, address(0), _id, 10);
@@ -216,27 +233,75 @@ contract MatchManager {
   //   emit StartGame(_id);
   // }
 
-  function finalizeGame(uint256 _id) public {
-    require(games[_id].status == 2, "Game status is not pending...");
-    uint256 winner = 0;
-    require((winner == 0 || winner == 1), "Random winner result not within expect bounds...");
+  function finalizeGame(bytes memory buffer) external {
+    _finalizeGame(buffer, msg.sender);
+  }
 
-    //Updates user statistics and winner of current game
-    if (winner == 0) {
-      games[_id].winner = games[_id].creator;
-      ManagerStats[games[_id].creator].wins++;
-      ManagerStats[games[_id].challenger].losses++;
-    } else if (winner == 1) {
-      games[_id].winner = games[_id].challenger;
-      ManagerStats[games[_id].challenger].wins++;
-      ManagerStats[games[_id].creator].losses++;
+  function _finalizeGame(bytes memory buffer, address _caller) internal {
+    uint256 offset = 0;
+
+    // Read gameId from buffer
+    uint256 gameId;
+    assembly {
+      gameId := mload(add(buffer, add(offset, 32)))
+    }
+    offset += 4;
+
+    // Check game status to ensure it can be finalized
+    require(games[gameId].status == 2, "Game cannot be finalized");
+
+    // Read winner, team1Goals, and team2Goals from buffer
+    uint8 winner = uint8(buffer[offset]);
+    offset++;
+    uint8 team1Goals = uint8(buffer[offset]);
+    offset++;
+    uint8 team2Goals = uint8(buffer[offset]);
+    offset++;
+
+    // Cache game and manager stats in memory to minimize storage accesses
+    Game storage game = games[gameId];
+    Stats storage creatorStats = ManagerStats[game.creator];
+    Stats storage challengerStats = ManagerStats[game.challenger];
+
+    // Upgrade tokens based on winner
+    uint256 upgradedTokenID;
+    for (uint i = 0; i < 4; i++) {
+      uint8 tokenIndex = uint8(buffer[offset]);
+      uint8 upgradedAttribute = uint8(buffer[offset + 1]);
+      offset += 2;
+
+      if (winner == 0) {
+        upgradedTokenID = game.creatorRoster[tokenIndex].tokenID;
+      } else {
+        upgradedTokenID = game.challengerRoster[tokenIndex].tokenID;
+      }
+
+      _upgradeToken(upgradedTokenID, upgradedAttribute);
     }
 
-    //Update state of game with further details
-    games[_id].completionTime = block.timestamp;
-    games[_id].status = 3; //set game status to completed
+    // Assign winner based on winner variable
+    if (winner == 0) {
+      game.winner = game.creator;
+    } else if (winner == 1) {
+      game.winner = game.challenger;
+    }
 
-    emit FinalizeGame(_id, games[_id].winner, games[_id].completionTime);
+    // Update total goals for managers
+    creatorStats.totalGoals += uint256(team1Goals);
+    challengerStats.totalGoals += uint256(team2Goals);
+
+    // Update state of game with further details
+    game.completionTime = block.timestamp;
+    //COmmented out for the sake of testing,
+    //otherwise would need to set up a new game for each time this funciton is triggered succesfully
+    //game.status = 3; // set game status to completed
+
+    emit FinalizeGame(gameId, game.winner, game.completionTime);
+  }
+
+  function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
+    uint8 previousValue = i_NFT.getTokenUpgradeValue(_tokenID, _attribute);
+    i_NFT.modifyUpgrade(_tokenID, _attribute, previousValue + 1);
   }
 
   function cancelGame(uint256 _id) public isManagerRegistered(msg.sender) {
@@ -282,7 +347,7 @@ contract MatchManager {
     // By default _index should be 99 to indicate adding a new player
     if (_index == 99) {
       // Extend the array if the index is beyond current length
-      rosters[_user].push(Player(_tokenID, _index, true, _position));
+      rosters[_user].push(Player(_tokenID, _BaseURIndex, true, _position));
     } else if (_index <= 10 && _index >= 0) {
       // Otherwise Update the existing player at the index
       rosters[_user][_index].tokenID = _tokenID;
@@ -292,51 +357,12 @@ contract MatchManager {
     } else {
       revert("Invalid TokenId");
     }
-  }
-
-  function _finalizeGameResults(bytes memory buffer) internal {
-    uint256 offset = 0;
-
-    uint256 gameId;
-
-    assembly {
-      gameId := mload(add(buffer, add(offset, 32)))
+    //check if 11 players staked for player
+    if (rosters[_user].length == 11) {
+      rosterFilled[_user] = true;
+    } else {
+      rosterFilled[_user] = false;
     }
-    offset += 4;
-    uint8 winner = uint8(buffer[offset]);
-    offset++;
-    uint256 team1Goals = uint8(buffer[offset]);
-    offset++;
-    uint256 team2Goals = uint8(buffer[offset]);
-    offset++;
-
-    for (uint i = 0; i < 4; i++) {
-      if (winner == 0) {
-        uint256 upgradedTokenID = games[gameId].creatorRoster[uint8(buffer[offset * 2])].tokenID;
-        uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
-
-        _upgradeToken(upgradedTokenID, upgradedAttribute);
-      } else {
-        uint256 upgradedTokenID = games[gameId].challengerRoster[uint8(buffer[offset * 2])].tokenID;
-        uint8 upgradedAttribute = uint8(buffer[(offset * 2) + 1]);
-
-        _upgradeToken(upgradedTokenID, upgradedAttribute);
-      }
-    }
-
-    if (winner == 0) {
-      games[gameId].winner = games[gameId].creator;
-    } else if (winner == 1) {
-      games[gameId].winner = games[gameId].challenger;
-    }
-
-    ManagerStats[games[gameId].creator].totalGoals += team1Goals;
-    ManagerStats[games[gameId].challenger].totalGoals += team2Goals;
-  }
-
-  function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
-    uint8 previousValue = i_NFT.getTokenUpgradeValue(_tokenID, _attribute);
-    i_NFT.modifyUpgrade(_tokenID, _attribute, previousValue + 1);
   }
 
   //Internal Utility Functions
@@ -344,13 +370,18 @@ contract MatchManager {
     return (games[_id].status == 1);
   }
 
+  function _checkAccepted(uint256 _id) internal view returns (bool) {
+    return (games[_id].status == 2);
+  }
+
   function _rosterFilled(address _user) internal view returns (bool) {
-    for (uint256 i = 0; i < 11; i++) {
-      if (rosters[_user][i].active == false) {
-        return false;
-      }
-    }
-    return true;
+    return rosterFilled[_user];
+    // for (uint256 i = 0; i < 11; i++) {
+    //   if (rosters[_user][i].active == false) {
+    //     return false;
+    //   }
+    // }
+    // return true;
   }
 
   //Getter Calls
@@ -358,17 +389,23 @@ contract MatchManager {
     return rosters[_managerAddress];
   }
 
+  function getGameDetails(uint256 _gameID) public view returns (Game memory) {
+    return games[_gameID];
+  }
+
   //External Helper Functions
+
   //set nft address
-  function setNFTAddress(address _NFTAddress) external onlyOwner {
+  function setNFTAddress(address _NFTAddress) external onlyAdmin(msg.sender) {
     i_NFT = CB_NFTInterface(_NFTAddress);
   }
   //set VRF Address
-  function setVRFHandlerAddress(address _vrfHandler) external onlyOwner {
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
     i_VRF = CB_VRFInterface(_vrfHandler);
   }
 
-  function getGameDetails(uint256 _gameID) public view returns (Game memory) {
-    return games[_gameID];
+  // set functions consumer address
+  function setFunctionsConsumerAddress(address _consumerAddress) external onlyAdmin(msg.sender) {
+    i_Consumer = CB_ConsumerInterface(_consumerAddress);
   }
 }

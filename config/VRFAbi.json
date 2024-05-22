@@ -8,9 +8,12 @@
       { "type": "bytes32", "name": "gasLane" },
       { "type": "uint32", "name": "callbackGasLimit" },
       { "type": "address", "name": "_CBNFTAddress" },
-      { "type": "address", "name": "_contract_Admin" }
+      { "type": "address", "name": "_contract_Admin" },
+      { "type": "address", "name": "_consumerAddress" },
+      { "type": "address", "name": "_matchManagerAddress" }
     ]
   },
+  { "type": "error", "name": "CBVRF__CallerNotAdmin", "inputs": [{ "type": "address" }] },
   {
     "type": "error",
     "name": "OnlyCoordinatorCanFulfill",
@@ -53,17 +56,51 @@
       { "type": "address", "name": "to", "indexed": true }
     ]
   },
+  {
+    "type": "function",
+    "name": "REQUEST_CONFIRMATIONS",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint16" }]
+  },
   { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
     "type": "function",
-    "name": "handleLootBoxLogic",
-    "constant": false,
+    "name": "contract_Admin",
+    "constant": true,
+    "stateMutability": "view",
     "payable": false,
-    "inputs": [
-      { "type": "uint256", "name": "_randomNumber" },
-      { "type": "address", "name": "_player" }
-    ],
-    "outputs": []
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_Consumer",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_MatchManager",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_NFT",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
   },
   {
     "type": "function",
@@ -113,6 +150,33 @@
   },
   {
     "type": "function",
+    "name": "s_callbackGasLimit",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint32" }]
+  },
+  {
+    "type": "function",
+    "name": "s_gasLane",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "bytes32" }]
+  },
+  {
+    "type": "function",
+    "name": "s_subscriptionId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
     "name": "s_vrfCoordinator",
     "constant": true,
     "stateMutability": "view",
@@ -127,6 +191,41 @@
     "payable": false,
     "inputs": [{ "type": "address", "name": "_vrfCoordinator" }],
     "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setFunctionsConsumerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_consumerAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setMatchManagerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_matchManagerAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setNFTAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_nftAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "testHandleGameSimulationTrigger",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_gameId" },
+      { "type": "uint256[]", "name": "_randomWords" }
+    ],
+    "outputs": [{ "type": "string[]" }]
   },
   {
     "type": "function",

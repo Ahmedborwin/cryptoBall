@@ -8,7 +8,11 @@
       { "type": "address", "name": "_consumerAddress" }
     ]
   },
+  { "type": "error", "name": "CBNFT__CallerNotAdmin", "inputs": [{ "type": "address", "name": "Caller" }] },
+  { "type": "error", "name": "CBNFT__ManagerAlreadyRegistered", "inputs": [] },
+  { "type": "error", "name": "CBNFT__ManagerNotYetRegistered", "inputs": [] },
   { "type": "error", "name": "CBNFT__NotTokenOwner", "inputs": [] },
+  { "type": "error", "name": "CBNFT__TeamNameTaken", "inputs": [] },
   {
     "type": "event",
     "anonymous": false,
@@ -47,6 +51,15 @@
   {
     "type": "event",
     "anonymous": false,
+    "name": "NewManagerRegistered",
+    "inputs": [
+      { "type": "address", "name": "_player", "indexed": false },
+      { "type": "string", "name": "teamname", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
     "name": "StakingProcessFailed",
     "inputs": [
       { "type": "address", "name": "_player", "indexed": false },
@@ -61,11 +74,37 @@
   },
   {
     "type": "function",
+    "name": "ManagerStats",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }],
+    "outputs": [
+      { "type": "string", "name": "teamName" },
+      { "type": "uint256", "name": "wins" },
+      { "type": "uint256", "name": "losses" },
+      { "type": "uint256", "name": "totalGoals" },
+      { "type": "uint256", "name": "activeGames" },
+      { "type": "uint256", "name": "totalUserGames" },
+      { "type": "uint256", "name": "totalUserAcceptedGames" }
+    ]
+  },
+  {
+    "type": "function",
     "name": "acceptGame",
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "uint256", "name": "_id" }],
     "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "admin",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
   },
   { "type": "function", "name": "cancelAllGames", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
@@ -89,7 +128,7 @@
     "name": "finalizeGame",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "inputs": [{ "type": "bytes", "name": "buffer" }],
     "outputs": []
   },
   {
@@ -128,6 +167,7 @@
             "name": "creatorRoster",
             "components": [
               { "type": "uint256", "name": "tokenID" },
+              { "type": "uint256", "name": "uriIndex" },
               { "type": "bool", "name": "active" },
               { "type": "uint8", "name": "playerPosition" }
             ]
@@ -138,6 +178,7 @@
             "name": "challengerRoster",
             "components": [
               { "type": "uint256", "name": "tokenID" },
+              { "type": "uint256", "name": "uriIndex" },
               { "type": "bool", "name": "active" },
               { "type": "uint8", "name": "playerPosition" }
             ]
@@ -147,6 +188,25 @@
           { "type": "uint256", "name": "blockAccepted" },
           { "type": "uint256", "name": "completionTime" },
           { "type": "uint256", "name": "status" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "getRosterForPlayer",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_managerAddress" }],
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "components": [
+          { "type": "uint256", "name": "tokenID" },
+          { "type": "uint256", "name": "uriIndex" },
+          { "type": "bool", "name": "active" },
+          { "type": "uint8", "name": "playerPosition" }
         ]
       }
     ]
@@ -180,12 +240,29 @@
   },
   {
     "type": "function",
-    "name": "owner",
+    "name": "isManagerRegisteredTable",
     "constant": true,
     "stateMutability": "view",
     "payable": false,
-    "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "inputs": [{ "type": "address" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "isTeamNameTaken",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "string" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "registerNewManager",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "string", "name": "_teamName" }],
+    "outputs": []
   },
   {
     "type": "function",
@@ -197,6 +274,15 @@
   },
   {
     "type": "function",
+    "name": "rosterFilled",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
     "name": "rosters",
     "constant": true,
     "stateMutability": "view",
@@ -204,9 +290,18 @@
     "inputs": [{ "type": "address" }, { "type": "uint256" }],
     "outputs": [
       { "type": "uint256", "name": "tokenID" },
+      { "type": "uint256", "name": "uriIndex" },
       { "type": "bool", "name": "active" },
       { "type": "uint8", "name": "playerPosition" }
     ]
+  },
+  {
+    "type": "function",
+    "name": "setFunctionsConsumerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_consumerAddress" }],
+    "outputs": []
   },
   {
     "type": "function",
@@ -239,18 +334,12 @@
   },
   {
     "type": "function",
-    "name": "stats",
+    "name": "testVariable",
     "constant": true,
     "stateMutability": "view",
     "payable": false,
-    "inputs": [{ "type": "address" }],
-    "outputs": [
-      { "type": "uint256", "name": "wins" },
-      { "type": "uint256", "name": "losses" },
-      { "type": "uint256", "name": "activeGames" },
-      { "type": "uint256", "name": "totalUserGames" },
-      { "type": "uint256", "name": "totalUserAcceptedGames" }
-    ]
+    "inputs": [],
+    "outputs": [{ "type": "bytes" }]
   },
   {
     "type": "function",

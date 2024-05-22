@@ -4,7 +4,10 @@
     "payable": false,
     "inputs": [
       { "type": "address", "name": "router" },
-      { "type": "bytes32", "name": "_donId" }
+      { "type": "bytes32", "name": "_donId" },
+      { "type": "address", "name": "_matchManagerAddress" },
+      { "type": "address", "name": "_vrfAddress" },
+      { "type": "address", "name": "_contract_Admin" }
     ]
   },
   { "type": "error", "name": "EmptyArgs", "inputs": [] },
@@ -53,12 +56,39 @@
   { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
     "type": "function",
+    "name": "callbackGasLimit",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint32" }]
+  },
+  {
+    "type": "function",
+    "name": "contract_Admin",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
     "name": "donId",
     "constant": true,
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
     "outputs": [{ "type": "bytes32" }]
+  },
+  {
+    "type": "function",
+    "name": "gameEngine",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "string" }]
   },
   {
     "type": "function",
@@ -71,6 +101,24 @@
       { "type": "bytes", "name": "err" }
     ],
     "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "i_MatchManager",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_VRF",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
   },
   {
     "type": "function",
@@ -87,6 +135,17 @@
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "string", "name": "_gameEngine" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "populateSubIdANDGasLimit",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint64", "name": "_subId" },
+      { "type": "uint32", "name": "_callbackGasLimit" }
+    ],
     "outputs": []
   },
   {
@@ -121,15 +180,15 @@
     "name": "sendRequest",
     "constant": false,
     "payable": false,
-    "inputs": [
-      { "type": "string", "name": "source" },
-      { "type": "uint8", "name": "secretsLocation" },
-      { "type": "bytes", "name": "encryptedSecretsReference" },
-      { "type": "string[]", "name": "args" },
-      { "type": "bytes[]", "name": "bytesArgs" },
-      { "type": "uint64", "name": "subscriptionId" },
-      { "type": "uint32", "name": "callbackGasLimit" }
-    ],
+    "inputs": [{ "type": "string[]", "name": "args" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setContractAdmin",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_newAdmin" }],
     "outputs": []
   },
   {
@@ -139,6 +198,31 @@
     "payable": false,
     "inputs": [{ "type": "bytes32", "name": "newDonId" }],
     "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setMatchManagerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_matchManagerAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setVRFAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_vrfAddress" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "subscriptionId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint64" }]
   },
   {
     "type": "function",

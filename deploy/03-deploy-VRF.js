@@ -5,6 +5,7 @@ const hre = require("hardhat")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 const NFTContractFile = require("../config/NFT_AddressList.json")
 const CONSUMERCONTRACTFILE = require("../config/consumer_AddressList.json")
+const GameManagerAddressList = require("../config/Manager_AddressList.json")
 /**
  * Deploys a contract named "YourContract" using the deployer account and
  * constructor arguments set to the deployer address
@@ -12,6 +13,7 @@ const CONSUMERCONTRACTFILE = require("../config/consumer_AddressList.json")
  * @param hre HardhatRuntimeEnvironment object.
  *
  */
+const chainId = 421614
 console.log("NetworkName: ", hre.network.name)
 const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
 console.log("coordinatorAddress", coordinatorAddress)
@@ -22,9 +24,7 @@ console.log("gasLane", gasLane)
 const callbackGasLimit = networks[hre.network.name]["callbackGasLimit"]
 console.log("callbackGasLimit", callbackGasLimit)
 const linkToken = networks[hre.network.name]["linkToken"]
-//const chainId = (await hre.ethers.provider.getNetwork()).chainId.toString()
-const chainId = 421614
-
+const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
 const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
 console.log("NFTAddress", NFTAddress)
 const consumerAddress = CONSUMERCONTRACTFILE[chainId] ? CONSUMERCONTRACTFILE[chainId] : address(0)
@@ -33,8 +33,9 @@ console.log("consumerAddress", consumerAddress)
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
 
-  // //deploy VRF sub manager contract to fund and add consumer programatically
+  //TODO - deploy VRF sub manager contract to fund and add consumer programatically
   // const VRFManager = await hre.ethers.deployContract("VRFv2SubscriptionManager", [])
+
   // Get the deployed contract to interact with it after deploying.
   const VRFRequestHandler = await hre.ethers.deployContract("VRFRequestHandler", [
     coordinatorAddress,
@@ -44,6 +45,7 @@ const deployVRFHandler = async function () {
     NFTAddress,
     signer.address,
     consumerAddress,
+    gameManagerAddress,
   ])
 
   //write address and ABI to config
@@ -66,6 +68,8 @@ deployVRFHandler()
         callbackGasLimit,
         NFTAddress,
         result.signer.address,
+        consumerAddress,
+        gameManagerAddress,
       ],
     })
   })

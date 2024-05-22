@@ -5,6 +5,7 @@ import {FunctionsClient} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/Fu
 import {ConfirmedOwner} from "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol";
 import {FunctionsRequest} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/libraries/FunctionsRequest.sol";
 import {CB_MatchManagerInterface} from "contracts/interfaces/CB_MatchManagerInterface.sol";
+import {CB_VRFInterface} from "contracts/interfaces/CB_VRFInterface.sol";
 /**
  * @title Chainlink Functions example on-demand consumer contract example
  */
@@ -13,7 +14,10 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
 
   //Modifiers
   modifier onlyAdmin(address _caller) {
-    require(_caller == contract_Admin || _caller == address(i_MatchManager), "Only Contract Admins Can Make This Call");
+    require(
+      _caller == contract_Admin || _caller == address(i_MatchManager) || _caller == address(i_VRF),
+      "Only Contract Admins Can Make This Call"
+    );
     _;
   }
 
@@ -25,15 +29,17 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
 
   //Game Variables
   //game Engine JS Code
-  string internal gameEngine;
-  uint64 internal subscriptionId;
-  uint32 internal callbackGasLimit;
+  string public gameEngine;
+  uint64 public subscriptionId;
+  uint32 public callbackGasLimit;
 
   //Interfaces
-  CB_MatchManagerInterface i_MatchManager;
+  CB_MatchManagerInterface public i_MatchManager;
+  //Interfaces
+  CB_VRFInterface public i_VRF;
 
   //Admin
-  address contract_Admin;
+  address public contract_Admin;
 
   //EVENTS
   event ResponseReceived(bytes32 _requestId, bytes _response);
@@ -42,10 +48,12 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
     address router,
     bytes32 _donId,
     address _matchManagerAddress,
+    address _vrfAddress,
     address _contract_Admin
   ) FunctionsClient(router) ConfirmedOwner(msg.sender) {
     donId = _donId;
     i_MatchManager = CB_MatchManagerInterface(_matchManagerAddress);
+    i_VRF = CB_VRFInterface(_vrfAddress);
     contract_Admin = _contract_Admin;
   }
   /**
@@ -62,10 +70,10 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
   }
 
   /**
-   * @notice Triggers an on-demand Functions request using remote encrypted secrets
+   * @notice Triggers an on-demand Functions request
    * @param args String arguments passed into the source code and accessible via the global variable `args`
    */
-  function _internalSendRequest(string[] calldata args, address _caller) internal onlyAdmin(_caller) {
+  function _internalSendRequest(string[] calldata args, address _caller) internal {
     FunctionsRequest.Request memory req;
     req.initializeRequest(FunctionsRequest.Location.Inline, FunctionsRequest.CodeLanguage.JavaScript, gameEngine);
     if (args.length > 0) {
@@ -85,6 +93,8 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
     s_lastResponse = response;
     s_lastError = err;
     if (response.length > 0) {
+      //call match manager contract to handle finaliseGame logic
+      i_MatchManager.finalizeGame(response);
       emit ResponseReceived(requestId, response);
     }
   }
@@ -102,6 +112,10 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
   //Setter Functions
   function setMatchManagerAddress(address _matchManagerAddress) external onlyAdmin(msg.sender) {
     i_MatchManager = CB_MatchManagerInterface(_matchManagerAddress);
+  }
+
+  function setVRFAddress(address _vrfAddress) external onlyAdmin(msg.sender) {
+    i_VRF = CB_VRFInterface(_vrfAddress);
   }
 
   function setContractAdmin(address _newAdmin) external onlyAdmin(msg.sender) {

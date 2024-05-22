@@ -4,25 +4,27 @@ const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-too
 const hre = require("hardhat")
 const { SubscriptionManager } = require("@chainlink/functions-toolkit")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
-const GameManagerAddressList = require("../cryptoBall/config/Manager_AddressList.json")
+const GameManagerAddressList = require("../config/Manager_AddressList.json")
+const VRFContractFile = require("../config/VRF_AddressList.json")
 
-/**
- * Deploys a contract named "YourContract" using the deployer account and
- * constructor arguments set to the deployer address
- *
- * @param hre HardhatRuntimeEnvironment object.
- */
+const chainId = 421614
+const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
+const VRFAddress = VRFContractFile[chainId] ? VRFContractFile[chainId] : address(0)
+
+const functionsRouterAddress = networks[hre.network.name]["functionsRouter"]
+const donIdBytes32 = hre.ethers.utils.formatBytes32String(networks[hre.network.name]["donId"])
+const subId = networks[hre.network.name]["subscriptionId"]
+const callbackGasLimit = 300000
+
 const FunctionsConsumerContract = async function () {
   const signer = await hre.ethers.getSigner()
-  const functionsRouterAddress = networks[hre.network.name]["functionsRouter"]
-  const donIdBytes32 = hre.ethers.utils.formatBytes32String(networks[hre.network.name]["donId"])
-  const subId = networks[hre.network.name]["subscriptionId"]
-  const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
   // Get the deployed contract to interact with it after deploying.
   const functionsConsumer = await hre.ethers.deployContract("FunctionsConsumer", [
     functionsRouterAddress,
     donIdBytes32,
     gameManagerAddress,
+    VRFAddress,
+    signer.address,
   ])
 
   console.log(functionsConsumer.address)
@@ -31,14 +33,26 @@ const FunctionsConsumerContract = async function () {
   await functionsConsumer.populateGameEngine(fs.readFileSync("gameEngine.js").toString())
 
   //write address and ABI to config
-  await updateContractInfo(functionsConsumer.address)
+  await updateContractInfo({
+    chainFunctionsConsumerAddress: functionsConsumer.address,
+    undefined,
+    undefined,
+    undefined,
+  })
 
+  //populate subID and gaslimit
+  await functionsConsumer.populateSubIdANDGasLimit(subId, callbackGasLimit)
   //add consumer to subscription
   await hre.run("functions-sub-add", {
     subid: subId.toString(),
     contract: functionsConsumer.address.toString(),
   })
-  return { functionsConsumer, functionsRouterAddress, donIdBytes32 }
+  return {
+    functionsConsumer,
+    functionsRouterAddress,
+    donIdBytes32,
+    signer,
+  }
 }
 
 FunctionsConsumerContract()
@@ -46,7 +60,13 @@ FunctionsConsumerContract()
     //verify contracts
     await hre.run("verify:verify", {
       address: result.functionsConsumer.address,
-      constructorArguments: [result.functionsRouterAddress, result.donIdBytes32],
+      constructorArguments: [
+        result.functionsRouterAddress,
+        result.donIdBytes32,
+        gameManagerAddress,
+        VRFAddress,
+        result.signer.address,
+      ],
     })
   })
   .catch((e) => {

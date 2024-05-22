@@ -715,12 +715,12 @@ function simulateMatch() {
     team2GkSkill
   )
 
-  const homeTeam = randomFactors[0] % 2
+  const homeTeam = getRandomNumber() % 2
 
   const team1Skill = team1Attack + team1Defense + team1Midfield
 
   // Compute initial goals
-  let team1Goals = computeScoreFromChance(team1Skill, randomFactors[2] % 3000) * shotsToGoalsRatio
+  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber() % 3000) * shotsToGoalsRatio
 
   // Compute goals saved by the goalkeeper
   const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
@@ -729,7 +729,7 @@ function simulateMatch() {
   team1Goals = team1Goals - team2Saves
 
   const team2Skill = team2Attack + team2Defense + team2Midfield
-  let team2Goals = computeScoreFromChance(team2Skill, randomFactors[3] % 3000) * shotsToGoalsRatio
+  let team2Goals = computeScoreFromChance(team2Skill, getRandomNumber() % 3000) * shotsToGoalsRatio
 
   const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
 
@@ -808,7 +808,7 @@ function encodeMatchResult(matchResult) {
 }
 
 //runs simulate match and returns object of winner, team 2 and 2 score, adjusted team 2 and two metadata
-const matchResult = simulateMatch(randomFactors)
+const matchResult = simulateMatch()
 //encode match result into custom Bugger
 const encodedMatchResult = encodeMatchResult(matchResult)
 return encodedMatchResult

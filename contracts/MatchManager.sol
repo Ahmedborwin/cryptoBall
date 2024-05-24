@@ -71,6 +71,7 @@ contract MatchManager {
   //TEST
   uint8[] public testPlayerIndexArray;
   uint256[] public testTokenIdArray;
+  event testEvent(bytes indexed buffer, uint8 indexed winner, uint8 indexed team1goals);
 
   struct Game {
     uint256 id; //id of game
@@ -225,12 +226,13 @@ contract MatchManager {
     // Read gameId from buffer
     uint256 gameId;
     assembly {
-      gameId := mload(add(buffer, add(offset, 32)))
+      gameId := mload(add(add(buffer, 0x20), offset))
+      gameId := shr(224, gameId) // shift right by 224 bits to keep only the first 32 bits
     }
     offset += 4;
 
     // Check game status to ensure it can be finalized
-    require(games[gameId].status == 2, "Game Status should be accepted");
+    require(games[gameId].status == 2, "Game cannot be finalized");
 
     // Read winner, team1Goals, and team2Goals from buffer
     uint8 winner = uint8(buffer[offset]);
@@ -252,40 +254,35 @@ contract MatchManager {
       uint8 upgradedAttribute = uint8(buffer[offset + 1]);
       offset += 2;
 
-      testPlayerIndexArray.push(tokenIndex);
+      if (winner == 0) {
+        upgradedTokenID = game.creatorRoster[tokenIndex].tokenID;
+      } else {
+        upgradedTokenID = game.challengerRoster[tokenIndex].tokenID;
+      }
 
-      //-------------------------------------------------------
-      //THIS IS THE BIT THAT IS CAUSING THE ISSUE
-
-      // check which array we are looking at based on who is the winner
-      // if (winner == uint8(0)) {}
-      // else {}
-
-      upgradedTokenID = creatorRosterTable[gameId][tokenIndex].tokenID;
-
-      testTokenIdArray.push(upgradedTokenID);
-
-      // _upgradeToken(upgradedTokenID, upgradedAttribute);
-
-      //-------------------------------------------------------
+      _upgradeToken(upgradedTokenID, upgradedAttribute);
     }
 
-    // Assign winner based on winner variable
-    if (winner == uint8(0)) {
+    if (winner == 0) {
       game.winner = game.creator;
-    } else if (winner == uint8(1)) {
+      creatorStats.wins++;
+      challengerStats.losses++;
+    } else if (winner == 1) {
       game.winner = game.challenger;
+      creatorStats.losses++;
+      challengerStats.wins++;
     }
 
     // Update total goals for managers
     creatorStats.totalGoals += uint256(team1Goals);
     challengerStats.totalGoals += uint256(team2Goals);
 
-    // // COmmented out for the sake of testing,
-    // // otherwise would need to set up a new game for each time this funciton is triggered succesfully
-    // // Update state of game with further details
-    //  game.completionTime = block.timestamp;
-    // game.status = 3; // set game status to completed
+    // Update state of game with further details
+    game.completionTime = block.timestamp;
+
+    //COmmented out for the sake of testing,
+    //otherwise would need to set up a new game for each time this funciton is triggered succesfully
+    //game.status = 3; // set game status to completed
 
     emit FinalizeGame(gameId, game.winner, game.completionTime);
   }

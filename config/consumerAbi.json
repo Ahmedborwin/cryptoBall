@@ -209,7 +209,7 @@
   },
   {
     "type": "function",
-    "name": "setVRFAddress",
+    "name": "setVRFHandlerAddress",
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "address", "name": "_vrfAddress" }],

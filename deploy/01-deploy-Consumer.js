@@ -52,7 +52,7 @@ const FunctionsConsumerContract = async function () {
   })
 
   //set Consumer address on VRF
-  const vrfContract = await hre.ethers.getContractAt("vrfContract", VRFAddress)
+  const vrfContract = await hre.ethers.getContractAt("VRFRequestHandler", VRFAddress)
   console.log("functionsConsumer Address:", vrfContract.address)
   await vrfContract.setFunctionsConsumerAddress(functionsConsumer.address)
 

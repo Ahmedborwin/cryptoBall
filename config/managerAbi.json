@@ -73,6 +73,16 @@
     "inputs": [{ "type": "uint256", "name": "id", "indexed": false }]
   },
   {
+    "type": "event",
+    "anonymous": false,
+    "name": "testEvent",
+    "inputs": [
+      { "type": "bytes", "name": "buffer", "indexed": true },
+      { "type": "uint8", "name": "winner", "indexed": true },
+      { "type": "uint8", "name": "team1goals", "indexed": true }
+    ]
+  },
+  {
     "type": "function",
     "name": "ManagerStats",
     "constant": true,

@@ -41,13 +41,21 @@ const deployManager = async function () {
   await updateContractInfo({ undefined, undefined, undefined, gameManagerAddress: gameManager.address })
 
   //set GameManager address on consumer
-  // const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
-  // console.log("functionsConsumer Address:", functionsConsumerContract.address)
-  // await functionsConsumerContract.setMatchManagerAddress(gameManager.address)
+  const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
+  console.log("functionsConsumer Address:", functionsConsumerContract.address)
+  await functionsConsumerContract.setMatchManagerAddress(gameManager.address)
+  //set game manager address on VRF
+  const vrfContract = await hre.ethers.getContractAt("VRFRequestHandler", VRFAddress)
+  console.log("VRF Contract Address:", vrfContract.address)
+  await vrfContract.setMatchManagerAddress(gameManager.address)
+  //set game manager address on NFT COntract
+  const nftContract = await hre.ethers.getContractAt("CBNFT", NFTAddress)
+  console.log("NFT Contract Address:", nftContract.address)
+  await nftContract.setMatchManager(gameManager.address)
 
   //Create Game
   const gameId = await gameManager.createGame()
-
+  console.log("Game Created")
   // //accept Game
   // await gameManager.connect(player2).acceptGame(gameId)
 
@@ -56,6 +64,7 @@ const deployManager = async function () {
 
 deployManager()
   .then(async (result) => {
+    console.log("@@@ Verifying Contract")
     //verify contracts
     await hre.run("verify:verify", {
       address: result.gameManager.address,

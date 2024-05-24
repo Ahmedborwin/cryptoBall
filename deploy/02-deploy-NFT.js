@@ -5,13 +5,19 @@ const hre = require("hardhat")
 const { SubscriptionManager } = require("@chainlink/functions-toolkit")
 
 const chainId = 421614
+
 const GameManagerAddressList = require("../config/Manager_AddressList.json")
+const VRFContractFile = require("../config/VRF_AddressList.json")
+const ConsumerContractFile = require("../config/consumer_AddressList.json")
+
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
+const VRFAddress = VRFContractFile[chainId] ? VRFContractFile[chainId] : address(0)
+const ConsumerAddress = ConsumerContractFile[chainId] ? ConsumerContractFile[chainId] : address(0)
+
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 const baseURI = "ipfs://QmPp7Tgav8SwPWufZkGaePziMcDHXXCev6DPtHHrHpKHGG/"
+
 /**
- *
- * @param hre HardhatRuntimeEnvironment object.
  */
 const deployNFTContract = async function () {
   const signer = await hre.ethers.getSigner()
@@ -19,7 +25,7 @@ const deployNFTContract = async function () {
   const provider = new hre.ethers.getDefaultProvider()
 
   // Get the deployed contract to interact with it after deploying.
-  const CBNFT = await hre.ethers.deployContract("CBNFT", [baseURI, signer.address, gameManagerAddress])
+  const CBNFT = await hre.ethers.deployContract("CBNFT", [baseURI, gameManagerAddress])
 
   //write address and ABI to config
   await updateContractInfo({ undefined, NFTAddress: CBNFT.address, undefined })
@@ -54,6 +60,16 @@ const deployNFTContract = async function () {
   await CBNFT.openLootBox(219, player2.address)
   await CBNFT.openLootBox(224, player2.address)
 
+  //update other contracts
+
+  //set NFT address on VRF
+  const vrfContract = await hre.ethers.getContractAt("VRFRequestHandler", VRFAddress)
+  console.log("VRF Contract Address:", vrfContract.address)
+  await vrfContract.setNFTAddress(gameManager.address)
+  //set NFT address on Game Manager Contract
+  const matchManagerContract = await hre.ethers.getContractAt("MatchManager", gameManagerAddress)
+  console.log("Game Manager Contract Address:", matchManagerContract.address)
+  await matchManagerContract.setNFTAddress(gameManager.address)
   return { CBNFT, signer }
 }
 
@@ -62,7 +78,7 @@ deployNFTContract()
     if (hre.network.name !== "localhost" && hre.network.name !== "localFunctionsTestnet") {
       await hre.run("verify:verify", {
         address: result.CBNFT.address,
-        constructorArguments: [baseURI, result.signer.address, gameManagerAddress],
+        constructorArguments: [baseURI, gameManagerAddress],
       })
     }
   })

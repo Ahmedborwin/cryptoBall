@@ -36,20 +36,16 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   address public contract_Admin;
   address public MatchManager;
 
-  function setMatchManager(address _matchManager) public onlyAdmin(msg.sender) {
-    MatchManager = _matchManager;
-  }
-
   //All NFT's to address storage mapping
   mapping(address => string[]) public s_addressToAllTokenURIs;
 
   event NFTMinted(address player, string tokenURI);
   event LootBoxOpened(address player, string tokenURI);
 
-  constructor(string memory _baseHash, address _contractAdmin, address _MatchManager) ERC721("CB_PLAYERS", "CBNFT") {
+  constructor(string memory _baseHash, address _MatchManager) ERC721("CB_PLAYERS", "CBNFT") {
     s_tokenCounter = 1;
     s_CB_BaseURI = _baseHash;
-    contract_Admin = _contractAdmin;
+    contract_Admin = msg.sender;
     MatchManager = _MatchManager;
   }
 
@@ -113,10 +109,6 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     return Strings.toString(value);
   }
 
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
-    VRF_RequestHandler = _vrfHandler;
-  }
-
   function populateBaseHash(string calldata _baseHash) external onlyAdmin(msg.sender) {
     s_CB_BaseURI = _baseHash;
   }
@@ -131,6 +123,14 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     } else {
       return false;
     }
+  }
+  //Setter functions
+
+  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
+    VRF_RequestHandler = _vrfHandler;
+  }
+  function setMatchManager(address _matchManager) public onlyAdmin(msg.sender) {
+    MatchManager = _matchManager;
   }
 
   //getter functions

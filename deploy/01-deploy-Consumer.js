@@ -3,11 +3,14 @@ const fs = require("fs")
 const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-toolkit")
 const hre = require("hardhat")
 const { SubscriptionManager } = require("@chainlink/functions-toolkit")
+
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
+
+const chainId = 421614
+
 const GameManagerAddressList = require("../config/Manager_AddressList.json")
 const VRFContractFile = require("../config/VRF_AddressList.json")
 
-const chainId = 421614
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
 const VRFAddress = VRFContractFile[chainId] ? VRFContractFile[chainId] : address(0)
 
@@ -47,6 +50,17 @@ const FunctionsConsumerContract = async function () {
     subid: subId.toString(),
     contract: functionsConsumer.address.toString(),
   })
+
+  //set Consumer address on VRF
+  const vrfContract = await hre.ethers.getContractAt("vrfContract", VRFAddress)
+  console.log("functionsConsumer Address:", vrfContract.address)
+  await vrfContract.setFunctionsConsumerAddress(functionsConsumer.address)
+
+  //set Consumer address on Game Manager
+  const gameManagerContract = await hre.ethers.getContractAt("MatchManager", gameManagerAddress)
+  console.log("Game Manager Contract Address:", gameManagerContract.address)
+  await gameManagerContract.setFunctionsConsumerAddress(functionsConsumer.address)
+
   return {
     functionsConsumer,
     functionsRouterAddress,

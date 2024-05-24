@@ -737,7 +737,7 @@ function simulateMatch() {
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
-  const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 0 : "draw"
+  const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 1 : "draw"
   console.log("Winner: Team", winner)
 
   const playersUpgrades = adjustPlayerAttributes()

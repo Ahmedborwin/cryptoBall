@@ -6,29 +6,19 @@ const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 const NFTContractFile = require("../config/NFT_AddressList.json")
 const CONSUMERCONTRACTFILE = require("../config/consumer_AddressList.json")
 const GameManagerAddressList = require("../config/Manager_AddressList.json")
+
 /**
- * Deploys a contract named "YourContract" using the deployer account and
- * constructor arguments set to the deployer address
- *
- * @param hre HardhatRuntimeEnvironment object.
- *
  */
 const chainId = 421614
-console.log("NetworkName: ", hre.network.name)
+
 const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
-console.log("coordinatorAddress", coordinatorAddress)
-const vrfSubID = networks[hre.network.name]["vrfSubscriptionId"]
-console.log("vrfSubID", vrfSubID)
 const gasLane = networks[hre.network.name]["gasLane"]
-console.log("gasLane", gasLane)
 const callbackGasLimit = networks[hre.network.name]["callbackGasLimit"]
-console.log("callbackGasLimit", callbackGasLimit)
 const linkToken = networks[hre.network.name]["linkToken"]
+
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
 const NFTAddress = NFTContractFile[chainId] ? NFTContractFile[chainId] : address(0)
-console.log("NFTAddress", NFTAddress)
 const consumerAddress = CONSUMERCONTRACTFILE[chainId] ? CONSUMERCONTRACTFILE[chainId] : address(0)
-console.log("consumerAddress", consumerAddress)
 
 const deployVRFHandler = async function () {
   const signer = await hre.ethers.getSigner()
@@ -48,10 +38,21 @@ const deployVRFHandler = async function () {
     gameManagerAddress,
   ])
 
+  //set VRF address on consumer
+  const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
+  console.log("functionsConsumer Address:", functionsConsumerContract.address)
+  await functionsConsumerContract.setVRFHandlerAddress(VRFRequestHandler.address)
+  //set VRF address on NFT COntract
+  const nftContract = await hre.ethers.getContractAt("CBNFT", NFTAddress)
+  console.log("NFT Contract Address:", nftContract.address)
+  await nftContract.setVRFHandlerAddress(VRFRequestHandler.address)
+  //set VRF address on Game Manager
+  const gameManagerContract = await hre.ethers.getContractAt("MatchManager", gameManagerAddress)
+  console.log("Game Manager Contract Address:", gameManagerContract.address)
+  await gameManagerContract.setVRFHandlerAddress(VRFRequestHandler.address)
+
   //write address and ABI to config
   await updateContractInfo({ undefined, undefined, VRFHandlerAddress: VRFRequestHandler.address })
-
-  // await requestRandomNumber(1, "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", 1, 1)
 
   return { signer, VRFRequestHandler }
 }

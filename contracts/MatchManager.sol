@@ -65,6 +65,12 @@ contract MatchManager {
   mapping(address => Player[]) public rosters;
   mapping(address => string[]) public tokenIdStringTable; //TODO: RENAME THIS!!
   mapping(address => bool) public rosterFilled;
+  mapping(uint256 => Player[]) public creatorRosterTable;
+  mapping(uint256 => Player[]) public challengerRosterTable;
+
+  //TEST
+  uint8[] public testPlayerIndexArray;
+  uint256[] public testTokenIdArray;
 
   struct Game {
     uint256 id; //id of game
@@ -168,6 +174,8 @@ contract MatchManager {
     games[totalGames].status = 1; //set game to active
     games[totalGames].creatorRoster = rosters[msg.sender];
 
+    creatorRosterTable[totalGames] = rosters[msg.sender];
+
     //Update creator's created game count and list
     //QUERY: Should active games update on game accepted rather than create?
     ManagerStats[msg.sender].activeGames++;
@@ -198,7 +206,6 @@ contract MatchManager {
   }
 
   function requestRandomNumbers(uint256 _id) public {
-    require(games[_id].creator == msg.sender, "Only Creator Can Start a Game...");
     require(_checkAccepted(_id), "Game is not Accepted...");
     require(_rosterFilled(games[_id].creator));
     require(_rosterFilled(games[_id].challenger));
@@ -207,32 +214,7 @@ contract MatchManager {
     i_VRF.requestRandomNumber(2, address(0), _id, 10);
   }
 
-  // function startGame(uint256 _id, uint256[] calldata _randomNumbers) public {
-  //   string[] storage _args;
-  //   Player[] memory creatorTeam = games[_id].creatorRoster;
-  //   Player[] memory challengerTeam = games[_id].challengerRoster;
-  //   //How to get the staked Player lists as an array of Strings
-  //   //TODO: There must be a better way to do this. Can we store the tokenIds as string when we first stake them?
-  //   for (uint8 i; i < creatorTeam.length; i++) {
-  //     string memory tokenIdString = creatorTeam[i].tokenID.toString();
-  //     _args.push(tokenIdString);
-  //   }
-
-  //   for (uint8 i; i < challengerTeam.length; i++) {
-  //     string memory tokenIdString = challengerTeam[i].tokenID.toString();
-  //     _args.push(tokenIdString);
-  //   }
-
-  //   for (uint8 i; i < _randomNumbers.length; i++) {
-  //     string memory randomNumberString = _randomNumbers[i].toString();
-  //     _args.push(randomNumberString);
-  //   }
-
-  //   i_Consumer.sendRequest(_args);
-
-  //   emit StartGame(_id);
-  // }
-
+  //TODO: Add modifier to restrict who can call this function
   function finalizeGame(bytes memory buffer) external {
     _finalizeGame(buffer, msg.sender);
   }
@@ -248,7 +230,7 @@ contract MatchManager {
     offset += 4;
 
     // Check game status to ensure it can be finalized
-    require(games[gameId].status == 2, "Game cannot be finalized");
+    require(games[gameId].status == 2, "Game Status should be accepted");
 
     // Read winner, team1Goals, and team2Goals from buffer
     uint8 winner = uint8(buffer[offset]);
@@ -270,19 +252,28 @@ contract MatchManager {
       uint8 upgradedAttribute = uint8(buffer[offset + 1]);
       offset += 2;
 
-      if (winner == 0) {
-        upgradedTokenID = game.creatorRoster[tokenIndex].tokenID;
-      } else {
-        upgradedTokenID = game.challengerRoster[tokenIndex].tokenID;
-      }
+      testPlayerIndexArray.push(tokenIndex);
 
-      _upgradeToken(upgradedTokenID, upgradedAttribute);
+      //-------------------------------------------------------
+      //THIS IS THE BIT THAT IS CAUSING THE ISSUE
+
+      // check which array we are looking at based on who is the winner
+      // if (winner == uint8(0)) {}
+      // else {}
+
+      upgradedTokenID = creatorRosterTable[gameId][tokenIndex].tokenID;
+
+      testTokenIdArray.push(upgradedTokenID);
+
+      // _upgradeToken(upgradedTokenID, upgradedAttribute);
+
+      //-------------------------------------------------------
     }
 
     // Assign winner based on winner variable
-    if (winner == 0) {
+    if (winner == uint8(0)) {
       game.winner = game.creator;
-    } else if (winner == 1) {
+    } else if (winner == uint8(1)) {
       game.winner = game.challenger;
     }
 
@@ -290,11 +281,11 @@ contract MatchManager {
     creatorStats.totalGoals += uint256(team1Goals);
     challengerStats.totalGoals += uint256(team2Goals);
 
-    // Update state of game with further details
-    game.completionTime = block.timestamp;
-    //COmmented out for the sake of testing,
-    //otherwise would need to set up a new game for each time this funciton is triggered succesfully
-    //game.status = 3; // set game status to completed
+    // // COmmented out for the sake of testing,
+    // // otherwise would need to set up a new game for each time this funciton is triggered succesfully
+    // // Update state of game with further details
+    //  game.completionTime = block.timestamp;
+    // game.status = 3; // set game status to completed
 
     emit FinalizeGame(gameId, game.winner, game.completionTime);
   }
@@ -391,6 +382,14 @@ contract MatchManager {
 
   function getGameDetails(uint256 _gameID) public view returns (Game memory) {
     return games[_gameID];
+  }
+
+  function getTestArray() external view returns (uint8[] memory) {
+    return testPlayerIndexArray;
+  }
+
+  function getTestArray2() external view returns (uint256[] memory) {
+    return testTokenIdArray;
   }
 
   //External Helper Functions

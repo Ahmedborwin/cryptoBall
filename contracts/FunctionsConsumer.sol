@@ -114,7 +114,7 @@ contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
     i_MatchManager = CB_MatchManagerInterface(_matchManagerAddress);
   }
 
-  function setVRFAddress(address _vrfAddress) external onlyAdmin(msg.sender) {
+  function setVRFHandlerAddress(address _vrfAddress) external onlyAdmin(msg.sender) {
     i_VRF = CB_VRFInterface(_vrfAddress);
   }
 

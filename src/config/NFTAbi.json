@@ -1,0 +1,497 @@
+[
+  {
+    "type": "constructor",
+    "payable": false,
+    "inputs": [
+      { "type": "string", "name": "_baseHash" },
+      { "type": "address", "name": "_MatchManager" }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "Approval",
+    "inputs": [
+      { "type": "address", "name": "owner", "indexed": true },
+      { "type": "address", "name": "approved", "indexed": true },
+      { "type": "uint256", "name": "tokenId", "indexed": true }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "ApprovalForAll",
+    "inputs": [
+      { "type": "address", "name": "owner", "indexed": true },
+      { "type": "address", "name": "operator", "indexed": true },
+      { "type": "bool", "name": "approved", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "BatchMetadataUpdate",
+    "inputs": [
+      { "type": "uint256", "name": "_fromTokenId", "indexed": false },
+      { "type": "uint256", "name": "_toTokenId", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "LootBoxOpened",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": false },
+      { "type": "string", "name": "tokenURI", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "MetadataUpdate",
+    "inputs": [{ "type": "uint256", "name": "_tokenId", "indexed": false }]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "NFTMinted",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": false },
+      { "type": "string", "name": "tokenURI", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "OwnershipTransferred",
+    "inputs": [
+      { "type": "address", "name": "previousOwner", "indexed": true },
+      { "type": "address", "name": "newOwner", "indexed": true }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "PlayerNFTListed",
+    "inputs": [
+      { "type": "address", "name": "seller", "indexed": false },
+      { "type": "uint256", "name": "tokenId", "indexed": false },
+      { "type": "uint256", "name": "price", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "PlayerSold",
+    "inputs": [
+      { "type": "uint256", "name": "tokenId", "indexed": false },
+      { "type": "address", "name": "seller", "indexed": false },
+      { "type": "address", "name": "buyer", "indexed": false },
+      { "type": "uint256", "name": "price", "indexed": false }
+    ]
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "Transfer",
+    "inputs": [
+      { "type": "address", "name": "from", "indexed": true },
+      { "type": "address", "name": "to", "indexed": true },
+      { "type": "uint256", "name": "tokenId", "indexed": true }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "approve",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "to" },
+      { "type": "uint256", "name": "tokenId" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "balanceOf",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "owner" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "buyPlayerNft",
+    "constant": false,
+    "stateMutability": "payable",
+    "payable": true,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "contract_Admin",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "getApproved",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "tokenId" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "getBasePlayerIndexFromId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "getIsNFTListed",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "getTokenURIByAddress",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_address" }],
+    "outputs": [{ "type": "string[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getTokenUpgradeValue",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_tokenId" },
+      { "type": "uint8", "name": "_attribute" }
+    ],
+    "outputs": [{ "type": "uint8" }]
+  },
+  {
+    "type": "function",
+    "name": "getTokenUriFromTokenId",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "tokenId" }],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "i_GameManager",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "i_VRF",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "isApprovedForAll",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "owner" },
+      { "type": "address", "name": "operator" }
+    ],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "isNFTOwner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "_player" },
+      { "type": "uint256", "name": "tokenId" }
+    ],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "isTokenOwnedByAddress",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }, { "type": "uint256" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "listPlayerNFT",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_tokenId" },
+      { "type": "uint256", "name": "_price" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "minNFT",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_uriIndex" },
+      { "type": "address", "name": "_player" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "modifyUpgrade",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_tokenID" },
+      { "type": "uint8", "name": "_attribute" },
+      { "type": "uint8", "name": "_newValue" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "name",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "openLootBox",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "_uriIndex" },
+      { "type": "address", "name": "_player" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "ownerOf",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "tokenId" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "populateBaseHash",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "string", "name": "_baseHash" }],
+    "outputs": []
+  },
+  { "type": "function", "name": "renounceOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "s_CB_BaseURI",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "s_addressToAllTokenURIs",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address" }, { "type": "uint256" }],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "s_tokenCounter",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "uint8" }]
+  },
+  {
+    "type": "function",
+    "name": "safeTransferFrom",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "from" },
+      { "type": "address", "name": "to" },
+      { "type": "uint256", "name": "tokenId" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "safeTransferFrom",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "from" },
+      { "type": "address", "name": "to" },
+      { "type": "uint256", "name": "tokenId" },
+      { "type": "bytes", "name": "data" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setApprovalForAll",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "operator" },
+      { "type": "bool", "name": "approved" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setMatchManager",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_matchManager" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "setVRFHandlerAddress",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_vrfHandler" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "supportsInterface",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "bytes4", "name": "interfaceId" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "symbol",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenIdToURIIndex",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenURI",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "tokenId" },
+      { "type": "uint256", "name": "_URIIndex" }
+    ],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenURI",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "tokenId" }],
+    "outputs": [{ "type": "string" }]
+  },
+  {
+    "type": "function",
+    "name": "tokenUpgrades",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }, { "type": "uint256" }],
+    "outputs": [{ "type": "uint8" }]
+  },
+  {
+    "type": "function",
+    "name": "transferFrom",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "from" },
+      { "type": "address", "name": "to" },
+      { "type": "uint256", "name": "tokenId" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "newOwner" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "updateTokenURI",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint8", "name": "_tokenID" },
+      { "type": "string", "name": "_newURI" }
+    ],
+    "outputs": []
+  }
+]

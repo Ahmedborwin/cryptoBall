@@ -2,7 +2,7 @@ const hre = require("hardhat")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 
 const chainId = 421614
-const ManagerContractFile = require("../config/Manager_AddressList.json")
+const ManagerContractFile = require("../src/config/Manager_AddressList.json")
 const managerAddress = ManagerContractFile[chainId] ? ManagerContractFile[chainId] : address(0)
 
 let gameManagerAddress

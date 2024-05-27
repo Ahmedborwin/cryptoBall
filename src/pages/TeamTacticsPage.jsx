@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SubmitButton from "../components/common/Button/SubmitButton";
+import TabContainer from "../components/common/Container/Tab/TabContainer";
 
 const formations = {
   "4-4-2": { defenders: 4, midfielders: 4, forwards: 2, goalkeeper: 1 },
@@ -14,7 +15,7 @@ const TeamTacticsPage = () => {
   const players = formations[selectedFormation];
 
   return (
-    <div className="w-full h-screen flex justify-between p-10">
+    <TabContainer>
       <div className="w-full max-w-3xl h-128 bg-green-800 bg-opacity-50 rounded-lg flex flex-col justify-around py-4 px-10">
         {/* Forwards */}
         <div className="flex justify-evenly">
@@ -57,7 +58,7 @@ const TeamTacticsPage = () => {
           id="formation-select"
           value={selectedFormation}
           onChange={e => setSelectedFormation(e.target.value)}
-          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md text-gray-600"
         >
           {Object.keys(formations).map(formation => (
             <option key={formation} value={formation}>
@@ -71,7 +72,7 @@ const TeamTacticsPage = () => {
         <div>Player NFTs number: (getURI(manager address) function -- NFT contract [playersTokens]) -- on the right side</div>
         <SubmitButton>STAKE PLAYER/TEAM</SubmitButton>
       </div>
-    </div>
+    </TabContainer>
   );
 };
 

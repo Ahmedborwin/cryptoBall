@@ -54,10 +54,10 @@ const LoginPage = () => {
       <FormBox>
         <FormField type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </FormBox>
-      <SubmitButton onClick={handleLogin}>Log In</SubmitButton>
       <FormBox>
         <div id="turnkey-iframe-container" />
       </FormBox>
+      <SubmitButton onClick={handleLogin}>Log In</SubmitButton>
     </div>
   )
 }

@@ -63,8 +63,8 @@
     "solidity-coverage": "^0.8.2",
     "styled-components": "^6.1.9",
     "typechain": "^8.1.0",
-    "viem": "^2.9.32",
-    "wagmi": "^2.8.1"
+    "viem": "^2.12.5",
+    "wagmi": "^2.9.7"
   },
   "lint-staged": {
     "*.{js,json,yml,yaml}": [

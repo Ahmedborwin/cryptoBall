@@ -3,7 +3,7 @@ const hre = require("hardhat")
 const { networks } = require("../../networks")
 const { network } = require("hardhat")
 
-const consumer_AddressList = require("../../config/consumer_AddressList.json")
+const consumer_AddressList = require("../../src/config/consumer_AddressList.json")
 
 const networkName = network.name
 const chainId = networks[networkName]["chainId"]

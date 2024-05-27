@@ -3,9 +3,9 @@ const fs = require("fs")
 const { Location, ReturnType, CodeLanguage } = require("@chainlink/functions-toolkit")
 const hre = require("hardhat")
 const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
-const NFTContractFile = require("../config/NFT_AddressList.json")
-const CONSUMERCONTRACTFILE = require("../config/consumer_AddressList.json")
-const GameManagerAddressList = require("../config/Manager_AddressList.json")
+const NFTContractFile = require("../src/config/NFT_AddressList.json")
+const CONSUMERCONTRACTFILE = require("../src/config/consumer_AddressList.json")
+const GameManagerAddressList = require("../src/config/Manager_AddressList.json")
 
 /**
  */

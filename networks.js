@@ -85,6 +85,7 @@ const networks = {
     gasPrice: undefined,
     nonce: undefined,
     accounts,
+    subscriptionId: 1843,
     verifyApiKey: process.env.ETHERSCAN_API_KEY || "UNSET",
     chainId: 11155111,
     confirmations: DEFAULT_VERIFICATION_BLOCK_CONFIRMATIONS,
@@ -96,7 +97,11 @@ const networks = {
     gatewayUrls: [
       "https://01.functions-gateway.testnet.chain.link/",
       "https://02.functions-gateway.testnet.chain.link/",
-    ],
+    ], //VRF Variables
+    vrfCoordinatorV2: "0x9ddfaca8183c41ad55329bdeed9f6a8d53168b1b",
+    gasLane: "0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae",
+    callbackGasLimit: "2500000", // 2,500,000 gas
+    vrfSubscriptionId: "112962707688958146916079652617488254597188946239164302805618079293397607680996", // add your ID here!
   },
   polygonMumbai: {
     url: process.env.POLYGON_MUMBAI_RPC_URL || "UNSET",
@@ -133,11 +138,13 @@ const networks = {
       "https://01.functions-gateway.testnet.chain.link/",
       "https://02.functions-gateway.testnet.chain.link/",
     ],
+    //FunctionsSubID
+    subscriptionId: 1620,
     //VRF Variables
-    vrfCoordinatorV2: "",
-    gasLane: "",
-    callbackGasLimit: "500000", // 500,000 gas
-    vrfSubscriptionId: "", // add your ID here!
+    vrfCoordinatorV2: "0x5c210ef41cd1a72de73bf76ec39637bb0d3d7bee",
+    gasLane: "0xc799bd1e3bd4d1a41cd4968997a4e03dfd2a3c7c04b695881138580163f42887",
+    callbackGasLimit: "2500000", // 500,000 gas
+    vrfSubscriptionId: "22893234025567037033211099490406710378626671179684264872588321889309253644677", // add your ID here!
   },
   arbitrumSepolia: {
     url: `https://arb-sepolia.g.alchemy.com/v2/${providerApiKey}` || "UNSET",
@@ -201,6 +208,16 @@ const networks = {
   },
   // localFunctionsTestnet is updated dynamically by scripts/startLocalFunctionsTestnet.js so it should not be modified here
   localFunctionsTestnet: {
+    url: "http://localhost:8545/",
+    accounts,
+    confirmations: 1,
+    nativeCurrencySymbol: "ETH",
+    linkToken: "0xf73494Fb41d801F0Aa30bF572b1b5ca14F452FF2",
+    functionsRouter: "0x63f9dF5F7637297693265927A83FF9a208E23Cb9",
+    donId: "local-functions-testnet",
+  },
+
+  localtestnet: {
     url: "http://localhost:8545/",
     accounts,
     confirmations: 1,

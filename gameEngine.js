@@ -1,6 +1,7 @@
 const { Buffer } = await import("node:buffer")
 const { promisify } = await import("node:util")
 const ethers = await import("npm:ethers@6.10.0")
+const crypto = await import("node:crypto")
 
 //Declare Variables
 
@@ -622,14 +623,8 @@ const randomFactors = args.slice(1, 9).map(Number)
 
 let counter = 0
 
-function getRandomNumber() {
-  const output = randomFactors[counter]
-  if (counter == randomFactors.length - 1) {
-    counter = 0
-  } else {
-    counter++
-  }
-  return output
+function getRandomNumber(max) {
+  return crypto.randomInt(max)
 }
 
 function simulateMatch() {
@@ -715,12 +710,12 @@ function simulateMatch() {
     team2GkSkill
   )
 
-  const homeTeam = getRandomNumber() % 2
+  const homeTeam = getRandomNumber(2)
 
   const team1Skill = team1Attack + team1Defense + team1Midfield
 
   // Compute initial goals
-  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber() % 3000) * shotsToGoalsRatio
+  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber(3000)) * shotsToGoalsRatio
 
   // Compute goals saved by the goalkeeper
   const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
@@ -729,7 +724,7 @@ function simulateMatch() {
   team1Goals = team1Goals - team2Saves
 
   const team2Skill = team2Attack + team2Defense + team2Midfield
-  let team2Goals = computeScoreFromChance(team2Skill, getRandomNumber() % 3000) * shotsToGoalsRatio
+  let team2Goals = computeScoreFromChance(team2Skill, getRandomNumber(3000)) * shotsToGoalsRatio
 
   const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
 
@@ -737,7 +732,7 @@ function simulateMatch() {
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
 
-  const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 1 : "draw"
+  const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 1 : 2
   console.log("Winner: Team", winner)
 
   const playersUpgrades = adjustPlayerAttributes()
@@ -766,17 +761,12 @@ function adjustPlayerAttributes() {
 
   let playersToUpgrade = []
 
-  const playerUpgraded = getRandomNumber() % 11
+  const playerUpgraded = getRandomNumber(11)
 
-  //TODO: is there an issue with randomness?
-  //Attribute is always 0...
   for (let i = 0; i < playerUpgraded; i++) {
-    const player = getRandomNumber() % 11
-    const attribute = (getRandomNumber() % 4) + 1
+    const player = getRandomNumber(11)
+    const attribute = getRandomNumber(4) + 1
     console.log("attribute", attribute)
-
-    //an array where every two items refer to the players index in the team
-
     playersToUpgrade.push(player, attribute)
   }
 

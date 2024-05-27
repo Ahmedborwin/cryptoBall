@@ -14,6 +14,7 @@ const chainId = 421614
 const coordinatorAddress = networks[hre.network.name]["vrfCoordinatorV2"]
 const gasLane = networks[hre.network.name]["gasLane"]
 const callbackGasLimit = networks[hre.network.name]["callbackGasLimit"]
+const vrfSubID = networks[hre.network.name]["vrfSubscriptionId"]
 const linkToken = networks[hre.network.name]["linkToken"]
 
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
@@ -37,18 +38,21 @@ const deployVRFHandler = async function () {
     consumerAddress,
     gameManagerAddress,
   ])
+  console.log("-----------VRFAddress-------------------")
+  console.log(VRFRequestHandler.address)
+  console.log("----------------------------------------")
+
+  console.log("-----------update contracts with NEW VRF Address-----------")
+  console.log("-----------------------------------------------------------")
 
   //set VRF address on consumer
-  const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)
-  console.log("functionsConsumer Address:", functionsConsumerContract.address)
+  const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", consumerAddress)
   await functionsConsumerContract.setVRFHandlerAddress(VRFRequestHandler.address)
   //set VRF address on NFT COntract
   const nftContract = await hre.ethers.getContractAt("CBNFT", NFTAddress)
-  console.log("NFT Contract Address:", nftContract.address)
   await nftContract.setVRFHandlerAddress(VRFRequestHandler.address)
   //set VRF address on Game Manager
   const gameManagerContract = await hre.ethers.getContractAt("MatchManager", gameManagerAddress)
-  console.log("Game Manager Contract Address:", gameManagerContract.address)
   await gameManagerContract.setVRFHandlerAddress(VRFRequestHandler.address)
 
   //write address and ABI to config
@@ -59,20 +63,22 @@ const deployVRFHandler = async function () {
 
 deployVRFHandler()
   .then(async (result) => {
-    //verify contracts
-    await hre.run("verify:verify", {
-      address: result.VRFRequestHandler.address,
-      constructorArguments: [
-        coordinatorAddress,
-        vrfSubID,
-        gasLane,
-        callbackGasLimit,
-        NFTAddress,
-        result.signer.address,
-        consumerAddress,
-        gameManagerAddress,
-      ],
-    })
+    if (hre.network.name !== "localhost" && hre.network.name !== "localFunctionsTestnet") {
+      console.log("-----------Verifying VRF Contract-----------")
+      await hre.run("verify:verify", {
+        address: result.VRFRequestHandler.address,
+        constructorArguments: [
+          coordinatorAddress,
+          vrfSubID,
+          gasLane,
+          callbackGasLimit,
+          NFTAddress,
+          result.signer.address,
+          consumerAddress,
+          gameManagerAddress,
+        ],
+      })
+    }
   })
   .catch((e) => {
     console.error(e)

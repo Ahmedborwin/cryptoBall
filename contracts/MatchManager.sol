@@ -3,14 +3,17 @@ pragma solidity ^0.8.19;
 import {CB_NFTInterface} from "contracts/interfaces/CB_NFTInterface.sol";
 import {CB_VRFInterface} from "contracts/interfaces/CB_VRFInterface.sol";
 import {CB_ConsumerInterface} from "contracts/interfaces/CB_ConsumerInterface.sol";
+import {CBToken} from "contracts/CBToken.sol";
 
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-error CBNFT__NotTokenOwner();
-error CBNFT__TeamNameTaken();
-error CBNFT__ManagerAlreadyRegistered();
-error CBNFT__ManagerNotYetRegistered();
-error CBNFT__CallerNotAdmin(address Caller);
+error CBMANAGER__NotTokenOwner();
+error CBMANAGER__TeamNameTaken();
+error CBMANAGER__ManagerAlreadyRegistered();
+error CBMANAGER__ManagerNotYetRegistered();
+error CBMANAGER__CallerNotAdmin(address Caller);
+error CBMANAGER__NFTAlreadyStaked(address playerAddress);
+error CBMANAGER__NFTListedForSale();
 
 contract MatchManager {
   using Strings for uint256;
@@ -24,21 +27,21 @@ contract MatchManager {
       _caller != address(i_NFT) &&
       _caller != address(i_VRF)
     ) {
-      revert CBNFT__CallerNotAdmin(_caller);
+      revert CBMANAGER__CallerNotAdmin(_caller);
     }
     _;
   }
 
   modifier isManagerRegistered(address _caller) {
     if (!isManagerRegisteredTable[_caller]) {
-      revert CBNFT__ManagerNotYetRegistered();
+      revert CBMANAGER__ManagerNotYetRegistered();
     }
     _;
   }
 
   modifier isManagerNotRegistered(address _caller) {
     if (isManagerRegisteredTable[_caller]) {
-      revert CBNFT__ManagerAlreadyRegistered();
+      revert CBMANAGER__ManagerAlreadyRegistered();
     }
     _;
   }
@@ -63,10 +66,12 @@ contract MatchManager {
   }
 
   mapping(address => Player[]) public rosters;
-  mapping(address => string[]) public tokenIdStringTable; //TODO: RENAME THIS!!
   mapping(address => bool) public rosterFilled;
   mapping(uint256 => Player[]) public creatorRosterTable;
   mapping(uint256 => Player[]) public challengerRosterTable;
+
+  //PlayerStakings Structures
+  mapping(uint256 => address) public NFTStakedBy;
 
   //TEST
   uint8[] public testPlayerIndexArray;
@@ -113,6 +118,7 @@ contract MatchManager {
   CB_NFTInterface public i_NFT;
   CB_VRFInterface public i_VRF;
   CB_ConsumerInterface public i_Consumer;
+  CBToken public cbTokenContract;
 
   //Events
 
@@ -128,12 +134,16 @@ contract MatchManager {
 
   event CancelGame(uint256 id);
 
-  event FinalizeGame(uint256 id, address winner, uint256 completionTime);
+  event FinalizeGame(uint256 id, address winner, uint256 team1Goals, uint256 team2Goals);
+
+  event Draw(address gameCreator, address challenger, uint256 team1Goals, uint256 team2Goals);
+
+  event testEvent1(uint256 upgradedTokenID, uint256 upgradedAttribute);
 
   //constructor
 
-  constructor(address _CBNFTAddress, address _VRFAddress, address _consumerAddress) {
-    i_NFT = CB_NFTInterface(_CBNFTAddress);
+  constructor(address _CBMANAGERAddress, address _VRFAddress, address _consumerAddress) {
+    i_NFT = CB_NFTInterface(_CBMANAGERAddress);
     i_VRF = CB_VRFInterface(_VRFAddress);
     i_Consumer = CB_ConsumerInterface(_consumerAddress);
     admin = msg.sender;
@@ -142,7 +152,7 @@ contract MatchManager {
   //Create New Manager Pofile
   function registerNewManager(string calldata _teamName) external isManagerNotRegistered(msg.sender) {
     if (isTeamNameTaken[_teamName]) {
-      revert CBNFT__TeamNameTaken();
+      revert CBMANAGER__TeamNameTaken();
     }
 
     // Initialize the new team stats
@@ -155,6 +165,9 @@ contract MatchManager {
     newTeam.totalUserAcceptedGames = 0;
 
     isManagerRegisteredTable[msg.sender] = true; //register new manager
+
+    //Send Winner tokens
+    cbTokenContract.transfer(msg.sender, 20 ether);
 
     //emit New Manager Event
     emit NewManagerRegistered(msg.sender, _teamName);
@@ -206,7 +219,7 @@ contract MatchManager {
     emit AcceptGame(_id, games[_id].challenger);
   }
 
-  function requestRandomNumbers(uint256 _id) public {
+  function startGame(uint256 _id) public {
     require(_checkAccepted(_id), "Game is not Accepted...");
     require(_rosterFilled(games[_id].creator));
     require(_rosterFilled(games[_id].challenger));
@@ -261,16 +274,22 @@ contract MatchManager {
       }
 
       _upgradeToken(upgradedTokenID, upgradedAttribute);
+      emit testEvent1(upgradedTokenID, upgradedAttribute);
     }
 
     if (winner == 0) {
       game.winner = game.creator;
       creatorStats.wins++;
       challengerStats.losses++;
+      cbTokenContract.transfer(game.winner, 5 ether);
     } else if (winner == 1) {
       game.winner = game.challenger;
       creatorStats.losses++;
       challengerStats.wins++;
+      cbTokenContract.transfer(game.winner, 5 ether);
+    } else {
+      //How to handle draw?
+      emit Draw(game.creator, game.challenger, team1Goals, team2Goals);
     }
 
     // Update total goals for managers
@@ -284,7 +303,7 @@ contract MatchManager {
     //otherwise would need to set up a new game for each time this funciton is triggered succesfully
     //game.status = 3; // set game status to completed
 
-    emit FinalizeGame(gameId, game.winner, game.completionTime);
+    emit FinalizeGame(gameId, game.winner, team1Goals, team2Goals);
   }
 
   function _upgradeToken(uint256 _tokenID, uint8 _attribute) internal {
@@ -320,37 +339,58 @@ contract MatchManager {
   }
 
   function setRosterPosition(
-    address _user,
+    address _playerAddress,
     Position _position,
     uint256 _tokenID,
     uint8 _index
   ) public isManagerRegistered(msg.sender) {
-    if (!i_NFT.isNFTOwner(_user, _tokenID)) {
-      emit StakingProcessFailed(_user, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
-      revert CBNFT__NotTokenOwner();
+    if (!i_NFT.isNFTOwner(_playerAddress, _tokenID)) {
+      emit StakingProcessFailed(_playerAddress, abi.encodePacked("Does Not Own The TokenId: ", _tokenID.toString()));
+      revert CBMANAGER__NotTokenOwner();
+    }
+    //Check if NFT is already staked on a team
+    if (NFTStakedBy[_tokenID] != address(0)) {
+      revert CBMANAGER__NFTAlreadyStaked(NFTStakedBy[_tokenID]);
+    }
+    //Check if NFT is listed for sale
+    if (i_NFT.getIsNFTListed(_tokenID)) {
+      revert CBMANAGER__NFTListedForSale();
     }
     //get URI Index
     uint256 _BaseURIndex = i_NFT.getBasePlayerIndexFromId(_tokenID);
-    //TODO: Need to think about this + Clean up
-    // By default _index should be 99 to indicate adding a new player
-    if (_index == 99) {
+    // _index should be 99 to indicate adding a new player
+    if (_index == 99 && rosters[_playerAddress].length <= 11) {
       // Extend the array if the index is beyond current length
-      rosters[_user].push(Player(_tokenID, _BaseURIndex, true, _position));
+      rosters[_playerAddress].push(Player(_tokenID, _BaseURIndex, true, _position));
+      //Update NFT Stake mapping
+
+      NFTStakedBy[_tokenID] = msg.sender;
     } else if (_index <= 10 && _index >= 0) {
-      // Otherwise Update the existing player at the index
-      rosters[_user][_index].tokenID = _tokenID;
-      rosters[_user][_index].uriIndex = _BaseURIndex;
-      rosters[_user][_index].playerPosition = _position;
-      rosters[_user][_index].active = true;
+      // Otherwise Update the existing NFT at the index
+      //Record old NFT no longer staked
+      NFTStakedBy[rosters[_playerAddress][_index].tokenID] = address(0);
+      //Record New NFT Info
+      rosters[_playerAddress][_index].tokenID = _tokenID;
+      rosters[_playerAddress][_index].uriIndex = _BaseURIndex;
+      rosters[_playerAddress][_index].playerPosition = _position;
+      rosters[_playerAddress][_index].active = true;
+      //Update NFT Stake mapping
+      NFTStakedBy[_tokenID] = msg.sender;
     } else {
       revert("Invalid TokenId");
     }
     //check if 11 players staked for player
-    if (rosters[_user].length == 11) {
-      rosterFilled[_user] = true;
+    if (rosters[_playerAddress].length == 11) {
+      rosterFilled[_playerAddress] = true;
     } else {
-      rosterFilled[_user] = false;
+      rosterFilled[_playerAddress] = false;
     }
+  }
+
+  //Lootbox
+  function openLootbox(uint256 _amountTokens, uint256 _gameId) external {
+    //transferFrom msg.sender to this address 5 tokens
+    i_VRF.requestRandomNumber(1, msg.sender, _gameId, 5);
   }
 
   //Internal Utility Functions
@@ -364,12 +404,6 @@ contract MatchManager {
 
   function _rosterFilled(address _user) internal view returns (bool) {
     return rosterFilled[_user];
-    // for (uint256 i = 0; i < 11; i++) {
-    //   if (rosters[_user][i].active == false) {
-    //     return false;
-    //   }
-    // }
-    // return true;
   }
 
   //Getter Calls
@@ -381,15 +415,19 @@ contract MatchManager {
     return games[_gameID];
   }
 
-  function getTestArray() external view returns (uint8[] memory) {
-    return testPlayerIndexArray;
+  function getIsNFTStaked(uint256 _tokenId) external view returns (address) {
+    return NFTStakedBy[_tokenId];
   }
 
-  function getTestArray2() external view returns (uint256[] memory) {
-    return testTokenIdArray;
+  function isNFTListed(uint256 _tokenId) external view returns (bool) {
+    return i_NFT.getIsNFTListed(_tokenId);
   }
 
-  //External Helper Functions
+  //External Setter Functions - ONLY ADMIN
+
+  function setTokenContract(address _tokenAddress) external onlyAdmin(msg.sender) {
+    cbTokenContract = CBToken(_tokenAddress);
+  }
 
   //set nft address
   function setNFTAddress(address _NFTAddress) external onlyAdmin(msg.sender) {
@@ -399,7 +437,6 @@ contract MatchManager {
   function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
     i_VRF = CB_VRFInterface(_vrfHandler);
   }
-
   // set functions consumer address
   function setFunctionsConsumerAddress(address _consumerAddress) external onlyAdmin(msg.sender) {
     i_Consumer = CB_ConsumerInterface(_consumerAddress);

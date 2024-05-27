@@ -17,16 +17,27 @@ const ConsumerAddress = ConsumerContractFile[chainId] ? ConsumerContractFile[cha
 //----------------Deploy Function---------------------//
 const deployManager = async function () {
   const [signer, player2] = await hre.ethers.getSigners()
-  console.log(signer.address)
-  console.log(player2.address)
 
   //deploy VRF sub manager contract to fund and add consumer programatically
   const gameManager = await hre.ethers.deployContract("MatchManager", [NFTAddress, VRFAddress, ConsumerAddress])
-  console.log("@@@gameManager", gameManager.address)
+  console.log("-----------gameManagerAddress-----------")
+  console.log(gameManager.address)
+  console.log("----------------------------------------")
+  //DEPLOY TOKEN
+  //deploy token contract
+  const cryptoBallToken = await hre.ethers.deployContract("CBToken", [gameManager.address])
+  console.log("-----------TokenAddress-----------")
+  console.log(cryptoBallToken.address)
+  console.log("----------------------------------------")
+  //SET Token Address on Match Manager
+  await gameManager.setTokenContract(cryptoBallToken.address)
+  console.log("-----------TokenAddress Set-----------")
+  //------------------
   //register Managers
   await gameManager.registerNewManager("blueTeam")
+  console.log("------------Manager 1 Registered------------")
   await gameManager.connect(player2).registerNewManager("redTeam")
-  console.log("managers registered")
+  console.log("------------Manager 2 Registered------------")
   //fill creator Roster
   for (let i = 12; i < 23; i++) {
     await gameManager.connect(player2).setRosterPosition(player2.address, 2, i, 99)
@@ -59,7 +70,7 @@ const deployManager = async function () {
   // //accept Game
   // await gameManager.connect(player2).acceptGame(gameId)
 
-  return { signer, gameManager }
+  return { signer, gameManager, cryptoBallToken }
 }
 
 deployManager()
@@ -69,6 +80,10 @@ deployManager()
     await hre.run("verify:verify", {
       address: result.gameManager.address,
       constructorArguments: [NFTAddress, VRFAddress, ConsumerAddress],
+    })
+    await hre.run("verify:verify", {
+      address: result.cryptoBallToken.address,
+      constructorArguments: [result.gameManager.address],
     })
   })
   .catch((e) => {

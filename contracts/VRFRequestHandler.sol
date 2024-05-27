@@ -134,23 +134,6 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
     i_Consumer.sendRequest(requestArguments);
   }
 
-  //TEST FUNCTIONS
-
-  function testHandleGameSimulationTrigger(
-    uint256 _gameId,
-    uint256[] memory _randomWords
-  ) external returns (string[] memory) {
-    //create an array of strings and send to consumer contract
-    string[] memory requestArguments = new string[](_randomWords.length + 1);
-    requestArguments[0] = Strings.toString(_gameId);
-
-    for (uint8 i = 1; i < _randomWords.length; i++) {
-      requestArguments[i] = Strings.toString(_randomWords[i]);
-    }
-    i_Consumer.sendRequest(requestArguments);
-    return requestArguments;
-  }
-
   // set functions consumer address
   function setFunctionsConsumerAddress(address _consumerAddress) external onlyAdmin(msg.sender) {
     i_Consumer = CB_ConsumerInterface(_consumerAddress);

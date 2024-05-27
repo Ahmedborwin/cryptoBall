@@ -5,13 +5,21 @@ const CONSUMER_ADDRESS_FILE = "config/consumer_AddressList.json"
 const MANAGER_ADDRESS_FILE = "config/Manager_AddressList.json"
 const NFT_ADDRESS_FILE = "config/NFT_AddressList.json"
 const VRF_ADDRESS_FILE = "config/VRF_AddressList.json"
+const TOKEN_ADDRESS_FILE = "config/token_AddressList.json"
 
 const CONSUMER_ABI_FILE = "config/consumerAbi.json"
 const MANAGER_ABI_FILE = "config/managerAbi.json"
 const NFT_ABI_FILE = "config/NFTAbi.json"
 const VRF_ABI_FILE = "config/VRFAbi.json"
+const TOKEN_ABI_FILE = "config/tokenAbi.json"
 
-module.exports = async ({ chainFunctionsConsumerAddress, NFTAddress, VRFHandlerAddress, gameManagerAddress }) => {
+module.exports = async ({
+  chainFunctionsConsumerAddress,
+  NFTAddress,
+  VRFHandlerAddress,
+  gameManagerAddress,
+  tokenContractAddress,
+}) => {
   const chainId = ethers.provider.network.chainId.toString()
   if (chainFunctionsConsumerAddress) {
     console.log("--------Consumer UPDATE Address and ABI--------")
@@ -33,6 +41,30 @@ module.exports = async ({ chainFunctionsConsumerAddress, NFTAddress, VRFHandlerA
     await updateManagerAddress(chainId, gameManagerAddress)
     await updateManagerABI(gameManagerAddress)
   }
+  if (tokenContractAddress) {
+    console.log("--------Token Update Address and ABI--------")
+    await updateTokenAddress(chainId, tokenContractAddress)
+    await updateManagerABI(tokenContractAddress)
+  }
+}
+async function updateTokenAddress(chainId, tokenContractAddress) {
+  //get contract
+
+  const tokenAddressList = JSON.parse(fs.readFileSync(TOKEN_ADDRESS_FILE, "utf8"))
+
+  if (chainId in tokenAddressList) {
+    if (!tokenAddressList[chainId].includes(tokenContractAddress)) {
+      tokenAddressList[chainId] = tokenContractAddress
+    }
+  } else {
+    tokenAddressList[chainId] = tokenContractAddress
+  }
+  fs.writeFileSync(TOKEN_ADDRESS_FILE, JSON.stringify(tokenAddressList, null, 2))
+}
+
+async function updateManagerABI(tokenContractAddress) {
+  const TokenContract = await ethers.getContractAt("CBToken", tokenContractAddress)
+  fs.writeFileSync(TOKEN_ABI_FILE, TokenContract.interface.format(ethers.utils.FormatTypes.json))
 }
 
 async function updateManagerAddress(chainId, gameManagerAddress) {

@@ -8,8 +8,8 @@ const updateContractInfo = require("../scripts/utils/updateAddress&ABI")
 
 const chainId = 421614
 
-const GameManagerAddressList = require("../config/Manager_AddressList.json")
-const VRFContractFile = require("../config/VRF_AddressList.json")
+const GameManagerAddressList = require("../src/config/Manager_AddressList.json")
+const VRFContractFile = require("../src/config/VRF_AddressList.json")
 
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
 const VRFAddress = VRFContractFile[chainId] ? VRFContractFile[chainId] : address(0)
@@ -29,8 +29,9 @@ const FunctionsConsumerContract = async function () {
     VRFAddress,
     signer.address,
   ])
-
+  console.log("-----------ConsumerAddress-------------------")
   console.log(functionsConsumer.address)
+  console.log("----------------------------------------")
 
   //populate js script for gameEngine
   await functionsConsumer.populateGameEngine(fs.readFileSync("gameEngine.js").toString())
@@ -45,12 +46,15 @@ const FunctionsConsumerContract = async function () {
 
   //populate subID and gaslimit
   await functionsConsumer.populateSubIdANDGasLimit(subId, callbackGasLimit)
-  //add consumer to subscription
+
+  console.log("-----------add consumer to subscription-------------------")
   await hre.run("functions-sub-add", {
     subid: subId.toString(),
     contract: functionsConsumer.address.toString(),
   })
 
+  console.log("-----------update contracts with NEW Conumer Address-----------")
+  console.log("-----------------------------------------------------------")
   //set Consumer address on VRF
   const vrfContract = await hre.ethers.getContractAt("VRFRequestHandler", VRFAddress)
   console.log("functionsConsumer Address:", vrfContract.address)
@@ -71,18 +75,21 @@ const FunctionsConsumerContract = async function () {
 
 FunctionsConsumerContract()
   .then(async (result) => {
-    //verify contracts
-    await hre.run("verify:verify", {
-      address: result.functionsConsumer.address,
-      constructorArguments: [
-        result.functionsRouterAddress,
-        result.donIdBytes32,
-        gameManagerAddress,
-        VRFAddress,
-        result.signer.address,
-      ],
-    })
+    if (hre.network.name !== "localhost" && hre.network.name !== "localFunctionsTestnet") {
+      console.log("-----------Verifying Consumer Contract-----------")
+      await hre.run("verify:verify", {
+        address: result.functionsConsumer.address,
+        constructorArguments: [
+          result.functionsRouterAddress,
+          result.donIdBytes32,
+          gameManagerAddress,
+          VRFAddress,
+          result.signer.address,
+        ],
+      })
+    }
   })
+
   .catch((e) => {
     console.error(e)
     process.exit(1)

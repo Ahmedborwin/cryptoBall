@@ -14,4 +14,6 @@ interface CB_NFTInterface {
   function getTokenUpgradeValue(uint256 _tokenId, uint8 _attribute) external returns (uint8);
 
   function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) external;
+
+  function getIsNFTListed(uint256 _tokenId) external view returns (bool);
 }

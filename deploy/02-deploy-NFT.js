@@ -6,9 +6,9 @@ const { SubscriptionManager } = require("@chainlink/functions-toolkit")
 
 const chainId = 421614
 
-const GameManagerAddressList = require("../config/Manager_AddressList.json")
-const VRFContractFile = require("../config/VRF_AddressList.json")
-const ConsumerContractFile = require("../config/consumer_AddressList.json")
+const GameManagerAddressList = require("../src/config/Manager_AddressList.json")
+const VRFContractFile = require("../src/config/VRF_AddressList.json")
+const ConsumerContractFile = require("../src/config/consumer_AddressList.json")
 
 const gameManagerAddress = GameManagerAddressList[chainId] ? GameManagerAddressList[chainId] : address(0)
 const VRFAddress = VRFContractFile[chainId] ? VRFContractFile[chainId] : address(0)

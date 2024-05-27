@@ -2,8 +2,8 @@ const fetch = require("node-fetch")
 const { networks } = require("../networks")
 const { storeTokenUriMetadata } = require("../scripts/utils/uploadPinata")
 const https = require("https")
-const NFT_AddressList = require("../config/NFT_AddressList.json")
-const NFT_ABI = require("../config/NFTAbi.json")
+const NFT_AddressList = require("../src/config/NFT_AddressList.json")
+const NFT_ABI = require("../src/config/NFTAbi.json")
 
 const networkName = "localFunctionsTestnet"
 const chainId = networks[networkName]["chainId"]

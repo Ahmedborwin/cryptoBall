@@ -43,7 +43,7 @@
     "inputs": [
       { "type": "address", "name": "player", "indexed": false },
       { "type": "string", "name": "tokenURI", "indexed": false },
-      { "type": "uint256", "name": "uirIndex", "indexed": false }
+      { "type": "uint256", "name": "uriIndex", "indexed": false }
     ]
   },
   {

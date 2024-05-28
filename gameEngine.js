@@ -607,7 +607,7 @@ async function buildTeam(teamIds, gatewayBaseUrl, team) {
 }
 
 // Define the base URL for the IPFS gateway
-const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmY59zJCpS9ChBWxBau85XpGYSi5zcpixczARXnfrLFm6k"
+const gatewayBaseUrl = "https://gateway.pinata.cloud/ipfs/QmYDmg62hTnibmAvAeWkDgtvcbQtgNE2KHhJt2ci8UuW6d"
 
 // Build both teams
 await buildTeam(team1Ids, gatewayBaseUrl, team1)

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const IPFS_HASH = "https://gateway.pinata.cloud/ipfs/QmY59zJCpS9ChBWxBau85XpGYSi5zcpixczARXnfrLFm6k"
+const IPFS_HASH = "https://gateway.pinata.cloud/ipfs/QmYDmg62hTnibmAvAeWkDgtvcbQtgNE2KHhJt2ci8UuW6d"
 
 const useGetIPFSData = () => {
   const [ipfsData, setIpfsData] = useState({})

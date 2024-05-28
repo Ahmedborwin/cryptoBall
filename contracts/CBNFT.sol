@@ -51,7 +51,7 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   CB_MatchManagerInterface public i_GameManager;
 
   event NFTMinted(address player, string tokenURI);
-  event LootBoxOpened(address player, string tokenURI, uint256 uirIndex);
+  event LootBoxOpened(address player, string tokenURI, uint256 uriIndex);
   event PlayerNFTListed(address seller, uint256 tokenId, uint256 price);
   event PlayerSold(uint256 tokenId, address seller, address buyer, uint256 price);
 

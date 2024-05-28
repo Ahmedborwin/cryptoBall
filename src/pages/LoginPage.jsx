@@ -38,7 +38,6 @@ const LoginPage = () => {
         return
       }
       const result = await signer.authenticate({ type: "email", email })
-      console.log(result, "@@@@result")
       console.log("Login successful")
 
       navigate("/team-create")

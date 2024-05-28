@@ -25,15 +25,6 @@ const useGetManagerPlayers = () => {
     return Array.from({ length: tokenCounter ? tokenCounter.toNumber() : 0 }, (_, i) => i)
   }, [tokenCounter])
 
-  //   const {
-  //     data: owners,
-  //     loading: loadingOwners,
-  //     error: errorOwners,
-  //   } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "isNFTOwner", tokenIds, [
-  //     "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
-  //   ])
-  //   console.log(owners, "@@@@owners")
-
   const {
     data: playerIndices,
     loading: loadingPlayerIndices,
@@ -41,6 +32,8 @@ const useGetManagerPlayers = () => {
   } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "getBasePlayerIndexFromId", tokenIds)
 
   useEffect(() => {
+    if (playersMetadata.length) return
+
     if (playerIndices.length && tokenIds.length && Object.keys(ipfsData).length) {
       const newPlayersMetadata = playerIndices.map((player, index) => {
         const playerIndex = player.toString()
@@ -50,7 +43,7 @@ const useGetManagerPlayers = () => {
     }
   }, [playerIndices, ipfsData, tokenIds])
 
-  return { playersMetadata, loadingPlayersMetadata: loadingPlayerIndices, errorPlayerMetadata: errorPlayerIndices }
+  return { playersMetadata, loadingPlayersMetadata: false, errorPlayerMetadata: "" }
 }
 
 export default useGetManagerPlayers

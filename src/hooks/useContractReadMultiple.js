@@ -34,7 +34,8 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
       }
     }
 
-    if (!data.length) fetchData()
+    if (!data.length && tokenIds.length) fetchData()
+    else setLoading(false)
   }, [contractAddress, contractABI, functionName, tokenIds])
 
   return { data, loading, error }

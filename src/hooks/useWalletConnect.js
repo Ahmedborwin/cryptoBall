@@ -27,46 +27,47 @@ const useWalletConnect = () => {
   }
 
   useEffect(() => {
-    if (window.ethereum) {
-      const provider = new ethers.providers.Web3Provider(window.ethereum)
+    if (!window.ethereum) {
+      setError("MetaMask is not installed")
+      return
+    }
 
-      const handleAccountsChanged = (accounts) => {
-        if (accounts.length === 0) {
-          setAccount(null)
-        } else {
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+
+    const handleAccountsChanged = (accounts) => {
+      if (accounts.length === 0) {
+        setAccount(null)
+      } else {
+        setAccount(accounts[0])
+      }
+    }
+
+    const handleChainChanged = (chainId) => {
+      setChainId(parseInt(chainId, 16)) // chainId is returned as a hex string
+    }
+
+    provider
+      .listAccounts()
+      .then((accounts) => {
+        if (accounts.length > 0) {
           setAccount(accounts[0])
         }
-      }
+      })
+      .catch((err) => setError(err.message))
 
-      const handleChainChanged = (chainId) => {
-        setChainId(parseInt(chainId, 16)) // chainId is returned as a hex string
-      }
+    provider
+      .getNetwork()
+      .then((network) => {
+        setChainId(network.chainId)
+      })
+      .catch((err) => setError(err.message))
 
-      provider
-        .listAccounts()
-        .then((accounts) => {
-          if (accounts.length > 0) {
-            setAccount(accounts[0])
-          }
-        })
-        .catch((err) => setError(err.message))
+    window.ethereum.on("accountsChanged", handleAccountsChanged)
+    window.ethereum.on("chainChanged", handleChainChanged)
 
-      provider
-        .getNetwork()
-        .then((network) => {
-          setChainId(network.chainId)
-        })
-        .catch((err) => setError(err.message))
-
-      window.ethereum.on("accountsChanged", handleAccountsChanged)
-      window.ethereum.on("chainChanged", handleChainChanged)
-
-      return () => {
-        window.ethereum.removeListener("accountsChanged", handleAccountsChanged)
-        window.ethereum.removeListener("chainChanged", handleChainChanged)
-      }
-    } else {
-      setError("MetaMask is not installed")
+    return () => {
+      window.ethereum.removeListener("accountsChanged", handleAccountsChanged)
+      window.ethereum.removeListener("chainChanged", handleChainChanged)
     }
   }, [])
 

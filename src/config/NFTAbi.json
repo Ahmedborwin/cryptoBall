@@ -42,7 +42,8 @@
     "name": "LootBoxOpened",
     "inputs": [
       { "type": "address", "name": "player", "indexed": false },
-      { "type": "string", "name": "tokenURI", "indexed": false }
+      { "type": "string", "name": "tokenURI", "indexed": false },
+      { "type": "uint256", "name": "uirIndex", "indexed": false }
     ]
   },
   {
@@ -259,17 +260,6 @@
   },
   {
     "type": "function",
-    "name": "minNFT",
-    "constant": false,
-    "payable": false,
-    "inputs": [
-      { "type": "uint256", "name": "_uriIndex" },
-      { "type": "address", "name": "_player" }
-    ],
-    "outputs": []
-  },
-  {
-    "type": "function",
     "name": "modifyUpgrade",
     "constant": false,
     "payable": false,
@@ -352,7 +342,7 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "uint8" }]
+    "outputs": [{ "type": "uint256" }]
   },
   {
     "type": "function",

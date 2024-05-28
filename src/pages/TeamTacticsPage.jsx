@@ -12,6 +12,7 @@ import TeamSquad from "../components/TeamSquad"
 import useGetManagerPlayers from "../hooks/useGetManagerPlayers"
 import useContractRead from "../hooks/useContractRead"
 import useContractWrite from "../hooks/useContractWrite"
+import useWalletConnect from "../hooks/useWalletConnect"
 
 // utils
 import { formations } from "../utils/constants/squad"
@@ -20,11 +21,13 @@ import Loading from "../components/Loading"
 const TeamTacticsPage = () => {
   const [selectedFormation, setSelectedFormation] = useState("4-4-2")
 
+  const { chainId } = useWalletConnect()
+
   const {
     data: playerRoster,
     loading: loadingPlayerRoster,
     error: errorPlayerRoster,
-  } = useContractRead(Manager_AddressList[421614], MM_ABI, "getRosterForPlayer", [
+  } = useContractRead(Manager_AddressList[chainId], MM_ABI, "getRosterForPlayer", [
     "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
   ])
 
@@ -34,7 +37,7 @@ const TeamTacticsPage = () => {
     write: setRosterPosition,
     loadingSetRosterPosition,
     errorSetRosterPosition,
-  } = useContractWrite(Manager_AddressList[421614], MM_ABI, "setRosterPosition")
+  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "setRosterPosition")
 
   const handleStakePlayer = (player) => {
     console.log("Staked player " + player + " with index " + player.id)

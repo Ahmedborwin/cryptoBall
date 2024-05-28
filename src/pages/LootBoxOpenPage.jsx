@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
-import SubmitButton from "../components/common/Button/SubmitButton"
-import FootballImage from "../assets/football-card.png" // Replace with your football icon
+import { ethers } from "ethers"
 import NFT_AddressList from "../config/NFT_AddressList.json"
 import CBNFT_ABI from "../config/NFTAbi.json"
 import Manager_AddressList from "../config/Manager_AddressList.json"
 import MM_ABI from "../config/managerAbi.json"
 import Token_AddressList from "../config/token_AddressList.json"
 import TOKEN_ABI from "../config/tokenAbi.json"
+
+// assets
+import FootballImage from "../assets/football-card.png"
+
+// components
+import SubmitButton from "../components/common/Button/SubmitButton"
+
+// hooks
+import { useNavigate } from "react-router-dom"
 import useContractWrite from "../hooks/useContractWrite"
 import useEventListener from "../hooks/useEventListener"
-import { ethers } from "ethers"
+import useWalletConnect from "../hooks/useWalletConnect"
 
 const LootBoxOpenPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,20 +25,22 @@ const LootBoxOpenPage = () => {
 
   const navigate = useNavigate()
 
+  const { account, chainId } = useWalletConnect()
+
   const {
     write: approveTokens,
     loading: loadingApproveTokens,
     error: errorApproveTokens,
-  } = useContractWrite(Token_AddressList[421614], TOKEN_ABI, "approve")
+  } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
 
   const { events: approvalEvent, error: errorApprovalEvent } = useEventListener(
-    Token_AddressList[421614],
+    Token_AddressList[chainId],
     TOKEN_ABI,
     "Approval"
   )
 
   const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useEventListener(
-    NFT_AddressList[421614],
+    NFT_AddressList[chainId],
     CBNFT_ABI,
     "LootBoxOpened"
   )
@@ -43,11 +52,11 @@ const LootBoxOpenPage = () => {
     write: openLootBox,
     loading,
     error: errorOpenLootBox,
-  } = useContractWrite(Manager_AddressList[421614], MM_ABI, "openLootbox")
+  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
 
   const handleOpenBox = async () => {
     setIsOpen(true)
-    await approveTokens(Manager_AddressList[421614], ethers.utils.parseEther("5"))
+    await approveTokens(Manager_AddressList[chainId], ethers.utils.parseEther("5"))
   }
 
   useEffect(() => {
@@ -58,7 +67,7 @@ const LootBoxOpenPage = () => {
     }
 
     if (approvalEvent.length) {
-      if (approvalEvent.find(event => event.eventData.find(prop => prop === "0xe437260B3785171cB5BAd86c3B78d961da1b8223"))) handleOpenLootBox()
+      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === account))) handleOpenLootBox()
     }
   }, [approvalEvent])
 
@@ -74,7 +83,7 @@ const LootBoxOpenPage = () => {
     }
 
     if (lootBoxOpenedEvent.length) {
-      const foundEvent = lootBoxOpenedEvent.find(event => event.eventData.find(prop => prop === "0xe437260B3785171cB5BAd86c3B78d961da1b8223"))
+      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account))
       if (foundEvent) {
         console.log("Starting animation...")
         startOpeningAnimation()

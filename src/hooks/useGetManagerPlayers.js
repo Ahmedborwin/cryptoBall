@@ -6,33 +6,42 @@ import CBNFT_ABI from "../config/NFTAbi.json"
 import Manager_AddressList from "../config/Manager_AddressList.json"
 import MM_ABI from "../config/managerAbi.json"
 import useGetIPFSData from "../hooks/useGetIPFSData"
-
-const CBNFT_ADDRESS = NFT_AddressList[421614]
-const address = ""
+import useWalletConnect from "./useWalletConnect"
 
 const useGetManagerPlayers = () => {
   const [playersMetadata, setPlayersMetadata] = useState([])
 
   const ipfsData = useGetIPFSData()
 
+  const { chainId } = useWalletConnect()
+
   const {
     data: tokenCounter,
     loading: loadingTokenCounter,
     error: errorTokenCounter,
-  } = useContractRead(CBNFT_ADDRESS, CBNFT_ABI, "s_tokenCounter")
+  } = useContractRead(NFT_AddressList[chainId], CBNFT_ABI, "s_tokenCounter")
 
   const tokenIds = useMemo(() => {
     return Array.from({ length: tokenCounter ? tokenCounter.toNumber() : 0 }, (_, i) => i)
   }, [tokenCounter])
 
+  //   const {
+  //     data: owners,
+  //     loading: loadingOwners,
+  //     error: errorOwners,
+  //   } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "isNFTOwner", tokenIds, [
+  //     "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
+  //   ])
+  //   console.log(owners, "@@@@owners")
+
   const {
     data: playerIndices,
     loading: loadingPlayerIndices,
     error: errorPlayerIndices,
-  } = useContractReadMultiple(CBNFT_ADDRESS, CBNFT_ABI, "getBasePlayerIndexFromId", tokenIds)
+  } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "getBasePlayerIndexFromId", tokenIds)
 
   useEffect(() => {
-    if (playerIndices) {
+    if (playerIndices.length && tokenIds.length && Object.keys(ipfsData).length) {
       const newPlayersMetadata = playerIndices.map((player, index) => {
         const playerIndex = player.toString()
         return { id: tokenIds[index], ...ipfsData[playerIndex] }

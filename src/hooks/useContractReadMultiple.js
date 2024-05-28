@@ -11,7 +11,7 @@ import useContractRead from "./useContractRead"
  * @param {Array} tokenIds - The list of token IDs to read data for.
  * @returns {Object} - An object containing the data, loading, and error states.
  */
-const useContractReadMultiple = (contractAddress, contractABI, functionName, tokenIds) => {
+const useContractReadMultiple = (contractAddress, contractABI, functionName, tokenIds, args = []) => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -24,7 +24,7 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
       try {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const contract = new ethers.Contract(contractAddress, contractABI, provider)
-        const promises = tokenIds.map((id) => contract[functionName](id))
+        const promises = tokenIds.map((id) => contract[functionName](...args, id))
         const results = await Promise.all(promises)
         setData(results)
       } catch (err) {
@@ -34,7 +34,7 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
       }
     }
 
-    fetchData()
+    if (!data.length) fetchData()
   }, [contractAddress, contractABI, functionName, tokenIds])
 
   return { data, loading, error }

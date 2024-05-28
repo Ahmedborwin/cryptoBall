@@ -17,7 +17,7 @@ const TeamCreationPage = () => {
     console.log("Creating team:", teamName, "with manager:", managerName)
     // Here you can add more logic to do something with the form data
 
-    navigate("/team-statistics")
+    navigate("/team-stats")
   }
 
   return (

@@ -5,10 +5,12 @@ const useTokenIds = (tokenCounter) => {
 
   useEffect(() => {
     if (tokenCounter) {
-      const ids = Array.from({ length: tokenCounter.toNumber() }, (_, i) => i)
+      const ids = Array.from({ length: tokenCounter }, (_, i) => i)
       setTokenIds(ids)
     }
   }, [tokenCounter])
+
+  return tokenIds
 }
 
 export default useTokenIds

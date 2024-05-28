@@ -2,6 +2,10 @@ import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import SubmitButton from "../components/common/Button/SubmitButton"
 import ChestBoxImage from "../assets/chest-box.avif"
+import NFT_AddressList from "../config/NFT_AddressList.json"
+import CBNFT_ABI from "../config/NFTAbi.json"
+import Manager_AddressList from "../config/Manager_AddressList.json"
+import MM_ABI from "../config/managerAbi.json"
 
 const LootBoxOpenPage = () => {
   const [isOpen, setIsOpen] = useState(false)

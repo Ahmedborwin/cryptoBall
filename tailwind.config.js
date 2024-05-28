@@ -9,6 +9,11 @@ export default {
       screens: {
         mdd: "991px",
       },
+      colors: {
+        "dark-green": "#006400", // Custom color for values above 80
+        green: "#008000", // Custom color for values between 71 and 80
+        yellow: "#FFFF00", // Custom color for values below 71
+      },
     },
   },
   plugins: [],

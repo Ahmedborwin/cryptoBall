@@ -44,7 +44,7 @@ module.exports = async ({
   if (tokenContractAddress) {
     console.log("--------Token Update Address and ABI--------")
     await updateTokenAddress(chainId, tokenContractAddress)
-    await updateManagerABI(tokenContractAddress)
+    await updateTokenABI(tokenContractAddress)
   }
 }
 async function updateTokenAddress(chainId, tokenContractAddress) {
@@ -62,7 +62,7 @@ async function updateTokenAddress(chainId, tokenContractAddress) {
   fs.writeFileSync(TOKEN_ADDRESS_FILE, JSON.stringify(tokenAddressList, null, 2))
 }
 
-async function updateManagerABI(tokenContractAddress) {
+async function updateTokenABI(tokenContractAddress) {
   const TokenContract = await ethers.getContractAt("CBToken", tokenContractAddress)
   fs.writeFileSync(TOKEN_ABI_FILE, TokenContract.interface.format(ethers.utils.FormatTypes.json))
 }

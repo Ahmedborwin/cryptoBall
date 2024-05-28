@@ -388,9 +388,10 @@ contract MatchManager {
   }
 
   //Lootbox
-  function openLootbox(uint256 _amountTokens, uint256 _gameId) external {
+  function openLootbox() external {
     //transferFrom msg.sender to this address 5 tokens
-    i_VRF.requestRandomNumber(1, msg.sender, _gameId, 5);
+    require(cbTokenContract.transferFrom(msg.sender, address(this), 5 ether), "Token Transfer Failed");
+    i_VRF.requestRandomNumber(1, msg.sender, 0, 5);
   }
 
   //Internal Utility Functions

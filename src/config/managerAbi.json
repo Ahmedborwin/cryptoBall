@@ -62,7 +62,8 @@
     "inputs": [
       { "type": "uint256", "name": "id", "indexed": false },
       { "type": "address", "name": "winner", "indexed": false },
-      { "type": "uint256", "name": "completionTime", "indexed": false }
+      { "type": "uint256", "name": "team1Goals", "indexed": false },
+      { "type": "uint256", "name": "team2Goals", "indexed": false }
     ]
   },
   {
@@ -340,6 +341,15 @@
   },
   {
     "type": "function",
+    "name": "isNFTListed",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
     "name": "isTeamNameTaken",
     "constant": true,
     "stateMutability": "view",
@@ -347,20 +357,13 @@
     "inputs": [{ "type": "string" }],
     "outputs": [{ "type": "bool" }]
   },
+  { "type": "function", "name": "openLootbox", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
     "type": "function",
     "name": "registerNewManager",
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "string", "name": "_teamName" }],
-    "outputs": []
-  },
-  {
-    "type": "function",
-    "name": "requestRandomNumbers",
-    "constant": false,
-    "payable": false,
-    "inputs": [{ "type": "uint256", "name": "_id" }],
     "outputs": []
   },
   {
@@ -429,6 +432,14 @@
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "address", "name": "_vrfHandler" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "startGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
     "outputs": []
   },
   {

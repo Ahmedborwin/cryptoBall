@@ -1,17 +1,17 @@
 const fs = require("fs")
 const { ethers } = require("hardhat")
 
-const CONSUMER_ADDRESS_FILE = "config/consumer_AddressList.json"
-const MANAGER_ADDRESS_FILE = "config/Manager_AddressList.json"
-const NFT_ADDRESS_FILE = "config/NFT_AddressList.json"
-const VRF_ADDRESS_FILE = "config/VRF_AddressList.json"
-const TOKEN_ADDRESS_FILE = "config/token_AddressList.json"
+const CONSUMER_ADDRESS_FILE = "src/config/consumer_AddressList.json"
+const MANAGER_ADDRESS_FILE = "src/config/Manager_AddressList.json"
+const NFT_ADDRESS_FILE = "src/config/NFT_AddressList.json"
+const VRF_ADDRESS_FILE = "src/config/VRF_AddressList.json"
+const TOKEN_ADDRESS_FILE = "src/config/token_AddressList.json"
 
-const CONSUMER_ABI_FILE = "config/consumerAbi.json"
-const MANAGER_ABI_FILE = "config/managerAbi.json"
-const NFT_ABI_FILE = "config/NFTAbi.json"
-const VRF_ABI_FILE = "config/VRFAbi.json"
-const TOKEN_ABI_FILE = "config/tokenAbi.json"
+const CONSUMER_ABI_FILE = "src/config/consumerAbi.json"
+const MANAGER_ABI_FILE = "src/config/managerAbi.json"
+const NFT_ABI_FILE = "src/config/NFTAbi.json"
+const VRF_ABI_FILE = "src/config/VRFAbi.json"
+const TOKEN_ABI_FILE = "src/config/tokenAbi.json"
 
 module.exports = async ({
   chainFunctionsConsumerAddress,

@@ -2,7 +2,7 @@ import React from "react"
 
 const LootBoxViewPage = () => {
   // Create an array with 11 elements, each representing a card
-  const cards = Array.from({ length: 11 }, (_, i) => ({
+  const cards = Array.from({ length: 5 }, (_, i) => ({
     id: i + 1,
     name: `Player ${i + 1}`,
     pos: "GK",

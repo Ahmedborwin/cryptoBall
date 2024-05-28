@@ -10,7 +10,7 @@ const useTokenIds = (tokenCounter) => {
     }
   }, [tokenCounter])
 
-  return tokenIds
+  return [...tokenIds]
 }
 
 export default useTokenIds

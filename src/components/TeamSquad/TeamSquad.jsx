@@ -33,7 +33,7 @@ const TeamSquad = ({ selectedFormation, playerRoster }) => {
 
   const renderPlayers = (position, count) => {
     return (
-      <div className={`flex justify-${position === "goalkeeper" ? "center" : "evenly"}`}>
+      <div className={`flex justify-center ${position === "goalkeeper" ? "justify-center" : "justify-evenly"} w-full`}>
         {Array.from({ length: count }).map((_, index) => (
           <SquadPlayer key={`${position}-${index}`} position={position} index={index} playerNumber={playerNumber--} />
         ))}
@@ -42,7 +42,7 @@ const TeamSquad = ({ selectedFormation, playerRoster }) => {
   }
 
   return (
-    <div className="bg-green bg-opacity-50 rounded-lg flex flex-col justify-around py-4 px-10">
+    <div className="bg-green bg-opacity-50 rounded-lg flex flex-col justify-around py-4 px-10 min-h-[600px]">
       {renderPlayers("forwards", players.forwards || 0)}
       {selectedFormation === "4-2-3-1" && renderPlayers("attackingMid", players.attackingMid || 0)}
       {renderPlayers("midfielders", players.midfielders || players.defensiveMid || 0)}

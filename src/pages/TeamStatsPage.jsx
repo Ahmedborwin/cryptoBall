@@ -1,7 +1,6 @@
 import React from "react"
 import TabContainer from "../components/common/Container/Tab/TabContainer"
 import useGetManagerPlayers from "../hooks/useGetManagerPlayers"
-import FormBox from "../components/common/Form/FormBox"
 import FormField from "../components/common/Form/FormField"
 import useContractRead from "../hooks/useContractRead"
 import Manager_AddressList from "../config/Manager_AddressList.json"

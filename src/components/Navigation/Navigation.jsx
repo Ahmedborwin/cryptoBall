@@ -1,9 +1,9 @@
-import React from "react";
-import NavLink from "./_components/NavLink";
-import useWalletConnect from "../../hooks/useWalletConnect";
+import React from "react"
+import NavLink from "./_components/NavLink"
+import useWalletConnect from "../../hooks/useWalletConnect"
 
 const Navigation = () => {
-  const { account, error, handleWalletConnect, handleWalletDisconnect } = useWalletConnect();
+  const { account, error, handleWalletConnect, handleWalletDisconnect } = useWalletConnect()
 
   return (
     <div
@@ -35,7 +35,7 @@ const Navigation = () => {
         {error && <div className="ml-4 text-red-500">{error}</div>}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

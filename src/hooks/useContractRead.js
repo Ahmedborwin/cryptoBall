@@ -37,7 +37,7 @@ const useContractRead = (contractAddress, contractABI, functionName, args = []) 
       }
     }
 
-    if (!data?.length) fetchData()
+    if (!data || !Object.keys(data).length) fetchData()
   }, [contractAddress, contractABI, functionName, args])
 
   return { data, loading, error }

@@ -62,14 +62,6 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     i_GameManager = CB_MatchManagerInterface(_MatchManager);
   }
 
-  function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) public {
-    _modifyUpgrade(_tokenID, _attribute, _newValue, msg.sender);
-  }
-
-  function _modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue, address _caller) internal {
-    tokenUpgrades[_tokenID][_attribute] = _newValue;
-  }
-
   function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
     uint256 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
@@ -92,6 +84,16 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
 
   function updateTokenURI(uint8 _tokenID, string calldata _newURI) external onlyOwner {
     _setTokenURI(_tokenID, _newURI);
+  }
+
+  // Upgrade TokenIDs
+
+  function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) public {
+    _modifyUpgrade(_tokenID, _attribute, _newValue, msg.sender);
+  }
+
+  function _modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue, address _caller) internal {
+    tokenUpgrades[_tokenID][_attribute] = _newValue;
   }
 
   //Function to List nft for sale

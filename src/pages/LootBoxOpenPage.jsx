@@ -38,15 +38,15 @@ const LootBoxOpenPage = () => {
     TOKEN_ABI,
     "Approval"
   )
-
+  console.log()
   const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useEventListener(
     NFT_AddressList[chainId],
     CBNFT_ABI,
     "LootBoxOpened"
   )
 
-  // console.log(lootBoxOpenedEvent, "@@@@@event")
-  // console.log(errorLootBoxOpenedEvent, "@@@@error")
+  console.log(lootBoxOpenedEvent, "@@@@@event")
+  console.log(errorLootBoxOpenedEvent, "@@@@error", NFT_AddressList[chainId])
 
   const {
     write: openLootBox,

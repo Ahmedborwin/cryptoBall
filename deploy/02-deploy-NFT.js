@@ -33,7 +33,7 @@ const deployNFTContract = async function () {
   await updateContractInfo({ undefined, NFTAddress: CBNFT.address, undefined })
   console.log("-----------Mint NFTs For Player1-----------")
   console.log("-------------------------------------------")
-  await CBNFT.openLootBox(10, signer.address)
+  await CBNFT.openLootBox(9, signer.address)
   await CBNFT.openLootBox(20, signer.address)
   await CBNFT.openLootBox(30, signer.address)
   await CBNFT.openLootBox(40, signer.address)
@@ -52,7 +52,7 @@ const deployNFTContract = async function () {
   console.log("-----------Mint NFTs For Player2-----------")
   console.log("-------------------------------------------")
   //second player
-  await CBNFT.openLootBox(120, player2.address)
+  await CBNFT.openLootBox(31, player2.address)
   await CBNFT.openLootBox(134, player2.address)
   await CBNFT.openLootBox(142, player2.address)
   await CBNFT.openLootBox(159, player2.address)

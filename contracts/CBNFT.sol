@@ -73,7 +73,6 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
     uint256 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
-
     //Mint NFT and set the TokenURI
     _safeMint(_player, _tokenCounter);
 

@@ -229,7 +229,8 @@
       { "type": "uint256", "name": "creationTime" },
       { "type": "uint256", "name": "blockAccepted" },
       { "type": "uint256", "name": "completionTime" },
-      { "type": "uint256", "name": "status" }
+      { "type": "uint256", "name": "status" },
+      { "type": "uint8", "name": "gamesPlayed" }
     ]
   },
   {
@@ -270,7 +271,8 @@
           { "type": "uint256", "name": "creationTime" },
           { "type": "uint256", "name": "blockAccepted" },
           { "type": "uint256", "name": "completionTime" },
-          { "type": "uint256", "name": "status" }
+          { "type": "uint256", "name": "status" },
+          { "type": "uint8", "name": "gamesPlayed" }
         ]
       }
     ]
@@ -477,5 +479,14 @@
     "payable": false,
     "inputs": [],
     "outputs": [{ "type": "uint256" }]
-  }
+  },
+  {
+    "type": "function",
+    "name": "unstakePlayerNFT",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint8", "name": "_index" }],
+    "outputs": []
+  },
+  { "type": "function", "name": "unstakeRoster", "constant": false, "payable": false, "inputs": [], "outputs": [] }
 ]

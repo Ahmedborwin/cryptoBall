@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import Manager_AddressList from "../config/Manager_AddressList.json";
-import MM_ABI from "../config/managerAbi.json";
+import React, { useState } from "react"
+import Manager_AddressList from "../config/Manager_AddressList.json"
+import MM_ABI from "../config/managerAbi.json"
 
 // components
-import PlayerCard from "../components/PlayerCard";
-import TabContainer from "../components/common/Container/Tab/TabContainer";
-import TeamFormations from "../components/TeamFormations";
-import TeamSquad from "../components/TeamSquad";
-import StakeModal from "../components/StakeModal";
+import PlayerCard from "../components/PlayerCard"
+import TabContainer from "../components/common/Container/Tab/TabContainer"
+import TeamFormations from "../components/TeamFormations"
+import TeamSquad from "../components/TeamSquad"
+import StakeModal from "../components/StakeModal"
 
 // hooks
-import useGetManagerPlayers from "../hooks/useGetManagerPlayers";
-import useContractRead from "../hooks/useContractRead";
-import useContractWrite from "../hooks/useContractWrite";
-import useWalletConnect from "../hooks/useWalletConnect";
+import useGetManagerPlayers from "../hooks/useGetManagerPlayers"
+import useContractRead from "../hooks/useContractRead"
+import useContractWrite from "../hooks/useContractWrite"
+import useWalletConnect from "../hooks/useWalletConnect"
 
 // utils
-import { formations } from "../utils/constants/squad";
-import Loading from "../components/Loading";
+import { formations } from "../utils/constants/squad"
+import Loading from "../components/Loading"
 
 const TeamTacticsPage = () => {
-  const [selectedFormation, setSelectedFormation] = useState("4-4-2");
-  const [openStakeDialog, setOpenStakeDialog] = useState(false);
-  const [selectedPlayer, setSelectedPlayer] = useState(null);
+  const [selectedFormation, setSelectedFormation] = useState("4-4-2")
+  const [openStakeDialog, setOpenStakeDialog] = useState(false)
+  const [selectedPlayer, setSelectedPlayer] = useState(null)
 
-  const { chainId } = useWalletConnect();
+  const { chainId } = useWalletConnect()
 
   const {
     data: playerRoster,
@@ -32,31 +32,34 @@ const TeamTacticsPage = () => {
     error: errorPlayerRoster,
   } = useContractRead(Manager_AddressList[chainId], MM_ABI, "getRosterForPlayer", [
     "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
-  ]);
+  ])
 
-  const { playersMetadata, loadingPlayersMetadata, errorPlayerMetadata } = useGetManagerPlayers();
+  const { playersMetadata, loadingPlayersMetadata, errorPlayerMetadata } = useGetManagerPlayers()
 
   const {
     write: setRosterPosition,
     loading: loadingSetRosterPosition,
-    errorSetRosterPosition,
-  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "setRosterPosition");
+    error: errorSetRosterPosition,
+  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "setRosterPosition")
 
   const handleStakePlayer = (player) => {
-    setSelectedPlayer(player);
-    setOpenStakeDialog(true);
-  };
+    setSelectedPlayer(player)
+    setOpenStakeDialog(true)
+  }
 
-  const handleStakeConfirm = (position) => {
-    console.log("Staking player", selectedPlayer, "at position", position);
-    setRosterPosition("0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", "0", selectedPlayer.id, position);
-  };
+  const handleStakeConfirm = async (position) => {
+    console.log("Staking player", selectedPlayer, "at position", position)
+    await setRosterPosition("0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", "0", selectedPlayer.id, position - 1)
+    console.log("Done staking")
+  }
 
   const isPlayerStaked = (playerId) => {
-    return playerRoster?.some((player) => parseInt(player.tokenID) === parseInt(playerId));
-  };
+    return playerRoster?.some((player) => parseInt(player.tokenID) === parseInt(playerId))
+  }
 
-  if (loadingPlayerRoster || loadingPlayersMetadata || loadingSetRosterPosition) return <Loading />;
+  if (!playerRoster || !playersMetadata || !playerRoster.length || !playersMetadata.length) return <Loading />
+
+  console.log(playerRoster, "@@@@PR")
 
   return (
     <TabContainer>
@@ -85,13 +88,9 @@ const TeamTacticsPage = () => {
         </div>
       </div>
 
-      <StakeModal
-        isOpen={openStakeDialog}
-        onClose={() => setOpenStakeDialog(false)}
-        onStake={handleStakeConfirm}
-      />
+      <StakeModal isOpen={openStakeDialog} onClose={() => setOpenStakeDialog(false)} onStake={handleStakeConfirm} />
     </TabContainer>
-  );
-};
+  )
+}
 
-export default TeamTacticsPage;
+export default TeamTacticsPage

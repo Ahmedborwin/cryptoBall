@@ -24,7 +24,7 @@ const TeamStatsPage = () => {
     error: errorManagerStats,
   } = useContractRead(Manager_AddressList[chainId], MM_ABI, "ManagerStats", ["0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029"])
 
-  if (loadingManagerStats || loadingPlayersMetadata) return <Loading />
+  if (loadingManagerStats || !playersMetadata || !playersMetadata.length) return <Loading />
 
   return (
     <TabContainer>

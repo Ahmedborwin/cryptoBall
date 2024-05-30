@@ -19,9 +19,6 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
         const handleEventListener = (...args) => {
           const event = args[args.length - 1]
           const eventData = args.slice(0, args.length - 1)
-          console.log(eventName, "@@@@eventName")
-          console.log(event, "@@@@event")
-          console.log(eventData, "@@@@eventData")
           setEvents((prevEvents) => [...prevEvents, { eventData, transactionHash: event.transactionHash }])
         }
 

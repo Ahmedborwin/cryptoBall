@@ -12,7 +12,7 @@ import StakeModal from "../components/StakeModal"
 
 // context
 import { usePlayers } from "../context/PlayerContext"
-import { usePlayerRoster } from "../context/PlayerRoster"
+import { usePlayerRoster } from "../context/PlayerRosterContext"
 
 // hooks
 import useContractWrite from "../hooks/useContractWrite"
@@ -28,9 +28,9 @@ const TeamTacticsPage = () => {
 
   const { chainId } = useWalletConnect()
 
-  const { playerRoster, loading: loadingPlayerRoster, error: errorPlayerRoster } = usePlayerRoster()
+  const { playerRoster } = usePlayerRoster()
 
-  const { playersMetadata, loading: loadingPlayersMetadata, error: errorPlayerMetadata } = usePlayers()
+  const { playersMetadata} = usePlayers()
 
   const {
     write: setRosterPosition,

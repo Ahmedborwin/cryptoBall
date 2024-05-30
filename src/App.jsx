@@ -8,7 +8,7 @@ import Container from "./components/common/Container/Basic"
 // Icons
 import FootballFieldLogo from "./assets/football-stadium-logo.jpg"
 import { PlayersProvider } from "./context/PlayerContext"
-import { PlayerRosterProvider } from "./context/PlayerRoster"
+import { PlayerRosterProvider } from "./context/PlayerRosterContext"
 
 const App = () => {
   const backgroundStyle = {

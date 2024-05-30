@@ -1,9 +1,11 @@
 import React from "react"
-import useGetManagerPlayers from "../../hooks/useGetManagerPlayers"
 import { formations } from "../../utils/constants/squad"
+import { usePlayers } from "../../context/PlayerContext"
+import { usePlayerRoster } from "../../context/PlayerRosterContext"
 
-const TeamSquad = ({ selectedFormation, playerRoster }) => {
-  const { playersMetadata, loadingPlayersMetadata, errorPlayerMetadata } = useGetManagerPlayers()
+const TeamSquad = ({ selectedFormation }) => {
+  const { playersMetadata } = usePlayers()
+  const { playerRoster} = usePlayerRoster()
 
   const players = formations[selectedFormation]
   let playerNumber = 11
@@ -20,7 +22,7 @@ const TeamSquad = ({ selectedFormation, playerRoster }) => {
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
           <span className="text-xs text-gray-800">{playerNumber}</span>
         </div>
-        <div className="mt-1 text-xs text-center">
+        <div className="mt-1 text-xs text-center h-10"> {/* Fixed height for the name container */}
           {name.split(" ").map((word, wordIndex) => (
             <span key={wordIndex} className="block">
               {word}

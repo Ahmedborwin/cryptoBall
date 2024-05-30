@@ -5,24 +5,27 @@ import MM_ABI from "../config/managerAbi.json"
 // components
 import FormField from "../components/common/Form/FormField"
 import TabContainer from "../components/common/Container/Tab/TabContainer"
-import PlayerCard from "../components/PlayerCard"
 import Loading from "../components/Loading"
 
+// context
+import { usePlayers } from "../context/PlayerContext"
+
 // hooks
-import useGetManagerPlayers from "../hooks/useGetManagerPlayers"
 import useContractRead from "../hooks/useContractRead"
 import useWalletConnect from "../hooks/useWalletConnect"
 
 const TeamStatsPage = () => {
   const { chainId } = useWalletConnect()
 
-  const { playersMetadata, loadingPlayersMetadata, errorPlayerMetadata } = useGetManagerPlayers()
+  const { playersMetadata, loading: loadingPlayersMetadata, error: errorPlayerMetadata } = usePlayers()
 
   const {
     data: managerStats,
     loading: loadingManagerStats,
     error: errorManagerStats,
-  } = useContractRead(Manager_AddressList[chainId], MM_ABI, "ManagerStats", ["0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029"])
+  } = useContractRead(Manager_AddressList[chainId], MM_ABI, "ManagerStats", [
+    "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
+  ])
 
   if (!managerStats || !managerStats.length || !playersMetadata || !playersMetadata.length) return <Loading />
 

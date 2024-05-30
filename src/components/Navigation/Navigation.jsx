@@ -1,8 +1,15 @@
-import React from "react"
-import NavLink from "./_components/NavLink"
-import { ConnectButton } from "@rainbow-me/rainbowkit"
+import React from "react";
+import NavLink from "./_components/NavLink";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount, useChainId } from 'wagmi';
+import useTokenBalance from "../../hooks/useTokenBalance"; // Adjust the import path
+import Token_AddressList from "../../config/token_AddressList"
 
 const Navigation = () => {
+  const { address: account } = useAccount();
+  const chainId = useChainId()
+  const { balance: tokenBalance, error: tokenBalanceError } = useTokenBalance(account, Token_AddressList[chainId]);
+
   return (
     <div
       className="flex max-w-[1240px] justify-between max-sm:justify-center items-center
@@ -17,10 +24,16 @@ const Navigation = () => {
       </div>
 
       <div className="flex items-center">
+        {account && (
+          <div className="bg-white text-black px-4 py-2 rounded-full mr-4">
+            {tokenBalance ? `${tokenBalance} CBT` : 'Loading...'}
+          </div>
+        )}
         <ConnectButton />
       </div>
+      {tokenBalanceError && <div className="ml-4 text-red-500">{tokenBalanceError}</div>}
     </div>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

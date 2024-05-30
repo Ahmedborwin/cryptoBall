@@ -3,21 +3,23 @@ import Manager_AddressList from "../config/Manager_AddressList.json"
 import MM_ABI from "../config/managerAbi.json"
 
 // components
+import Loading from "../components/Loading"
 import PlayerCard from "../components/PlayerCard"
 import TabContainer from "../components/common/Container/Tab/TabContainer"
 import TeamFormations from "../components/TeamFormations"
 import TeamSquad from "../components/TeamSquad"
 import StakeModal from "../components/StakeModal"
 
+// context
+import { usePlayers } from "../context/PlayerContext"
+import { usePlayerRoster } from "../context/PlayerRoster"
+
 // hooks
-import useGetManagerPlayers from "../hooks/useGetManagerPlayers"
-import useContractRead from "../hooks/useContractRead"
 import useContractWrite from "../hooks/useContractWrite"
 import useWalletConnect from "../hooks/useWalletConnect"
 
 // utils
 import { formations } from "../utils/constants/squad"
-import Loading from "../components/Loading"
 
 const TeamTacticsPage = () => {
   const [selectedFormation, setSelectedFormation] = useState("4-4-2")
@@ -26,15 +28,9 @@ const TeamTacticsPage = () => {
 
   const { chainId } = useWalletConnect()
 
-  const {
-    data: playerRoster,
-    loading: loadingPlayerRoster,
-    error: errorPlayerRoster,
-  } = useContractRead(Manager_AddressList[chainId], MM_ABI, "getRosterForPlayer", [
-    "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
-  ])
+  const { playerRoster, loading: loadingPlayerRoster, error: errorPlayerRoster } = usePlayerRoster()
 
-  const { playersMetadata, loadingPlayersMetadata, errorPlayerMetadata } = useGetManagerPlayers()
+  const { playersMetadata, loading: loadingPlayersMetadata, error: errorPlayerMetadata } = usePlayers()
 
   const {
     write: setRosterPosition,

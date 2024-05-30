@@ -14,6 +14,8 @@ const useGetManagerPlayers = () => {
 
   const { chainId } = useWalletConnect()
 
+  console.log(playersNFT.length, "@@@@@length")
+
   const {
     data: tokenCounter,
     loading: loadingTokenCounter,
@@ -40,11 +42,10 @@ const useGetManagerPlayers = () => {
 
   useEffect(() => {
     if (playersMetadata.length) return
-
     if (playerIndices.length && ownedTokenIds.length && Object.keys(ipfsData).length) {
       const newPlayersMetadata = playerIndices.map((player, index) => {
         const playerIndex = player.toString()
-        return { id: ownedTokenIds[index] + 1, ...ipfsData[playerIndex] }
+        return { id: ownedTokenIds[index], ...ipfsData[playerIndex] }
       })
       setPlayersMetadata(newPlayersMetadata)
     }

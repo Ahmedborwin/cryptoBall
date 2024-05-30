@@ -24,9 +24,22 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
       try {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const contract = new ethers.Contract(contractAddress, contractABI, provider)
-        const promises = tokenIds.map((id) => contract[functionName](...args, id))
+
+        // Create promises for each tokenId with individual error handling
+        const promises = tokenIds.map(async (id) => {
+          try {
+            const result = await contract[functionName](...args, id)
+            return result
+          } catch (err) {
+            if (id !== 0) console.error(`${functionName} - Error fetching data for tokenId ${id}:`, err)
+            return null // or you can handle it differently
+          }
+        })
+
+        // Wait for all promises to resolve
         const results = await Promise.all(promises)
-        setData(results)
+        const newData = results.filter((item) => item !== null)
+        setData(newData)
       } catch (err) {
         setError(err.message)
       } finally {

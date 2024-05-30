@@ -48,7 +48,7 @@ const TeamTacticsPage = () => {
   }
 
   const handleStakeConfirm = async (position) => {
-    console.log("Staking player", selectedPlayer, "at position", position)
+    console.log("Staking player", selectedPlayer?.id, "at position", position)
     await setRosterPosition("0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", "0", selectedPlayer.id, position - 1)
     console.log("Done staking")
   }
@@ -58,8 +58,6 @@ const TeamTacticsPage = () => {
   }
 
   if (!playerRoster || !playersMetadata || !playerRoster.length || !playersMetadata.length) return <Loading />
-
-  console.log(playerRoster, "@@@@PR")
 
   return (
     <TabContainer>

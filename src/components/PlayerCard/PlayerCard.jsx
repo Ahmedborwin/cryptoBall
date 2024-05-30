@@ -19,12 +19,14 @@ const PlayerCard = ({ player, index = 0, isStaked = false }) => {
       </div>
       <FormBox>
         <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-          {player.attributes.map((attribute, attrIndex) => (
-            <div key={attrIndex} className="flex justify-between text-xs">
-              <span className="text-gray-400">{attribute.name}: &nbsp;</span>
-              <span className={getColorForValue(attribute.value)}>{attribute.value}</span>
-            </div>
-          ))}
+          {player &&
+            player?.attributes &&
+            player.attributes.map((attribute, attrIndex) => (
+              <div key={attrIndex} className="flex justify-between text-xs">
+                <span className="text-gray-400">{attribute.name}: &nbsp;</span>
+                <span className={getColorForValue(attribute.value)}>{attribute.value}</span>
+              </div>
+            ))}
         </div>
       </FormBox>
     </div>

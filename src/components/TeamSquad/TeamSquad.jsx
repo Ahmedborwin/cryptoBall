@@ -9,7 +9,7 @@ const TeamSquad = ({ selectedFormation, playerRoster }) => {
   let playerNumber = 11
 
   const getPlayerName = (playerNumber) => {
-    const tokenId = playerRoster?.[11 - playerNumber]?.tokenID.toString()
+    const tokenId = playerRoster?.[playerNumber - 1]?.tokenID.toString()
     return playersMetadata.find((player) => parseInt(player.id) === parseInt(tokenId))?.name || ""
   }
 

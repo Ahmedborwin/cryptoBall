@@ -7,6 +7,8 @@ import Manager_AddressList from "../config/Manager_AddressList.json"
 import MM_ABI from "../config/managerAbi.json"
 import Token_AddressList from "../config/token_AddressList.json"
 import TOKEN_ABI from "../config/tokenAbi.json"
+import VRF_AddressList from "../config/VRF_AddressList.json"
+import VRF_ABI from "../config/VRFAbi.json"
 
 // assets
 import FootballImage from "../assets/football-card.png"
@@ -35,6 +37,12 @@ const LootBoxOpenPage = () => {
     error: errorApproveTokens,
   } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
 
+  const {
+    write: openLootBox,
+    loading,
+    error: errorOpenLootBox,
+  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
+
   const { events: approvalEvent, error: errorApprovalEvent } = useEventListener(
     Token_AddressList[chainId],
     TOKEN_ABI,
@@ -42,19 +50,12 @@ const LootBoxOpenPage = () => {
   )
 
   const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useOpenLootboxEventListener(
-    NFT_AddressList[chainId],
-    CBNFT_ABI,
-    "LootBoxOpened"
+    VRF_AddressList[chainId],
+    VRF_ABI,
+    "PackOpened"
   )
 
-  // console.log(lootBoxOpenedEvent, "@@@@@event")
-  // console.log(errorLootBoxOpenedEvent, "@@@@error",)
-
-  const {
-    write: openLootBox,
-    loading,
-    error: errorOpenLootBox,
-  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
+  console.log(lootBoxOpenedEvent, "@@@@@event")
 
   const handleOpenBox = async () => {
     setIsOpen(true)

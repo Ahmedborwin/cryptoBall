@@ -1,10 +1,8 @@
 import React from "react"
 import NavLink from "./_components/NavLink"
-import useWalletConnect from "../../hooks/useWalletConnect"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
 
 const Navigation = () => {
-  const { account, error, handleWalletConnect, handleWalletDisconnect } = useWalletConnect()
-
   return (
     <div
       className="flex max-w-[1240px] justify-between max-sm:justify-center items-center
@@ -14,25 +12,12 @@ const Navigation = () => {
         <NavLink to="/team-stats">Team Stats</NavLink>
         <NavLink to="/team-tactics">Team Tactics</NavLink>
         <NavLink to="/loot-open">Open loot</NavLink>
-        <NavLink to="/season">Season</NavLink>
+        <NavLink to="/match">Match</NavLink>
+        {/* <NavLink to="/season">Season</NavLink> */}
       </div>
 
       <div className="flex items-center">
-        {account ? (
-          <>
-            <div className="bg-white text-black px-4 py-2 rounded-full">
-              {account.substring(0, 6)}...{account.substring(account.length - 4)}
-            </div>
-            <button onClick={handleWalletDisconnect} className="bg-red-500 text-white px-4 py-2 ml-4 rounded-full">
-              Disconnect
-            </button>
-          </>
-        ) : (
-          <button onClick={handleWalletConnect} className="bg-blue-500 text-white px-4 py-2 rounded-full">
-            Connect Wallet
-          </button>
-        )}
-        {error && <div className="ml-4 text-red-500">{error}</div>}
+        <ConnectButton />
       </div>
     </div>
   )

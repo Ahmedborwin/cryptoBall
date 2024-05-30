@@ -12,6 +12,7 @@ import SeasonPage from "../pages/SeasonPage"
 import TeamCreationPage from "../pages/TeamCreationPage"
 import TeamStatsPage from "../pages/TeamStatsPage"
 import TeamTacticsPage from "../pages/TeamTacticsPage"
+import MatchPage from "../pages/MatchPage"
 
 const PageRoutes = () => (
   <HashRouter>
@@ -23,6 +24,7 @@ const PageRoutes = () => (
       <Route path="/team-stats" element={<TeamStatsPage />} />
       <Route path="/loot-open" element={<LootBoxOpenPage />} />
       <Route path="/loot-view" element={<LootBoxViewPage />} />
+      <Route path="/match" element={<MatchPage />} />
       <Route path="/season" element={<SeasonPage />} />
     </Routes>
   </HashRouter>

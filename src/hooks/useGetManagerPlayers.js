@@ -3,10 +3,9 @@ import useContractRead from "../hooks/useContractRead"
 import useContractReadMultiple from "../hooks/useContractReadMultiple"
 import NFT_AddressList from "../config/NFT_AddressList.json"
 import CBNFT_ABI from "../config/NFTAbi.json"
-import Manager_AddressList from "../config/Manager_AddressList.json"
-import MM_ABI from "../config/managerAbi.json"
 import useGetIPFSData from "../hooks/useGetIPFSData"
 import useWalletConnect from "./useWalletConnect"
+import useContractReadIsOwner from "./useContractReadIsOwner"
 
 const useGetManagerPlayers = () => {
   const [playersMetadata, setPlayersMetadata] = useState([])
@@ -14,6 +13,8 @@ const useGetManagerPlayers = () => {
   const ipfsData = useGetIPFSData()
 
   const { chainId } = useWalletConnect()
+
+  console.log(playersNFT.length, "@@@@@length")
 
   const {
     data: tokenCounter,
@@ -26,22 +27,29 @@ const useGetManagerPlayers = () => {
   }, [tokenCounter])
 
   const {
+    data: ownedTokenIds,
+    loading: loadingOwners,
+    error: errorOwners,
+  } = useContractReadIsOwner(NFT_AddressList[chainId], CBNFT_ABI, "isNFTOwner", tokenIds, [
+    "0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029",
+  ])
+
+  const {
     data: playerIndices,
     loading: loadingPlayerIndices,
     error: errorPlayerIndices,
-  } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "getBasePlayerIndexFromId", tokenIds)
+  } = useContractReadMultiple(NFT_AddressList[chainId], CBNFT_ABI, "getBasePlayerIndexFromId", ownedTokenIds)
 
   useEffect(() => {
     if (playersMetadata.length) return
-
-    if (playerIndices.length && tokenIds.length && Object.keys(ipfsData).length) {
+    if (playerIndices.length && ownedTokenIds.length && Object.keys(ipfsData).length) {
       const newPlayersMetadata = playerIndices.map((player, index) => {
         const playerIndex = player.toString()
-        return { id: tokenIds[index], ...ipfsData[playerIndex] }
+        return { id: ownedTokenIds[index], ...ipfsData[playerIndex] }
       })
       setPlayersMetadata(newPlayersMetadata)
     }
-  }, [playerIndices, ipfsData, tokenIds])
+  }, [playerIndices, ipfsData, ownedTokenIds])
 
   return { playersMetadata, loadingPlayersMetadata: false, errorPlayerMetadata: "" }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { ethers } from "ethers"
+import { useNavigate } from "react-router-dom"
 import NFT_AddressList from "../config/NFT_AddressList.json"
 import CBNFT_ABI from "../config/NFTAbi.json"
 import Manager_AddressList from "../config/Manager_AddressList.json"
@@ -14,18 +15,19 @@ import FootballImage from "../assets/football-card.png"
 import SubmitButton from "../components/common/Button/SubmitButton"
 
 // hooks
-import { useNavigate } from "react-router-dom"
 import useContractWrite from "../hooks/useContractWrite"
+import { useAccount, useChainId } from "wagmi"
 import useEventListener from "../hooks/useEventListener"
-import useWalletConnect from "../hooks/useWalletConnect"
+import useOpenLootboxEventListener from "../hooks/useOpenLootboxEventListener"
 
 const LootBoxOpenPage = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [transition, setTransition] = useState(false)
 
-  const navigate = useNavigate()
+  const chainId = useChainId()
+  const account = useAccount()
 
-  const { account, chainId } = useWalletConnect()
+  const navigate = useNavigate()
 
   const {
     write: approveTokens,
@@ -38,8 +40,8 @@ const LootBoxOpenPage = () => {
     TOKEN_ABI,
     "Approval"
   )
-  console.log()
-  const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useEventListener(
+
+  const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useOpenLootboxEventListener(
     NFT_AddressList[chainId],
     CBNFT_ABI,
     "LootBoxOpened"
@@ -72,7 +74,7 @@ const LootBoxOpenPage = () => {
     }
 
     if (approvalEvent.length) {
-      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === account))) handleOpenLootBox()
+      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === account.address))) handleOpenLootBox()
     }
   }, [approvalEvent])
 
@@ -88,7 +90,7 @@ const LootBoxOpenPage = () => {
     }
 
     if (lootBoxOpenedEvent.length) {
-      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account))
+      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account.address))
       if (foundEvent) {
         console.log("Starting animation...")
         startOpeningAnimation()

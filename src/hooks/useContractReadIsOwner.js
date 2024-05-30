@@ -11,7 +11,7 @@ import useContractRead from "./useContractRead"
  * @param {Array} tokenIds - The list of token IDs to read data for.
  * @returns {Object} - An object containing the data, loading, and error states.
  */
-const useContractReadMultiple = (contractAddress, contractABI, functionName, tokenIds, args = []) => {
+const useContractReadIsOwner = (contractAddress, contractABI, functionName, tokenIds, args = []) => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -29,17 +29,18 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
         const promises = tokenIds.map(async (id) => {
           try {
             const result = await contract[functionName](...args, id)
-            return result
+            return { id, result }
           } catch (err) {
-            if (id !== 0) console.error(`${functionName} - Error fetching data for tokenId ${id}:`, err)
+            if (id !== 0) console.error(`Error fetching data for tokenId ${id}:`, err)
             return null // or you can handle it differently
           }
         })
 
         // Wait for all promises to resolve
         const results = await Promise.all(promises)
-        const newData = results.filter((item) => item !== null)
-        setData(newData)
+        // Filter tokenIds based on the result being true
+        const validTokenIds = results.filter((item) => item && item.result === true).map((item) => item.id)
+        setData(validTokenIds)
       } catch (err) {
         setError(err.message)
       } finally {
@@ -54,4 +55,4 @@ const useContractReadMultiple = (contractAddress, contractABI, functionName, tok
   return { data, loading, error }
 }
 
-export default useContractReadMultiple
+export default useContractReadIsOwner

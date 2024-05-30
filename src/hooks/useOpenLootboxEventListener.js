@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import { ethers } from "ethers"
 
-const useEventListener = (contractAddress, contractABI, eventName) => {
+const useOpenLootboxEventListener = (contractAddress, contractABI, eventName) => {
   const [events, setEvents] = useState([])
   const [error, setError] = useState(null)
-
+  console.log(error, "@@@@Error")
   useEffect(() => {
     const setupEventListener = async () => {
       try {
@@ -15,10 +15,13 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
 
         // Set up the contract
         const contract = new ethers.Contract(contractAddress, contractABI, provider)
+        console.log(contract, "@@@@contract")
 
         const handleEventListener = (...args) => {
+          console.log(args, "@@@args")
           const event = args[args.length - 1]
           const eventData = args.slice(0, args.length - 1)
+          console.log(event, "@@@@event")
           setEvents((prevEvents) => [...prevEvents, { eventData, transactionHash: event.transactionHash }])
         }
 
@@ -44,4 +47,4 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
   return { events, error }
 }
 
-export default useEventListener
+export default useOpenLootboxEventListener

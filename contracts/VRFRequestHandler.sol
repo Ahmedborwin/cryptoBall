@@ -106,8 +106,11 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       // trigger start game simulation
       handleGameSimulationTrigger(s_RequestTable[requestId].challengeId, randomWords);
     } else if (s_RequestTable[requestId].requestType == RequestType.LootBox) {
-      //TODO: is there a better way to do this?
-      handleLootBoxLogic(randomWords[0], s_RequestTable[requestId].player);
+      // gives 50% chance of GK
+      uint256 playerIndex = randomWords[0] % 61;
+      //send random numbers to nft contract
+      i_NFT.openLootBox(playerIndex, s_RequestTable[requestId].player);
+      //Any of the base 700 odd players
       handleLootBoxLogic(randomWords[1], s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[2], s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
@@ -118,7 +121,7 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //handleLootBox Logic
   function handleLootBoxLogic(uint256 _randomNumber, address _player) internal {
     //TODO add logic here to get to the random player index
-    uint256 playerIndex = _randomNumber % 1000;
+    uint256 playerIndex = _randomNumber % 706;
     //send random numbers to nft contract
     i_NFT.openLootBox(playerIndex, _player);
   }

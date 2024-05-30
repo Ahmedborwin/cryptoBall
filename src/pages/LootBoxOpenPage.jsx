@@ -45,8 +45,8 @@ const LootBoxOpenPage = () => {
     "LootBoxOpened"
   )
 
-  console.log(lootBoxOpenedEvent, "@@@@@event")
-  console.log(errorLootBoxOpenedEvent, "@@@@error", NFT_AddressList[chainId])
+  // console.log(lootBoxOpenedEvent, "@@@@@event")
+  // console.log(errorLootBoxOpenedEvent, "@@@@error",)
 
   const {
     write: openLootBox,
@@ -58,6 +58,11 @@ const LootBoxOpenPage = () => {
     setIsOpen(true)
     await approveTokens(Manager_AddressList[chainId], ethers.utils.parseEther("5"))
   }
+
+  if (errorOpenLootBox) {
+    console.log(errorOpenLootBox, "error: errorOpenLootBox")
+  }
+
 
   useEffect(() => {
     const handleOpenLootBox = async () => {

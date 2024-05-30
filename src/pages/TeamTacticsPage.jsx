@@ -74,7 +74,7 @@ const TeamTacticsPage = () => {
           <div className="mt-6 overflow-x-auto">
             <div className="flex flex-nowrap gap-4 h-96">
               <div className="grid grid-flow-col auto-cols-max gap-4">
-                {playersMetadata.map((player, index) => (
+                {playersMetadata?.map((player, index) => (
                   <button key={index} onClick={() => handleStakePlayer(player)} className="w-full">
                     <PlayerCard player={player} index={index} isStaked={isPlayerStaked(player.id)} />
                   </button>

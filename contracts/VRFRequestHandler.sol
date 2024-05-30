@@ -123,19 +123,15 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       uint256 player2Index = randomWords[1] % 706;
       //send random numbers to nft contract
       i_NFT.openLootBox(player2Index, s_RequestTable[requestId].player);
-      handleLootBoxLogic(randomWords[1], s_RequestTable[requestId].player);
       uint256 player3Index = randomWords[2] % 706;
       //send random numbers to nft contract
       i_NFT.openLootBox(player3Index, s_RequestTable[requestId].player);
-      handleLootBoxLogic(randomWords[2], s_RequestTable[requestId].player);
       uint256 player4Index = randomWords[3] % 706;
       //send random numbers to nft contract
       i_NFT.openLootBox(player4Index, s_RequestTable[requestId].player);
-      handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
       uint256 player5Index = randomWords[4] % 706;
       //send random numbers to nft contract
       i_NFT.openLootBox(player5Index, s_RequestTable[requestId].player);
-      handleLootBoxLogic(randomWords[4], s_RequestTable[requestId].player);
       emit PackOpened(
         s_RequestTable[requestId].player,
         player1Index,

@@ -14,8 +14,6 @@ const useGetManagerPlayers = () => {
 
   const { chainId } = useWalletConnect()
 
-  console.log(playersNFT.length, "@@@@@length")
-
   const {
     data: tokenCounter,
     loading: loadingTokenCounter,

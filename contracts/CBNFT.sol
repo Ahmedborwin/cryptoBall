@@ -55,11 +55,12 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   event PlayerNFTListed(address seller, uint256 tokenId, uint256 price);
   event PlayerSold(uint256 tokenId, address seller, address buyer, uint256 price);
 
-  constructor(string memory _baseHash, address _MatchManager) ERC721("CB_PLAYERS", "CBNFT") {
+  constructor(string memory _baseHash, address _MatchManager, address _VRFAddress) ERC721("CB_PLAYERS", "CBNFT") {
     s_tokenCounter = 1;
     s_CB_BaseURI = _baseHash;
     contract_Admin = msg.sender;
     i_GameManager = CB_MatchManagerInterface(_MatchManager);
+    i_VRF = CB_VRFInterface(_VRFAddress);
   }
 
   function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
@@ -155,8 +156,8 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   //-------------------------------------------------------------------
   //Setter functions
 
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
-    i_VRF = CB_VRFInterface(_vrfHandler);
+  function setVRFHandlerAddress(address _VRFAddress) external onlyAdmin(msg.sender) {
+    i_VRF = CB_VRFInterface(_VRFAddress);
   }
   function setMatchManager(address _matchManager) public onlyAdmin(msg.sender) {
     i_GameManager = CB_MatchManagerInterface(_matchManager);

@@ -218,17 +218,6 @@
   },
   {
     "type": "function",
-    "name": "testHandleGameSimulationTrigger",
-    "constant": false,
-    "payable": false,
-    "inputs": [
-      { "type": "uint256", "name": "_gameId" },
-      { "type": "uint256[]", "name": "_randomWords" }
-    ],
-    "outputs": [{ "type": "string[]" }]
-  },
-  {
-    "type": "function",
     "name": "testMapping",
     "constant": true,
     "stateMutability": "view",

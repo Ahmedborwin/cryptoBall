@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { ethers } from "ethers"
+import { ethers, BigNumber } from "ethers"
 import { useNavigate } from "react-router-dom"
 import NFT_AddressList from "../config/NFT_AddressList.json"
 import CBNFT_ABI from "../config/NFTAbi.json"
@@ -9,6 +9,8 @@ import Token_AddressList from "../config/token_AddressList.json"
 import TOKEN_ABI from "../config/tokenAbi.json"
 import VRF_AddressList from "../config/VRF_AddressList.json"
 import VRF_ABI from "../config/VRFAbi.json"
+import useGetIPFSData from "../hooks/useGetIPFSData"
+
 
 // assets
 import FootballImage from "../assets/football-card.png"
@@ -31,6 +33,8 @@ const LootBoxOpenPage = () => {
 
   const navigate = useNavigate()
 
+  const ipfsData = useGetIPFSData()
+
   const {
     write: approveTokens,
     loading: loadingApproveTokens,
@@ -49,22 +53,23 @@ const LootBoxOpenPage = () => {
     "Approval"
   )
 
+
   const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useOpenLootboxEventListener(
     VRF_AddressList[chainId],
     VRF_ABI,
     "PackOpened"
   )
 
-  console.log(lootBoxOpenedEvent, "@@@@@event")
+  console.log(lootBoxOpenedEvent, "lootBoxOpenedEvent")
+  console.log(errorLootBoxOpenedEvent, "error: errorOpenLootBox")
+
+
 
   const handleOpenBox = async () => {
     setIsOpen(true)
     await approveTokens(Manager_AddressList[chainId], ethers.utils.parseEther("5"))
   }
 
-  if (errorOpenLootBox) {
-    console.log(errorOpenLootBox, "error: errorOpenLootBox")
-  }
 
 
   useEffect(() => {
@@ -80,6 +85,7 @@ const LootBoxOpenPage = () => {
   }, [approvalEvent])
 
   useEffect(() => {
+    console.log("llootBoxOpenedEvent@@@@@@@@@@")
     const startOpeningAnimation = async () => {
       setIsOpen(true)
       setTimeout(() => {
@@ -91,13 +97,25 @@ const LootBoxOpenPage = () => {
     }
 
     if (lootBoxOpenedEvent.length) {
+      console.log("lootBoxOpenedEvent", lootBoxOpenedEvent)
+
       const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account.address))
-      if (foundEvent) {
-        console.log("Starting animation...")
-        startOpeningAnimation()
-        console.log("Done starting animation")
-        // console.log(foundEvent.uirIndex, "@@@@@@@uriIndex")
-      }
+      // get the players details from the event args and use IPFS to get the player info
+
+
+
+
+      // Extract and convert the event arguments
+      const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
+      const playerDetailsArray = playerURIIndexArray.map((index) => { ipfsData[index] })
+      console.log(playerDetailsArray)
+
+
+      console.log("Starting animation...")
+      startOpeningAnimation()
+      console.log("Done starting animation")
+      // console.log(foundEvent.uirIndex, "@@@@@@@uriIndex")
+
     }
   }, [lootBoxOpenedEvent])
 

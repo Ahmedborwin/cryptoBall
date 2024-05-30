@@ -4,7 +4,8 @@
     "payable": false,
     "inputs": [
       { "type": "string", "name": "_baseHash" },
-      { "type": "address", "name": "_MatchManager" }
+      { "type": "address", "name": "_MatchManager" },
+      { "type": "address", "name": "_VRFAddress" }
     ]
   },
   {
@@ -393,7 +394,7 @@
     "name": "setVRFHandlerAddress",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "_vrfHandler" }],
+    "inputs": [{ "type": "address", "name": "_VRFAddress" }],
     "outputs": []
   },
   {

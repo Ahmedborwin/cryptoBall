@@ -10,14 +10,13 @@ const useOpenLootboxEventListener = (contractAddress, contractABI, eventName) =>
       try {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
 
-        // Request account access if needed
-        await provider.send("eth_requestAccounts", [])
-
         // Set up the contract
         const contract = new ethers.Contract(contractAddress, contractABI, provider)
 
         const handleEventListener = (...args) => {
           const event = args[args.length - 1]
+          console.log("lootbox event", event)
+
           const eventData = args.slice(0, args.length - 1)
           setEvents((prevEvents) => [...prevEvents, { eventData, transactionHash: event.transactionHash }])
         }
@@ -37,7 +36,9 @@ const useOpenLootboxEventListener = (contractAddress, contractABI, eventName) =>
 
     // Cleanup function to remove listeners when component unmounts or contractAddress changes
     return () => {
-      setupEventListener().then((cleanup) => cleanup && cleanup())
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const contract = new ethers.Contract(contractAddress, contractABI, provider)
+      contract.removeAllListeners(eventName)
     }
   }, [contractAddress, contractABI, eventName])
 

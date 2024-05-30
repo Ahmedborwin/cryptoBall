@@ -3,48 +3,113 @@
     "type": "constructor",
     "payable": false,
     "inputs": [
-      { "type": "address", "name": "vrfCoordinatorV2" },
-      { "type": "uint256", "name": "subscriptionId" },
-      { "type": "bytes32", "name": "gasLane" },
-      { "type": "uint32", "name": "callbackGasLimit" },
-      { "type": "address", "name": "_CBNFTAddress" },
-      { "type": "address", "name": "_contract_Admin" },
-      { "type": "address", "name": "_consumerAddress" },
-      { "type": "address", "name": "_matchManagerAddress" }
+      {
+        "type": "address",
+        "name": "vrfCoordinatorV2"
+      },
+      {
+        "type": "uint256",
+        "name": "subscriptionId"
+      },
+      {
+        "type": "bytes32",
+        "name": "gasLane"
+      },
+      {
+        "type": "uint32",
+        "name": "callbackGasLimit"
+      },
+      {
+        "type": "address",
+        "name": "_CBNFTAddress"
+      },
+      {
+        "type": "address",
+        "name": "_contract_Admin"
+      },
+      {
+        "type": "address",
+        "name": "_consumerAddress"
+      },
+      {
+        "type": "address",
+        "name": "_matchManagerAddress"
+      }
     ]
   },
-  { "type": "error", "name": "CBVRF__CallerNotAdmin", "inputs": [{ "type": "address" }] },
+  {
+    "type": "error",
+    "name": "CBVRF__CallerNotAdmin",
+    "inputs": [
+      {
+        "type": "address"
+      }
+    ]
+  },
   {
     "type": "error",
     "name": "OnlyCoordinatorCanFulfill",
     "inputs": [
-      { "type": "address", "name": "have" },
-      { "type": "address", "name": "want" }
+      {
+        "type": "address",
+        "name": "have"
+      },
+      {
+        "type": "address",
+        "name": "want"
+      }
     ]
   },
   {
     "type": "error",
     "name": "OnlyOwnerOrCoordinator",
     "inputs": [
-      { "type": "address", "name": "have" },
-      { "type": "address", "name": "owner" },
-      { "type": "address", "name": "coordinator" }
+      {
+        "type": "address",
+        "name": "have"
+      },
+      {
+        "type": "address",
+        "name": "owner"
+      },
+      {
+        "type": "address",
+        "name": "coordinator"
+      }
     ]
   },
-  { "type": "error", "name": "ZeroAddress", "inputs": [] },
+  {
+    "type": "error",
+    "name": "ZeroAddress",
+    "inputs": []
+  },
   {
     "type": "event",
     "anonymous": false,
     "name": "CoordinatorSet",
-    "inputs": [{ "type": "address", "name": "vrfCoordinator", "indexed": false }]
+    "inputs": [
+      {
+        "type": "address",
+        "name": "vrfCoordinator",
+        "indexed": false
+      }
+    ]
   },
   {
     "type": "event",
     "anonymous": false,
     "name": "OwnershipTransferRequested",
     "inputs": [
-      { "type": "address", "name": "from", "indexed": true },
-      { "type": "address", "name": "to", "indexed": true }
+      {
+        "type": "address",
+        "name": "from",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "to",
+        "indexed": true
+      }
     ]
   },
   {
@@ -52,8 +117,16 @@
     "anonymous": false,
     "name": "OwnershipTransferred",
     "inputs": [
-      { "type": "address", "name": "from", "indexed": true },
-      { "type": "address", "name": "to", "indexed": true }
+      {
+        "type": "address",
+        "name": "from",
+        "indexed": true
+      },
+      {
+        "type": "address",
+        "name": "to",
+        "indexed": true
+      }
     ]
   },
   {
@@ -61,12 +134,36 @@
     "anonymous": false,
     "name": "PackOpened",
     "inputs": [
-      { "type": "address", "name": "player", "indexed": false },
-      { "type": "uint256", "name": "player1Index", "indexed": false },
-      { "type": "uint256", "name": "player2Index", "indexed": false },
-      { "type": "uint256", "name": "player3Index", "indexed": false },
-      { "type": "uint256", "name": "player4Index", "indexed": false },
-      { "type": "uint256", "name": "player5Index", "indexed": false }
+      {
+        "type": "address",
+        "name": "player",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "player1Index",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "player2Index",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "player3Index",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "player4Index",
+        "indexed": false
+      },
+      {
+        "type": "uint256",
+        "name": "player5Index",
+        "indexed": false
+      }
     ]
   },
   {
@@ -76,9 +173,20 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "uint16" }]
+    "outputs": [
+      {
+        "type": "uint16"
+      }
+    ]
   },
-  { "type": "function", "name": "acceptOwnership", "constant": false, "payable": false, "inputs": [], "outputs": [] },
+  {
+    "type": "function",
+    "name": "acceptOwnership",
+    "constant": false,
+    "payable": false,
+    "inputs": [],
+    "outputs": []
+  },
   {
     "type": "function",
     "name": "contract_Admin",
@@ -86,7 +194,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
@@ -95,7 +207,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
@@ -104,7 +220,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
@@ -113,7 +233,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
@@ -122,7 +246,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
@@ -130,8 +258,14 @@
     "constant": false,
     "payable": false,
     "inputs": [
-      { "type": "uint256", "name": "requestId" },
-      { "type": "uint256[]", "name": "randomWords" }
+      {
+        "type": "uint256",
+        "name": "requestId"
+      },
+      {
+        "type": "uint256[]",
+        "name": "randomWords"
+      }
     ],
     "outputs": []
   },
@@ -141,12 +275,29 @@
     "constant": false,
     "payable": false,
     "inputs": [
-      { "type": "uint8", "name": "_requestType" },
-      { "type": "address", "name": "_player" },
-      { "type": "uint256", "name": "_challengeId" },
-      { "type": "uint32", "name": "_randomNumbersReq" }
+      {
+        "type": "uint8",
+        "name": "_requestType"
+      },
+      {
+        "type": "address",
+        "name": "_player"
+      },
+      {
+        "type": "uint256",
+        "name": "_challengeId"
+      },
+      {
+        "type": "uint32",
+        "name": "_randomNumbersReq"
+      }
     ],
-    "outputs": [{ "type": "uint256", "name": "requestId" }]
+    "outputs": [
+      {
+        "type": "uint256",
+        "name": "requestId"
+      }
+    ]
   },
   {
     "type": "function",
@@ -154,11 +305,24 @@
     "constant": true,
     "stateMutability": "view",
     "payable": false,
-    "inputs": [{ "type": "uint256" }],
+    "inputs": [
+      {
+        "type": "uint256"
+      }
+    ],
     "outputs": [
-      { "type": "uint8", "name": "requestType" },
-      { "type": "address", "name": "player" },
-      { "type": "uint256", "name": "challengeId" }
+      {
+        "type": "uint8",
+        "name": "requestType"
+      },
+      {
+        "type": "address",
+        "name": "player"
+      },
+      {
+        "type": "uint256",
+        "name": "challengeId"
+      }
     ]
   },
   {
@@ -168,7 +332,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "uint32" }]
+    "outputs": [
+      {
+        "type": "uint32"
+      }
+    ]
   },
   {
     "type": "function",
@@ -177,7 +345,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "bytes32" }]
+    "outputs": [
+      {
+        "type": "bytes32"
+      }
+    ]
   },
   {
     "type": "function",
@@ -186,7 +358,11 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "uint256" }]
+    "outputs": [
+      {
+        "type": "uint256"
+      }
+    ]
   },
   {
     "type": "function",
@@ -195,14 +371,23 @@
     "stateMutability": "view",
     "payable": false,
     "inputs": [],
-    "outputs": [{ "type": "address" }]
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ]
   },
   {
     "type": "function",
     "name": "setCoordinator",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "_vrfCoordinator" }],
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_vrfCoordinator"
+      }
+    ],
     "outputs": []
   },
   {
@@ -210,7 +395,12 @@
     "name": "setFunctionsConsumerAddress",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "_consumerAddress" }],
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_consumerAddress"
+      }
+    ],
     "outputs": []
   },
   {
@@ -218,7 +408,12 @@
     "name": "setMatchManagerAddress",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "_matchManagerAddress" }],
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_matchManagerAddress"
+      }
+    ],
     "outputs": []
   },
   {
@@ -226,7 +421,12 @@
     "name": "setNFTAddress",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "_nftAddress" }],
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_nftAddress"
+      }
+    ],
     "outputs": []
   },
   {
@@ -235,15 +435,28 @@
     "constant": true,
     "stateMutability": "view",
     "payable": false,
-    "inputs": [{ "type": "uint256" }],
-    "outputs": [{ "type": "bool" }]
+    "inputs": [
+      {
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "bool"
+      }
+    ]
   },
   {
     "type": "function",
     "name": "transferOwnership",
     "constant": false,
     "payable": false,
-    "inputs": [{ "type": "address", "name": "to" }],
+    "inputs": [
+      {
+        "type": "address",
+        "name": "to"
+      }
+    ],
     "outputs": []
   }
 ]

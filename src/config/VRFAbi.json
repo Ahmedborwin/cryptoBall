@@ -57,6 +57,19 @@
     ]
   },
   {
+    "type": "event",
+    "anonymous": false,
+    "name": "PackOpened",
+    "inputs": [
+      { "type": "address", "name": "player", "indexed": false },
+      { "type": "uint256", "name": "player1Index", "indexed": false },
+      { "type": "uint256", "name": "player2Index", "indexed": false },
+      { "type": "uint256", "name": "player3Index", "indexed": false },
+      { "type": "uint256", "name": "player4Index", "indexed": false },
+      { "type": "uint256", "name": "player5Index", "indexed": false }
+    ]
+  },
+  {
     "type": "function",
     "name": "REQUEST_CONFIRMATIONS",
     "constant": true,

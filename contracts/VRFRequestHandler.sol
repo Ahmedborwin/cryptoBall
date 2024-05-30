@@ -53,6 +53,15 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
   //admin
   address public contract_Admin;
 
+  event PackOpened(
+    address player,
+    uint256 player1Index,
+    uint256 player2Index,
+    uint256 player3Index,
+    uint256 player4Index,
+    uint256 player5Index
+  );
+
   constructor(
     address vrfCoordinatorV2,
     uint256 subscriptionId,
@@ -107,14 +116,34 @@ contract VRFRequestHandler is VRFConsumerBaseV2Plus {
       handleGameSimulationTrigger(s_RequestTable[requestId].challengeId, randomWords);
     } else if (s_RequestTable[requestId].requestType == RequestType.LootBox) {
       // gives 50% chance of GK
-      uint256 playerIndex = randomWords[0] % 61;
+      uint256 player1Index = randomWords[0] % 61;
       //send random numbers to nft contract
-      i_NFT.openLootBox(playerIndex, s_RequestTable[requestId].player);
+      i_NFT.openLootBox(player1Index, s_RequestTable[requestId].player);
       //Any of the base 700 odd players
+      uint256 player2Index = randomWords[1] % 706;
+      //send random numbers to nft contract
+      i_NFT.openLootBox(player2Index, s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[1], s_RequestTable[requestId].player);
+      uint256 player3Index = randomWords[2] % 706;
+      //send random numbers to nft contract
+      i_NFT.openLootBox(player3Index, s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[2], s_RequestTable[requestId].player);
+      uint256 player4Index = randomWords[3] % 706;
+      //send random numbers to nft contract
+      i_NFT.openLootBox(player4Index, s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[3], s_RequestTable[requestId].player);
+      uint256 player5Index = randomWords[4] % 706;
+      //send random numbers to nft contract
+      i_NFT.openLootBox(player5Index, s_RequestTable[requestId].player);
       handleLootBoxLogic(randomWords[4], s_RequestTable[requestId].player);
+      emit PackOpened(
+        s_RequestTable[requestId].player,
+        player1Index,
+        player2Index,
+        player3Index,
+        player4Index,
+        player5Index
+      );
     }
   }
 

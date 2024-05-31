@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react"
 import { ethers, BigNumber } from "ethers"
 import { useNavigate } from "react-router-dom"
-import NFT_AddressList from "../config/NFT_AddressList.json"
-import CBNFT_ABI from "../config/NFTAbi.json"
 import Manager_AddressList from "../config/Manager_AddressList.json"
 import MM_ABI from "../config/managerAbi.json"
 import Token_AddressList from "../config/token_AddressList.json"
 import TOKEN_ABI from "../config/tokenAbi.json"
 import VRF_AddressList from "../config/VRF_AddressList.json"
 import VRF_ABI from "../config/VRFAbi.json"
-import useGetIPFSData from "../hooks/useGetIPFSData"
-
 
 // assets
 import FootballImage from "../assets/football-card.png"
@@ -23,6 +19,7 @@ import useContractWrite from "../hooks/useContractWrite"
 import { useAccount, useChainId } from "wagmi"
 import useEventListener from "../hooks/useEventListener"
 import useOpenLootboxEventListener from "../hooks/useOpenLootboxEventListener"
+import useGetIPFSData from "../hooks/useGetIPFSData"
 
 const LootBoxOpenPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,42 +32,18 @@ const LootBoxOpenPage = () => {
 
   const ipfsData = useGetIPFSData()
 
-  const {
-    write: approveTokens,
-    loading: loadingApproveTokens,
-    error: errorApproveTokens,
-  } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
+  const { write: approveTokens } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
 
-  const {
-    write: openLootBox,
-    loading,
-    error: errorOpenLootBox,
-  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
+  const { write: openLootBox } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
 
-  const { events: approvalEvent, error: errorApprovalEvent } = useEventListener(
-    Token_AddressList[chainId],
-    TOKEN_ABI,
-    "Approval"
-  )
+  const { events: approvalEvent } = useEventListener(Token_AddressList[chainId], TOKEN_ABI, "Approval")
 
-
-  const { events: lootBoxOpenedEvent, error: errorLootBoxOpenedEvent } = useOpenLootboxEventListener(
-    VRF_AddressList[chainId],
-    VRF_ABI,
-    "PackOpened"
-  )
-
-  console.log(lootBoxOpenedEvent, "lootBoxOpenedEvent")
-  console.log(errorLootBoxOpenedEvent, "error: errorOpenLootBox")
-
-
+  const { events: lootBoxOpenedEvent } = useOpenLootboxEventListener(VRF_AddressList[chainId], VRF_ABI, "PackOpened")
 
   const handleOpenBox = async () => {
     setIsOpen(true)
     await approveTokens(Manager_AddressList[chainId], ethers.utils.parseEther("5"))
   }
-
-
 
   useEffect(() => {
     const handleOpenLootBox = async () => {
@@ -85,7 +58,6 @@ const LootBoxOpenPage = () => {
   }, [approvalEvent])
 
   useEffect(() => {
-    console.log("llootBoxOpenedEvent@@@@@@@@@@")
     const startOpeningAnimation = async () => {
       setIsOpen(true)
       setTimeout(() => {
@@ -97,8 +69,7 @@ const LootBoxOpenPage = () => {
     }
 
     if (lootBoxOpenedEvent.length) {
-      console.log("lootBoxOpenedEvent", lootBoxOpenedEvent)
-
+      console.log("@@@@lootBoxOpenedEvent", lootBoxOpenedEvent)
 
       const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account.address))
       // get the players details from the event args and use IPFS to get the player info
@@ -107,19 +78,18 @@ const LootBoxOpenPage = () => {
       const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
       console.log("playerURIIndexArray", playerURIIndexArray)
 
-      const packOpenedArray = [];
+      const packOpenedArray = []
       playerURIIndexArray.forEach((index) => {
-        packOpenedArray.push(ipfsData[index]);
-      });
+        packOpenedArray.push(ipfsData[index])
+      })
 
-      console.log("packOpenedArray", packOpenedArray);
-
+      console.log("packOpenedArray", packOpenedArray)
 
       console.log("Starting animation...")
       startOpeningAnimation()
       console.log("Done starting animation")
-      // console.log(foundEvent.uirIndex, "@@@@@@@uriIndex")
-
+    } else {
+      console.log("Array empty or not an array: ", lootBoxOpenedEvent, "@@@@@")
     }
   }, [lootBoxOpenedEvent])
 

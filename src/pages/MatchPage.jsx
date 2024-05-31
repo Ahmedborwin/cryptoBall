@@ -28,8 +28,8 @@ const MatchPage = () => {
   const totalMinutes = 90
   const [currentMinute, setCurrentMinute] = useState(0)
   const [extraTime, setExtraTime] = useState(0)
-  const [teamAScore, setTeamAScore] = useState(0)
-  const [teamBScore, setTeamBScore] = useState(0)
+  const [teamAScore, setTeamAScore] = useState(null)
+  const [teamBScore, setTeamBScore] = useState(null)
   const [narration, setNarration] = useState("")
   const [isSimulating, setIsSimulating] = useState(false)
   const [showScores, setShowScores] = useState(false)

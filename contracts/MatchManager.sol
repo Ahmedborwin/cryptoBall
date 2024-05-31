@@ -297,9 +297,9 @@ contract MatchManager {
     challengerStats.totalGoals += uint256(team2Goals);
 
     game.gamesPlayed++;
-    if (game.gamesPlayed == 3) {
-      game.status = 3; // set game status to completed
-    }
+    // if (game.gamesPlayed == 3) {
+    //   game.status = 3; // set game status to completed
+    // }
 
     emit FinalizeGame(gameId, game.winner, team1Goals, team2Goals);
   }

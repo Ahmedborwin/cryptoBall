@@ -51,17 +51,17 @@ const MatchPage = () => {
 
   const toggleSimulation = async () => {
     await startGame(1)
-    // setExtraTime(Math.floor(Math.random() * 8)) // Random extra time between 0 and 7
-    // intervalRef.current = setInterval(updateMinute, 500) // Simulate each minute every second
+    setExtraTime(Math.floor(Math.random() * 8)) // Random extra time between 0 and 7
+    intervalRef.current = setInterval(updateMinute, 500) // Simulate each minute every second
     setIsSimulating(true)
-    // setShowScores(false)
+    setShowScores(false)
   }
 
-  // useEffect(() => {
-  //   return () => {
-  //     if (intervalRef.current) clearInterval(intervalRef.current)
-  //   }
-  // }, [])
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
+  }, [])
 
   useEffect(() => {
     if (finalizeGameEvent.length) {
@@ -77,15 +77,15 @@ const MatchPage = () => {
     }
   }, [finalizeGameEvent, isSimulating])
 
-  // useEffect(() => {
-  //   if (teamAScore !== null && teamBScore !== null && !isSimulating) {
-  //     setNarration(
-  //       `Full time! The match ends with a score of ${teamAScore} - ${teamBScore}. ${
-  //         teamAScore > teamBScore ? "Team A wins!" : teamBScore > teamAScore ? "Team B wins!" : "It's a draw!"
-  //       }`
-  //     )
-  //   }
-  // }, [teamAScore, teamBScore, isSimulating])
+  useEffect(() => {
+    if (teamAScore !== null && teamBScore !== null && !isSimulating) {
+      setNarration(
+        `Full time! The match ends with a score of ${teamAScore} - ${teamBScore}. ${
+          teamAScore > teamBScore ? "Team A wins!" : teamBScore > teamAScore ? "Team B wins!" : "It's a draw!"
+        }`
+      )
+    }
+  }, [teamAScore, teamBScore, isSimulating])
 
   const updateMinute = () => {
     setCurrentMinute((prevMinute) => {

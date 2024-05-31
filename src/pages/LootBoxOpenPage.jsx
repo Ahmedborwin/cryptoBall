@@ -58,12 +58,12 @@ const LootBoxOpenPage = () => {
   }, [approvalEvent])
 
   useEffect(() => {
-    const startOpeningAnimation = async () => {
+    const startOpeningAnimation = async ({ packOpenedArray }) => {
       setIsOpen(true)
       setTimeout(() => {
         setTransition(true)
         setTimeout(() => {
-          navigate("/loot-view") // Navigate after the animation duration
+          navigate("/loot-view", { state: { packOpenedArray } }) // Navigate after the animation duration
         }, 1000) // Transition duration
       }, 2000)
     }
@@ -86,7 +86,7 @@ const LootBoxOpenPage = () => {
       console.log("packOpenedArray", packOpenedArray)
 
       console.log("Starting animation...")
-      startOpeningAnimation()
+      startOpeningAnimation({ packOpenedArray })
       console.log("Done starting animation")
     } else {
       console.log("Array empty or not an array: ", lootBoxOpenedEvent, "@@@@@")

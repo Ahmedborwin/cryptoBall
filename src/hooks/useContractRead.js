@@ -17,8 +17,10 @@ const useContractRead = (contractAddress, contractABI, functionName, args = []) 
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true)
+      setError(null)
+
       try {
-        // Set up the provider (you can use any provider)
         const provider = new ethers.providers.Web3Provider(window.ethereum)
 
         // Request account access if needed
@@ -37,7 +39,7 @@ const useContractRead = (contractAddress, contractABI, functionName, args = []) 
       }
     }
 
-    if (!data || !Object.keys(data).length) fetchData()
+    fetchData()
   }, [contractAddress, contractABI, functionName, args])
 
   return { data, loading, error }

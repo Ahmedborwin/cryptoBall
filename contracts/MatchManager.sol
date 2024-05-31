@@ -279,24 +279,24 @@ contract MatchManager {
 
     if (winner == 0) {
       game.winner = game.creator;
-      creatorStats.wins++;
+      // creatorStats.wins++;
       // challengerStats.losses++;
       cbTokenContract.transfer(game.winner, 5 ether);
     } else if (winner == 1) {
       game.winner = game.challenger;
       // creatorStats.losses++;
-      challengerStats.wins++;
+      // challengerStats.wins++;
       cbTokenContract.transfer(game.winner, 5 ether);
     } else {
       //How to handle draw?
       emit Draw(game.creator, game.challenger, team1Goals, team2Goals);
     }
 
-    // Update total goals for managers
-    creatorStats.totalGoals += uint256(team1Goals);
-    challengerStats.totalGoals += uint256(team2Goals);
+    // // Update total goals for managers
+    // creatorStats.totalGoals += uint256(team1Goals);
+    // challengerStats.totalGoals += uint256(team2Goals);
 
-    game.gamesPlayed++;
+    // game.gamesPlayed++;
     // if (game.gamesPlayed == 3) {
     //   game.status = 3; // set game status to completed
     // }

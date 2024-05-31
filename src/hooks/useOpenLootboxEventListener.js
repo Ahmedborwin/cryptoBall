@@ -11,15 +11,16 @@ const useOpenLootboxEventListener = (contractAddress, contractABI, eventName) =>
   useEffect(() => {
     let contract
 
-    console.log(eventName, "@@@@@eventName")
-    // console.log(contract, '@@@@contract')
     const setupEventListener = async () => {
       try {
         console.log("@@@@setEventListener")
-        const provider = new ethers.providers.Web3Provider(window.ethereum)
+        const alchemyProvider = new ethers.providers.JsonRpcProvider(
+          `https://arb-sepolia.g.alchemy.com/v2/vD6QwCUWLfCBxRT2A6CwgATSQpqc9w8G`
+        )
+        const signer = alchemyProvider.getSigner()
         if (!provider) throw new ErrorEvent("No provider!")
 
-        contract = new ethers.Contract(contractAddress, contractABI, provider)
+        contract = new ethers.Contract(contractAddress, contractABI, signer)
         if (!contract) throw new ErrorEvent("No contract!")
 
         const handleEventListener = (...args) => {

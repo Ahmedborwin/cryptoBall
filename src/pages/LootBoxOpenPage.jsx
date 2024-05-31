@@ -69,7 +69,6 @@ const LootBoxOpenPage = () => {
     }
 
     if (lootBoxOpenedEvent.length) {
-      console.log("@@@@lootBoxOpenedEvent", lootBoxOpenedEvent)
 
       const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account.address))
       // get the players details from the event args and use IPFS to get the player info
@@ -82,8 +81,6 @@ const LootBoxOpenPage = () => {
       playerURIIndexArray.forEach((index) => {
         packOpenedArray.push(ipfsData[index])
       })
-
-      console.log("packOpenedArray", packOpenedArray)
 
       console.log("Starting animation...")
       startOpeningAnimation({ packOpenedArray })

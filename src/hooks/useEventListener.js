@@ -6,13 +6,11 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
+    console.log("Match Event listener Here ")
     const setupEventListener = async () => {
       try {
+        console.log("Match Event listener Here 2")
         const provider = new ethers.providers.Web3Provider(window.ethereum)
-
-        // Request account access if needed
-        await provider.send("eth_requestAccounts", [])
-
         // Set up the contract
         const contract = new ethers.Contract(contractAddress, contractABI, provider)
 
@@ -24,6 +22,7 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
           setEvents([{ eventData, transactionHash: event.transactionHash }])
         }
 
+        console.log(contract.on(eventName, handleEventListener))
         contract.on(eventName, handleEventListener)
 
         // Cleanup function to remove the event listener

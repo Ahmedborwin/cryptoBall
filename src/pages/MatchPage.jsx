@@ -9,6 +9,7 @@ import SubmitButton from "../components/common/Button/SubmitButton"
 import useContractWrite from "../hooks/useContractWrite"
 import useEventListener from "../hooks/useEventListener"
 import { useChainId } from "wagmi"
+import { BigNumber } from "ethers"
 
 const commentaries = [
   "What a fantastic weather today!",
@@ -27,8 +28,8 @@ const MatchPage = () => {
   const totalMinutes = 90
   const [currentMinute, setCurrentMinute] = useState(0)
   const [extraTime, setExtraTime] = useState(0)
-  const [teamAScore, setTeamAScore] = useState(0)
-  const [teamBScore, setTeamBScore] = useState(0)
+  const [teamAScore, setTeamAScore] = useState(null)
+  const [teamBScore, setTeamBScore] = useState(null)
   const [narration, setNarration] = useState("")
   const [isSimulating, setIsSimulating] = useState(false)
   const [showScores, setShowScores] = useState(false)
@@ -61,32 +62,30 @@ const MatchPage = () => {
       if (intervalRef.current) clearInterval(intervalRef.current)
     }
   }, [])
-  console.log(finalizeGameEvent, "@@@@finalizeGameEvent")
 
   useEffect(() => {
     if (finalizeGameEvent.length) {
-      if (finalizeGameEvent.find((event) => event.eventData.find((prop) => prop.toString() === "1"))) {
-        if (!isSimulating) {
-          const gameScore = finalizeGameEvent.eventData.slice(2, 3).map((prop) => BigNumber.from(prop).toNumber())
-          console.log(gameScore, "@@@@gameScore")
+      const gameEvent = finalizeGameEvent.find((event) => event.eventData.find((prop) => prop.toString() === "1"))
+      if (gameEvent && !isSimulating) {
+        const gameScore = gameEvent.eventData.slice(2, 4).map((prop) => BigNumber.from(prop).toNumber())
+        console.log(gameScore, "@@@@gameScore")
 
-          setTeamAScore(gameScore[0])
-          setTeamBScore(gameScore[1])
-          setShowScores(true)
-        }
+        setTeamAScore(gameScore[0])
+        setTeamBScore(gameScore[1])
+        setShowScores(true)
       }
     }
   }, [finalizeGameEvent, isSimulating])
 
   useEffect(() => {
-    if (teamAScore && teamBScore) {
+    if (teamAScore !== null && teamBScore !== null && !isSimulating) {
       setNarration(
         `Full time! The match ends with a score of ${teamAScore} - ${teamBScore}. ${
           teamAScore > teamBScore ? "Team A wins!" : teamBScore > teamAScore ? "Team B wins!" : "It's a draw!"
         }`
       )
     }
-  }, [teamAScore, teamBScore])
+  }, [teamAScore, teamBScore, isSimulating])
 
   const updateMinute = () => {
     setCurrentMinute((prevMinute) => {
@@ -158,7 +157,9 @@ const MatchPage = () => {
       <div className="w-full max-w-4xl min-h-[100px] mb-4 p-4 bg-[#00000073] rounded-xl shadow-xl border-y border-gray-300 flex items-center justify-center">
         <p className="text-white text-center">{narration}</p>
       </div>
-      <SubmitButton onClick={toggleSimulation} disabled={isSimulating}>{"Simulate"}</SubmitButton>
+      <SubmitButton onClick={toggleSimulation} disabled={isSimulating}>
+        {"Simulate"}
+      </SubmitButton>
     </div>
   )
 }

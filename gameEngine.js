@@ -626,11 +626,10 @@ let counter = 0
 function getRandomNumber(max) {
   return crypto.randomInt(max)
 }
-
 function simulateMatch() {
   console.log("Starting match simulation...")
 
-  const homeBias = 0.25
+  const homeBias = 0.5 // Increased home advantage
   const eliteGoalSavePercentage = 0.85
   const shotsToGoalsRatio = 0.7
 
@@ -644,7 +643,6 @@ function simulateMatch() {
   let team2Midfield = 0
   let team2GkSkill = 0
 
-  // Calculate team1 attributes
   team1.forEach((player) => {
     player.attributes.forEach((attr) => {
       switch (attr.name) {
@@ -677,7 +675,6 @@ function simulateMatch() {
     team1GkSkill
   )
 
-  // Calculate team2 attributes
   team2.forEach((player) => {
     player.attributes.forEach((attr) => {
       switch (attr.name) {
@@ -692,7 +689,7 @@ function simulateMatch() {
           break
         case "goalkeeping":
           if (player.team_position === "GK") {
-            team1GkSkill += parseInt(attr.value)
+            team2GkSkill += parseInt(attr.value)
           }
           break
       }
@@ -711,26 +708,36 @@ function simulateMatch() {
   )
 
   const homeTeam = getRandomNumber(2)
-
   const team1Skill = team1Attack + team1Defense + team1Midfield
-
-  // Compute initial goals
-  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber(3000)) * shotsToGoalsRatio
-
-  // Compute goals saved by the goalkeeper
-  const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
-
-  // Adjust goals after saves
-  team1Goals = team1Goals - team2Saves
-
   const team2Skill = team2Attack + team2Defense + team2Midfield
+
+  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber(3000)) * shotsToGoalsRatio
+  team1Goals += homeTeam === 0 ? homeBias : 0
+
+  const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
+  team1Goals = Math.max(0, Math.round(team1Goals - team2Saves))
+
   let team2Goals = computeScoreFromChance(team2Skill, getRandomNumber(3000)) * shotsToGoalsRatio
+  team2Goals += homeTeam === 1 ? homeBias : 0
 
   const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
-
-  team2Goals = team2Goals - team1Saves
+  team2Goals = Math.max(0, Math.round(team2Goals - team1Saves))
 
   console.table({ "team1 Goals": team1Goals, "team 2 Goals": team2Goals })
+
+  if (team1Goals === team2Goals) {
+    console.log("Draw after regular time. Starting extra time...")
+    const extraTimeResult = simulateExtraTime(team1Skill, team2Skill, team1GkSkill, team2GkSkill, homeTeam)
+    team1Goals += extraTimeResult.team1Goals
+    team2Goals += extraTimeResult.team2Goals
+
+    if (team1Goals === team2Goals) {
+      console.log("Draw after extra time. Starting penalty shootout...")
+      const penaltyShootoutResult = simulatePenaltyShootout()
+      team1Goals += penaltyShootoutResult.team1Goals
+      team2Goals += penaltyShootoutResult.team2Goals
+    }
+  }
 
   const winner = team1Goals > team2Goals ? 0 : team1Goals < team2Goals ? 1 : 2
   console.log("Winner: Team", winner)
@@ -739,28 +746,53 @@ function simulateMatch() {
 
   return { winner, team1Goals, team2Goals, playersUpgrades }
 }
+
+function simulateExtraTime(team1Skill, team2Skill, team1GkSkill, team2GkSkill, homeTeam) {
+  const homeBias = 0.25 // Reduced home advantage for extra time
+  const eliteGoalSavePercentage = 0.85
+  const shotsToGoalsRatio = 0.7
+
+  let team1Goals = computeScoreFromChance(team1Skill, getRandomNumber(3000)) * shotsToGoalsRatio
+  team1Goals += homeTeam === 0 ? homeBias : 0
+
+  const team2Saves = team1Goals * (team2GkSkill / 999) * eliteGoalSavePercentage
+  team1Goals = Math.max(0, Math.round(team1Goals - team2Saves))
+
+  let team2Goals = computeScoreFromChance(team2Skill, getRandomNumber(3000)) * shotsToGoalsRatio
+  team2Goals += homeTeam === 1 ? homeBias : 0
+
+  const team1Saves = team2Goals * (team1GkSkill / 999) * eliteGoalSavePercentage
+  team2Goals = Math.max(0, Math.round(team2Goals - team1Saves))
+
+  console.table({ "Extra Time team1 Goals": team1Goals, "Extra Time team 2 Goals": team2Goals })
+
+  return { team1Goals, team2Goals }
+}
+
+function simulatePenaltyShootout() {
+  const maxPenaltyGoals = 5
+  const team1PenaltyGoals = getRandomNumber(maxPenaltyGoals + 1)
+  const team2PenaltyGoals = getRandomNumber(maxPenaltyGoals + 1)
+
+  console.table({
+    "Penalty Shootout team1 Goals": team1PenaltyGoals,
+    "Penalty Shootout team 2 Goals": team2PenaltyGoals,
+  })
+
+  return { team1Goals: team1PenaltyGoals, team2Goals: team2PenaltyGoals }
+}
+
 function computeScoreFromChance(skill, _chance) {
-  // Ensure the chance is within the 0-3000 range
   const chance = _chance % 3000
-
-  // Normalize the skill to a 0-1 range (assuming max skill is 4356)
   const normalizedSkill = skill / 4356
-
-  // Normalize the chance to a 0-1 range
   const normalizedChance = chance / 3000
-
-  // Calculate the raw score using a sigmoid function for smooth scaling
-  const score = 10 / (1 + Math.exp(-(normalizedSkill - normalizedChance)))
-
-  // Ensure the score is in the 0-10 range
+  const skillFactor = 2.0 // Further increase the impact of skill
+  const score = 10 / (1 + Math.exp(-(normalizedSkill * skillFactor - normalizedChance)))
   return Math.round(score)
 }
 
 function adjustPlayerAttributes() {
-  //TODO only goalkeeper should have their GK skills increased?
-
   let playersToUpgrade = []
-
   const playerUpgraded = getRandomNumber(11)
 
   for (let i = 0; i < playerUpgraded; i++) {
@@ -772,7 +804,8 @@ function adjustPlayerAttributes() {
 
   return playersToUpgrade
 }
-//Create Custom Buffer
+
+// Create Custom Buffer
 function encodeMatchResult(matchResult) {
   const buffer = Buffer.alloc(256) // Total buffer allocation
   let offset = 0
@@ -797,8 +830,7 @@ function encodeMatchResult(matchResult) {
   return buffer
 }
 
-//runs simulate match and returns object of winner, team 2 and 2 score, adjusted team 2 and two metadata
+// Simulate match and encode result
 const matchResult = simulateMatch()
-//encode match result into custom Bugger
 const encodedMatchResult = encodeMatchResult(matchResult)
 return encodedMatchResult

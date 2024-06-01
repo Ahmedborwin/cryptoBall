@@ -80,8 +80,7 @@ const MatchPage = () => {
   useEffect(() => {
     if (teamAScore !== null && teamBScore !== null && !isSimulating) {
       setNarration(
-        `Full time! The match ends with a score of ${teamAScore} - ${teamBScore}. ${
-          teamAScore > teamBScore ? "Team A wins!" : teamBScore > teamAScore ? "Team B wins!" : "It's a draw!"
+        `Full time! The match ends with a score of ${teamAScore} - ${teamBScore}. ${teamAScore > teamBScore ? "Team A wins!" : teamBScore > teamAScore ? "Team B wins!" : "It's a draw!"
         }`
       )
     }

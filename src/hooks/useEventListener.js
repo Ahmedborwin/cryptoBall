@@ -8,15 +8,17 @@ const useEventListener = (contractAddress, contractABI, eventName) => {
   useEffect(() => {
     const setupEventListener = async () => {
       try {
-        const provider = new ethers.providers.Web3Provider(window.ethereum)
+        const alchemyProvider = new ethers.providers.JsonRpcProvider(
+          `https://arb-sepolia.g.alchemy.com/v2/vD6QwCUWLfCBxRT2A6CwgATSQpqc9w8G`
+        )
+        const signer = alchemyProvider.getSigner()
         // Set up the contract
-        const contract = new ethers.Contract(contractAddress, contractABI, provider)
+        const contract = new ethers.Contract(contractAddress, contractABI, signer)
 
         const handleEventListener = (...args) => {
           const event = args[args.length - 1]
           console.log(event, "@@@@event")
           const eventData = args.slice(0, args.length - 1)
-          console.log(eventData, "@@@@eventData")
           setEvents([{ eventData, transactionHash: event.transactionHash }])
         }
 

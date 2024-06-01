@@ -27,18 +27,45 @@ const LootBoxOpenPage = () => {
 
   const chainId = useChainId()
   const { address: accountAddress } = useAccount()
-
   const navigate = useNavigate()
-
   const ipfsData = useGetIPFSData()
 
   const { writeContract } = useWriteContract()
 
+  const { write: approveTokens } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
   const { write: openLootBox } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
 
-  const { events: approvalEvent } = useEventListener(Token_AddressList[chainId], TOKEN_ABI, "Approval")
+  // Watch for Approval event
+  useWatchContractEvent({
+    address: Token_AddressList[chainId],
+    abi: TOKEN_ABI,
+    eventName: "Approval",
+    onLogs(logs) {
+      console.log("Approval logs:", logs)
+      if (logs.some((log) => log.args?.owner === account.address)) {
+        handleOpenLootBox()
+      }
+    },
+  })
 
-  const { events: lootBoxOpenedEvent } = useOpenLootboxEventListener(VRF_AddressList[chainId], VRF_ABI, "PackOpened")
+  // Watch for PackOpened event
+  useWatchContractEvent({
+    address: VRF_AddressList[chainId],
+    abi: VRF_ABI,
+    eventName: "PackOpened",
+    onLogs(logs) {
+      console.log("PackOpened logs:", logs)
+      const foundEvent = logs.find((log) => log.args?.[0] === account.address)
+      if (foundEvent) {
+        const playerURIIndexArray = foundEvent.args.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
+        console.log("playerURIIndexArray", playerURIIndexArray)
+        const packOpenedArray = playerURIIndexArray.map((index) => ipfsData[index])
+        console.log("Starting animation...")
+        startOpeningAnimation({ packOpenedArray })
+        console.log("Done starting animation")
+      }
+    },
+  })
 
   useWatchContractEvent({
     address: Token_AddressList[chainId],
@@ -48,7 +75,7 @@ const LootBoxOpenPage = () => {
       console.log("Approval event@@@@@@", logs)
     },
     onError(error) {
-      console.error("Error in Approval event listener:", error);
+      console.error("Error in Approval event listener:", error)
     },
     chainId, // Ensure this is correctly set
     enabled: !!chainId && !!accountAddress, // Ensure this runs only when chainId and accountAddress are defined
@@ -64,53 +91,60 @@ const LootBoxOpenPage = () => {
     })
   }
 
-  useEffect(() => {
-    const handleOpenLootBox = async () => {
-      console.log("Opening Lootbox...")
-      await openLootBox()
-      console.log("Done opening lootbox")
-    }
+  const handleOpenLootBox = async () => {
+    console.log("Opening Lootbox...")
+    await openLootBox()
+    console.log("Done opening lootbox")
+  }
 
-    if (approvalEvent.length) {
-      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))) handleOpenLootBox()
-    }
-  }, [approvalEvent, accountAddress, openLootBox])
+  // if (approvalEvent.length) {
+  //   if (approvalEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))) handleOpenLootBox()
+  // }
 
-  useEffect(() => {
-    const startOpeningAnimation = async ({ packOpenedArray }) => {
-      setIsOpen(true)
-      setTimeout(() => {
-        setTransition(true)
-        setTimeout(() => {
-          navigate("/loot-view", { state: { packOpenedArray } }) // Navigate after the animation duration
-        }, 1000) // Transition duration
-      }, 2000)
-    }
+  // useEffect(() => {
+  //   const startOpeningAnimation = async ({ packOpenedArray }) => {
+  //     setIsOpen(true)
+  //     setTimeout(() => {
+  //       setTransition(true)
+  //       setTimeout(() => {
+  //         navigate("/loot-view", { state: { packOpenedArray } }) // Navigate after the animation duration
+  //       }, 1000) // Transition duration
+  //     }, 2000)
+  //   }
 
-    if (lootBoxOpenedEvent.length) {
-      console.log("@@@@lootBoxOpenedEvent", lootBoxOpenedEvent)
+  //   if (lootBoxOpenedEvent.length) {
+  //     console.log("@@@@lootBoxOpenedEvent", lootBoxOpenedEvent)
 
-      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))
-      if (foundEvent) {
-        // get the players details from the event args and use IPFS to get the player info
-        const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
-        console.log("playerURIIndexArray", playerURIIndexArray)
+  //     const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))
+  //     if (foundEvent) {
+  //       // get the players details from the event args and use IPFS to get the player info
+  //       const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
+  //       console.log("playerURIIndexArray", playerURIIndexArray)
 
-        const packOpenedArray = []
-        playerURIIndexArray.forEach((index) => {
-          packOpenedArray.push(ipfsData[index])
-        })
+  //       const packOpenedArray = []
+  //       playerURIIndexArray.forEach((index) => {
+  //         packOpenedArray.push(ipfsData[index])
+  //       })
 
-        console.log("packOpenedArray", packOpenedArray)
+  //       console.log("packOpenedArray", packOpenedArray)
 
-        console.log("Starting animation...")
-        startOpeningAnimation({ packOpenedArray })
-        console.log("Done starting animation")
-      }
-    } else {
-      console.log("Array empty or not an array: ", lootBoxOpenedEvent, "@@@@@")
-    }
-  }, [lootBoxOpenedEvent, accountAddress, ipfsData])
+  //       console.log("Starting animation...")
+  //       startOpeningAnimation({ packOpenedArray })
+  //       console.log("Done starting animation")
+  //     }
+  //   } else {
+  //     console.log("Array empty or not an array: ", lootBoxOpenedEvent, "@@@@@")
+  //   }
+  // }, [lootBoxOpenedEvent, accountAddress, ipfsData])
+  // const startOpeningAnimation = ({ packOpenedArray }) => {
+  //   setIsOpen(true)
+  //   setTimeout(() => {
+  //     setTransition(true)
+  //     setTimeout(() => {
+  //       navigate("/loot-view", { state: { packOpenedArray } }) // Navigate after the animation duration
+  //     }, 1000) // Transition duration
+  //   }, 2000) // Animation duration
+  // }
 
   return (
     <>

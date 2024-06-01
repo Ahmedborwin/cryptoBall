@@ -62,7 +62,8 @@
     "inputs": [
       { "type": "uint256", "name": "id", "indexed": false },
       { "type": "address", "name": "winner", "indexed": false },
-      { "type": "uint256", "name": "completionTime", "indexed": false }
+      { "type": "uint256", "name": "team1Goals", "indexed": false },
+      { "type": "uint256", "name": "team2Goals", "indexed": false }
     ]
   },
   {
@@ -228,7 +229,8 @@
       { "type": "uint256", "name": "creationTime" },
       { "type": "uint256", "name": "blockAccepted" },
       { "type": "uint256", "name": "completionTime" },
-      { "type": "uint256", "name": "status" }
+      { "type": "uint256", "name": "status" },
+      { "type": "uint8", "name": "gamesPlayed" }
     ]
   },
   {
@@ -269,7 +271,8 @@
           { "type": "uint256", "name": "creationTime" },
           { "type": "uint256", "name": "blockAccepted" },
           { "type": "uint256", "name": "completionTime" },
-          { "type": "uint256", "name": "status" }
+          { "type": "uint256", "name": "status" },
+          { "type": "uint8", "name": "gamesPlayed" }
         ]
       }
     ]
@@ -340,6 +343,15 @@
   },
   {
     "type": "function",
+    "name": "isNFTListed",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_tokenId" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
     "name": "isTeamNameTaken",
     "constant": true,
     "stateMutability": "view",
@@ -347,20 +359,13 @@
     "inputs": [{ "type": "string" }],
     "outputs": [{ "type": "bool" }]
   },
+  { "type": "function", "name": "openLootbox", "constant": false, "payable": false, "inputs": [], "outputs": [] },
   {
     "type": "function",
     "name": "registerNewManager",
     "constant": false,
     "payable": false,
     "inputs": [{ "type": "string", "name": "_teamName" }],
-    "outputs": []
-  },
-  {
-    "type": "function",
-    "name": "requestRandomNumbers",
-    "constant": false,
-    "payable": false,
-    "inputs": [{ "type": "uint256", "name": "_id" }],
     "outputs": []
   },
   {
@@ -433,6 +438,14 @@
   },
   {
     "type": "function",
+    "name": "startGame",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint256", "name": "_id" }],
+    "outputs": []
+  },
+  {
+    "type": "function",
     "name": "testPlayerIndexArray",
     "constant": true,
     "stateMutability": "view",
@@ -466,5 +479,14 @@
     "payable": false,
     "inputs": [],
     "outputs": [{ "type": "uint256" }]
-  }
+  },
+  {
+    "type": "function",
+    "name": "unstakePlayerNFT",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "uint8", "name": "_index" }],
+    "outputs": []
+  },
+  { "type": "function", "name": "unstakeRoster", "constant": false, "payable": false, "inputs": [], "outputs": [] }
 ]

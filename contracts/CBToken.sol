@@ -48,12 +48,6 @@ contract CBToken is IERC20, Ownable {
     return true;
   }
 
-  function approveChainRunner(address delegate, uint256 numTokens) external returns (bool) {
-    allowed[address(this)][delegate] = numTokens;
-    emit Approval(msg.sender, delegate, numTokens);
-    return true;
-  }
-
   function allowance(address owner, address delegate) public view override returns (uint) {
     return allowed[owner][delegate];
   }

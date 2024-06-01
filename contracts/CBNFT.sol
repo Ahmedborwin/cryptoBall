@@ -51,29 +51,21 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   CB_MatchManagerInterface public i_GameManager;
 
   event NFTMinted(address player, string tokenURI);
-  event LootBoxOpened(address player, string tokenURI);
+  event LootBoxOpened(address player, string tokenURI, uint256 uriIndex);
   event PlayerNFTListed(address seller, uint256 tokenId, uint256 price);
   event PlayerSold(uint256 tokenId, address seller, address buyer, uint256 price);
 
-  constructor(string memory _baseHash, address _MatchManager) ERC721("CB_PLAYERS", "CBNFT") {
+  constructor(string memory _baseHash, address _MatchManager, address _VRFAddress) ERC721("CB_PLAYERS", "CBNFT") {
     s_tokenCounter = 1;
     s_CB_BaseURI = _baseHash;
     contract_Admin = msg.sender;
     i_GameManager = CB_MatchManagerInterface(_MatchManager);
-  }
-
-  function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) public {
-    _modifyUpgrade(_tokenID, _attribute, _newValue, msg.sender);
-  }
-
-  function _modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue, address _caller) internal {
-    tokenUpgrades[_tokenID][_attribute] = _newValue;
+    i_VRF = CB_VRFInterface(_VRFAddress);
   }
 
   function openLootBox(uint256 _uriIndex, address _player) external onlyAdmin(msg.sender) {
     uint256 _tokenCounter = s_tokenCounter;
     s_tokenCounter++;
-
     //Mint NFT and set the TokenURI
     _safeMint(_player, _tokenCounter);
 
@@ -88,11 +80,21 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
     s_addressToAllTokenURIs[_player].push(playerURI);
     isTokenOwnedByAddress[_player][_tokenCounter] = true;
     // //emit event
-    emit LootBoxOpened(_player, playerURI);
+    emit LootBoxOpened(_player, playerURI, _uriIndex);
   }
 
   function updateTokenURI(uint8 _tokenID, string calldata _newURI) external onlyOwner {
     _setTokenURI(_tokenID, _newURI);
+  }
+
+  // Upgrade TokenIDs
+
+  function modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue) public {
+    _modifyUpgrade(_tokenID, _attribute, _newValue, msg.sender);
+  }
+
+  function _modifyUpgrade(uint256 _tokenID, uint8 _attribute, uint8 _newValue, address _caller) internal {
+    tokenUpgrades[_tokenID][_attribute] = _newValue;
   }
 
   //Function to List nft for sale
@@ -154,8 +156,8 @@ contract CBNFT is ERC721URIStorage, Ownable, ReentrancyGuard {
   //-------------------------------------------------------------------
   //Setter functions
 
-  function setVRFHandlerAddress(address _vrfHandler) external onlyAdmin(msg.sender) {
-    i_VRF = CB_VRFInterface(_vrfHandler);
+  function setVRFHandlerAddress(address _VRFAddress) external onlyAdmin(msg.sender) {
+    i_VRF = CB_VRFInterface(_VRFAddress);
   }
   function setMatchManager(address _matchManager) public onlyAdmin(msg.sender) {
     i_GameManager = CB_MatchManagerInterface(_matchManager);

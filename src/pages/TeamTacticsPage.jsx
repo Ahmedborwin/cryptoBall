@@ -1,78 +1,90 @@
-import React, { useState } from "react";
-import SubmitButton from "../components/common/Button/SubmitButton";
+import React, { useState } from "react"
+import Manager_AddressList from "../config/Manager_AddressList.json"
+import MM_ABI from "../config/managerAbi.json"
 
-const formations = {
-  "4-4-2": { defenders: 4, midfielders: 4, forwards: 2, goalkeeper: 1 },
-  "4-3-3": { defenders: 4, midfielders: 3, forwards: 3, goalkeeper: 1 },
-  "4-2-3-1": { defenders: 4, defensiveMid: 2, attackingMid: 3, forwards: 1, goalkeeper: 1 },
-  "3-4-3": { defenders: 3, midfielders: 4, forwards: 3, goalkeeper: 1 },
-};
+// components
+import Loading from "../components/Loading"
+import PlayerCard from "../components/PlayerCard"
+import TabContainer from "../components/common/Container/Tab/TabContainer"
+import TeamFormations from "../components/TeamFormations"
+import TeamSquad from "../components/TeamSquad"
+import StakeModal from "../components/StakeModal"
+
+// context
+import { usePlayers } from "../context/PlayerContext"
+import { usePlayerRoster } from "../context/PlayerRosterContext"
+
+// hooks
+import useContractWrite from "../hooks/useContractWrite"
+import useWalletConnect from "../hooks/useWalletConnect"
+
+// utils
+import { formations } from "../utils/constants/squad"
 
 const TeamTacticsPage = () => {
-  const [selectedFormation, setSelectedFormation] = useState("4-4-2");
+  const [selectedFormation, setSelectedFormation] = useState("4-4-2")
+  const [openStakeDialog, setOpenStakeDialog] = useState(false)
+  const [selectedPlayer, setSelectedPlayer] = useState(null)
 
-  const players = formations[selectedFormation];
+  const { chainId } = useWalletConnect()
+
+  const { playerRoster } = usePlayerRoster()
+
+  const { playersMetadata} = usePlayers()
+
+  const {
+    write: setRosterPosition,
+    loading: loadingSetRosterPosition,
+    error: errorSetRosterPosition,
+  } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "setRosterPosition")
+
+  const handleStakePlayer = (player) => {
+    setSelectedPlayer(player)
+    setOpenStakeDialog(true)
+  }
+
+  const handleStakeConfirm = async (position) => {
+    console.log("Staking player", selectedPlayer?.id, "at position", position)
+    await setRosterPosition("0x5f2AF68dF96F3e58e1a243F4f83aD4f5D0Ca6029", "0", selectedPlayer.id, position - 1)
+    console.log("Done staking")
+  }
+
+  const isPlayerStaked = (playerId) => {
+    return playerRoster?.some((player) => parseInt(player.tokenID) === parseInt(playerId))
+  }
+
+  if (!playerRoster || !playersMetadata || !playerRoster.length || !playersMetadata.length) return <Loading />
 
   return (
-    <div className="w-full h-screen flex justify-between p-10">
-      <div className="w-full max-w-3xl h-128 bg-green-800 bg-opacity-50 rounded-lg flex flex-col justify-around py-4 px-10">
-        {/* Forwards */}
-        <div className="flex justify-evenly">
-          {Array.from({ length: players.forwards || 0 }).map((_, index) => (
-            <div key={`forward-${index}`} className="w-6 h-6 bg-white rounded-full" />
-          ))}
-        </div>
-        {/* Attacking Midfielders (for 4-2-3-1 formation specifically) */}
-        {selectedFormation === "4-2-3-1" && (
-          <div className="flex justify-evenly">
-            {Array.from({ length: players.attackingMid }).map((_, index) => (
-              <div key={`attackingMid-${index}`} className="w-6 h-6 bg-white rounded-full" />
-            ))}
+    <TabContainer>
+      <div className="flex flex-col md:flex-row justify-between items-start w-full">
+        <div className="flex flex-col w-full md:w-1/2 p-4">
+          <TeamFormations {...{ formations, selectedFormation, setSelectedFormation }} />
+          <div className="mt-4">
+            <TeamSquad {...{ selectedFormation, formations, playerRoster }} />
           </div>
-        )}
-        {/* Midfielders or Defensive Midfielders */}
-        <div className="flex justify-evenly">
-          {Array.from({ length: players.midfielders || players.defensiveMid || 0 }).map((_, index) => (
-            <div key={`midfielder-${index}`} className="w-6 h-6 bg-white rounded-full" />
-          ))}
         </div>
-        {/* Defenders */}
-        <div className="flex justify-evenly">
-          {Array.from({ length: players.defenders }).map((_, index) => (
-            <div key={`defender-${index}`} className="w-6 h-6 bg-white rounded-full" />
-          ))}
-        </div>
-        {/* Goalkeeper */}
-        <div className="flex justify-center">
-          {Array.from({ length: players.goalkeeper }).map((_, index) => (
-            <div key={`goalkeeper-${index}`} className="w-6 h-6 bg-white rounded-full" />
-          ))}
+
+        <div className="flex flex-col w-full md:w-1/2 p-4">
+          <div className="text-lg text-center">Click a player to add it to the team squad</div>
+
+          <div className="mt-6 overflow-x-auto">
+            <div className="flex flex-nowrap gap-4 h-96">
+              <div className="grid grid-flow-col auto-cols-max gap-4">
+                {playersMetadata?.map((player, index) => (
+                  <button key={index} onClick={() => handleStakePlayer(player)} className="w-full">
+                    <PlayerCard player={player} index={index} isStaked={isPlayerStaked(player.id)} />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Dropdown for selecting formation */}
-      <div className="ml-4">
-        <label htmlFor="formation-select" className="block text-lg font-medium text-white">Select Formation</label>
-        <select
-          id="formation-select"
-          value={selectedFormation}
-          onChange={e => setSelectedFormation(e.target.value)}
-          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-        >
-          {Object.keys(formations).map(formation => (
-            <option key={formation} value={formation}>
-              {formation}
-            </option>
-          ))}
-        </select>
-        <div>ROSTERS -- Struct -- Player -- tokenId & URIIndex</div>
-        <div>ROSTER less than 11 -- You cannot play a game </div>
-        <div>getRoaster function (manager address) -- on the left side</div>
-        <div>Player NFTs number: (getURI(manager address) function -- NFT contract [playersTokens]) -- on the right side</div>
-        <SubmitButton>STAKE PLAYER/TEAM</SubmitButton>
-      </div>
-    </div>
-  );
-};
+      <StakeModal isOpen={openStakeDialog} onClose={() => setOpenStakeDialog(false)} onStake={handleStakeConfirm} />
+    </TabContainer>
+  )
+}
 
-export default TeamTacticsPage;
+export default TeamTacticsPage

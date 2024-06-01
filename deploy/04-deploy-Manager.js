@@ -49,7 +49,13 @@ const deployManager = async function () {
   }
 
   //write address and ABI to config
-  await updateContractInfo({ undefined, undefined, undefined, gameManagerAddress: gameManager.address })
+  await updateContractInfo({
+    undefined,
+    undefined,
+    undefined,
+    gameManagerAddress: gameManager.address,
+    tokenContractAddress: cryptoBallToken.address,
+  })
 
   //set GameManager address on consumer
   const functionsConsumerContract = await hre.ethers.getContractAt("FunctionsConsumer", ConsumerAddress)

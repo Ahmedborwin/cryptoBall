@@ -95,9 +95,9 @@ contract MatchManager {
     //3 = completed
     //4 = cancelled
     //5 = expired
+    uint8 gamesPlayed; //3 Game Series
   }
   mapping(uint256 => Game) public games;
-
   mapping(string => bool) public isTeamNameTaken;
   mapping(address => bool) public isManagerRegisteredTable;
 
@@ -112,6 +112,7 @@ contract MatchManager {
     uint256 totalUserAcceptedGames; //number of total games ever accepted by given user
     mapping(uint256 => uint256) userAcceptedGameIds; //ids of all games accepted by user
   }
+
   mapping(address => Stats) public ManagerStats;
 
   //Interfaces
@@ -262,7 +263,7 @@ contract MatchManager {
 
     // Upgrade tokens based on winner
     uint256 upgradedTokenID;
-    for (uint i = 0; i < 4; i++) {
+    for (uint i = 0; i < 2; i++) {
       uint8 tokenIndex = uint8(buffer[offset]);
       uint8 upgradedAttribute = uint8(buffer[offset + 1]);
       offset += 2;
@@ -274,34 +275,31 @@ contract MatchManager {
       }
 
       _upgradeToken(upgradedTokenID, upgradedAttribute);
-      emit testEvent1(upgradedTokenID, upgradedAttribute);
     }
 
     if (winner == 0) {
       game.winner = game.creator;
-      creatorStats.wins++;
-      challengerStats.losses++;
+      // creatorStats.wins++;
+      // challengerStats.losses++;
       cbTokenContract.transfer(game.winner, 5 ether);
     } else if (winner == 1) {
       game.winner = game.challenger;
-      creatorStats.losses++;
-      challengerStats.wins++;
+      // creatorStats.losses++;
+      // challengerStats.wins++;
       cbTokenContract.transfer(game.winner, 5 ether);
     } else {
       //How to handle draw?
       emit Draw(game.creator, game.challenger, team1Goals, team2Goals);
     }
 
-    // Update total goals for managers
-    creatorStats.totalGoals += uint256(team1Goals);
-    challengerStats.totalGoals += uint256(team2Goals);
+    // // Update total goals for managers
+    // creatorStats.totalGoals += uint256(team1Goals);
+    // challengerStats.totalGoals += uint256(team2Goals);
 
-    // Update state of game with further details
-    game.completionTime = block.timestamp;
-
-    //COmmented out for the sake of testing,
-    //otherwise would need to set up a new game for each time this funciton is triggered succesfully
-    //game.status = 3; // set game status to completed
+    // game.gamesPlayed++;
+    // if (game.gamesPlayed == 3) {
+    //   game.status = 3; // set game status to completed
+    // }
 
     emit FinalizeGame(gameId, game.winner, team1Goals, team2Goals);
   }
@@ -335,6 +333,30 @@ contract MatchManager {
         cancelGame(ManagerStats[msg.sender].userGameIds[_totalUserGames]);
       }
       _totalUserGames--;
+    }
+  }
+
+  function unstakePlayerNFT(uint8 _index) external isManagerRegistered(msg.sender) {
+    Player[] storage rosterArray = rosters[msg.sender];
+
+    NFTStakedBy[rosterArray[_index].tokenID] = address(0);
+    //Record New NFT Info
+    rosterArray[_index].tokenID = 0;
+    rosterArray[_index].uriIndex = 0;
+    rosterArray[_index].playerPosition = Position(0);
+    rosterArray[_index].active = false;
+  }
+
+  function unstakeRoster() external isManagerRegistered(msg.sender) {
+    Player[] storage rosterArray = rosters[msg.sender];
+
+    for (uint8 i; i < rosterArray.length; i++) {
+      NFTStakedBy[rosterArray[i].tokenID] = address(0);
+      //Record New NFT Info
+      rosterArray[i].tokenID = 0;
+      rosterArray[i].uriIndex = 0;
+      rosterArray[i].playerPosition = Position(0);
+      rosterArray[i].active = false;
     }
   }
 
@@ -388,9 +410,10 @@ contract MatchManager {
   }
 
   //Lootbox
-  function openLootbox(uint256 _amountTokens, uint256 _gameId) external {
+  function openLootbox() external {
     //transferFrom msg.sender to this address 5 tokens
-    i_VRF.requestRandomNumber(1, msg.sender, _gameId, 5);
+    // cbTokenContract.transferFrom(msg.sender, address(this), 5 ether);
+    i_VRF.requestRandomNumber(1, msg.sender, 0, 5);
   }
 
   //Internal Utility Functions

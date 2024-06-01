@@ -1,10 +1,10 @@
 import { http, createConfig } from "wagmi"
-import { mainnet, sepolia } from "wagmi/chains"
+import { arbitrumSepolia, mainnet, sepolia } from "wagmi/chains"
 
 export const configureApp = createConfig({
-  chains: [mainnet, sepolia],
+  chains: [arbitrumSepolia, sepolia],
   transports: {
-    [mainnet.id]: http(),
+    [arbitrumSepolia]: http(`https://arb-sepolia.g.alchemy.com/v2/vD6QwCUWLfCBxRT2A6CwgATSQpqc9w8G`),
     [sepolia.id]: http(),
   },
 })

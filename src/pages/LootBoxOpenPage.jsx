@@ -16,7 +16,7 @@ import SubmitButton from "../components/common/Button/SubmitButton"
 
 // hooks
 import useContractWrite from "../hooks/useContractWrite"
-import { useAccount, useChainId } from "wagmi"
+import { useAccount, useChainId, useWriteContract, useWatchContractEvent } from "wagmi"
 import useEventListener from "../hooks/useEventListener"
 import useOpenLootboxEventListener from "../hooks/useOpenLootboxEventListener"
 import useGetIPFSData from "../hooks/useGetIPFSData"
@@ -26,13 +26,13 @@ const LootBoxOpenPage = () => {
   const [transition, setTransition] = useState(false)
 
   const chainId = useChainId()
-  const account = useAccount()
+  const { address: accountAddress } = useAccount()
 
   const navigate = useNavigate()
 
   const ipfsData = useGetIPFSData()
 
-  const { write: approveTokens } = useContractWrite(Token_AddressList[chainId], TOKEN_ABI, "approve")
+  const { writeContract } = useWriteContract()
 
   const { write: openLootBox } = useContractWrite(Manager_AddressList[chainId], MM_ABI, "openLootbox")
 
@@ -40,9 +40,28 @@ const LootBoxOpenPage = () => {
 
   const { events: lootBoxOpenedEvent } = useOpenLootboxEventListener(VRF_AddressList[chainId], VRF_ABI, "PackOpened")
 
+  useWatchContractEvent({
+    address: Token_AddressList[chainId],
+    abi: TOKEN_ABI,
+    eventName: "Approval",
+    onLogs(logs) {
+      console.log("Approval event@@@@@@", logs)
+    },
+    onError(error) {
+      console.error("Error in Approval event listener:", error);
+    },
+    chainId, // Ensure this is correctly set
+    enabled: !!chainId && !!accountAddress, // Ensure this runs only when chainId and accountAddress are defined
+  })
+
   const handleOpenBox = async () => {
     setIsOpen(true)
-    await approveTokens(Manager_AddressList[chainId], ethers.utils.parseEther("5"))
+    writeContract({
+      abi: TOKEN_ABI,
+      address: Token_AddressList[chainId],
+      functionName: "approve",
+      args: [Manager_AddressList[chainId], ethers.utils.parseEther("5")],
+    })
   }
 
   useEffect(() => {
@@ -53,9 +72,9 @@ const LootBoxOpenPage = () => {
     }
 
     if (approvalEvent.length) {
-      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === account.address))) handleOpenLootBox()
+      if (approvalEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))) handleOpenLootBox()
     }
-  }, [approvalEvent])
+  }, [approvalEvent, accountAddress, openLootBox])
 
   useEffect(() => {
     const startOpeningAnimation = async ({ packOpenedArray }) => {
@@ -71,27 +90,27 @@ const LootBoxOpenPage = () => {
     if (lootBoxOpenedEvent.length) {
       console.log("@@@@lootBoxOpenedEvent", lootBoxOpenedEvent)
 
-      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === account.address))
-      // get the players details from the event args and use IPFS to get the player info
+      const foundEvent = lootBoxOpenedEvent.find((event) => event.eventData.find((prop) => prop === accountAddress))
+      if (foundEvent) {
+        // get the players details from the event args and use IPFS to get the player info
+        const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
+        console.log("playerURIIndexArray", playerURIIndexArray)
 
-      // Extract and convert the event arguments
-      const playerURIIndexArray = foundEvent.eventData.slice(1, 6).map((arg) => BigNumber.from(arg).toNumber())
-      console.log("playerURIIndexArray", playerURIIndexArray)
+        const packOpenedArray = []
+        playerURIIndexArray.forEach((index) => {
+          packOpenedArray.push(ipfsData[index])
+        })
 
-      const packOpenedArray = []
-      playerURIIndexArray.forEach((index) => {
-        packOpenedArray.push(ipfsData[index])
-      })
+        console.log("packOpenedArray", packOpenedArray)
 
-      console.log("packOpenedArray", packOpenedArray)
-
-      console.log("Starting animation...")
-      startOpeningAnimation({ packOpenedArray })
-      console.log("Done starting animation")
+        console.log("Starting animation...")
+        startOpeningAnimation({ packOpenedArray })
+        console.log("Done starting animation")
+      }
     } else {
       console.log("Array empty or not an array: ", lootBoxOpenedEvent, "@@@@@")
     }
-  }, [lootBoxOpenedEvent])
+  }, [lootBoxOpenedEvent, accountAddress, ipfsData])
 
   return (
     <>
